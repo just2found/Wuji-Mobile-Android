@@ -1,0 +1,5 @@
+<resources>
+    <string name="brvah_loading">&#8230;ر التحميل</string>
+    <string name="brvah_load_failed">فشل التحميل ، يرجى النقر فوقي للمحاولة مرة أخرى</string>
+    <string name="brvah_load_end">لا مزيد من البيانات</string>
+</resources>

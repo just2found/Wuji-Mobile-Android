@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/home_msg_system_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:paddingTop="@dimen/common_12"
+        android:paddingBottom="@dimen/common_12"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/common_icon28"
+                android:layout_height="@dimen/common_icon28"
+                android:src="@drawable/icon_sys_msg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_3"
+                android:text="@string/system_msg"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/txt_13" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/home_msg_tv_msg_count"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_16"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/common_24"
+            android:background="@drawable/bg_orange_bubble"
+            android:gravity="center"
+            android:minWidth="@dimen/common_16"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_4"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/txt_11"
+            android:visibility="gone"
+            tools:text="999"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/item_popup_msg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dip" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_msg_file_share"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dip">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="@dimen/common_icon42"
+            android:layout_height="@dimen/common_icon42"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_4"
+            android:src="@drawable/icon_msg_share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/common_8"
+            android:autoSizeMaxTextSize="@dimen/txt_13"
+            android:autoSizeMinTextSize="1sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:paddingStart="@dimen/common_8"
+            android:paddingEnd="@dimen/common_8"
+            android:text="@string/file_share"
+            android:textColor="@color/text_dark"
+            app:autoSizeMaxTextSize="@dimen/txt_13"
+            app:autoSizeMinTextSize="1sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+        <TextView
+            android:id="@+id/home_msg_tv_share_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_orange_bubble"
+            android:gravity="center"
+            android:minWidth="@dimen/common_16"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_4"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/txt_11"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            tools:text="2"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_msg_torrents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dip"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="@dimen/common_icon42"
+            android:layout_height="@dimen/common_icon42"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_4"
+            android:src="@drawable/icon_msg_bt"
+            app:layout_constraintBottom_toTopOf="@+id/textView120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/common_8"
+            android:text="@string/fast_transfer"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+
+        <TextView
+            android:id="@+id/home_msg_tv_torrents_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_orange_bubble"
+            android:gravity="center"
+            android:minWidth="@dimen/common_16"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_4"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/txt_11"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/imageView26"
+            app:layout_constraintTop_toTopOf="@+id/imageView26"
+            tools:text="2"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

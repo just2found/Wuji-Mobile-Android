@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/samba_navigation"
+    app:startDestination="@id/Samba">
+    <fragment
+        android:id="@+id/Samba"
+        android:name="net.linkmate.app.ui.nas.samba.SAMBAFragment"
+        android:label="SambaFragment">
+        <action
+            android:id="@+id/enterSettingPassword"
+            app:destination="@id/settingPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingPassword"
+        android:name="net.linkmate.app.ui.nas.samba.SAMBASettingPasswordFragment"
+        android:label="SambaSettingPasswordFragment" />
+</navigation>

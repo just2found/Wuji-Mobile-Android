@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unexpected_intent_action">Action d’intention inattendue : %1$s</string>
+    <string name="error_cleartext_not_permitted">Trafic de texte clair non autorisé</string>
+    <string name="error_generic">La lecture a échoué</string>
+    <string name="error_unrecognized_abr_algorithm">Algorithme ABR non reconnu</string>
+    <string name="error_unrecognized_stereo_mode">Mode stéréo non reconnu</string>
+    <string name="error_drm_not_supported">Contenu protégé non pris en charge au niveau API inférieur à 18</string>
+    <string name="error_drm_unsupported_scheme">Cet appareil ne prend pas en charge le programme DRM requis</string>
+    <string name="error_drm_unknown">Une erreur de DRM inconnue s’est produite</string>
+    <string name="error_no_decoder">Cet appareil ne fournit pas un décodeur pour %1$s</string>
+    <string name="error_no_secure_decoder">Cet appareil ne fournit pas un décodeur sécurisé pour %1$s</string>
+    <string name="error_querying_decoders">Incapable de consulter le décodeur de l\'appareil</string>
+    <string name="error_instantiating_decoder">Incapable de décoder %1$s</string>
+    <string name="error_unsupported_video">Les médias incluent des pistes vidéo, mais aucune ne peut être lue par cet appareil</string>
+    <string name="error_unsupported_audio">Les médias comprennent des pistes audio, mais aucune ne peut être lue par cet appareil</string>
+    <string name="storage_permission_denied">L’autorisation d\'accès au stockage a été refusée</string>
+    <string name="download_start_error">Échec du téléchargement</string>
+</resources>

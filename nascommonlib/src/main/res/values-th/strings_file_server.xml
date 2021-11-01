@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">การแชร์ถูกยกเลิก</string>
+    <string name="tip_error_open_dir">ไม่สามารถเปิดไดเรกทอรี</string>
+    <string name="tip_error_task_running">เกิดข้อผิดพลาดในการรันงาน</string>
+    <string name="msg_error_exceed_downloads">การแชร์นี้เกินจำนวนดาวน์โหลดสูงสุด</string>
+    <string name="msg_error_cancel_shared">ยกเลิกการแบ่งปันไม่สำเร็จ</string>
+    <string name="msg_error_bind_network">เกิดข้อผิดพลาดในการเชื่อมต่อกับบริการระยะไกล</string>
+    <string name="msg_error_user_not_exist">ไม่มีผู้ใช้การแชร์อีกต่อไป</string>
+    <string name="msg_error_illegal_operation">การดำเนินการที่ไม่ถูกต้องของผู้ใช้โปรดรีเฟรชและลองอีกครั้ง</string>
+    <string name="msg_error_get_device_ip">ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ที่ใช้ร่วมกันได้โปรดลองอีกครั้งในภายหลัง</string>
+    <string name="msg_error_broken_network">เครือข่ายผิดพลาด</string>
+    <string name="msg_error_dl_not_running">การดาวน์โหลดไม่ได้อยู่ในสถานะกำลังทำงานและไม่สามารถเพิ่มไฟล์ใหม่ได้</string>
+    <string name="msg_error_source_file_open">ไม่สามารถเปิดไฟล์ต้นฉบับได้</string>
+    <string name="msg_error_source_file_change">การเปลี่ยนแปลงขนาดไฟล์ต้นฉบับ</string>
+    <string name="msg_error_temp_file">ลบไฟล์ชั่วคราวแล้ว</string>
+    <string name="msg_error_auth">ข้อผิดพลาดการตรวจสอบภายใน</string>
+    <string name="msg_error_target_file">ไม่สามารถแก้ใขไฟล์ได้</string>
+    <string name="msg_error_token">เครื่องหมายรับรองไม่ถูกต้อง</string>
+    <string name="msg_error_more_shared_ticket">สร้างงานดาวน์โหลดแล้ว</string>
+    <string name="msg_error_shared_ticket_overtime">การแบ่งปันหมดอายุแล้ว</string>
+    <string name="tips_warn_cancel_share">การดาวน์โหลดที่ยังไม่เสร็จจะถูกยกเลิกและจะลบไฟล์ชั่วคราว</string>
+    <string name="msg_error_disk_full">ดิสก์เต็ม โปรดล้างพื้นที่และลองอีกครั้ง</string>
+</resources>

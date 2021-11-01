@@ -1,0 +1,143 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dialog_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_start"
+            android:layout_marginTop="@dimen/view_top_start"
+            android:layout_marginEnd="@dimen/view_end"
+            android:gravity="center"
+            android:minHeight="@dimen/layout_title_height"
+            android:text="@string/tip_chmod_file"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_chmod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title"
+            android:layout_marginStart="@dimen/view_start"
+            android:layout_marginTop="@dimen/view_top_middle"
+            android:layout_marginEnd="@dimen/view_end"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_top_middle"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/chmod_file_group"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/text_size_sm" />
+
+                <net.sdvn.nascommon.widget.CheckableImageButton
+                    android:id="@+id/cb_group_read"
+                    style="@style/checkableImageButton"
+                    android:layout_marginStart="@dimen/view_middle"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_middle"
+                    android:gravity="center"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/permission_read"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/text_size_sm" />
+
+                <net.sdvn.nascommon.widget.CheckableImageButton
+                    android:id="@+id/cb_group_write"
+                    style="@style/checkableImageButton"
+                    android:layout_marginStart="@dimen/view_middle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_middle"
+                    android:gravity="center"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/permission_write"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/text_size_sm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_top_middle"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/chmod_file_other"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/text_size_sm" />
+
+                <net.sdvn.nascommon.widget.CheckableImageButton
+                    android:id="@+id/cb_other_read"
+                    style="@style/checkableImageButton"
+                    android:layout_marginStart="@dimen/view_middle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_middle"
+                    android:gravity="center"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/permission_read"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/text_size_sm" />
+
+                <net.sdvn.nascommon.widget.CheckableImageButton
+                    android:id="@+id/cb_other_write"
+                    style="@style/checkableImageButton"
+                    android:layout_marginStart="@dimen/view_middle" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_middle"
+                    android:gravity="center"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/permission_write"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/text_size_sm" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <include
+            layout="@layout/include_layout_pos_and_neg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_top_start" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

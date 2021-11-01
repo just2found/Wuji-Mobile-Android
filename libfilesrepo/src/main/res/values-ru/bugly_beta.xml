@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strNetworkTipsCancelBtn">Отменить</string>
+    <string name="strNetworkTipsConfirmBtn">Продолжить загрузку</string>
+    <string name="strNetworkTipsMessage">Сеть перешла на мобильную сеть, продолжить?</string>
+    <string name="strNetworkTipsTitle">Сетевые советы</string>
+    <string name="strNotificationClickToContinue">Продолжить загрузку</string>
+    <string name="strNotificationClickToInstall">Нажмите, чтобы установить</string>
+    <string name="strNotificationClickToRetry">Нажмите, чтобы повторить</string>
+    <string name="strNotificationClickToView">Нажмите, чтобы проверить</string>
+    <string name="strNotificationDownloadError">Ошибка загрузки</string>
+    <string name="strNotificationDownloadSucc">Загрузка завершена</string>
+    <string name="strNotificationDownloading">Загрузка…</string>
+    <string name="strNotificationHaveNewVersion">Есть новая версия</string>
+    <string name="strToastCheckUpgradeError">Не удалось проверить обновление, повторите попытку позже</string>
+    <string name="strToastCheckingUpgrade">Проверка, подождите&#8230;</string>
+    <string name="strToastYourAreTheLatestVersion">Это последняя версия</string>
+    <string name="strUpgradeDialogCancelBtn">Позже</string>
+    <string name="strUpgradeDialogContinueBtn">Продолжить</string>
+    <string name="strUpgradeDialogFeatureLabel">О обновлении</string>
+    <string name="strUpgradeDialogFileSizeLabel">Размер пакета</string>
+    <string name="strUpgradeDialogInstallBtn">Устанавить</string>
+    <string name="strUpgradeDialogRetryBtn">Повторите попытку</string>
+    <string name="strUpgradeDialogUpdateTimeLabel">Время обновления</string>
+    <string name="strUpgradeDialogUpgradeBtn">Обновить</string>
+    <string name="strUpgradeDialogVersionLabel">Версия</string>
+</resources>

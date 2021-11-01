@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/files_group_nav_settings"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/groupOSSettingFragment">
+    <fragment
+        android:id="@+id/groupOSAnnouncementListFragment"
+        android:name="net.linkmate.app.ui.nas.group.GroupOSAnnouncementListFragment"
+        tools:layout="@layout/fragment_group_o_s_announcement_list">
+
+        <action
+            android:id="@+id/action_groupOSAnnouncementListFragment_to_groupPublishAnnouncementFragment"
+            app:destination="@id/groupPublishAnnouncementFragment" />
+        <action
+            android:id="@+id/action_groupOSAnnouncementListFragment_to_groupAnnouncementDetailFragment"
+            app:destination="@id/groupAnnouncementDetailFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/groupPublishAnnouncementFragment"
+        android:name="net.linkmate.app.ui.nas.group.GroupPublishAnnouncementFragment"
+        tools:layout="@layout/fragment_group_publish_announcement">
+
+    </fragment>
+    <fragment
+        android:id="@+id/groupOSAddMemberFragment"
+        android:name="net.linkmate.app.ui.nas.group.GroupOSAddMemberFragment"
+        tools:layout="@layout/fragment_group_o_s_add_member">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <argument
+            android:name="groupId"
+            app:argType="long" />
+        <argument
+            android:name="action"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupMemberListFragment"
+        android:name="net.linkmate.app.ui.nas.group.GroupMemberListFragment"
+        tools:layout="@layout/fragment_group_member_list">
+        <action
+            android:id="@+id/action_groupMemberListFragment_to_groupSpaceUserDetailFragment"
+            app:destination="@id/groupSpaceUserDetailFragment" />
+        <action
+            android:id="@+id/action_groupMemberListFragment_to_groupOSAddMemberFragment"
+            app:destination="@id/groupOSAddMemberFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/groupSpaceUserDetailFragment"
+        android:name="net.linkmate.app.ui.nas.group.GroupSpaceUserDetailFragment"
+        tools:layout="@layout/fragment_group_space_user_detail">
+        <argument
+            android:name="data"
+            app:argType="net.sdvn.nascommon.db.objboxkt.GroupUser" />
+        <action
+            android:id="@+id/action_groupSpaceUserDetailFragment_to_groupOSAddMemberFragment"
+            app:destination="@id/groupOSAddMemberFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/groupOSSettingFragment"
+        android:name="net.linkmate.app.ui.nas.group.GroupOSSettingFragment"
+        tools:layout="@layout/fragment_group_o_s_setting">
+
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <argument
+            android:name="groupId"
+            app:argType="long" />
+        <argument
+            android:defaultValue="false"
+            android:name="announcement"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_groupOSSettingFragment_to_groupMemberListFragment"
+            app:destination="@id/groupMemberListFragment" />
+        <action
+            android:id="@+id/action_groupOSSettingFragment_to_groupOSAnnouncementListFragment"
+            app:destination="@id/groupOSAnnouncementListFragment" />
+        <action
+            android:id="@+id/action_groupOSSettingFragment_to_groupOSIndexFragment"
+            app:destination="@id/groupOSAnnouncementListFragment" />
+        <action
+            android:id="@+id/action_groupOSSettingFragment_to_groupOSRecycleFragment"
+            app:destination="@id/groupSpaceRecycleFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/groupAnnouncementDetailFragment"
+        android:name="net.linkmate.app.ui.nas.group.GroupAnnouncementDetailFragment"
+        tools:layout="@layout/fragment_group_announcement_detail">
+        <argument
+            android:name="data"
+            app:argType="net.sdvn.nascommon.db.objboxkt.GroupNotice" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/groupSpaceRecycleFragment"
+        android:name="net.linkmate.app.ui.nas.group.GroupSpaceRecycleFragment"
+        tools:layout="@layout/fragment_group_announcement_detail">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+
+        <argument
+            android:name="groupid"
+            app:argType="long" />
+
+        <argument
+            android:name="sharePathType"
+            app:argType="integer" />
+
+        <argument
+            app:nullable="true"
+            android:name="rootPath"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_list_to_move_to"
+            app:destination="@id/moveToFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/moveToFragment"
+        android:name="net.linkmate.app.ui.nas.group.list.GroupSpaceMoveToFragment"
+        android:label="GroupSpaceMoveToFragment"
+        tools:layout="@layout/fragment_choice_nas">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="paths"
+            app:argType="string[]" />
+        <argument
+            android:name="groupid"
+            app:argType="long" />
+    </fragment>
+</navigation>

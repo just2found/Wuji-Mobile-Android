@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brvah_loading">読み込み中&#8230;</string>
+    <string name="brvah_load_failed">読み込みに失敗しました。クリックしてください。</string>
+    <string name="brvah_load_end">より多くのデータがありません</string>
+</resources>

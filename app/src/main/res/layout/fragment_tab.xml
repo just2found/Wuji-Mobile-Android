@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="#3b393a"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="bottom|end">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_end"
+            android:layout_marginBottom="@dimen/view_bottom_end"
+            android:background="#50FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            app:borderWidth="0dp"
+            android:src="@drawable/menu"
+            android:theme="@style/Theme.AppCompat.DayNight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_end"
+            android:layout_marginBottom="@dimen/view_bottom_end"
+            android:background="#50FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            app:borderWidth="0dp"
+            android:src="@drawable/ic_up"
+            android:theme="@style/Theme.AppCompat.DayNight"
+            app:layout_constraintBottom_toTopOf="@+id/fabMenu"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:backgroundTint="@color/white"
+            android:layout_margin="10dp"
+            android:src="@drawable/menu"
+            app:layout_scrollFlags="scroll|enterAlways" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

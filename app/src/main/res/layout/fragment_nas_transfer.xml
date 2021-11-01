@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_title_bar_gradient">
+
+    <net.sdvn.nascommon.widget.TitleBackLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/tab_left_bg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_btn_height"
+            android:layout_marginStart="@dimen/common_24"
+            android:layout_marginEnd="@dimen/common_6"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_tab_item"
+            android:foreground="@drawable/bg_ripple_trans_gray"
+            android:gravity="center"
+            android:text="@string/upload"
+            android:textAllCaps="false"
+            android:textColor="@color/selector_transfer_btn_txt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tab_right_bg"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/tab_right_bg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_btn_height"
+            android:layout_marginStart="@dimen/common_6"
+            android:layout_marginEnd="@dimen/common_24"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_tab_item"
+            android:foreground="@drawable/bg_ripple_trans_gray"
+            android:gravity="center"
+            android:text="@string/download"
+            android:textAllCaps="false"
+            android:textColor="@color/selector_transfer_btn_txt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tab_left_bg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tab_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:drawableStart="@drawable/selector_button_upload_2"
+            android:drawablePadding="@dimen/common_4"
+            android:gravity="center"
+            android:paddingStart="@dimen/common_24"
+            android:paddingEnd="@dimen/common_6"
+            android:text="@string/upload"
+            android:textColor="@color/selector_transfer_btn_txt"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tab_left_bg"
+            app:layout_constraintEnd_toEndOf="@+id/tab_left_bg"
+            app:layout_constraintStart_toStartOf="@+id/tab_left_bg"
+            app:layout_constraintTop_toTopOf="@+id/tab_left_bg" />
+
+        <TextView
+            android:id="@+id/tab_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:drawableStart="@drawable/selector_button_download_2"
+            android:drawablePadding="@dimen/common_4"
+            android:gravity="center"
+            android:paddingStart="@dimen/common_6"
+            android:paddingEnd="@dimen/common_24"
+            android:text="@string/download"
+            android:textColor="@color/selector_transfer_btn_txt"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tab_right_bg"
+            app:layout_constraintEnd_toEndOf="@+id/tab_right_bg"
+            app:layout_constraintStart_toStartOf="@+id/tab_right_bg"
+            app:layout_constraintTop_toTopOf="@+id/tab_right_bg" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/tab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tab_left_bg,tab_left_tv" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/tab_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tab_right_bg,tab_right_tv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <include layout="@layout/include_swipe_refresh_and_rv" />
+
+
+</LinearLayout>

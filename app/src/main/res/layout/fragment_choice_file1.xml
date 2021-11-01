@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <net.linkmate.app.ui.function_ui.titlebar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/layout_title_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text_content="fragment_title" />
+
+    <net.sdvn.nascommon.widget.FileSelectPanel
+        android:id="@+id/layout_select_top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_title"
+        android:elevation="@dimen/default_elevation_3"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/title_bar"
+        app:layout_constraintEnd_toEndOf="@+id/title_bar"
+        app:layout_constraintStart_toStartOf="@+id/title_bar"
+        tools:visibility="gone" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+
+    <net.sdvn.nascommon.widget.FilePathPanel
+        android:id="@+id/title_psl"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipsBar" />
+
+
+    <LinearLayout
+        android:id="@+id/set_path_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_button_white_radius_top"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/target_path_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginStart="@dimen/common_20"
+            android:layout_marginTop="@dimen/common_10"
+            android:layout_marginEnd="@dimen/common_20"
+            android:background="@drawable/bg_20_full_radius_gray"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#B3B3B3"
+            android:textColorHint="#B3B3B3"
+            android:textSize="@dimen/txt_14" />
+
+        <TextView
+            android:id="@+id/ok_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginStart="@dimen/common_20"
+            android:layout_marginTop="@dimen/common_10"
+            android:layout_marginEnd="@dimen/common_20"
+            android:layout_marginBottom="@dimen/common_10"
+            android:background="@drawable/bg_button_theme_primary_radius"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_14" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/set_path_ll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_psl" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

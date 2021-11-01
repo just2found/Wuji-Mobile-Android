@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resource>
+    <paths>
+        <!--name：名称标志字符串，不可以同名！-->
+        <!--path：文件夹“相对路径”，完整路径取决于当前的标签类型。-->
+        <external-path
+            name="nas_ep"
+            path="." />
+        <files-path
+            name="nas_fp"
+            path="." />
+        <external-files-path
+            name="nas_efp"
+            path="." />
+        <external-cache-path
+            name="nas_ecp"
+            path="." />
+        <cache-path
+            name="cache"
+            path="." />
+        <cache-path
+            name="cache"
+            path="images/"/>
+    </paths>
+</resource>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_pop_type"
+    android:gravity="center_horizontal">
+
+
+    <FrameLayout
+        android:padding="@dimen/common_16"
+        android:layout_width="wrap_content"
+        android:background="@color/bg_pop_menu"
+        android:layout_height="wrap_content"
+        >
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/common_24"
+            android:background="@drawable/bg_pop_type"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp"
+            android:stretchMode="columnWidth"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+    <!--辅助性 遮住白色虚线-->
+    <View android:layout_width="0dip"
+        android:layout_height="1dip"
+        android:layout_marginTop="@dimen/common_16"
+        android:background="#1d1d1d"
+        android:layout_alignStart="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/common_8"
+        android:id="@+id/title"
+        android:layout_marginStart="@dimen/common_24"
+        android:layout_marginEnd="@dimen/common_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dip"
+        android:paddingEnd="10dip"
+        android:textColor="@color/color_bg_grey50"
+        tools:text="@string/please_select_file_type_upload"
+        tools:visibility="visible"
+        android:autoSizeMaxTextSize="14sp"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeTextType="uniform"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeMaxTextSize="14sp"
+        android:maxLines="1"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flBottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0"
+    android:background="@android:color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:showIn="@layout/dialog_device_layout">
+
+    <View
+        style="@style/common_line_style"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/tvBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/btn_new_folder"
+        android:drawablePadding="@dimen/common_4"
+        android:gravity="center"
+        android:padding="@dimen/common_10"
+        android:text="23432"
+        android:textAllCaps="false"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/txt_13" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnBottomAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_16"
+            android:layout_marginTop="@dimen/common_8"
+            android:layout_marginEnd="@dimen/common_16"
+            android:background="@drawable/selector_button_bg_primary"
+            android:minWidth="0dip"
+            android:minHeight="0dip"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:padding="@dimen/common_10"
+            android:text="3242"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/glStart" />
+        <Button
+            android:id="@+id/btnBottomConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_16"
+            android:layout_marginTop="@dimen/common_8"
+            android:layout_marginEnd="@dimen/common_16"
+            android:layout_marginBottom="@dimen/common_8"
+            android:background="@drawable/selector_button_bg_primary"
+            android:minWidth="0dip"
+            android:minHeight="0dip"
+            android:padding="@dimen/common_10"
+            android:text="3242"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/glStart" />
+    </LinearLayout>
+</FrameLayout>
+

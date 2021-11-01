@@ -1,0 +1,170 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dialog_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_top_start"
+            android:gravity="center"
+            android:minHeight="@dimen/layout_title_height"
+            android:padding="@dimen/tv_padding"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold"
+            tools:text="title" />
+
+        <FrameLayout
+            android:id="@+id/fl_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_start"
+            android:layout_marginTop="@dimen/view_top_middle"
+            android:layout_marginEnd="@dimen/view_end"
+            >
+
+            <net.sdvn.nascommon.widget.ClearEditText
+                android:id="@+id/et_old_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_full_radius_gray"
+                android:gravity="center"
+                android:inputType="text"
+                android:minHeight="@dimen/layout_edit_height"
+                android:padding="@dimen/tv_padding"
+                android:textDirection="anyRtl"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_mid"
+                />
+            <TextView
+                android:id="@+id/tv_old_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="@dimen/layout_edit_height"
+                android:padding="@dimen/tv_padding"
+                android:textColor="@color/color_black_secondary_text"
+                android:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:maxLines="1"
+                tools:text="old_pwd" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fl_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_start"
+            android:layout_marginTop="@dimen/view_top_middle"
+            android:layout_marginEnd="@dimen/view_end"
+            >
+
+            <net.sdvn.nascommon.widget.ClearEditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_full_radius_gray"
+                android:gravity="center"
+                android:inputType="text"
+                android:textDirection="anyRtl"
+                android:minHeight="@dimen/layout_edit_height"
+                android:padding="@dimen/tv_padding"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_mid"
+                />
+            <TextView
+                android:id="@+id/tv_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="@dimen/layout_edit_height"
+                android:padding="@dimen/tv_padding"
+                android:textColor="@color/color_black_secondary_text"
+                android:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:maxLines="1"
+                tools:text="pwd" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fl_pwd_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_start"
+            android:layout_marginTop="@dimen/view_top_middle"
+            android:layout_marginEnd="@dimen/view_end"
+            >
+            <net.sdvn.nascommon.widget.ClearEditText
+                android:id="@+id/et_pwd_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_full_radius_gray"
+                android:gravity="center"
+                android:inputType="text"
+                android:minHeight="@dimen/layout_edit_height"
+                android:textDirection="anyRtl"
+                android:padding="@dimen/tv_padding"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_mid"
+                />
+            <TextView
+                android:id="@+id/tv_pwd_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="@dimen/layout_edit_height"
+                android:padding="@dimen/tv_padding"
+                android:textColor="@color/color_black_secondary_text"
+                android:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:maxLines="1"
+                tools:text="pwd" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/txt_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_start"
+            android:layout_marginTop="@dimen/view_top_middle"
+            android:layout_marginEnd="@dimen/view_end"
+            android:layout_marginBottom="10dp"
+            android:minHeight="@dimen/layout_content_height"
+            android:gravity="center"
+            android:padding="@dimen/tv_padding"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_sm"
+            tools:text="tips" />
+
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/include_layout_pos_and_neg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_top_start" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,46 @@
+//include ':easyPhotos'
+include ':app', ':nascommonlib', ':internetlib', ':libwidget', ':scorepaylib'
+//include ':testbottomnav'
+
+include ':cmlib'
+
+//include ':cmlib_final'
+//project(':cmlib_final').projectDir = new File('../../cmapi/cmlib_final')
+
+
+//include ':Memenet'
+//project(':Memenet').projectDir = new File('../mobile/Memenet')
+//include ':NewLinkMate'
+//project(':NewLinkMate').projectDir = new File('../mobile/NewLinkMate')
+
+//include ':nas'
+//project(':nas').projectDir = new File('../m3nas/app')
+//include ':imagewatcher'
+//project(':imagewatcher').projectDir = new File('../m3nas/imagewatcher')
+// include ':BRVAH'
+//project(':BRVAH').projectDir = new File('../m3nas/BRVAH')
+//include ':libtorrentclient'
+//project(':libtorrentclient').projectDir = new File('../libs/libtorrentclient')
+
+
+include ':common'
+include ':devhelper'
+
+include ':libtorrentsrepo'
+include ':libfilesrepo'
+include ':strings'
+include ':libimageloader'
+//include ':mediaplayer'
+
+def localProps = new Properties()
+def projectRootDirPath = rootDir.getAbsolutePath()
+localProps.load(file(projectRootDirPath + '/local.properties').newDataInputStream())
+
+if (localProps['tester']) {
+//    include ':imageselector'
+    //include ':tester'
+    //include ':mediaplayer'
+    //include ':internetdb'
+    //include ':libtorrentclient'
+//    include ':filehelper'
+}

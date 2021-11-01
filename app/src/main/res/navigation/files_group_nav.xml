@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/files_group_nav"
+    app:startDestination="@id/groupOSIndexFragment">
+    <fragment
+        android:id="@+id/groupOSIndexFragment"
+        android:name="net.linkmate.app.ui.nas.group.GroupOSIndexFragment"
+        tools:layout="@layout/fragment_group_o_s_index">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_groupOSIndexFragment_to_groupOSCreateFragment"
+            app:destination="@id/groupOSCreateFragment" />
+        <action
+            android:id="@+id/action_groupOSIndexFragment_to_groupOSSettingFragment"
+            app:destination="@id/files_group_nav_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/groupOSCreateFragment"
+        android:name="net.linkmate.app.ui.nas.group.GroupOSCreateFragment"
+        tools:layout="@layout/fragment_group_o_s_create" />
+
+
+    <action
+        android:id="@+id/action_global_groupOSSettingFragment"
+        app:destination="@id/files_group_nav_settings" />
+
+    <include app:graph="@navigation/files_group_nav_settings" />
+
+</navigation>

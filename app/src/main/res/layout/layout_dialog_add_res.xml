@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/common_6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bg_grey250"
+            android:minWidth="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/common_20"
+                android:text="@string/pls_select_type"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/txt_16" />
+
+            <TextView
+                android:id="@+id/lda_tv_device"
+                style="@style/StyleDialogDesTvBtn"
+                android:text="@string/add_new_device" />
+
+            <TextView
+                android:id="@+id/lda_tv_net"
+                style="@style/StyleDialogDesTvBtn"
+                android:text="@string/add_new_circle" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

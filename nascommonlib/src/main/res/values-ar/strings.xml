@@ -1,0 +1,1013 @@
+<resources>
+    <!-- Common String-->
+    <string name="title_back">عودة</string>
+    <string name="ok">حسنا</string>
+    <string name="confirm">تأكيد</string>
+    <string name="cancel">إلغاء</string>
+    <string name="tips">نصائح</string>
+    <string name="warning">تحذير</string>
+    <string name="paste">لصق</string>
+    <string name="modify">تعديل</string>
+    <string name="modifying">&#8230;جارٍ التعديل</string>
+    <string name="modify_succeed">نجح التعديل</string>
+    <string name="modify_failed">فشل التعديل</string>
+    <string name="delete">حذف</string>
+    <string name="open">افتح</string>
+    <string name="dialog_continue">استمر</string>
+    <string name="permission_denied">طلب الاذن مرفوض</string>
+    <string name="connection_refused">غير قادر على الاتصال بجهازك ، يرجى التحقق من حالة الجهاز والشبكة!</string>
+    <string name="network_not_available">الشبكة غير متوفرة ، يرجى التحقق منها!</string>
+    <string name="oneos_version_mismatch">إصدار جهازك منخفض للغاية ، يرجى الترقية إلى إصدار OneOS v4.x!</string>
+    <string name="fmt_oneos_version_upgrade" formatte="false">إصدار جهازك منخفض للغاية ، يرجى الترقية إلى أحدث من إصدار OS v%s!</string>
+    <string name="oneos_version_check_failed">فشل إصدار نظام الكشف ، يرجى المحاولة مرة أخرى!</string>
+    <string name="tips_title_version_mismatch">إصدار النظام لا يتطابق</string>
+    <string name="wifi_not_available">شبكة WiFi غير متاحة ، برجاء التحقق منها!</string>
+    <string name="goto_settings">الإعدادات</string>
+    <string name="error_json_exception">فشل تحليل البروتوكول</string>
+    <string name="operate_failed">فشلت العملية</string>
+    <string name="app_exception">استثناء التطبيق</string>
+    <string name="please_login_onespace">يرجة تسجيل الدخول أولا</string>
+    <string name="please_login_onespace_with_admin">يرجى استخدام جهاز تسجيل دخول المستخدم المالك</string>
+    <string name="confirm_download_not_wifi">بيئة الشبكة الحالية غير Wi-Fi ، الاستمرار في التنزيل سيؤدي إلى توليد حركة مرور البيانات!</string>
+    <string name="confirm_upload_not_wifi">بيئة الشبكة الحالية غير المتصلة بشبكة Wi-Fi ، استمر في التحميل وستولد حركة مرور البيانات!</string>
+    <string name="app_exception_to_exit">&#8230;شاذ ، يجمع المعلومات ، يخرج بعد 3 ثواني</string>
+    <string name="press_again_to_exit">اضغط مرة أخرى للعودة إلى سطح المكتب</string>
+    <string name="tips_exit_if_has_task">لديك مهام تحميل / تنزيل غير مكتملة ، ستتم مقاطعة جميع المهام إذا واصلت الخروج!</string>
+    <string name="exit">خروج</string>
+    <string name="loading">&#8230;جار التحميل</string>
+    <string name="all_loaded">جميع تحميلها</string>
+    <string name="failed_get_upload_file">فشل في الحصول على مسار ملف التحميل</string>
+    <string name="perm_denied_storage">من أجل ضمان الاستخدام العادي App ، يرجى تعيين للسماح بقراءة وتخزين تخزين الموبايل</string>
+
+    <!--tab-->
+    <string name="tab_device">جهاز</string>
+    <string name="tab_file">ملف</string>
+    <string name="tab_share">مشاركة</string>
+    <string name="tab_setting">إعدادات</string>
+    <string name="tab_me">لي</string>
+
+    <!-- File Operation -->
+    <string name="file_type_private">ملفاتي</string>
+    <string name="file_type_public">الملفات العامة</string>
+    <string name="file_type_doc">المستند</string>
+    <string name="file_type_pic">صورة</string>
+    <string name="file_type_audio">موسيقى</string>
+    <string name="file_type_video">فيديو</string>
+    <string name="file_type_cycle">سلة المهملات</string>
+    <string name="file_type_download">تنزيل</string>
+    <string name="file_type_app">حزمة التثبيت</string>
+
+    <string name="details_file">تفاصيل</string>
+    <string name="open_file">افتح</string>
+    <string name="copy_file">نسخ</string>
+    <string name="move_file">نقل</string>
+    <string name="delete_file">حذف</string>
+    <string name="rename_file">إعادة تسمية</string>
+    <string name="download_file">تنزيل</string>
+    <string name="upload_file">تحميل</string>
+    <string name="encrypt_file">تشفير</string>
+    <string name="decrypt_file">فك تشفير</string>
+    <string name="chmod_file">إذن</string>
+    <string name="attr_file">تفاصيل</string>
+    <string name="share_file">مشاركة</string>
+    <string name="clean_recycle_file">افرغ سلة المهملات</string>
+    <string name="tip_select_file">يرجى تحديد العنصر أولاً</string>
+    <string name="tip_attr_file">السمات</string>
+    <string name="getting_file_attr">&#8230;جارٍ الاسترداد</string>
+    <string name="file_attr_path">موقع:</string>
+    <string name="file_attr_size">حجم:</string>
+    <string name="file_attr_files">ملف:</string>
+    <string name="file_attr_folders">مجلد:</string>
+    <string name="tail_file_attr_size_bytes">بايت</string>
+    <string name="tail_file_attr_folders">المجلدات</string>
+    <string name="tail_file_attr_files">الملفات</string>
+    <string name="file_attr_permission">الإذن:</string>
+    <string name="file_attr_uid">UID:</string>
+    <string name="file_attr_gid">GID:</string>
+    <string name="file_attr_read">مقروء:</string>
+    <string name="file_attr_write">قابل للكتابة:</string>
+    <string name="file_attr_time">زمن:</string>
+    <string name="tip_chmod_file">إذن الملف</string>
+    <string name="chmod_file_group">مستخدم المجموعة:</string>
+    <string name="chmod_file_other">مستخدم آخر:</string>
+    <string name="permission_read">مقروء</string>
+    <string name="permission_write">قابل للكتابة</string>
+    <string name="tip_delete_file">هل تريد حذف الملف المحدد؟</string>
+    <string name="deleting_file">&#8230;حذف </string>
+    <string name="delete_file_success">نجح الحذف</string>
+    <string name="delete_file_failed">فشل الحذف</string>
+    <string name="renaming_file">&#8230;إعادة التسمية</string>
+    <string name="tip_rename_file">إعادة تسمية الملف</string>
+    <string name="hint_rename_file">الرجاء إدخال اسم ملف جديد</string>
+    <string name="rename_file_success">نجحت إعادة التسمية</string>
+    <string name="rename_file_failed">فشلت إعادة التسمية</string>
+    <string name="making_folder">&#8230;إنشاء</string>
+    <string name="tip_new_folder">إنشاء مجلد</string>
+    <string name="hint_new_folder">الرجاء إدخال اسم المجلد</string>
+    <string name="default_new_folder">إنشاء مجلد</string>
+    <string name="new_folder_success">نجح إنشاء المجلد</string>
+    <string name="new_folder_failed">فشل إنشاء المجلد</string>
+    <string name="encrypting_file">&#8230;تشفير</string>
+    <string name="tip_encrypt_file">تشفير الملف</string>
+    <string name="warning_encrypt_file">تحذير: الرجاء تذكر كلمة المرور ، وإلا فلن تتمكن من فك تشفير الملف!</string>
+    <string name="hint_encrypt_pwd">الرجاء إدخال كلمة المرور</string>
+    <string name="hint_confirm_encrypt_pwd">الرجاء تأكيد كلمة المرور</string>
+    <string name="error_confirm_pwd">كلمة المرور غير متطابقة</string>
+    <string name="encrypt_file_success">نجح تشفير الملف</string>
+    <string name="encrypt_file_failed">فشل تشفير الملف</string>
+    <string name="decrypting_file">&#8230;فك التشفير</string>
+    <string name="tip_decrypt_file">فك تشفير الملف</string>
+    <string name="hint_decrypt_pwd">الرجاء إدخال كلمة المرور لفك التشفير</string>
+    <string name="decrypt_file_success">نجح فك تشفير الملف</string>
+    <string name="decrypt_file_failed">فشل فك تشفير الملف</string>
+    <string name="tip_move_file">الانتقال إلى</string>
+    <string name="moving_file">&#8230;الانتقال</string>
+    <string name="chmod_ing_file">&#8230;التعديل</string>
+    <string name="tip_upload_file">تحميل الى</string>
+    <string name="upload_file_success">نجح تحميل</string>
+    <string name="move_file_success">نجح نقل الملف</string>
+    <string name="move_file_failed">فشل نقل الملف</string>
+    <string name="tip_copy_file">لصق إلى</string>
+    <string name="copying_file">&#8230;اللصق</string>
+    <string name="copy_file_success">نجح لصق الملف</string>
+    <string name="copy_file_failed">فشل لصق الملف</string>
+    <string name="title_clean_recycle_file">افرغ سلة المهملات</string>
+    <string name="tip_clean_recycle_file">سيتم حذف جميع الملفات نهائيًا إذا قمت بافراغ سلة المهملات</string>
+    <string name="cleaning_recycle">&#8230;افراغ</string>
+    <string name="chmod_file_success">نجح تعديل الإذن</string>
+    <string name="clean_recycle_success">نجح افرغ سلة المهملات</string>
+    <string name="clean_recycle_failed">فشل افرغ سلة المهملات</string>
+    <string name="share_file_success">نجحت مشاركة</string>
+    <string name="clean_now">افراغ</string>
+
+    <!-- Navigation Bar Title -->
+    <string name="nav_title_local">محلي</string>
+    <string name="nav_title_cloud">قرص سحابي</string>
+    <string name="nav_title_transfer">نقل</string>
+    <string name="nav_title_tool">أدوات</string>
+    <string name="nav_title_recent">مؤخرا</string>
+
+    <!-- Login Activity -->
+    <string name="title_login">تسجيل الدخول M3 Station</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="title_enter_user">اسم المستخدم</string>
+    <string name="title_enter_pwd">؛ المرور&#160;&#160;&#160;&#160;كلمة</string>
+    <string name="title_select_ip">عنوان IP</string>
+    <string name="title_enter_port">رقم المنفذ</string>
+    <string name="hint_enter_user">الرجاء إدخال اسم المستخدم</string>
+    <string name="hint_enter_pwd">الرجاء إدخال كلمة المرور</string>
+    <string name="hint_select_ip">الرجاء إدخال عنوان IP</string>
+    <string name="hint_enter_port">الرجاء إدخال رقم المنفذ</string>
+    <string name="tip_invalid_port">الرجاء إدخال رقم المنفذ الصالح</string>
+    <string name="logining">&#8230;تسجيل الدخول</string>
+    <string name="scanning_device">&#8230;للبحث عن الأجهزة</string>
+    <string name="tip_title_research">للبحث عن الأجهزة</string>
+    <string name="tip_search_again">لم يتم العثور على الجهاز ، هل تريد البحث مرة أخرى؟</string>
+    <string name="research_now">البحث مرة أخرى</string>
+    <string name="getting_device_mac">&#8230;Macالحصول على</string>
+    <string name="error_get_device_mac">فشل الحصول على عنوان Mac الخاص بالجهاز ، الرجاء محاولة تسجيل الدخول مرة أخرى</string>
+    <string name="error_login_user_or_pwd">اسم المستخدم أو كلمة المرور غير صحيحة</string>
+
+    <!-- for SSUDP -->
+    <string name="remote_login">الوصول عن بعد</string>
+    <string name="tip_title_bond_ssudp">ربط SSUDP ؟</string>
+    <string name="tip_bond_ssudp">يمكنك الوصول إلى الجهاز باستخدام SSUDP بعد الربط</string>
+    <string name="binding">&#8230;ربط</string>
+    <string name="ssudp_connecting">&#8230;توصيل الجهاز</string>
+    <string name="bind_now">ربط الآن</string>
+    <string name="bind_succeed">نجح ربط</string>
+    <string name="bind_failed">فشل ربط</string>
+    <string name="tip_title_bond_ssudp_failed">فشل ربط SSUDP</string>
+    <string name="tip_title_connect_ssudp_failed">فشل توصيل الجهاز</string>
+    <string name="tip_bond_ssudp_failed">جهازك لا يدعم SSUDP ، الرجاء الاتصال بالدعم الفني الرسمي!</string>
+    <string name="tip_ssudp_open_file_failed">لا يدعم SSUDP الملفات المفتوحة على الإنترنت ، فالرجاء فتحها بعد التنزيل!</string>
+    <string name="tip_title_ssudp_disconnect">تم قطع اتصال SSUDP</string>
+    <string name="tip_title_ssudp_connect">متصل SSUDP</string>
+
+    <!-- Cloud Fragment -->
+    <string name="root_dir_name_private">ملفي</string>
+    <string name="root_dir_name_public">الدليل العام</string>
+    <string name="root_dir_name_recycle">سلة المهملات</string>
+    <string name="root_dir_name_sdcard">دليل التخزين</string>
+    <string name="root_dir_name_download">دليل تحميل</string>
+    <string name="root_dir_all">الكل</string>
+    <string name="action_upload_file">؛ الملف&#160;&#160;&#160;تحميل</string>
+    <string name="action_new_folder">إنشاء مجلد</string>
+    <string name="file_order_time">الترتيب حسب الوقت</string>
+    <string name="file_order_name">الترتيب حسب اسم الملف</string>
+    <string name="file_viewer_list">عرض قائمة الملفات</string>
+    <string name="file_viewer_grid">عرض شبكة الملف</string>
+    <string name="photo_palce">موقع</string>
+    <string name="photo_timeline">الخط الزمني</string>
+
+    <string name="hint_search">الرجاء إدخال اسم الملف للبحث</string>
+    <string name="hint_select_file">الرجاء تحديد الملف</string>
+    <string name="select_all">اختر الكل</string>
+    <string name="select_none">إلغاء تحديد الكل</string>
+    <string name="selected_item">محدد (%s)</string>
+    <string name="empty_file_list">لا توجد ملفات في هذا الدليل</string>
+    <string name="error_access_dir_perm_deny">لا يوجد إذن للوصول إلى هذا الدليل</string>
+    <string name="error_manage_perm_deny">غير مصرح به</string>
+    <string name="error_get_file_list">فشل في الحصول على قائمة الملفات</string>
+    <string name="fmt_time_line">شهر MM سنة yyyy</string>
+    <string name="error_open_encrypt_file">عذرا ، غير قادر على عرض الملفات المشفرة</string>
+    <string name="error_open_encrypt_pic">عذرا ، غير قادر على عرض الصور المشفرة</string>
+    <string name="error_app_not_found_to_open_file">لا يمكن العثور على تطبيق لفتح هذا الملف</string>
+    <string name="gap_symbol">/</string>
+    <string name="tip_start_download">بدء التنزيل: </string>
+    <string name="tip_start_upload">بدء التحميل: </string>
+
+    <!-- Transfer Fragment -->
+    <string name="download_list">&#160;تنزيل</string>
+    <string name="upload_list">&#160;تحميل</string>
+    <string name="download_record">سجل التنزيل</string>
+    <string name="downloading_list">تنزيل%1$s</string>
+    <string name="upload_record">سجل التحميل</string>
+    <string name="uploading_list">تحميل%1$s</string>
+    <string name="start_all">بدء الكل</string>
+    <string name="pause_all">وقفة جميع</string>
+    <string name="delete_all">حذف الكل</string>
+    <string name="empty_transfer_list">لا يوجد سجل نقل</string>
+    <string name="cancel_and_delete_local">حذف الملفات المحلية نفس الوقت</string>
+    <string name="confirm_cancel_download">تأكيد لإلغاء التنزيل الحالي؟</string>
+    <string name="confirm_cancel_upload">تأكيد لإلغاء التحميل الحالي؟</string>
+    <string name="cancel_download">تم إلغاء التنزيل</string>
+    <string name="cancel_upload">تم إلغاء التحميل</string>
+    <string name="waiting">&#8230;انتظار</string>
+    <string name="download_pause">تحميل وقفة</string>
+    <string name="download_failed">فشل التنزيل</string>
+    <string name="upload_pause">وقفة تحميل</string>
+    <string name="refuse_upload_folder">لا يدعم تحميل مجلد</string>
+
+    <!-- Download of upload failed information -->
+    <string name="local_space_insufficient">مساحة محلية غير كافية</string>
+    <string name="server_space_insufficient">مساحة غير كافية</string>
+    <string name="request_server_exception">فشل طلب الخادم</string>
+    <string name="decoding_exception">استثناء فك التشفير</string>
+    <string name="io_exception">قراءة وكتابة الاستثناءات</string>
+    <string name="file_not_found">الملف غير موجود</string>
+    <string name="touch_file_failed">فشل إنشاء الملف</string>
+    <string name="socket_timeout">مهلة ربط</string>
+    <string name="unknown_exception">استثناء غير معروف</string>
+    <string name="wifi_connect_break">انقطاع الشبكة</string>
+
+    <!-- Tools Fragment -->
+    <string name="tool_setting">إعدادات</string>
+    <string name="tool_backup_photo">النسخ الاحتياطي للألبوم</string>
+    <string name="tool_backup_file">النسخ الاحتياطي للملفات</string>
+    <string name="tool_sync_contact">النسخ الاحتياطي لدليل العناوين</string>
+    <string name="tool_sync_sms">النسخ الاحتياطي لرسالة قصيرة</string>
+    <string name="tool_app">الإدارة التطبيقية</string>
+    <string name="tool_tools">أدوات مفيدة</string>
+    <string name="tool_aria">تنزيل Aria</string>
+    <string name="tool_system_management">ادارة النظام</string>
+    <string name="tool_user_management">إدارةالمستخدم</string>
+    <string name="tool_hd_info">معلومات القرص الصلب</string>
+    <string name="tool_system_status">حالة النظام</string>
+    <string name="tool_logout">خروج من تسجيل</string>
+
+    <string name="device_power_off">إيقاف التشغيل</string>
+    <string name="cancel_opt_power">&#160;&#160;إلغاء</string>
+    <string name="device_reboot">اعادة التشغيل</string>
+    <string name="confirm_reboot_device">تأكيد إعادة تشغيل الجهاز؟</string>
+    <string name="confirm_power_off_device">تأكيد اغلاق الجهاز؟</string>
+    <string name="power_off_device">&#8230;اغلاق جهاز</string>
+    <string name="rebooting_device">&#8230;إعادة تشغيل جهاز</string>
+    <string name="success_power_off_device">نجح إغلاق جهاز</string>
+    <string name="success_reboot_device">نجح إعادة تشغيل جهاز</string>
+    <string name="failed_power_off_device">فشل الاغلاق</string>
+    <string name="failed_reboot_device">فشل إعادة التشغيل</string>
+    <string name="confirm_logout">تأكيد الخروج؟</string>
+    <string name="warning_logout">ستؤدي هذه العملية إلى إيقاف وظيفة مزامنة الألبوم التلقائية وإلغاء جميع مهام التحميل / التنزيل!</string>
+
+    <!-- Settings Activity -->
+    <string name="title_settings">إعدادات</string>
+    <string name="settings">إعدادات</string>
+    <string name="not_login">لم تقم بتسجيل الدخول</string>
+    <string name="current_user">المستخدم الحالي</string>
+    <string name="current_path">مسار التنزيل الحالي :</string>
+    <string name="clear_record">امسح كل تسجيلات التحميل والتنزيل</string>
+    <string name="clear_record_success">نجح المسح</string>
+    <string name="clear_record_failed">فشل المسح</string>
+    <string name="clear_failed_task">مسح المهام الفاشلة</string>
+    <string name="clear_running_task">مسح المهام الجارية</string>
+    <string name="setting_success">نجح الإعداد</string>
+    <string name="setting_failed">فشل الإعداد</string>
+    <string name="confirm_clear_record">تأكيد مسح سجل؟</string>
+    <string name="set_default_path">تعيين مسار التنزيل</string>
+    <string name="only_wifi_preview_pic">معاينة الصور فقط تحت بيئة WiFi</string>
+    <string name="not_wifi_download_tips">نصائح تحميل / تحميل غير بيئة WiFi</string>
+    <string name="about_onespace">حول M3 Station</string>
+    <string name="title_onespace_forum">منتدى M3 Station</string>
+    <string name="title_onespace_website">الموقع الرسمي M3 Station</string>
+    <string name="space_total">إجمالي مساحة الجهاز</string>
+    <string name="space_user">مساحة المستخدم الحالية</string>
+    <string name="space_local">مساحة بطاقة SD</string>
+    <string name="sd_state_unmounted">لا توجد بطاقة SD متاحة</string>
+
+    <!-- App Upgrade -->
+    <string name="get_version_exception">فشل في الحصول على الإصدار</string>
+    <string name="get_version_from_server_exception">فشل في الحصول على معلومات الإصدار الجديد</string>
+    <string name="is_latest_version">حاليا هو أحدث إصدار</string>
+    <string name="have_new_version_app">&#160;V&#160;الإصدار الجديد :</string>
+    <string name="oneos_minimum_version">v&#160;ملاحظة : OneOS الحد الأدنى من الإصدار</string>
+    <string name="confirm_cancel_download_app">هل تريد تأكيد تنزيل التطبيق؟</string>
+    <string name="interrupt_download">إلغاء تنزيل</string>
+    <string name="continue_download">استمر تنزيل</string>
+    <string name="check_app_version">&#8230;تحقق من إصدار</string>
+    <string name="tips_upgrade_oneos_version_low" formatted="false">إصدار نظام OneOS تشغيل الجهاز الحالي هو v%$s ، وهو أقل من App المطلوب الحد الأدنى للإصدار v%$s، نوصي بترقية OneOS إلى أحدث إصدار من نظام التشغيل قبل ترقية App ، وإلا فلن يعمل App!</string>
+    <string name="upgrade_later">ترقية في وقت لاحق</string>
+    <string name="upgrade_app_now">تحديث الآن</string>
+    <string name="upgrade_next_time">المرة القادمة</string>
+    <string name="ignore_this_version">تجاهل هذا الإصدار</string>
+    <string name="download_new_app">تحميل APP الجديد</string>
+    <string name="download_app_failed">فشل التنزيل ، يرجى المحاولة مرة أخرى</string>
+
+    <!-- Space Activity -->
+    <string name="user_space_info">تم استخدام المساحة الخاصة بك</string>
+    <string name="title_local">مساحة بطاقة SD</string>
+    <string name="title_server">إجمالي مساحة الجهاز</string>
+    <string name="title_user">مساحة المستخدم الحالية</string>
+    <string name="total_space"> مساحة :&#160;&#160;&#160;&#160;إجمالي</string>
+    <string name="available_space">مساحة متاحة:</string>
+    <string name="used_space">مساحه مستخدمه:</string>
+    <string name="query_space_failure">فشل الاستعلام</string>
+    <string name="device_dev_sda">القرص A</string>
+    <string name="device_dev_sdb">القرص B</string>
+
+    <!-- About Activity -->
+    <string name="product_version">نموذج:</string>
+    <string name="version_name">رقم الإصدار: </string>
+    <string name="title_about">حول</string>
+    <string name="about">حول</string>
+    <string name="copyright_statement">Powered by M3 Station</string>
+    <string name="website_home">www.memenet.net</string>
+    <string name="start_download_file">&#8230;ابدأ تنزيل الملف</string>
+
+    <!-- Apps Activity -->
+    <string name="title_apps_phone">موبايل</string>
+    <string name="getting_app_list">&#8230;الحصول على قائمة التطبيقات</string>
+    <string name="error_open_app">عذرا ، لا يمكن فتح هذا التطبيق</string>
+    <string name="error_get_app_details">لا تحصل على معلومات التطبيق</string>
+    <string name="can_not_uninstall">لا يمكن إلغاء التثبيت</string>
+    <string name="app_not_found_exception">لم يتم العثور على معلومات التطبيق</string>
+    <string name="confirm_uninstall_plugin">&#160;&#160;تأكيد إلغاء التثبيت</string>
+    <string name="uninstall">الغاء التثبيت</string>
+    <string name="uninstalling_plugin">&#8230;جارٍ إلغاء التثبيت</string>
+    <string name="opening_plugin">&#8230;جارٍ فتح</string>
+    <string name="closing_plugin">&#8230;جارٍ إغلاق</string>
+    <string name="confirm_open_plugin">&#160;&#160;أكيد الفتح</string>
+    <string name="confirm_close_plugin">&#160;&#160;تأكيد الإغلاق</string>
+    <string name="app_status">&#160;الحالة:</string>
+    <string name="app_state_getting">&#8230;الحصول على</string>
+    <string name="app_state_on">في تشغيل</string>
+    <string name="app_state_off">لم يعمل</string>
+    <string name="app_state_unknown">مجهول</string>
+
+    <!-- Aria Download Activity -->
+    <string name="enter_url_hint">HTTP ، FTP أو Magnet</string>
+    <string name="select_torrent">حدد Torrent</string>
+    <string name="add_aria_download">إضافة مهمة تنزيل Aria</string>
+    <string name="download_to_onespace">تنزيل إلى جهاز سحابي</string>
+    <string name="select_torrent_file">الرجاء تحديد ملف سيل</string>
+    <string name="dir_without_torrent">لا توجد ملفات سيل في هذا الدليل</string>
+    <string name="aria_download_tips">يرجى إدخال رابط ملف أو تحميل ملف سيل</string>
+    <string name="aria_download_path_tips">سيتم حفظ ملفات التنزيل في وضع عدم الاتصال في Download الدليل العام</string>
+    <string name="confirm_del_active_aria">هل تريد حذف مهمة التنزيل بلا اتصال؟</string>
+    <string name="confirm_del_stopped_aria">هل تريد حذف سجلات التنزيل بلا اتصال؟</string>
+    <string name="aria_task_file_list">قائمة الملفات</string>
+    <string name="aria_task_details">تفاصيل المهمة</string>
+    <string name="title_aria">تنزيل Aria</string>
+    <string name="title_aria_task_details">تفاصيل مهمة Aria</string>
+    <string name="save_settings">احفظ الإعدادات</string>
+    <string name="aria_global_settings">إعدادات التنزيل في وضع عدم الاتصال</string>
+    <string name="aria_upload_speed_limit">حد سرعة التحميل:</string>
+    <string name="aria_download_speed_limit">حد سرعة التنزيل:</string>
+    <string name="aria_download_max_concurrent">ماكس المتزامن:</string>
+    <string name="aria_download_piece_length">الحد الأدنى لطول النظير:</string>
+    <string name="aria_download_dir">دليل التحميل:</string>
+    <string name="aria_download_size">حجم الملف:</string>
+    <string name="aria_download_speed">سرعة التنزيل:</string>
+    <string name="aria_download_time">الوقت المتبقي:</string>
+    <string name="aria_download_connections">عدد الاتصالات:</string>
+    <string name="aria_download_peers">الأقران:</string>
+    <string name="aria_download_peer_len">طول الأقران:</string>
+    <string name="please_enter_limit">الرجاء إدخال حجم الحد</string>
+    <string name="success_save_aria_setting">تم الإعداد بنجاح</string>
+    <string name="request_aria_settings">Aria&#8230;الحصول على تكوين </string>
+    <string name="request_set_aria_settings">Aria&#8230;تكوين </string>
+    <string name="error_request_aria_params">فشل الحصول على تكوين Aria</string>
+    <string name="error_set_aria_params">فشل التكوين Aria</string>
+    <string name="fmt_add_aria_task_success">نجحت إضافة %s تنزيل دون اتصال!</string>
+    <string name="fmt_add_aria_task_failed">فشلت إضافة %s تنزيل دون اتصال!</string>
+    <string name="tips_no_sd_card">لم يتم الكشف عن بطاقة SD ،يرجى التأكد من بطاقة SD بشكل طبيعي!</string>
+    <string name="connect_aria_exception">Aria غير متصل ، يرجى تأكيد ما إذا كان سيتم فتح تنزيل Aria بلا اتصال</string>
+
+    <!--Backup Photo Activity -->
+    <string name="title_backup_photo">النسخ الاحتياطي للألبوم</string>
+    <string name="unknown_photo_date">وقت غير معروف</string>
+    <string name="remain">يبقى</string>
+    <string name="counts">عدد</string>
+    <string name="backup_dir_shown">&#160;دليل الحفظ : </string>
+    <string name="backup_complete">اكتمال النسخ الاحتياطي</string>
+    <string name="backup_closed">تم إغلاق النسخ الاحتياطي</string>
+    <string name="auto_backup_photo">ألبوم النسخ الاحتياطي التلقائي</string>
+    <string name="title_reset_backup">إعادة تعيين ألبوم النسخ الاحتياطي</string>
+    <string name="tips_reset_backup">سيتم فحص جميع صورك وفيديوهاتك بعد إعادة التعيين</string>
+    <string name="success_reset_backup">إعادة تعيين بالنجاح!</string>
+    <string name="reset_now">إعادة تعيين الآن</string>
+    <string name="auto_backup_only_wifi">النسخ الاحتياطي فقط في بيئة Wi-Fi</string>
+
+    <!-- Backup File Activity -->
+    <string name="title_backup_file">ملفات النسخ الاحتياطي</string>
+    <string name="auto_backup_file">ملفات النسخ الاحتياطي التلقائي</string>
+    <string name="backup_file_list">دليل النسخ الاحتياطي التلقائي</string>
+    <string name="fmt_backup_folder_count">&#160; (%d مجلد)</string>
+    <string name="tips_empty_backup_file">لا يحتاج مجلد إلى النسخ الاحتياطي</string>
+    <string name="title_backup_file_list">مجلد بالنسخ الاحتياطي التلقائي</string>
+    <string name="title_add_backup_file">إضافة مجلد بالنسخ الاحتياطي التلقائي</string>
+    <string name="confirm_add_backup_file">تأكيد النسخ الاحتياطي لهذا الدليل</string>
+    <string name="confirm_backup">تأكيد لإضافة نسخة احتياطية</string>
+    <string name="continue_add_backup">استمر في الإضافة</string>
+    <string name="error_fmt_add_backup_dir_count">يمكنك إضافة ما يصل إلى %d من المجلد</string>
+    <string name="tips_add_backup_dir_repeat">الاستمرار في إضافة الدليل قد يسبب ملفات مكررة</string>
+    <string name="tips_add_backup_album_repeat">الاستمرار في إضافة الدليل قد يسبب ملفات مكررة إذا فتح ألبوم النسخ الاحتياطي التلقائي</string>
+    <string name="error_backup_dir_exist">تمت إضافة الدليل</string>
+    <string name="error_backup_without_read_permission">لا يوجد إذن قراءة ، لا يمكن النسخ الاحتياطي للدليل</string>
+    <string name="delete_backup_file">حذف دليل النسخ الاحتياطي</string>
+    <string name="tips_confirm_delete_backup_dir">تأكيد حذف الدليل؟</string>
+    <string name="tips_confirm_add_backup_dir">تأكيد النسخ الاحتياطي للدليل؟</string>
+    <string name="is_backup">النسخ الاحتياطي:</string>
+    <string name="add_backup_file">إضافة النسخ الاحتياطي التلقائي</string>
+    <string name="cancel_backup_file">إلغاء النسخ الاحتياطي التلقائي</string>
+    <string name="tips_open_backup_file">تأكيد تمكين النسخ الاحتياطي التلقائي للدليل؟</string>
+    <string name="tips_close_backup_file">تأكيد إيقاف النسخ الاحتياطي التلقائي للدليل؟</string>
+
+    <!--Backup Contacts and SMS-->
+    <string name="title_sync_contacts">نسخة احتياطية من دفتر العناوين</string>
+    <string name="last_sync_time">وقت النسخ الاحتياطي الأخير:</string>
+    <string name="sync_contacts_to_server">نسخة احتياطية من دفتر العناوين إلى جهاز</string>
+    <string name="recover_contacts_to_phone">استرداد دفتر العناوين إلى الموبايل</string>
+    <string name="title_sync_sms">نسخة احتياطية من رسالة قصيرة</string>
+    <string name="sync_sms_to_server">النسخ الاحتياطي من رسالة قصيرة إلى الجهاز</string>
+    <string name="recover_sms_to_phone">استرداد رسالة قصيرة إلى الموبايل</string>
+    <string name="recovering">&#8230;استعادة</string>
+    <string name="recover_waiting">&#8230;انتظار استعادة</string>
+    <string name="recover_prepare">&#8230;تحضير استعادة</string>
+    <string name="recover_success">اكتمال استعادة</string>
+    <string name="recover_failed">فشلت استعادة</string>
+    <string name="error_export_sms">خطأ النسخ الاحتياطي من رسالة قصيرة</string>
+    <string name="error_export_contacts">خطأ النسخ الاحتياطي من دفتر العناوين</string>
+    <string name="error_import_sms">خطأت استعادة رسالة قصيرة</string>
+    <string name="error_import_contacts">خطأت استعادة دفتر العناوين</string>
+    <string name="no_sms_to_recover">لا توجد رسالة قصيرة لاستعادة</string>
+    <string name="no_contact_to_recover">لا توجد دفتر العناوين لاستعادة</string>
+    <string name="syncing">&#8230;النسخ الاحتياطي</string>
+    <string name="exporting">&#8230;تصدير</string>
+    <string name="sync_waiting">&#8230;انتظار النسخ الاحتياطي</string>
+    <string name="not_sync">لا النسخ الاحتياطي</string>
+    <string name="sync_failed">فشل النسخ الاحتياطي</string>
+    <string name="sync_success">اكتمل النسخ الاحتياطي</string>
+    <string name="wait_to_sync">انتظار التزامن</string>
+    <string name="no_sms_to_sync">لا توجد رسالة قصيرة لاستعادة للنسخ الاحتياطي</string>
+    <string name="no_contact_to_sync">لا توجد دفتر العناوين لاستعادة للنسخ الاحتياطي</string>
+    <string name="sync_exception_download">فشل النسخ الاحتياطي ، الرجاء المحاولة مرة أخرى</string>
+    <string name="recovery_exception_upload">فشلت الاستعادة ، الرجاء المحاولة مرة أخرى</string>
+    <string name="permission_denied_backup_contact">يحتاج دفتر عناوين النسخ الاحتياطي إلى قراءة وتعديل أذونات دفتر العناوين ، يرجى الانتقال إلى صفحة الإعدادات لفتح هذا الإذن!</string>
+    <string name="permission_denied_contact">تحتاج هذه الوظيفة إلى قراءة وتعديل إذن دفتر العناوين ، يرجى الانتقال إلى صفحة الإعدادات لفتح هذا الإذن!</string>
+    <string name="permission_denied_backup_sms">يحتاج دفتر عناوين النسخ الاحتياطي إلى قراءة وتعديل أذونات الرسائل القصيرة ، يرجى الانتقال إلى صفحة الإعدادات لفتح هذا الإذن!</string>
+    <string name="permission_denied_sms">يتطلب إشعار رسالة قصيرة إذنًا بإرسال رسالة قصيرة ، يرجى الانتقال إلى صفحة الإعدادات لفتح هذا الإذن!</string>
+
+    <!-- SetPath Activity-->
+    <string name="set_dir_to_download_path">اختر دليل التنزيل</string>
+    <string name="confirm_set_to_download_path">هل تريد التأكيد كدليل تنزيل؟</string>
+    <string name="empty_directory">دليل فارغ</string>
+    <string name="confirm_set_path">تأكيد الإعداد</string>
+    <string name="download_path_not_set">لا الإعداد</string>
+    <string name="error_path_without_write_permission">لا يمكن تعيين هذا الدليل كدليل تنزيل</string>
+    <string name="local">محلي</string>
+    <string name="remote">سحاب</string>
+
+    <!-- User Management -->
+    <string name="title_user_management">إدارة المستخدم</string>
+    <string name="getting_user_list">&#8230;الحصول على قائمة المستخدمين</string>
+    <string name="get_space_failed">فشل اكتساب الفضاء</string>
+    <string name="user_manage_delete">حذف</string>
+    <string name="user_manage_password">كلمه المرور</string>
+    <string name="user_manage_limit">الحد</string>
+    <string name="unlimited">غير محدود</string>
+    <string name="delete_user">حذف المستخدمين</string>
+    <string name="warning_delete_user">تحذير: سيؤدي هذا إلى إزالة جميع بيانات هذا المستخدم</string>
+    <string name="deleting_user">&#8230;حذف</string>
+    <string name="delete_user_succeed">نجح الحذف</string>
+    <string name="delete_user_failed">فشل الحذف</string>
+    <string name="add_user">أضف مستخدم</string>
+    <string name="error_user_name_length">يحتاج اسم المستخدم إلى 3 أحرف على الأقل</string>
+    <string name="adding_user">&#8230;إضافة </string>
+    <string name="add_user_succeed">نجحت الإضافة</string>
+    <string name="add_user_failed">فشلت الإضافة</string>
+    <string name="modify_user_space">تعديل الحد</string>
+    <string name="tips_modify_user_space">يرجى إدخال حجم الحد</string>
+    <string name="tips_invalid_user_space">يرجى إدخال قيمة حد صالحة</string>
+    <string name="reset_user_pwd">إعادة تعيين كلمة المرور</string>
+    <string name="tips_reset_user_pwd">إعادة تعيين كلمة مرور المستخدم إلى: 123456</string>
+    <string name="resetting">&#8230;إعادة تعيين</string>
+    <string name="reset_succeed">نجحت إعادة التعيين</string>
+    <string name="reset_failed">فشلت إعادة التعيين</string>
+    <string name="modify_user_pwd">تعديل كلمة المرور</string>
+    <string name="warning_modify_user_pwd">تحذير: يرجى تذكر كلمة المرور الجديدة التي قمت بتعيينها</string>
+    <string name="enter_new_pwd">يرجى إدخال كلمة مرور جديدة</string>
+    <string name="confirm_new_pwd">يرجى تأكيد كلمة المرور الجديدة</string>
+
+    <!-- System Status Activity -->
+    <string name="title_system_status">حالة النظام</string>
+    <string name="querying_info">&#8230;الاستعلام</string>
+    <string name="fmt_label_cpu_load">تحميل CPU (المستخدمة : %1$s)</string>
+    <string name="fmt_label_memory"> المتبقي : %3$s)&#160;/&#160;المستخدمة : %2$s&#160;/&#160;تشغيل الذاكرة (إجمالي :</string>
+    <string name="fmt_label_eth"> إرسال : &#160;/&#160;؛ إرسال : %3$ &#160;بطاقة الشبكة السلكية : %1$s (استقبال : %2$ </string>
+
+    <!-- HardDisk Info Activity -->
+    <string name="title_hd_info">معلومات القرص الصلب</string>
+    <string name="hd_info_tmp">درجة الحرارة:</string>
+    <string name="hd_info_time">مدة القرص الصلب:</string>
+    <string name="hd_info_model">طراز القرص الصلب:</string>
+    <string name="hd_info_serial">الرقم التسلسلي:</string>
+    <string name="hd_info_capacity">حجم القرص:</string>
+    <string name="fmt_hd_info_tmp">%1$d&#160;℃</string>
+    <string name="fmt_oneos_mode">في وضع الاستخدام حاليًا: %1$s</string>
+
+    <!-- HardDisk Manage Activity-->
+    <string name="hd_format">تهيئة القرص الصلب</string>
+    <string name="hd_one_title">تهيئة القرص الصلب</string>
+    <string name="hd_more_title">اختيار وضع القرص الصلب</string>
+    <string name="hd_raid0">وضع RAID0</string>
+    <string name="hd_raid0_info">يتم دمج محركي الأقراص الثابتة فعليًا في محرك أقراص ثابتة واحد ، والسعة هي مجموع سعة محرك الأقراص المزدوج ، وسرعة الوصول سريعة ، ولكن أي محرك أقراص ثابت واحد تالف ، كما يتم فقدان بيانات محرك الأقراص الثابتة الآخر.</string>
+    <string name="hd_raid1">وضع RAID1</string>
+    <string name="hd_raid1_info">يتم عكس محركي الأقراص الثابتة ومزامنتهما تلقائيًا. في حالة تلف أي محرك أقراص ثابتة ، ما عليك سوى استبدال محرك أقراص ثابتة جديد تمامًا. إنه أفضل وضع لأمان البيانات.</string>
+    <string name="hd_lvm">وضع LVM</string>
+    <string name="hd_lvm_info">هذا هو مسح بيانات القرص الثابت الداخلي وتوسيع السعة. وبهذه الطريقة ، أثناء توسيع مساحة التخزين من خلال القرص الثابت الخارجي ، سيتم مسح جميع البيانات الموجودة على القرص الثابت الداخلي الموجود لديك. لذلك ، يرجى الاختيار بعناية!</string>
+    <string name="hd_lvm_add">وضع LVM ADD (عند إضافة قرص ثابت)</string>
+    <string name="hd_lvm_add_info">أي احتفظ ببيانات القرص الثابت الداخلي الأصلية وقم بتوسيع السعة. وبهذه الطريقة ، أثناء توسيع مساحة التخزين من خلال القرص الثابت الخارجي ، لا تزال البيانات الموجودة في القرص الثابت الداخلي الموجود لديك محفوظة.</string>
+    <string name="tips_format_hd">ملاحظة: بعد توصيل الجهاز بالقرص الصلب الخارجي ، يرجى عدم إزالته. عند إزالة محرك الأقراص الصلبة الخارجي المهيأ ، لن يعمل محرك الأقراص الصلبة الداخلي بشكل صحيح. إذا كنت حقًا بحاجة إلى إزالة محرك الأقراص الصلبة الخارجي ثم توصيل محرك أقراص ثابت جديد أو استخدام محرك الأقراص الثابتة الداخلي فقط ، يجب عليك تهيئة الجهاز مرة أخرى قبل أن تتمكن من الوصول إلى مساحة القرص الصلب الداخلي للجهاز.</string>
+
+    <string name="hint_enter_ssupd_name">الرجاء إدخال اسم الجهاز</string>
+    <string name="ssudp_boned">SSUDP مرتبط</string>
+    <string name="tip_unbind_ssudp">تأكيد لإلغاء ربط SSUDP؟</string>
+    <string name="title_bind_ssudp">ربط SSUDP</string>
+    <string name="title_ssudp_name">اسم الجهاز</string>
+    <string name="tool_bind_ssudp">ربط SSUDP</string>
+    <string name="unbind">إلغاء ربط</string>
+    <string name="unbind_succeed">نجح إلغاء ربط</string>
+    <string name="more">أكثر</string>
+    <string name="extract_file">فك الضغط</string>
+    <string name="formating">&#8230;تهيئة</string>
+
+    <!-- user register -->
+    <string name="title_qr">مسح رمز الاستجابة السريعة</string>
+    <string name="scan_text">يرجى وضع رمز الاستجابة السريعة في المربع</string>
+    <string name="scan_failed">فشل التعرف على رمز الاستجابة السريعة</string>
+    <string name="scan_selected_path">اختر صورة رمز الاستجابة السريعة</string>
+    <string name="scan_share_title">تسجيل الدخول في رمز الاستجابة السريعة</string>
+    <string name="scan_get_failed">فشل الحصول على رمز الاستجابة السريعة</string>
+    <!--<string name="hint_input_phone_number">请输入手机号</string>-->
+    <string name="tv_user_register">تسجيل مستخدم جديد</string>
+    <string name="tv_foreget_password">نسيت كلمة المرور</string>
+    <string name="tip_user_no_exist">المستخدم غير موجود</string>
+    <string name="tip_password_error">كلمة المرور غير صحيحة</string>
+    <string name="tip_params_error">خطأ في المعلمة</string>
+    <string name="tip_request_failed">فشل الاتصال</string>
+    <string name="tip_request_timeout">انتهت مدة الاتصال</string>
+    <string name="tip_input_correct_phone_number">يرجى إدخال رقم الموبايل الصحيح</string>
+    <string name="please_wait">يرجى معاودة المحاولة في وقت لاحق</string>
+    <string name="unit_second">ثواني</string>
+    <string name="get_captcha">احصل على رمز التحقق</string>
+    <string name="tips_get_captcha_first">يرجى الحصول على رمز التحقق</string>
+    <string name="reginstering">التسجيل</string>
+    <string name="tip_register_success">نجح في التسجيل</string>
+    <string name="tip_user_already_exists">المستخدم موجود اصلا</string>
+    <string name="tip_register_failed">فشل في التسجيل</string>
+    <string name="tip_input_captcha">يرجى إدخال رمز التحقق</string>
+    <string name="tip_captcha_error">خطأ رمز التحقق</string>
+    <string name="btn_register">تسجيل</string>
+    <string name="tv_add_device_instruction">انقر لمسح رمز الاستجابة السريعة لجسم الطائرة لإضافة الجهاز</string>
+    <string name="tv_select_device">اختيار الجهاز</string>
+    <string name="tv_device_type">جهاز:</string>
+    <string name="tv_device_status">الحالة:</string>
+    <string name="tv_device_vip">IP الظاهري:</string>
+    <string name="tv_device_lan_ip">IP الحقيقي:</string>
+    <string name="tv_device_domains">اسم النطاق:</string>
+    <string name="tip_bind_success">نجحت إضافة الجهاز</string>
+    <string name="tip_bind_failed">فشلت إضافة الجهاز</string>
+    <string name="tip_device_bound">ربط الجهاز بواسطة جهاز آخر</string>
+    <string name="tip_device_offline">الجهاز %1$s غير متصل</string>
+    <string name="tip_device_not_found">لم يتم العثور علي الجهاز</string>
+    <string name="device_logining">&#8230;جارٍ التوصيل</string>
+    <string name="invite">دعوة</string>
+    <string name="invite_user">دعوة المستخدمين</string>
+    <string name="tip_invite_user_succeed">نجحت الدعوة</string>
+    <string name="setting_remove_device">إنزع الجهاز</string>
+    <string name="confirm_remove_device">تحذير: ستؤدي هذه العملية إلى حذف جميع المستخدمين على الجهاز وحذف جميع بيانات جميع المستخدمين تمامًا</string>
+    <string name="remove_device_failed">فشلت الإزالة</string>
+    <string name="remove_success">إزالة بالنجاح</string>
+    <string name="tv_phone">رقم الموبايل</string>
+    <string name="hind_input_phone">يرجى إدخال رقم الموبايل</string>
+    <string name="tv_captcha">رمز التحقق</string>
+    <string name="hint_input_captcha">يرجى إدخال رمز التحقق</string>
+    <string name="bt_get_captcha">الحصول على رمز التحقق</string>
+    <string name="tv_register">تسجيل حساب</string>
+    <string name="title_contact">دليل العناوين</string>
+    <string name="info_sms_to_user">إخطار عبر الرسائل القصيرة</string>
+    <string name="hdformat_failed">فشل التنسيق</string>
+    <string name="action_refresh">تحديث</string>
+    <string name="real_play">توقيت</string>
+    <string name="videoplayer_off_volume">كتم الصوت</string>
+    <string name="videoplayer_start">لعب</string>
+    <string name="videoplayer_pause">وقفة</string>
+    <string name="videoplayer_screeemshot">لقطة شاشة</string>
+    <string name="tip_no_sata">لا قرص صلب</string>
+    <string name="tip_sata_need_format">يجب تهيئة الأقراص الثابتة</string>
+    <string name="tv_not_find_camera">الجهاز الحالي غير متصل بالكاميرا</string>
+    <string name="tv_camera_title">كاميرا فيديو</string>
+    <string name="tv_camera_list">قائمة الكاميرا</string>
+    <string name="tv_camera_one">نسخة محسنة من الكاميرا الذكية بماركة مي جيا</string>
+    <string name="tv_camera_two">نسخة يون تاي من الكاميرا الذكية بماركة مي جيا</string>
+    <string name="tv_camera_three">النسخة الذكية من الكاميرا الذكية بماركة سياو باي</string>
+    <string name="file_type_all">كل الملفات</string>
+    <string name="please_select_file_type_upload">يرجى اختيار نوع ملف التحميل</string>
+    <string name="tv_user_space">المساحة الخالية الحالية للمستخدم </string>
+    <string name="title_select_pic">اختر الصورة</string>
+    <string name="title_select_video">اختر الفيديو</string>
+    <string name="title_select_audio">اختر الموسيقى</string>
+    <string name="title_select_doc">اختر الوثيقة</string>
+    <string name="title_select_all">لا قرص صلب</string>
+    <string name="file_type_gallery">إلبوم الصور</string>
+
+    <string name="tip_login_again">فشلت المصادقة ، يرجى الخروج وتسجيل الدخول مرة أخرى</string>
+    <string name="tip_file_exists">الملف الهدف موجود بالفعل</string>
+    <string name="tip_filetable_error">جدول الملفات غير طبيعي ، ويجب إعادة فهرسة صفحة الويب</string>
+    <string name="tip_decrypt_pass_error">خطأ في فك ضغط كلمة المرور</string>
+    <string name="btn_add_user">اضف</string>
+    <string name="tip_please_change_admin">يرجى نقل أذونات المالك قبل الخروج من الجهاز</string>
+    <string name="txt_set_admin">مسؤول النقل</string>
+    <string name="tip_change_admin">ستلغي هذه العملية حقوق المسؤول ، هل تريد المتابعة؟</string>
+    <string name="tip_do_failed">فشلت العملية</string>
+    <string name="tip_set_device_name">تعيين اسم الجهاز</string>
+    <string name="change_device_name">تعديل اسم الجهاز</string>
+    <string name="hint_set_device_name">يرجى إدخال اسم الجهاز</string>
+
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+
+    <string name="online">في العمل</string>
+    <string name="offline">غير متصل على الانترنت</string>
+    <string name="network_interruption">انقطاع الشبكة</string>
+    <string name="service_disconnect">تم قطع الخدمة</string>
+    <string name="device_offline">الجهاز غير متصل بالإنترنت ، يرجى التحقق من الشبكة والمحاولة</string>
+    <string name="network_unavailable">اتصال الشبكة غير متاح</string>
+    <string name="network_request_failed">الشبكة غير جيدة</string>
+    <string name="try_again">أعد المحاولة</string>
+    <string name="account_or_pwd_cannot_empty">لا يمكن أن يكون المستخدم أو كلمة المرور فارغة</string>
+    <string name="pwd_cannot_empty">لا يمكن أن تكون كلمة المرور فارغة</string>
+    <string name="request_error">فشل الحصول على البيانات</string>
+    <string name="pwd_too_dangerous">كلمة المرور بسيطة للغاية ، يرجى إعادة تعيينها للأمان</string>
+    <string name="password_reset_successful">نجح تعديل كلمة المرور</string>
+    <string name="add_user_success">تمت إضافة المستخدم بنجاح</string>
+    <string name="pls_notify_new_user">تمت إضافة المستخدم بنجاح</string>
+    <string name="save_success">حفظ بنجاح</string>
+    <string name="get_help_from_admin">لم يتم العثور على حساب ، يرجى الاتصال بمالك الجهاز !!!</string>
+    <string name="send_sms_success">نجح في إرسال الرسائل القصيرة</string>
+    <string name="send_sms_error">فشل في إرسال الرسائل القصيرة</string>
+    <string name="send_sms_error_permission">فشل إرسال الرسائل القصيرة ، يرجى إضافة الأذونات ذات الصلة في الإعدادات</string>
+    <string name="invite_sms_content_mid">وثائق جديدة</string>
+    <string name="share_sms_content_start">لقد شاركت الملف معك للتو</string>
+    <string name="invite_sms_content_start">لقد قمت للتو بمشاركة جهاز %1$s الجديد معك. </string>
+    <string name="invite_sms_content_end">انتقل إلى %1$s لتنزيل %2$sAPP لاستخدامه</string>
+    <string name="the_original_image">عرض الصورة الأصلية</string>
+    <string name="share_to_existing_user">المستخدمون الحاليون</string>
+    <string name="share_to_new_user">مستخدم جديد</string>
+    <string name="success">نجح</string>
+    <string name="failed">فشل</string>
+    <string name="online_extract">فك الضغط على الإنترنت</string>
+
+
+
+
+    <!--Share-->
+    <string name="your_shared">مشاركة انطلقت</string>
+    <string name="receivable_shared">مشاركة استلمت</string>
+    <string name="sharing">في مشاركة</string>
+    <string name="expired">منتهية الصلاحية</string>
+    <string name="transferring">جارٍ إرسال</string>
+    <string name="nas_downloading">جارٍ تنزيل</string>
+    <string name="completed">اكتمال</string>
+    <string name="error">خطأ</string>
+    <string name="dl_waiting">في انتظار</string>
+    <string name="paused">وقفة</string>
+    <string name="share_to">مشاركة ل</string>
+    <string name="remote_friends">صديق</string>
+    <string name="family">مستخدم</string>
+    <string name="add_family_member">أضف مستخدم</string>
+    <string name="add_family_member_detail">إنشاء مساحة شخصية على القرص السحابي للمستخدمين</string>
+    <string name="add_remote_friends">أضف صديق</string>
+    <string name="add_remote_friends_detail">دعوة أصدقاء قرص سحابة العائلة للانضمام</string>
+    <string name="sharer">المشاركات</string>
+    <string name="getter">مشاركة ل</string>
+    <string name="share_date">وقت المشاركة : %1$s</string>
+    <string name="expiration">وقت انتهاء الصلاحية : %1$s</string>
+
+
+    <string name="download_to">&#8230;تنزيل إلى </string>
+    <string name="download_to_phone">تنزيل على الموبايل</string>
+    <string name="tip_please_check_device">يرجى اختيار جهاز</string>
+
+    <string name="tip_please_choose_operation">يرجى اختيار عملية</string>
+    <string name="to_delete_record">حذف سجل</string>
+    <string name="to_re_download">تنزيل مرة أخرى</string>
+    <string name="to_pause_download">إيقاف التنزيل مؤقتًا</string>
+    <string name="to_cancel_download">إلغاء التنزيل</string>
+    <string name="to_resume_download">تابع التنزيل</string>
+    <string name="to_cancel_share">إلغاء المشاركة</string>
+    <string name="to_delete_expired_records">حذف السجلات غير الصالحة</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+
+    <!--App Manage-->
+    <string name="file_service">خدمة الملفات</string>
+    <string name="download_tool">أداة التحميل</string>
+    <string name="multimedia_service">خدمات الوسائط المتعددة</string>
+
+
+    <string name="network">شبكة</string>
+    <string name="owner">صاحب</string>
+    <string name="domain">اسم النطاق</string>
+    <string name="name">اسم</string>
+    <string name="area">منطقة</string>
+    <string name="gateway">DNS</string>
+    <string name="account">رقم حساب</string>
+    <string name="latency">تأخير</string>
+    <string name="ip">IP</string>
+    <string name="lanIp">IP الشبكة الداخلية</string>
+    <string name="public_share">تمكين المشاركة</string>
+    <string name="need_authentication">تحتاج إلى التحقق عند إضافة جهاز</string>
+
+    <string name="tip_select_device">يرجى تحديد الجهاز أولا</string>
+    <string name="current_device">المعدات الحالية</string>
+    <string name="warning_remove_device">إزالة هذا الجهاز ، لن تتمكن من الوصول إلى هذا الجهاز.</string>
+    <string name="unknown_mark">ملاحظات</string>
+    <string name="tip_set_user_name">تعيين ملاحظات</string>
+    <string name="hint_set_user_name">يرجى إدخال ملاحظة</string>
+    <string name="HomePageTxt">الصفحة الرئيسية</string>
+    <string name="support">دعم الخدمة</string>
+    <string name="check_for_updates">تحقق من وجود تحديثات</string>
+
+    <string name="my_header">قرص سحابة منزلي</string>
+    <string name="friend_header">قرص سحابة عائلة صديق</string>
+    <string name="title_enter_nickname">كنية</string>
+    <string name="hint_enter_nickname">يرجى إدخال كنية</string>
+
+    <string name="click_to_edit">إضغط للتعديل</string>
+    <string name="cannot_invite_family_again">المستخدم موجود اصلا</string>
+    <string name="nullnull">لا</string>
+    <string name="share_title">مشاركة</string>
+    <string name="receive_sms_success">تلقى المستلم بنجاح</string>
+    <string name="opt_sharing">مشاركة</string>
+    <string name="tip_sharing_file">مشاركة ل</string>
+    <string name="upgrade">ترقية البرامج الثابتة</string>
+    <string name="remove">إزالة</string>
+    <string name="waring_upgrade_device">ملاحظة: لا يمكن إيقاف تشغيل مصدر الطاقة أثناء عملية التثبيت ، وإلا فسوف يتلف النظام ولا يمكن استخدامه. أعد التشغيل بعد التثبيت ، لا تقم بإيقاف التشغيل وإعادة التشغيل!</string>
+    <string name="install">ابدأ التثبيت</string>
+    <string name="tip_wait_for_install">&#8230;ترقية البرامج الثابت</string>
+    <string name="get_cache_size_failed">فشل الحصول على حجم ذاكرة التخزين المؤقت</string>
+    <string name="copied">نسخ</string>
+    <string name="user_migration">ترحيل المستخدم</string>
+    <string name="one_day">واحد يوم</string>
+    <string name="three_days">ثلاثة ايام</string>
+    <string name="week">واحد اسبوع</string>
+    <string name="sharing_time">مدة المشاركة :</string>
+    <string name="tip_delete_friend">هل تريد حذف جهة الاتصال ؟</string>
+    <string name="tip_no_permission_or_data">لم يتم الحصول علي إذن لقراءة جهات الاتصال أو لا بيانات اتصال</string>
+    <string name="tip_user_migration_success">نجح ترحيل المستخدم</string>
+    <string name="tip_user_migration_failed">فشل ترحيل المستخدم</string>
+    <string name="network_not_fine">جودة الشبكة الحالية غير جيدة !</string>
+    <string name="device_upgrade_failed_by_download">&#8230;فشل تنزيل حزمة الترقية</string>
+    <string name="device_upgrade_failed_by_install">&#8230;فشل تثبيت حزمة الترقية</string>
+    <string name="all">الكل</string>
+    <string name="empty" />
+    <string name="connect_service">جاري التوصيل بالخادم</string>
+    <string name="error_share_download_reject">رفض التنزيل ، يرجى المحاولة مرة أخرى</string>
+    <string name="error_share_failed_src_dev">فشل الاتصال بمصدر المشاركة ، يرجى المحاولة مرة أخرى</string>
+    <string name="error_share_invalid">فشل التنزيل ، يرجى المحاولة مرة أخرى</string>
+    <string name="error_share_src_dev_not_found">لم يتم العثور على مصدر المشاركة ، يرجى المحاولة مرة أخرى</string>
+    <string name="Added_to_the_queue_being_uploaded">يضاف إلى قائمة الانتظار يتم تحميله</string>
+
+
+    <string name="picture">صورة</string>
+    <string name="description_info">تفاصيل</string>
+    <string name="request_permission">امنح أذونات الكاميرا لضمان الاستخدام الطبيعي لوظائف</string>
+    <string name="camera_error">فشل في فتح الكاميرا</string>
+    <string name="intro_message">
+        <![CDATA[
+        ]]>
+    </string>
+    <string name="downloaded">تم التنزيل (%1$d)</string>
+    <string name="title_select_app">اختيار التطبيقات</string>
+    <string name="_new">إنشاء</string>
+    <string name="tip_wait_for_service_connect">انقطع الاتصال ، يرجى المحاولة مرة أخرى لاحقًا!</string>
+    <string name="unknown">مجهول</string>
+    <string name="tips_pull_down_to_refresh_devices">
+ <![CDATA[
+ نصيحة: إذا كان جهاز موجودا بالفعل ، فيرجى السحب لأسفل للتحديث!
+        ]]>        </string>
+    <string name="tips_pull_down_to_refresh">نصيحة: اسحب لأسفل للتحديث!</string>
+    <string name="des_not_found">الملف المؤقت الذي تم تنزيله غير طبيعي</string>
+    <string name="source_expired">انتهت صلاحية مشاركة الملفات</string>
+    <string name="source_not_found">قد يتم حذف أو إلغاء مصدر الملف</string>
+    <string name="tip_receive_share_file">%1$s شارك %2$s</string>
+    <string name="tip_pls_retry_later">فشل الحصول على البيانات ، يرجى المحاولة مرة أخرى !</string>
+    <string name="tips_set_name_too_long">اسم المجموعة طويل جدًا !</string>
+    <string name="tips_set_change_space">نصيحة : اضبط الحجم 0 على غير محدود.</string>
+    <string name="tab_transmit">إرسال</string>
+    <string name="transmit_to">ارسل إلى</string>
+    <string name="tip_cannot_add_youself_number">لا يمكنك إضافة نفسك</string>
+    <string name="tips_download_the_files_first">يمكن نقل الملفات المحلية فقط إلى تطبيقات أخرى</string>
+    <string name="sent">إرسال</string>
+    <string name="receivable">استلام</string>
+    <string name="transmission">نقل</string>
+    <string name="tips_upgrade_oneos"><![CDATA[في ترقية نظام الجهاز ، يرجى عدم إيقاف تشغيل الجهاز . ستتم إعادة تشغيله تلقائيًا بعد تثبيت برنامج الترقية ، في حالة فشل إعادة التشغيل التلقائي ، يرجى إعادة التشغيل يدويًا (التفاصيل -> ...) .]]></string>
+    <string name="share_code">رمز المشاركة:</string>
+    <string name="send_to">ارسل إلى</string>
+    <string name="notify_friend_share_file">إرسال رسالة لإخطار الأصدقاء</string>
+    <string name="one_key_clean">فشل مسح</string>
+
+    <string name="agree">يوافق على</string>
+    <string name="disagree">رفض</string>
+    <string name="agreed">وافق</string>
+    <string name="disagreed">مرفوض</string>
+    <string name="share_code_tips">تنتهي صلاحية رمز المشاركة بعد استخدامه مرة واحدة</string>
+    <string name="tool_msg">مركز الرسائل</string>
+    <string name="Added_to_the_queue_being_download">إضافة إلى قائمة انتظار التنزيل</string>
+    <string name="max_name_length">نصيحة : لا يتجاوز الطول 16</string>
+    <string name="wait_for_consent">في انتظار الموافقة</string>
+    <string name="_switch">تبديل</string>
+    <string name="dev_share_code_tips">نصيحة : رمز المشاركة هذا صالح لمدة 24 ساعة</string>
+    <string name="download_to__">تنزيل إلى : %1$s</string>
+    <string name="upload_to__">تحميل إلى : %1$s%2$s</string>
+    <string name="folder_file">%1$s من المجلد ، %2$s من الملفات</string>
+    <string name="users">%1$s من المستخدمين</string>
+    <string name="agree_user_agreement">أنا أوافق على</string>
+    <string name="sub_agreement">اتفاقية المستخدم</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="terms_and_conditions">تعليمات الاستخدام</string>
+    <string name="tips_request_camera_permission">يرجى منح الإذن لاستخدام الكاميرا!</string>
+    <string name="hide">إخفاء</string>
+    <string name="pls_notify_select_one">يرجى تحديد هدف أولاً!</string>
+    <string name="tip_download_file">تنزيل إلى</string>
+    <string name="from">من</string>
+    <string name="to">إلى</string>
+    <string name="tips_copy_file_to_remote_device">لا يدعم نسخ الملفات إلى الأجهزة البعيدة المجلدات حاليًا ، لذا ترقب المزيد من الميزات!</string>
+    <string name="default_name_code">CN</string>
+    <string name="self">فقط أنا</string>
+    <string name="everyone">الكل</string>
+    <string name="update_device_version">سواء لتحديث إصدار الجهاز</string>
+    <string name="dns_1">DNS المفضل</string>
+    <string name="dns_2">DNS البديل</string>
+    <string name="access_internet_by_sn">يسمح بالوصول إلى الإنترنت عبر الجهاز</string>
+    <string name="access_subnet_by_sn">يسمح بالوصول الجهاز إلى الشبكات الفرعية</string>
+    <string name="configuration">تكوين شبكة</string>
+    <string name="sn_setting_dns_tip">لا تحتاج إلى الإعداد في معظم الحالات ، ما لم تكن بحاجة إلى استخدام خادم DNS محدد .</string>
+    <string name="pls_enter_right_subnet_ip">يرجى إدخال عنوان IP الصحيح للجهاز</string>
+    <string name="pls_enter_right_subnet_mask">يرجى إدخال قناع الشبكة الفرعية الصحيح</string>
+    <string name="pls_enter_right_dns">يرجى إدخال عنوان خادم DNS الصحيح</string>
+    <string name="pls_configure_at_least_one_subnet">يرجى تكوين معلومات شبكة فرعية واحدة على الأقل</string>
+    <string name="setting_not_commit">لم ترسل إعداداتك ، تأكيد الخروج</string>
+    <string name="use_dedicated_dns">استخدم DNS مخصص</string>
+    <string name="repeated_subnet">شبكة فرعية مكررة</string>
+    <string name="share_code_time_tips">رمز المشاركة هذا صالح لمدة 24 ساعة</string>
+    <string name="submit">تقديم</string>
+    <string name="select_sn">اختيار</string>
+    <string name="unselect_sn">إلغاء الاختيار</string>
+    <string name="access_internet">الوصول إلى الإنترنت من خلال هذا الجهاز</string>
+    <string name="get_captcha_success">تم إرسال رمز التحقق</string>
+    <string name="connected">متصل</string>
+    <string name="disconnected">انقطع الاتصال</string>
+    <string name="vpn_notification_content">الخدمة %1$s ، انقر لفتح التطبيق.</string>
+    <string name="vpn_notification_title">الخدمة %1$s</string>
+    <string name="other_used">أخرى (%1$s)</string>
+    <string name="used_by_me">أنا (%1$s)</string>
+    <string name="edit">تعديل</string>
+    <string name="version">الإصدار</string>
+    <string name="apply_config">&#8230;حفظ التكوين</string>
+    <string name="speed_up">تسريع</string>
+    <string name="msg_admin_remove_device">"""هناك طريقتان للمسؤولين لإزالة الأجهزة : \n
+    1. إزالة نفسك فقط ؛ \n
+    2. إزالة كافة مستخدمي الجهاز الحالي . \n"""</string>
+    <string name="delete_account">حذف الحساب</string>
+    <string name="tip_delete_account">هل أنت متأكد من حذف هذا الحساب والبيانات؟</string>
+    <string name="backup_location">موقع النسخ الاحتياطي</string>
+    <string name="title_backup">النسخ الاحتياطي</string>
+    <string name="DeleteAccountPrompt">هل تريد حذف حساب تسجيل الدخول هذا؟</string>
+    <string name="tip_format_disk">سيؤدي مسح القرص إلى حذف جميع البيانات المخزنة عليه ولا يمكن التراجع عنه ! أثناء هذه العملية ، يرجى الحفاظ على حالة الطاقة والشبكة ، لا تقم بإعادة تشغيل أو إيقاف تشغيل الجهاز!</string>
+    <string name="copy_file_add_to_queue">أضف إلى قائمة الانتظار التي يتم نقلها</string>
+    <string name="all_images_videos">الصور والفيديو</string>
+    <string name="select_backup_album_folder">اختر ألبوم النسخ الاحتياطي</string>
+    <string name="set_select_backup_album_folder">تعيين ألبوم النسخ الاحتياطي</string>
+    <string name="choice">اختيار</string>
+    <string name="target">أهداف</string>
+    <string name="device_has_been_binded">تمت إضافة جهاز %1$s</string>
+    <string name="resume">إعادة المحاولة</string>
+    <string name="message_permission_rationale">امنح الأذونات التالية لمتابعة البرنامج : %1$s</string>
+    <string name="message_permission_always_failed">امنح الأذونات التالية لمتابعة البرنامج في الإعدادات : %1$s</string>
+    <string name="play_with_other_app">العب من خلال تطبيقات أخرى</string>
+    <string name="no_data">لايوجد بيانات!</string>
+    <string name="click_to_retry">انقر لإعادة المحاولة!</string>
+    <string name="tip_connect_error">فشل الاتصال.</string>
+    <string name="tips_do_in_background">سيتم الانتهاء من المهمة في الخلفية.</string>
+    <string name="share_file_receiving_status">التنزيل إلى : %1$s \n التقدم الحالي : %2$s/%3$s \t %4$s</string>
+    <string name="share_file_receiving_status_to_device">التنزيل إلى : %1$s \n </string>
+    <string name="share_file_receiving_status_progress"> التقدم الحالي : %2$s/%3$s \t %4$s</string>
+    <string name="share_file_sending_status">  صالح حتى : %1$s \n التنزيلات المتبقية : %2$s</string>
+    <string name="pause">وقفة</string>
+    <string name="next">الخطوة التالية</string>
+    <string name="previous">الخطوة السابقة</string>
+    <string name="qrcode_viwer">عرض رمز الاستجابة السريعة</string>
+    <string name="share_file_period">المدة الفعلية :</string>
+    <string name="download_counter">مرات التحميل :</string>
+    <string name="update">تحديث</string>
+    <string name="installation_failed">فشل التثبيت</string>
+    <string name="app_cannot_run_in_root">لا يمكن تشغيل App في بيئة root</string>
+    <string name="qrcode">رمز الاستجابة السريعة</string>
+    <string name="setup_share_config">تعيين معلمات المشاركة</string>
+    <string name="line_title_valid_time">مدة صالحة</string>
+    <string name="day">يوم</string>
+    <string name="times">مرات</string>
+    <string name="hint_download_counter_des">افتراضي 1 ، قم بتعيين 0 إلى غير محدود</string>
+    <string name="hint_share_period_des">المدة محدودة 1-7</string>
+    <string name="tips_add_share_files">أضف مشاركة إلى القائمة</string>
+    <string name="tips_added">تمت الإضافة</string>
+    <string name="share_files_title">مشاركة الملفات</string>
+    <string name="tips_receive_pre_show">تلقي مشاركة المحتوى للملفات n\ انقر للعرض</string>
+    <string name="share_file_show_names_suffix">انتظر ملفات متعددة</string>
+    <string name="operate_show_qrcode">عرض رمز الاستجابة السريعة</string>
+    <string name="tips_share_to_other_app_not_support_dirs">المشاركة مع app أخرى لا تدعم المجلدات ، يقوم app بتصفية المجلدات تلقائيًا!</string>
+    <string name="waring_remove_title">إزالة العنصر</string>
+    <string name="tip_params_too_big">المعلمات المحددة كبيرة جدًا!</string>
+    <string name="tip_error_create_share">فشل إنشاء المشاركة</string>
+
+    <!--file share v2-->
+    <string name="tip_pls_retry">حاول مرة اخرى</string>
+    <!--file share v2 end-->
+
+    <string name="unknown_code">كود غير معروف</string>
+    <string name="create_time">إنشاء في</string>
+    <string name="download_removed">تمت إزالة مهمة التنزيل</string>
+    <string name="reavel_in_file_view">عرض</string>
+    <string name="invalid_name">اسم غير صالح</string>
+    <string name="cannot_contains_file_separator">لا يمكن أن يحتوي على "/"</string>
+    <string name="name_cannot_empty">لا يمكن إفراغ الاسم</string>
+    <string name="_private">سري</string>
+    <string name="_public">عامة</string>
+    <string name="password">كلمه المرور</string>
+    <string name="tip_password_error_retry">كلمة مرور خاطئة ، يرجى إعادة الدخول!</string>
+    <string name="clear">افراغ</string>
+    <string name="upload">تحميل</string>
+    <string name="processing">معالجة</string>
+    <string name="complete">اكتمل</string>
+    <string name="transfer_continue">استمر</string>
+    <string name="os_file_type">نوع الملف</string>
+    <string name="share_type">نوع المشاركة</string>
+    <string name="canceled">تم الإلغاء</string>
+    <string name="permanently_deleted">تم حذفه نهائيًا</string>
+    <string name="backing_up">النسخة الإحتياطية</string>
+    <string name="wait_for_copy_finish">انتظر اكتمال النسخة</string>
+    <string name="tip_device_status_exp">حالة الجهاز غير طبيعية</string>
+    <string name="system_pre_allocation">حجوزات النظام : </string>
+    <string name="system_space">مساحة النظام :</string>
+    <string name="user_space">مساحة المستخدم :</string>
+     <string-array name="choice_delete_data">
+        <item>حذف البيانات</item>
+    </string-array>
+
+    <string name="tip_extract_file">فك الضغط إلى</string>
+
+    <string name="tip_share_file">&#8230;مشاركة لـ</string>
+    <string name="empty_user_list">قائمة المستخدمين فارغة</string>
+    <string name="tip_please_check_user">يرجى تحديد المستخدم</string>
+    <string name="tip_select_the_way_of_sharing">اختر طريقة المشاركة</string>
+    <string name="in_this_app">الأصدقاء</string>
+    <string name="other_ways">تطبيقات طرف ثالث</string>
+    <string name="please_download_the_files_first">قبل استخدام هذه الوظيفة ، يرجى تنزيل الملف إلى المحلي</string>
+    <string name="download">تنزيل</string>
+
+    <string name="memeneting">&#8230;افتتاح الخدمة</string>
+
+    <string name="fmt_recent_time_line">يوم dd شهر MM سنة yyyy</string>
+
+    <string name="tool_videoplay">مساعد الكاميرا</string>
+
+    <string name="operate">تشغيل</string>
+
+    <string name="clean_cache">مسح ذاكرة التخزين المؤقت</string>
+
+    <string name="confirm_clear_cache">تأكيد لمسح ذاكرة التخزين المؤقت؟</string>
+    <string name="folder_cannot_be_copied_into_itself">لا يمكن نسخ المجلد في نفسه</string>
+    <string name="special_day">يوم</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--状态-->
+        <!--背景-->
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mSwitch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/mSwitch"
+            />
+        <TextView
+            android:id="@+id/tvStatusTitle"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:text="@string/dnla_protocol"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintBottom_toBottomOf="@+id/mSwitch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mSwitchBarrier"
+            app:layout_constraintTop_toTopOf="@+id/mSwitch" />
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/mSwitchBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="start"
+            app:constraint_referenced_ids="mSwitch,tvStatusText"
+            />
+
+        <Switch
+            android:id="@+id/mSwitch"
+            style="@style/StyleDialogDesSwitch"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/common_16"
+            android:checked="false"
+            android:background="@null"
+            android:paddingTop="@dimen/common_4"
+            android:paddingBottom="@dimen/common_4"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:gravity="end|right|center_vertical"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingRight="@dimen/common_16"
+            android:textSize="13sp"
+            android:textColor="@color/text_light_gray"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/mSwitch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mSwitch"
+            tools:text="@string/enabled" />
+        <!--底部线条-->
+        <View
+            android:id="@+id/vSwitchBottom"
+            style="@style/common_line_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mSwitch" />
+
+        <net.linkmate.app.view.CusTextView
+            android:id="@+id/tvSettingScanPath"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawableEnd="@drawable/gray_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/common_16"
+            android:paddingLeft="@dimen/common_16"
+            android:paddingTop="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingRight="@dimen/common_16"
+            android:paddingBottom="@dimen/common_16"
+            android:text="@string/dnla_scanning_path_setting"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vSwitchBottom" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/settingScanPathGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tvSettingScanPath,vSwitchBottom"
+            />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/settingScanPathBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="mSwitch,tvSettingScanPath,vSwitchBottom" />
+
+        <TextView
+            android:id="@+id/tvScanPath"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/common_16"
+            android:paddingTop="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingBottom="@dimen/common_16"
+            android:text="@string/current_scan_path"
+            android:textColor="@color/text_light_gray"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingScanPathBarrier" />
+
+        <TextView
+            android:id="@+id/tvFunctionDescriptionTitle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/common_16"
+            android:paddingTop="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingBottom="@dimen/common_16"
+            android:text="@string/function_description"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvScanPath" />
+
+        <TextView
+            android:id="@+id/tvFunctionDescriptionContent"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dip"
+            android:paddingStart="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:text="@string/dlna_function_content"
+            android:textColor="@color/text_light_gray"
+            android:textSize="12sp"
+            android:paddingBottom="@dimen/common_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFunctionDescriptionTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

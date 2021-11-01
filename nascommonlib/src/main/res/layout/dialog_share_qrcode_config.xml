@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dialog_radius">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:minHeight="@dimen/layout_title_height"
+                android:padding="8dp"
+                android:text="@string/setup_share_config"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_big"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_line0_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:gravity="end|end"
+                android:padding="8dp"
+                android:text="@string/share_file_period"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+            <TextView
+                android:id="@+id/tv_line1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="end|end"
+                android:padding="8dp"
+                android:text="@string/download_counter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_line0_edit" />
+
+            <TextView
+                android:id="@+id/tv_line0_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:text="@string/day"
+                app:layout_constraintTop_toTopOf="@+id/et_line0_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/et_line0_edit"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_line1_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:text="@string/times"
+                app:layout_constraintTop_toTopOf="@+id/et_line1_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/et_line1_edit"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/et_line0_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_full_radius_gray"
+                android:inputType="number"
+                android:padding="8dp"
+                android:layout_marginStart="16dip"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_mid"
+                app:layout_constraintTop_toBottomOf="@+id/tv_line0_title"
+                app:layout_constraintEnd_toStartOf="@+id/barrier16"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_line0_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_marginStart="16dip"
+                android:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:maxLines="1"
+                android:clickable="false"
+                android:text="@string/hint_share_period_des"
+                android:textColor="@color/color_black_hint_text"
+                app:layout_constraintTop_toBottomOf="@+id/tv_line0_title"
+                app:layout_constraintEnd_toStartOf="@+id/barrier16"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/et_line1_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_full_radius_gray"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:padding="8dp"
+                android:layout_marginStart="16dip"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_mid"
+                app:layout_constraintTop_toBottomOf="@+id/tv_line1_title"
+                app:layout_constraintEnd_toStartOf="@+id/barrier16"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_line1_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_marginStart="16dip"
+                android:clickable="false"
+                android:text="@string/hint_download_counter_des"
+                android:textColor="@color/color_black_hint_text"
+                android:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:maxLines="1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_line1_title"
+                app:layout_constraintEnd_toStartOf="@+id/barrier16"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/et_line1_edit">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/radio_public"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="8dp"
+                    android:text="@string/_public"
+                    android:theme="@style/AppCompatThemeDark" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/radio_private"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/_private"
+                    android:theme="@style/AppCompatThemeDark" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/include_layout_pos_and_neg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_top_start"
+                app:layout_constraintTop_toBottomOf="@+id/radio_group_pwd" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="start"
+                app:constraint_referenced_ids="tv_line0_content,tv_line1_content" />
+
+            <include
+                layout="@layout/include_layout_refresh_view"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/msg_sys"
+        android:icon="@drawable/icon_sys_msg"
+        android:title="@string/system_msg" />
+    <item
+        android:id="@+id/msg_file_share"
+        android:icon="@drawable/icon_share"
+        android:title="@string/file_share" />
+    <item
+        android:id="@+id/msg_file_transfer"
+        android:icon="@drawable/icon_trans"
+        android:title="@string/transfer" />
+    <item
+        android:id="@+id/msg_device_detail"
+        android:icon="@drawable/icon_trans"
+        android:title="@string/details_device" />
+
+
+</menu>

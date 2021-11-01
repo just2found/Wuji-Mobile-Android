@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/share_full_radius_gray350" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/share_full_radius_gray350" android:state_checked="true" android:state_enabled="true" />
+    <item android:drawable="@drawable/share_full_radius_gray350" android:state_enabled="true" android:state_selected="true" />
+    <item android:drawable="@drawable/share_full_radius_gray50" android:state_enabled="false" />
+    <item android:drawable="@drawable/share_full_radius_gray50" />
+</selector>

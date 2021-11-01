@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_string_invalid_account">Tên đăng nhập hoặc mật khẩu không chính xác.</string>
+    <string name="error_string_gw_busy">Máy chủ đang bận, vui lòng thử đăng nhập lại sau 10 phút.</string>
+    <string name="error_string_user_diabled">Tài khoản của bạn đã bị tạm khóa.</string>
+    <string name="error_string_max_device">Số lượng thiết bị đã vượt quá giới hạn.</string>
+    <string name="error_string_no_network">Mạng hiện tại không có sẵn.</string>
+    <string name="error_string_device_disabled">Thiết bị hiện tại bị cấm đăng nhập</string>
+    <string name="error_string_socket">Không thể kết nối với máy chủ, vui lòng kiểm tra môi trường mạng của bạn.</string>
+    <string name="error_string_device_dup">ID thiết bị hiện tại đã được đăng nhập.</string>
+    <string name="error_string_device_locked">Thiết bị hiện tại đã bị khóa.</string>
+    <string name="error_string_user_unactive">Tài khoản của bạn chưa được kích hoạt.</string>
+    <string name="error_string_user_locked">Tài khoản của bạn đã bị khóa.</string>
+    <string name="KR_Device_Removed">Thiết bị này đã bị xóa khỏi mạng.</string>
+    <string name="KR_Member_Removed">Tài khoản của bạn đã bị xóa khỏi mạng.</string>
+    <string name="KR_Deivce_Deactived">Thiết bị của bạn đã bị vô hiệu hóa.</string>
+    <string name="dr_invalid_sms">SMS không hợp lệ</string>
+    <string name="dr_vpn_permission_denied">Quyền VPN bị từ chối</string>
+    <string name="dr_vpn_tunnel_is_occupied">Kênh VPN đã bị chiếm dụng</string>
+    <string name="dr_read_phone_state_permission_denied">Không thể đọc ID nhận dạng thiết bị</string>
+    <string name="success">Thành công</string>
+    <string name="error_string_pending">Đang tải</string>
+    <string name="ec_insufficient_points">Điểm không đủ</string>
+    <string name="flow_is_expire">Không có giao thông</string>
+
+</resources>

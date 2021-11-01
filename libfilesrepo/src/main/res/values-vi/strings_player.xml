@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unexpected_intent_action">Hành động có ý định bất ngờ:%1$s</string>
+    <string name="error_cleartext_not_permitted">Xóa lưu lượng văn bản không được phép</string>
+    <string name="error_generic">Phát thất bại</string>
+    <string name="error_unrecognized_abr_algorithm">Thuật toán ABR không được công nhận</string>
+    <string name="error_unrecognized_stereo_mode">Chế độ âm thanh nổi không được nhận dạng</string>
+    <string name="error_drm_not_supported">  Cấp API dưới 18 không hỗ trợ nội dung được bảo vệ</string>
+    <string name="error_drm_unsupported_scheme">Thiết bị này không hỗ trợ sơ đồ DRM cần thiết</string>
+    <string name="error_drm_unknown">Đã xảy ra lỗi DRM không xác định</string>
+    <string name="error_no_decoder">Thiết bị này không cung cấp bộ giải mã%1$s</string>
+    <string name="error_no_secure_decoder">Thiết bị này không cung cấp bộ giải mã bảo mật%1$s</string>
+    <string name="error_querying_decoders">Không thể truy vấn bộ giải mã thiết bị</string>
+    <string name="error_instantiating_decoder">Không thể khởi tạo bộ giải mã%1$s</string>
+    <string name="error_unsupported_video">Phương tiện chứa các bản nhạc video, nhưng thiết bị này không thể phát</string>
+    <string name="error_unsupported_audio">Phương tiện chứa các rãnh âm thanh, nhưng thiết bị này không thể phát</string>
+    <string name="storage_permission_denied">Truy cập vào bộ lưu trữ bị từ chối</string>
+    <string name="download_start_error">Không thể bắt đầu tải xuống</string>
+</resources>

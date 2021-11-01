@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_string_invalid_account">Ваш счет или пароль неверны.</string>
+    <string name="error_string_gw_busy">Сервер занят, повторите попытку через 10 минут.</string>
+    <string name="error_string_user_diabled">Ваш аккаунт был заморожен.</string>
+    <string name="error_string_max_device">Количество зарегистрированных устройств достигло максимума.</string>
+    <string name="error_string_no_network">Текущая сеть недоступна.</string>
+    <string name="error_string_device_disabled">Текущее устройство запрещено войти</string>
+    <string name="error_string_socket">Не удается подключиться к серверу, проверьте вашу сеть.</string>
+    <string name="error_string_device_dup">Ваше устройство было в сети.</string>
+    <string name="error_string_device_locked">Ваше устройство было заблокировано.</string>
+    <string name="error_string_user_unactive">Аккаунт не активирован.</string>
+    <string name="error_string_user_locked">Аккаунт заблокирован.</string>
+    <string name="KR_Device_Removed">Устройство было удалено из сети.</string>
+    <string name="KR_Member_Removed">Аккаунт был удален из сети.</string>
+    <string name="KR_Deivce_Deactived">Устройство было деактивировано.</string>
+    <string name="dr_invalid_sms">Неверный СМС</string>
+    <string name="dr_vpn_permission_denied">Разрешение VPN отказано</string>
+    <string name="dr_vpn_tunnel_is_occupied">Канал VPN уже занят</string>
+    <string name="dr_read_phone_state_permission_denied">Не удалось прочитать идентификатор устройства</string>
+    <string name="success">Успешно</string>
+    <string name="error_string_pending">Загрузка &#8230;</string>
+    <string name="ec_insufficient_points">Недостаточно очков</string>
+    <string name="flow_is_expire">Нет покупательного трафика</string>
+
+</resources>

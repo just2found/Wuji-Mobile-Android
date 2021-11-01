@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/remove_duplicate_nav"
+    app:startDestination="@id/rdIndexFragment">
+
+    <fragment
+        android:id="@+id/rdIndexFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.remove_duplicate.RdIndexFragment"
+        android:label="RdIndexFragment"
+        tools:layout="@layout/fragment_rd_index">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_index_to_byFile"
+            app:destination="@id/rdByFileFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+        <action
+            android:id="@+id/action_index_to_select"
+            app:destination="@id/rdSelecterFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/rdByFileFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.remove_duplicate.RdByFileFragment"
+        android:label="RdByFileFragment"
+        tools:layout="@layout/fragment_rd_by_file">
+
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_by_to_add"
+            app:destination="@id/rdAddFileFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+        <action
+            android:id="@+id/action_by_to_select"
+            app:destination="@id/rdSelecterFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/rdAddFileFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.remove_duplicate.RdAddFileFragment"
+        android:label="RdAddFileFragment"
+        tools:layout="@layout/fragment_rd_add_file">
+
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_add_to_by"
+            app:destination="@id/rdByFileFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/rdSelecterFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.remove_duplicate.RdSelecterFragment"
+        android:label="RdSelecterFragment"
+        tools:layout="@layout/fragment_rd_selecter">
+
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_select_to_intelligence"
+            app:destination="@id/rdIntelligenceDialog"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/rdIntelligenceDialog"
+        android:name="net.linkmate.app.ui.simplestyle.device.remove_duplicate.RdIntelligenceDialog"
+        android:label="RdIntelligenceDialog"
+        tools:layout="@layout/dialog_rd_intelligence" />
+</navigation>

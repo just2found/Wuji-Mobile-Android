@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strNetworkTipsCancelBtn">ยกเลิก</string>
+    <string name="strNetworkTipsConfirmBtn">ดำเนินการดาวน์โหลดต่อ</string>
+    <string name="strNetworkTipsMessage">คุณเปลี่ยนเป็นเครือข่ายมือถือ คุณต้องการดาวน์โหลดต่อไปหรือไม่</string>
+    <string name="strNetworkTipsTitle">เคล็ดลับเครือข่าย</string>
+    <string name="strNotificationClickToContinue">ดำเนินการดาวน์โหลดต่อ</string>
+    <string name="strNotificationClickToInstall">คลิกเพื่อติดตั้ง</string>
+    <string name="strNotificationClickToRetry">คลิกเพื่อลองอีกครั้ง</string>
+    <string name="strNotificationClickToView">คลิกเพื่อดู</string>
+    <string name="strNotificationDownloadError">การดาวน์โหลดล้มเหลว</string>
+    <string name="strNotificationDownloadSucc">การดาวน์โหลดเสร็จสิ้น</string>
+    <string name="strNotificationDownloading">กำลังดาวน์โหลด</string>
+    <string name="strNotificationHaveNewVersion">มีรุ่นใหม่</string>
+    <string name="strToastCheckUpgradeError">ตรวจสอบเวอร์ชันใหม่ล้มเหลว โปรดลองอีกครั้งในภายหลัง</string>
+    <string name="strToastCheckingUpgrade">กำลังตรวจสอบโปรดรอ&#8230;</string>
+    <string name="strToastYourAreTheLatestVersion">เป็นเวอร์ชั่นล่าสุดแล้ว</string>
+    <string name="strUpgradeDialogCancelBtn">พูดคุยเกี่ยวกับเรื่องนี้ในครั้งต่อไป</string>
+    <string name="strUpgradeDialogContinueBtn">ดำเนินการต่อไป</string>
+    <string name="strUpgradeDialogFeatureLabel">เกียวกับอัปเดต</string>
+    <string name="strUpgradeDialogFileSizeLabel">ขนาดบรรจุ</string>
+    <string name="strUpgradeDialogInstallBtn">การติดตั้ง</string>
+    <string name="strUpgradeDialogRetryBtn">ลองใหม่</string>
+    <string name="strUpgradeDialogUpdateTimeLabel">อัปเดตเวลา</string>
+    <string name="strUpgradeDialogUpgradeBtn">อัปเดตทันที</string>
+    <string name="strUpgradeDialogVersionLabel">รุ่น</string>
+</resources>

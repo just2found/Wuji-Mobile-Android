@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_ItemHeight56"
+    android:background="@color/bg_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/common_4"
+        android:paddingEnd="@dimen/view_end">
+
+        <ImageView
+            android:id="@+id/ial_iv_icon"
+            android:layout_width="@dimen/common_icon24"
+            android:layout_height="@dimen/common_icon24"
+            android:layout_marginTop="@dimen/common_16"
+            android:layout_marginStart="@dimen/common_12"
+            android:layout_marginBottom="@dimen/common_16"
+            android:padding="@dimen/common_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/icon_me_devmng" />
+
+        <TextView
+            android:id="@+id/ial_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_middle"
+            android:minWidth="20dp"
+            android:minEms="3"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ial_iv_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="圈子管理" />
+
+        <TextView
+            android:id="@+id/ial_tv_tips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_middle"
+            android:layout_marginEnd="@dimen/view_end"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="@dimen/txt_13"
+            android:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeMaxTextSize="@dimen/txt_13"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ial_iv_right_arrow"
+            app:layout_constraintStart_toEndOf="@+id/ial_tv_title"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:drawableEnd="@drawable/icon_qr_code"
+            tools:text="123."
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/ial_iv_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_circle_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

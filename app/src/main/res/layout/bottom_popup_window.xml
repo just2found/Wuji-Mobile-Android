@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_white_radius_top"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_10"
+        android:background="@color/color_bg_grey300" />
+
+    <TextView
+        android:id="@+id/pop_account_tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_button_white_ripple_trans_gray"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_15" />
+</LinearLayout>

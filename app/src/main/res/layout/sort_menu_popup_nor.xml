@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/common_16"
+    android:background="@color/color_bg_grey150"
+    app:cardCornerRadius="@dimen/card_view_radius"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <RadioGroup
+        android:id="@+id/group_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_4"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/display_by_year"
+            style="@style/custom_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_ItemHeight42"
+            android:layout_marginBottom="@dimen/common_1"
+            android:text="@string/year"
+            tools:drawableEnd="@drawable/icon_sorting" />
+
+        <RadioButton
+            android:id="@+id/display_by_month"
+            style="@style/custom_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_ItemHeight42"
+            android:layout_marginBottom="@dimen/common_1"
+            android:text="@string/month"
+            tools:drawableEnd="@drawable/icon_sorting" />
+
+        <RadioButton
+            android:id="@+id/display_by_day"
+            style="@style/custom_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_ItemHeight42"
+            android:text="@string/special_day"
+            tools:drawableEnd="@drawable/icon_sorting"
+            tools:drawableStart="@drawable/icon_checked" />
+
+    </RadioGroup>
+
+</androidx.cardview.widget.CardView>

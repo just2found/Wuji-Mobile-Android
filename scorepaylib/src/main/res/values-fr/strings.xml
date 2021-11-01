@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wx_no_installed">Installer WeChat d’abord et réessayer</string>
+    <string name="pay_succ">Paiement réussi</string>
+    <string name="pay_failed">Échec du paiement</string>
+    <string name="pay_cancelled">Paiement annulé</string>
+    <string name="pay_order_error">Erreur de la commande de paiement</string>
+</resources>

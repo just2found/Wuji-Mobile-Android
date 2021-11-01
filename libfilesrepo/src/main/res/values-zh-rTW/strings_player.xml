@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unexpected_intent_action">意外的意圖動作:<xliff:g id="action">%1$s</xliff:g> </string>
+
+    <string name="error_cleartext_not_permitted">不允許使用明文流量</string>
+
+    <string name="error_generic">播放失敗</string>
+
+    <string name="error_unrecognized_abr_algorithm">無法識別的ABR算法</string>
+
+    <string name="error_unrecognized_stereo_mode">無法識別的立體聲模式</string>
+
+    <string name="error_drm_not_supported"> API級別低於18不支持受保護的內容 </string>
+
+    <string name="error_drm_unsupported_scheme">此設備不支持所需的DRM方案</string>
+
+    <string name="error_drm_unknown">發生了未知的DRM錯誤</string>
+
+    <string name="error_no_decoder">此設備不提供解碼器<xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_no_secure_decoder">此設備不提供安全解碼器<xliff:g id="mime_type">%1$s</xliff:g> </string>
+
+    <string name="error_querying_decoders">無法查詢設備解碼器</string>
+
+    <string name="error_instantiating_decoder">無法實例化解碼器<xliff:g id="decoder_name">%1$s</xliff:g> </string>
+
+    <string name="error_unsupported_video">媒體包含視頻曲目，但此設備無法播放</string>
+
+    <string name="error_unsupported_audio">媒體包含音軌，但此設備無法播放</string>
+
+    <string name="storage_permission_denied">訪問存儲的權限被拒絕</string>
+
+    <string name="download_start_error">無法開始下載</string>
+
+</resources>

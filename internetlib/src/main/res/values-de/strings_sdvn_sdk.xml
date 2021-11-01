@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_string_invalid_account">Benutzer-ID oder Passwort ist falsch</string>
+    <string name="error_string_gw_busy">Der Server ist ausgelastet, bitte versuchen Sie es in 10 Minuten erneut.</string>
+    <string name="error_string_user_diabled">Ihr Konto wurde gesperrt</string>
+    <string name="error_string_max_device">Die Anzahl der Geräte hat den Grenzwert überschritten.</string>
+    <string name="error_string_no_network">Aktuelles Netzwerk nicht verfügbar</string>
+    <string name="error_string_device_disabled">Das aktuelle Gerät wurde für die Anmeldung gesperrt</string>
+    <string name="error_string_socket">Kann keine Verbindung zum Server herstellen, überprüfen Sie bitte Ihre Netzwerkumgebung.</string>
+    <string name="error_string_device_dup">Die aktuelle Geräte-ID wird angemeldet.</string>
+    <string name="error_string_device_locked">Die aktuelle Ausrüstung ist gesperrt.</string>
+    <string name="error_string_user_unactive">Ihr Konto ist nicht aktiv.</string>
+    <string name="error_string_user_locked">Ihr Konto wurde gesperrt.</string>
+    <string name="KR_Device_Removed">Dieses Gerät wurde aus dem Netzwerk entfernt.</string>
+    <string name="KR_Member_Removed">Ihr Konto wurde aus dem Netzwerk entfernt.</string>
+    <string name="KR_Deivce_Deactived">Ihr Gerät wurde gesperrt.</string>
+    <string name="dr_invalid_sms">Die Textnachricht ist nicht gültig</string>
+    <string name="dr_vpn_permission_denied">VPN-Zugriff verweigert</string>
+    <string name="dr_vpn_tunnel_is_occupied">VPN-Kanal ist belegt.</string>
+    <string name="dr_read_phone_state_permission_denied">Auslesen der Geräteidentifikations-ID fehlgeschlagen</string>
+    <string name="success">erfolg</string>
+    <string name="error_string_pending">Laden&#8230;</string>
+    <string name="ec_insufficient_points">Ungenügende Punkte</string>
+    <string name="flow_is_expire">Kein Kaufverkehr</string>
+
+</resources>

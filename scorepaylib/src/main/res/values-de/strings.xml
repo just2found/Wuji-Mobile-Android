@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wx_no_installed">Bitte installieren Sie zuerst Wechat und versuchen Sie es dann erneut.</string>
+    <string name="pay_succ">Zahlung erfolgreich</string>
+    <string name="pay_failed">Zahlung fehlgeschlagen</string>
+    <string name="pay_cancelled">Zahlung storniert</string>
+    <string name="pay_order_error">Fehler beim Zahlungsauftrag</string>
+</resources>

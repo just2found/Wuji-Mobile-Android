@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/include_title_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg_grey50">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_account"
+                style="@style/Style_Status_txt_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="account:test110" />
+
+            <TextView
+                android:id="@+id/lan_access_tv_tips"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center"
+                android:text="@string/lan_access_account_pwd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_account" />
+
+            <net.sdvn.nascommon.widget.ClearEditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_ItemHeight48"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/selector_edit_line_primary_gray"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/pls_input_new_pwd"
+                android:inputType="textPassword"
+                android:textSize="@dimen/txt_14"
+                android:singleLine="true"
+                app:layout_constraintEnd_toStartOf="@+id/iv_visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lan_access_tv_tips" />
+
+            <View
+                android:id="@+id/line27"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:background="@drawable/selector_edit_line_primary_gray"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/iv_visible"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+
+            <ImageView
+                android:id="@+id/iv_visible"
+                android:layout_width="@dimen/common_icon48"
+                android:layout_height="@dimen/common_icon48"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:padding="@dimen/common_12"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_visible_white"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+               />
+
+            <net.sdvn.nascommon.widget.ClearEditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_ItemHeight48"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/selector_edit_line_primary_gray"
+                android:ems="10"
+                android:textSize="@dimen/txt_14"
+                android:gravity="center_vertical"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line27" />
+
+            <View
+                android:id="@+id/line28"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:background="@drawable/selector_edit_line_primary_gray"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/password_must_contains_num_letter_6_20"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+                app:layout_constraintTop_toBottomOf="@+id/line28" />
+
+            <Button
+                android:id="@+id/button_confirm"
+                style="@style/Style_btn_bg_primary_radius_24dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="42dp"
+                android:text="@string/confirm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26"
+                app:layout_constraintVertical_bias="0.75" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

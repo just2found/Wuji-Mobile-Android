@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.simplestyle.device.remove_duplicate.RdIndexFragment">
+
+
+    <net.linkmate.app.ui.function_ui.titlebar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/layout_title_height"
+        app:text_content="@string/duplicate_removal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/index_center_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rd_index"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipsBar"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/duplicate_removal_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/index_center_img"
+        app:layout_constraintVertical_bias="0.135"
+        app:layout_constraintWidth_percent="0.70" />
+
+    <Button
+        android:id="@+id/appoint_folder_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:background="@drawable/bg_button_theme_primary_radius"
+        android:text="@string/appoint_duplicate_removal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <Button
+        android:id="@+id/all_folders_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/permission_dp_25"
+        android:background="@drawable/bg_button_theme_primary_radius"
+        android:text="@string/all_duplicate_removal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_14"
+        app:layout_constraintBottom_toTopOf="@+id/appoint_folder_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

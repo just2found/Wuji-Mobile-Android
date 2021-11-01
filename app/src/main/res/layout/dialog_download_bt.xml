@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/card_view_radius">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:background="@drawable/selector_list_gray_to_gray"
+            android:baselineAligned="false"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/view_start">
+
+
+            <net.linkmate.app.view.SquareImageView
+                android:id="@+id/rv_list_iv_icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="@dimen/common_6"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_bt_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/icon_bt_blue" />
+
+
+            <TextView
+                android:id="@+id/rv_list_txt_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="middle"
+                android:paddingStart="2dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:textColor="@color/darker"
+                android:textSize="@dimen/text_size_mid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rv_list_iv_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="name" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="rv_list_txt_name,rv_list_iv_icon" />
+
+            <RelativeLayout
+                android:id="@+id/container_bottom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_top_middle"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrier34">
+
+                <net.sdvn.nascommon.widget.AutoGoneTextView
+                    android:id="@+id/rv_list_txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="2dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/text_size_min"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/rv_list_txt_size"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/rv_list_img_dl"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_list_progressbar"
+                    tools:text="2020-02-21 20:31:00" />
+
+                <!--    <TextView-->
+                <net.sdvn.nascommon.widget.AutoGoneTextView
+                    android:id="@+id/rv_list_txt_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/text_size_min"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/rv_list_txt_time"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_list_progressbar"
+                    tools:text="8.61MB" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line5"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/container_bottom" />
+
+            <include
+                layout="@layout/layout_negative_and_positive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

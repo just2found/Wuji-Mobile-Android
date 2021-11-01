@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="android:windowAnimationStyle">@style/ActivitySlideAnim</item>
+        <!--rtl反转布局配置-->
+        <item name="android:textDirection">locale</item>
+        <item name="android:gravity">start</item>
+        <item name="editTextStyle">@style/EditTextStyle.Alignment</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="NoStatusBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="android:windowAnimationStyle">@style/ActivitySlideAnim</item>
+        <!--rtl反转布局配置-->
+        <item name="android:textDirection">locale</item>
+        <item name="android:gravity">start</item>
+        <item name="editTextStyle">@style/EditTextStyle.Alignment</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+
+    <style name="toolbar_title">
+        <item name="android:textSize">@dimen/txt_17</item>
+        <item name="android:textColor">@color/title_text_color</item>
+    </style>
+    <style name="toolbar_title_bold">
+        <item name="android:textSize">@dimen/txt_15</item>
+        <item name="android:textColor">@color/title_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="toolbar_title_black">
+        <item name="android:textSize">@dimen/txt_15</item>
+        <item name="android:textColor">@color/title_text_color_dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="toolbar_grey_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_ItemHeight48</item>
+        <item name="titleTextAppearance">@style/toolbar_title_black</item>
+        <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+        <item name="contentInsetStartWithNavigation">0dip</item>
+        <item name="layout_collapseMode">pin</item>
+        <item name="layout_collapseParallaxMultiplier">0.5</item>
+    </style>
+</resources>

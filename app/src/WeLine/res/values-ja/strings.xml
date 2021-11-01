@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connecting_message">マイクロリンクを接続しています&#8230;</string>
+    <string name="error_string_no_account">マイクロリンクIDまたはパスワードが記入されていません。</string>
+    <string name="error_string_invalid_account">マイクロリンクIDまたはパスワードが間違っています。</string>
+    <string name="error_string_gw_busy">マイクロリンクサービスが忙しいので、10分後にログインしてみてください。</string>
+    <string name="error_string_socket">サービスに接続できませんでした。ネットワーク環境を確認してください。</string>
+    <string name="string_notification_ticker">マイクロリンク接続が切断されました。</string>
+    <string name="string_notification_text">マイクロリンクが切断されました。</string>
+    <string name="DownloadFail">マイクロリンクの更新に失敗しました。</string>
+    <string name="update_title">マイクロリンクの更新</string>
+    <string name="update_content">マイクロリンクソフトは新しいバージョンがあります ($VERSION$)。すぐに更新することを提案します。</string>
+    <string name="agree_privacy">もう読みました。ユーザーのプライバシー協議を受け入れることに同意します。</string>
+    <string name="if_not_agree_privacy">プライバシープロトコルに同意してこそ、マイクロリンクを継続して使用することができます。</string>
+</resources>

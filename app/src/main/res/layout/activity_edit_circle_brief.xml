@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:id="@+id/fStatus"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:background="#454545"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/common_ItemHeight48"
+        app:layout_collapseMode="pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fStatus"
+        app:navigationIcon="@drawable/icon_return_black"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/topBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tipsBar,toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPublish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/common_10"
+        android:background="@drawable/bg_square_full_radius_primary"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:paddingStart="@dimen/common_10"
+        android:paddingTop="@dimen/common_5"
+        android:paddingEnd="@dimen/common_10"
+        android:paddingBottom="@dimen/common_5"
+        android:text="@string/publish"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_10"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:background="@null"
+        android:hint="@string/pls_input_summary"
+        android:padding="@dimen/common_16"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBarrier" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

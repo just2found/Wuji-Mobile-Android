@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unexpected_intent_action"><xliff:g id="action">%1$s </xliff:g>عمل متعمد غير متوقع : </string>
+    <string name="error_cleartext_not_permitted">حركة المرور النصية غير مسموح بها</string>
+    <string name="error_generic">فشل التشغيل</string>
+    <string name="error_unrecognized_abr_algorithm">خوارزمية ABR غير معروفة</string>
+    <string name="error_unrecognized_stereo_mode">وضع ستيريو غير معروف</string>
+    <string name="error_drm_not_supported"> المحتوى المحمي غير مدعوم على مستويات API أقل من 18 </string>
+    <string name="error_drm_unsupported_scheme">لا يدعم هذا الجهاز مخطط DRM المطلوب</string>
+    <string name="error_drm_unknown">حدث خطأ DRM  غير معروف</string>
+    <string name="error_no_decoder"><xliff:g id="mime_type">%1$s </xliff:g> لا يوفر هذا الجهاز وحدة فك ترميز </string>
+    <string name="error_no_secure_decoder"><xliff:g id="mime_type">%1$s </xliff:g> لا يوفر هذا الجهاز وحدة فك ترميز آمنة </string>
+    <string name="error_querying_decoders">غير قادر على الاستعلام عن وحدة فك ترميز الجهاز</string>
+    <string name="error_instantiating_decoder"><xliff:g id="decoder_name">%1$s </xliff:g> يتعذر إنشاء وحدة فك ترميز </string>
+    <string name="error_unsupported_video">تشتمل الوسائط على مسارات فيديو ، ولكن لا يمكن تشغيل هذا الجهاز</string>
+    <string name="error_unsupported_audio">تشتمل الوسائط على مسارات صوتية ، ولكن لا يمكن تشغيل هذا الجهاز</string>
+    <string name="storage_permission_denied">تم رفض إذن الوصول إلى التخزين</string>
+    <string name="download_start_error">لا يمكن بدء التنزيل</string>
+</resources>

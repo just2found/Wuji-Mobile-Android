@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_6"
+        android:layout_marginStart="@dimen/common_10"
+        android:layout_marginTop="@dimen/common_8"
+        android:text="推荐应用"
+        android:textColor="@color/text_dark"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/me_rv_my_app"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/bg_white"-->
+    <!--android:elevation="1dp">-->
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <net.linkmate.app.view.CarouselView
+            android:id="@+id/me_cv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/bg_silver"/>
+
+        <net.linkmate.app.view.ViewPagerPoint
+            android:id="@+id/me_vpp_banner_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/common_6"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_6"
+        android:layout_marginStart="@dimen/common_10"
+        android:layout_marginTop="@dimen/common_8"
+        android:text="更多应用"
+        android:textColor="@color/text_dark"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/me_rv_more_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+</LinearLayout>

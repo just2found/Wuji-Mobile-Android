@@ -1,0 +1,341 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/include_title_bar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_status"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/primary"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_title">
+
+        <TextView
+            android:id="@+id/txt_file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/text_size_sm"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <net.sdvn.nascommon.widget.AnimCircleProgressBar xmlns:circleProgress="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progressbar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            circleProgress:bg_color="0x99FFFFFF"
+            circleProgress:fill="false"
+            circleProgress:layout_constraintBottom_toBottomOf="parent"
+            circleProgress:layout_constraintDimensionRatio="1:1"
+            circleProgress:layout_constraintEnd_toEndOf="parent"
+            circleProgress:layout_constraintStart_toStartOf="parent"
+            circleProgress:layout_constraintTop_toTopOf="parent"
+            circleProgress:max="100"
+            circleProgress:paint_color="@color/front_anim_progress_bar"
+            circleProgress:paint_weight="13dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/txt_progress_front"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:text="@string/remain"
+                android:textColor="@color/text_anim_progress"
+                android:textSize="@dimen/text_size_min" />
+
+            <TextView
+                android:id="@+id/txt_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_anim_progress" />
+
+            <TextView
+                android:id="@+id/txt_progress_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:text="@string/counts"
+                android:textColor="@color/text_anim_progress"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_complete_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/backup_complete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_max" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <net.sdvn.nascommon.widget.ReboundScrollView
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_status">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:addStatesFromChildren="true"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textview15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/backup_location"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/text_size_mid"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:maxEms="7"
+                    android:autoSizeMaxTextSize="@dimen/text_size_mid"
+                    android:autoSizeMinTextSize="1sp"
+                    android:autoSizeTextType="uniform"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="1sp"
+                    app:autoSizeMaxTextSize="@dimen/text_size_mid"
+                    android:maxLines="2"
+                    />
+
+                <TextView
+                    android:id="@+id/location_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/textview15"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/default_switch_button_h"
+                    android:paddingStart="@dimen/common_16"
+                    android:paddingEnd="@dimen/common_16"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/text_size_big"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textview15"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="CS-10" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_common_weight"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_settings"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txt_server_dir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/common_ItemHeight42"
+                android:padding="@dimen/common_6"
+                android:textSize="@dimen/text_size_mid"
+                tools:text="path:long long long long long long long long long long long long long long long" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_settings_weight"
+                android:layout_margin="10dp"
+                android:background="@color/line_settings" />
+
+            <TextView
+                android:id="@+id/tv_select_backup_album_folder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_ItemHeight48"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableEnd="@drawable/ic_chevron_right_gray_18dp"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/common_ItemHeight36"
+                android:paddingEnd="16dp"
+                android:text="@string/set_select_backup_album_folder"
+                android:textColor="@color/darker" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_settings_weight"
+                android:layout_margin="10dp"
+                android:background="@color/line_settings" />
+
+            <RelativeLayout
+                android:id="@+id/layout_pic_viewer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:addStatesFromChildren="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/auto_backup_photo"
+                    android:textColor="@color/darker"
+                    android:layout_toStartOf="@+id/btn_auto_backup"
+                    android:textSize="@dimen/text_size_mid" />
+
+                <net.sdvn.nascommon.widget.kyleduo.SwitchButton
+                    android:id="@+id/btn_auto_backup"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="@dimen/default_switch_button_w"
+                    android:layout_height="@dimen/default_switch_button_h"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp"
+                    app:kswThumbRangeRatio="1.4"
+                    app:kswTintColor="#16A560" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_settings_weight"
+                android:layout_margin="10dp"
+                android:background="@color/line_settings" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:addStatesFromChildren="true"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/auto_backup_only_wifi"
+                    android:textColor="@color/darker"
+                    android:layout_toStartOf="@+id/btn_wifi_backup"
+                    android:textSize="@dimen/text_size_mid" />
+
+                <net.sdvn.nascommon.widget.kyleduo.SwitchButton
+                    android:id="@+id/btn_wifi_backup"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="@dimen/default_switch_button_w"
+                    android:layout_height="@dimen/default_switch_button_h"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp"
+                    app:kswThumbRangeRatio="1.4"
+                    app:kswTintColor="#16A560" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_settings_weight"
+                android:layout_margin="10dp"
+                android:background="@color/line_settings" />
+
+        </LinearLayout>
+    </net.sdvn.nascommon.widget.ReboundScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

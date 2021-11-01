@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootCommentItem"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dynamic_comment_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/clCommentItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_click_transparent"
+        android:paddingStart="10dip"
+        android:paddingEnd="10dip"
+        android:paddingBottom="9dip"
+        android:paddingTop="9dip"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivPortrait"
+            android:layout_width="33dip"
+            android:layout_height="33dip"
+            android:src="@color/color_bg_grey300"
+            app:layout_constraintBottom_toBottomOf="@+id/vMid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/vMid"
+            app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_6dp" />
+        <!--辅助控件 用于图片置于名字和内容中间线条-->
+        <View
+            android:id="@+id/vMid"
+            android:layout_width="1dip"
+            android:layout_height="1dip"
+            app:layout_constraintBottom_toTopOf="@+id/tvComment"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvCommentTime"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:textSize="@dimen/txt_10"
+            android:includeFontPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivPortrait"
+            tools:text="sfsf" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_8"
+            android:textColor="@color/dynamic_name_color"
+            android:textSize="@dimen/txt_13"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+            app:layout_constraintEnd_toStartOf="@+id/tvCommentTime"
+            app:layout_constraintStart_toEndOf="@+id/ivPortrait"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="张三" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:textColor="#333333"
+            android:textSize="@dimen/txt_13"
+            android:includeFontPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            tools:text="哈哈哈" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/group_space_list_nav"
+    app:startDestination="@id/quickCloudNavFragment">
+
+    <fragment
+        android:id="@+id/quickCloudNavFragment"
+        android:name="net.linkmate.app.ui.nas.group.list.GroupSpaceQuickCloudNavFragment"
+        android:label="VP2QuickCloudNavFragment">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+
+        <argument
+            android:name="groupid"
+            app:argType="long" />
+
+        <argument
+            android:name="sharePathType"
+            app:argType="integer" />
+
+        <argument
+            android:name="rootPath"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_list_to_move_in"
+            app:destination="@id/moveInFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+        <action
+            android:id="@+id/action_list_to_transfer"
+            app:destination="@id/transferFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+        <action
+            android:id="@+id/action_list_to_move_to"
+            app:destination="@id/moveToFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+        <action
+            android:id="@+id/action_list_to_upload"
+            app:destination="@id/groupSpaceUploadNavFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/moveInFragment"
+        android:name="net.linkmate.app.ui.nas.group.list.GroupSpaceMoveInFragment"
+        android:label="GroupSpaceMoveInFragment"
+        tools:layout="@layout/fragment_choice_nas">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+
+        <argument
+            android:name="groupid"
+            app:argType="long" />
+        <argument
+            android:name="path"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_in_to_set_path"
+            app:destination="@id/groupSpaceSetPathFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/moveToFragment"
+        android:name="net.linkmate.app.ui.nas.group.list.GroupSpaceMoveToFragment"
+        android:label="GroupSpaceMoveToFragment"
+        tools:layout="@layout/fragment_choice_nas">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="paths"
+            app:argType="string[]" />
+        <argument
+            android:name="groupid"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/groupSpaceSetPathFragment"
+        android:name="net.linkmate.app.ui.nas.group.list.GroupSpaceSetPathFragment"
+        android:label="GroupSpaceSetPathFragment"
+        tools:layout="@layout/fragment_choice_nas">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <argument
+            android:name="share_type"
+            app:argType="integer" />
+        <argument
+            android:name="paths"
+            app:argType="string[]" />
+
+        <argument
+            android:name="groupid"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_set_to_index"
+            app:destination="@id/quickCloudNavFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/groupSpaceUploadNavFragment"
+        android:name="net.linkmate.app.ui.nas.group.list.GroupSpaceUploadNavFragment"
+        android:label="GroupSpaceUploadNavFragment"
+        tools:layout="@layout/fragment_nas_upload">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <argument
+            android:name="path"
+            app:argType="string" />
+        <argument
+            android:name="groupid"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_upload_to_set_path"
+            app:destination="@id/groupUploadSetPathFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/groupUploadSetPathFragment"
+        android:name="net.linkmate.app.ui.nas.group.list.GroupUploadSetPathFragment"
+        android:label="GroupUploadSetPathFragment"
+        tools:layout="@layout/fragment_choice_nas">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+
+        <argument
+            android:name="groupid"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_upload_to_index"
+            app:destination="@id/quickCloudNavFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/groupSearchFragment"
+        android:name="net.linkmate.app.ui.nas.group.list.GroupSearchFragment"
+        android:label="GroupUploadSetPathFragment"
+        tools:layout="@layout/fragment_choice_nas">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <argument
+            android:name="fileType"
+            android:defaultValue="ALL"
+            app:argType="net.sdvn.nascommon.model.oneos.OneOSFileType" />
+        <argument
+            android:name="pathType"
+            app:argType="integer[]" />
+        <argument
+            android:name="curPath"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="groupid"
+            android:defaultValue="-1L"
+            app:argType="long" />
+
+
+        <action
+            android:id="@+id/action_search_to_move_to"
+            app:destination="@id/moveToFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_searchFragment"
+        app:destination="@id/groupSearchFragment"
+        />
+
+
+    <action
+        android:id="@+id/action_global_groupOSSettingFragment"
+        app:destination="@id/files_group_nav_settings" />
+
+
+    <include app:graph="@navigation/files_group_nav_settings" />
+
+</navigation>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_title_height"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/ibtn_title_right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:padding="12dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/title_icon_color"
+        app:tintMode="src_in"
+        tools:src="@drawable/ic_refresh_black_24dp"
+        tools:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/ibtn_title_right1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:padding="12dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_title_right"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/title_icon_color"
+        app:tintMode="src_in"
+        tools:src="@drawable/ic_refresh_black_24dp"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="ibtn_title_right1,txt_title_right" />
+
+    <org.view.libwidget.MarqueeAutoGoneTextView
+        android:id="@+id/txt_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_title_height"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/text_size_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier_right"
+        app:layout_constraintStart_toEndOf="@+id/layout_title_left"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="txt_title_fdksdajfsdjflksjfjsdlfjsldfjskldfjsdljjkljasdfljsl" />
+
+    <TextView
+        android:id="@+id/txt_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:padding="8dp"
+        android:paddingEnd="@dimen/view_middle"
+        android:focusable="true"
+        android:clickable="true"
+        android:textColor="@color/title_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_title_right1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="end" />
+
+    <LinearLayout
+        android:id="@+id/layout_title_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_ripple_trans_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txt_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/ibtn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:padding="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_return"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_title_back"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/title_icon_color"
+            app:tintMode="src_in" />
+
+        <org.view.libwidget.MarqueeAutoGoneTextView
+            android:id="@+id/txt_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="@dimen/view_end"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_mid"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibtn_back"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="txt_title_backlkjsafdsadflsfdajasdlfjsldfjsldfjasl"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</merge>

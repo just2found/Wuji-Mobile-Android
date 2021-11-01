@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/common_6">
+
+            <ScrollView
+                android:id="@+id/net_nmg_des_sv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_bg_grey250"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:id="@+id/net_nmg_des_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_16"
+                        android:layout_marginBottom="@dimen/common_16"
+                        android:background="@color/color_bg_grey50"
+                        android:orientation="vertical">
+
+                        <net.linkmate.app.view.DataItemLayout
+                            android:id="@+id/net_nmg_des_dil_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:iv_src="@drawable/icon_edit"
+                            app:tv_text="@string/net_name"
+                            tools:tv_data_text="圈子AAA" />
+
+                        <net.linkmate.app.view.DataItemLayout
+                            android:id="@+id/net_nmg_des_dil_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tv_text="ID"
+                            tools:tv_data_text="123456789" />
+
+                        <net.linkmate.app.view.DataItemLayout
+                            android:id="@+id/net_nmg_des_dil_owner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tv_text="@string/owner"
+                            tools:tv_data_text="18676697923" />
+                    </LinearLayout>
+
+                    <Switch
+                        android:id="@+id/net_nmg_des_switch_hide"
+                        style="@style/StyleDialogDesSwitch"
+                        android:layout_marginBottom="@dimen/common_16"
+                        android:text="@string/hine_net_device"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/net_nmg_des_btn_share"
+                        style="@style/StyleDialogDesTvBtn"
+                        android:text="@string/share"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/net_nmg_des_btn_invite"
+                        style="@style/StyleDialogDesTvBtn"
+                        android:text="@string/invite"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/net_nmg_des_btn_user_mng"
+                        style="@style/StyleDialogDesTvBtn"
+                        android:text="@string/members_mng"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/net_nmg_des_btn_delete"
+                        style="@style/StyleDialogDesTvBtn"
+                        android:text="@string/delete"
+                        android:textColor="@color/text_orange" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <include
+                android:id="@+id/layout_share_code"
+                layout="@layout/layout_share_code"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layout_user_mng"
+                layout="@layout/layout_user_mng"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layout_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_trans_black_30"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <net.linkmate.app.view.ProgressView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    app:dot_color="@color/color_orange"
+                    app:dot_count="7" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/net_iv_back"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_icon36"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/common_4"
+                android:layout_marginBottom="@dimen/common_4"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/common_6"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_cancel" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

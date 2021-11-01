@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connecting_message">Verbindung zu Weline wird jetzt hergestellt &#8230;</string>
+    <string name="error_string_no_account">Sie müssen Benutzer-ID und Passwort von Weline eingeben.</string>
+    <string name="error_string_invalid_account">Ihre Benutzer-ID oder Ihr Passwort von Weline ist falsch.</string>
+    <string name="error_string_gw_busy">Der Server ist ausgelastet, bitte versuchen Sie es in 10 Minuten erneut.</string>
+    <string name="error_string_socket">Kann keine Verbindung zum Service herstellen, überprüfen Sie Ihr Netzwerk.</string>
+    <string name="string_notification_ticker">Weline ist nicht verbunden.</string>
+    <string name="string_notification_text">Die Verbindung zu Weline ist unterbrochen, berühren Sie hier, um sie zu öffnen.</string>
+    <string name="DownloadFail">Mikrolink  Line Update kann nicht heruntergeladen werden.</string>
+    <string name="update_title">Mikrolink  Update</string>
+    <string name="update_content">Es gibt eine neue Softwareversion für Mikrolink($VERSION$), wir empfehlen, diese sofort zu aktualisieren.</string>
+    <string name="agree_privacy">Die Datenschutzvereinbarung für Benutzer habe ich gelesen und bin damit einverstanden.</string>
+    <string name="if_not_agree_privacy">Nur wenn Sie der Datenschutzvereinbarung zustimmen, können Sie den Mikrolink weiterhin verwenden.</string>
+</resources>

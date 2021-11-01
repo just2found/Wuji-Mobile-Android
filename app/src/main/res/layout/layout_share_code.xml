@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/common_6">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bg_grey250"
+            android:minWidth="300dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/lsc_iv_back"
+                    android:layout_width="@dimen/common_icon42"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:background="@drawable/bg_ripple_trans_gray"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_return_black" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/lsc_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:paddingStart="@dimen/common_24"
+                    android:paddingTop="@dimen/common_24"
+                    android:paddingEnd="@dimen/common_24"
+                    android:paddingBottom="@dimen/common_10"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible">
+
+                    <net.linkmate.app.view.SquareImageView
+                        android:id="@+id/lsc_iv_qr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_bg_grey50"
+                        android:padding="@dimen/common_16"
+                        android:scaleType="centerInside"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:src="@drawable/ic_group_home" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_10"
+                        android:text="@string/share_code"
+                        android:textSize="@dimen/txt_12"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/lsc_tv_share_code"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lsc_iv_qr"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/lsc_tv_share_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_10"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingStart="@dimen/common_8"
+                        android:textSize="@dimen/txt_12"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView3"
+                        app:layout_constraintTop_toBottomOf="@+id/lsc_iv_qr"
+                        tools:text="12345678" />
+
+                    <TextView
+                        android:id="@+id/lsc_tv_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/share_code_time_tips"
+                        android:textSize="@dimen/txt_11"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lsc_tv_share_code" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <Switch
+                android:id="@+id/lsc_switch_share"
+                style="@style/StyleDialogDesSwitch"
+                android:layout_marginTop="@dimen/common_8"
+                android:text="@string/enable_share"
+                android:visibility="visible" />
+
+            <Switch
+                android:id="@+id/lsc_switch_share_need_Auth"
+                style="@style/StyleDialogDesSwitch"
+                android:layout_marginTop="1dp"
+                android:text="@string/tips_share_need_auth"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/lsc_btn_share"
+                style="@style/Style_btn_bg_primary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_ItemHeight48"
+                android:layout_marginStart="@dimen/common_8"
+                android:layout_marginTop="@dimen/common_8"
+                android:layout_marginEnd="@dimen/common_8"
+                android:layout_marginBottom="@dimen/common_8"
+                android:enabled="false"
+                android:text="@string/share"
+                android:textAllCaps="false"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/txt_15" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <net.linkmate.app.view.SquareImageView
+        android:id="@+id/iv_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon36"
+        android:layout_marginTop="@dimen/common_4"
+        android:layout_marginBottom="@dimen/common_4"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:padding="@dimen/common_6"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_cancel"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connecting_message">Подключение к микро ссылке&#8230;</string>
+    <string name="error_string_no_account">Идентификатор или пароль микро-ссылки не заполнены.</string>
+    <string name="error_string_invalid_account">Идентификатор или пароль неверны.</string>
+    <string name="error_string_gw_busy">Сервер занят, повторите попытку через 10 минут.</string>
+    <string name="error_string_socket">Не удается подключиться к Сервису, проверьте вашу сеть.</string>
+    <string name="string_notification_ticker">Микро-ссылка отключена.</string>
+    <string name="string_notification_text">Микро-ссылка отключена, нажмите здесь, чтобы открыть.</string>
+    <string name="DownloadFail">Загрузка микро-ссылки не удалась.</string>
+    <string name="update_title">Обновление микро-ссылки</string>
+    <string name="update_content">Есть новое обновление программного обеспечения микро-ссылки ($VERSION$), рекомендуется обновить немедленно.</string>
+    <string name="agree_privacy">Я прочитал. Я согласен с этой политикой конфиденциальности.</string>
+    <string name="if_not_agree_privacy">Только согласитесь с соглашением о конфиденциальности, прежде чем вы сможете продолжать использовать WeLine.</string>
+</resources>

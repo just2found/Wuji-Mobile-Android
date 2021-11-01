@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_string_invalid_account">Cuenta o contraseña incorrecta.</string>
+    <string name="error_string_gw_busy">El servidor está ocupado, intente iniciar sesión nuevamente después de 10 minutos.</string>
+    <string name="error_string_user_diabled">Su cuenta ha sido suspendida.</string>
+    <string name="error_string_max_device">El número de dispositivos ha excedido el límite.</string>
+    <string name="error_string_no_network">La red actual no está disponible.</string>
+    <string name="error_string_device_disabled">El dispositivo actual está prohibido iniciar sesión</string>
+    <string name="error_string_socket">No se puede conectar al servidor, verifique su entorno de red.</string>
+    <string name="error_string_device_dup">La ID actual del dispositivo ha sido iniciada sesión.</string>
+    <string name="error_string_device_locked">El dispositivo actual está bloqueado.</string>
+    <string name="error_string_user_unactive">Su cuenta no está activada.</string>
+    <string name="error_string_user_locked">Su cuenta ha sido bloqueada.</string>
+    <string name="KR_Device_Removed">Este dispositivo ha sido eliminado de la red.</string>
+    <string name="KR_Member_Removed">Su cuenta ha sido eliminada de la red.</string>
+    <string name="KR_Deivce_Deactived">Su dispositivo ha sido deshabilitado.</string>
+    <string name="dr_invalid_sms">SMS inválido</string>
+    <string name="dr_vpn_permission_denied">Permiso de VPN denegado</string>
+    <string name="dr_vpn_tunnel_is_occupied">El canal VPN ya está ocupado</string>
+    <string name="dr_read_phone_state_permission_denied">Error al leer la ID del dispositivo</string>
+    <string name="success">Éxito</string>
+    <string name="error_string_pending">Cargando&#8230;</string>
+    <string name="ec_insufficient_points">Puntajes insuficientes</string>
+    <string name="flow_is_expire">Sin tráfico de compra</string>
+
+</resources>

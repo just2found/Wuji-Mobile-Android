@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connecting_message">Đang vào kết nối&#8230;</string>
+    <string name="error_string_no_account">Chưa điền ID hoặc mật khẩu liên kết.</string>
+    <string name="error_string_invalid_account">ID hoặc mật khẩu liên kết sai.</string>
+    <string name="error_string_gw_busy">Dịch vụ liên kết vi mô đang bận, vui lòng thử đăng nhập lại sau 10 phút.</string>
+    <string name="error_string_socket">Không thể kết nối với dịch vụ, vui lòng kiểm tra môi trường mạng của bạn.</string>
+    <string name="string_notification_ticker">Kết nối liên kết vi mô đã bị ngắt kết nối.</string>
+    <string name="string_notification_text">Các liên kết vi được ngắt kết nối, nhấn để mở.</string>
+    <string name="DownloadFail">Việc tải xuống bản cập nhật liên kết vi mô không thành công.</string>
+    <string name="update_title">Cập nhật liên kết vi mô</string>
+    <string name="update_content">Đã có phiên bản mới của phần mềm liên kết vi mô ($VERSION$), hãy cập nhật ngay.</string>
+    <string name="agree_privacy">Đọc xong, tôi đồng ý chấp nhận thỏa thuận quyền riêng tư của người dùng.</string>
+    <string name="if_not_agree_privacy">Chỉ khi đồng ý với thỏa thuận bảo mật, bạn mới có thể tiếp tục sử dụng liên kết vi mô.</string>
+</resources>

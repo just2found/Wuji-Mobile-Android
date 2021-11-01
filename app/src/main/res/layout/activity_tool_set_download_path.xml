@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <net.sdvn.nascommon.widget.TitleBackLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar_gradient"
+        android:elevation="@dimen/default_elevation" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_path"
+        android:layout_below="@+id/tipsBar">
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/act_set_down_path_panel"
+            android:background="@color/line_settings"
+            android:visibility="visible" />
+
+        <net.sdvn.nascommon.widget.FilePathPanel
+            android:id="@+id/act_set_down_path_panel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_path_height"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/listview_path"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line4"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/line_gray"
+            android:dividerHeight="@dimen/line_list_divider_height" />
+
+        <include
+            android:id="@+id/layout_empty"
+            layout="@layout/layout_empty_directory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line4"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_confirm"
+        android:background="@color/color_bg_grey250"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:textColor="@color/darker"
+        android:textSize="@dimen/text_size_min" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_common_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selector_button_bg_primary"
+        android:enabled="false"
+        android:text="@string/confirm_set_path"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_mid" />
+
+</RelativeLayout>

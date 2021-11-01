@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--error code memenet-->
+    <string name="error_string_invalid_account">账号或密码错误.</string>
+    <string name="error_string_gw_busy">服务器正忙,请在10分钟后再尝试登入.</string>
+    <string name="error_string_user_diabled">您的账号已被暂停使用.</string>
+    <string name="error_string_max_device">设备数已超过限额.</string>
+    <string name="error_string_no_network">当前网络不可用.</string>
+    <string name="error_string_device_disabled">当前设备已被禁止登入</string>
+    <string name="error_string_socket">无法连接到服务器,请检查您的网络环境.</string>
+    <string name="error_string_device_dup">当前设备标识已经登入.</string>
+    <string name="error_string_device_locked">当前设备已被锁定.</string>
+    <string name="error_string_user_unactive">您的账号未激活.</string>
+    <string name="error_string_user_locked">您的账号已被锁定.</string>
+    <string name="KR_Device_Removed">此设备已从网络中移除.</string>
+    <string name="KR_Member_Removed">您的账号已从网络中移除.</string>
+    <string name="KR_Deivce_Deactived">您的设备已被禁用.</string>
+    <string name="dr_invalid_sms">短信无效</string>
+    <string name="dr_vpn_permission_denied">VPN权限被拒绝</string>
+    <string name="dr_vpn_tunnel_is_occupied">VPN通道已被占用</string>
+    <string name="dr_read_phone_state_permission_denied">读取设备识别ID失败</string>
+    <string name="success">成功</string>
+    <string name="error_string_pending">载入中…</string>
+    <string name="ec_insufficient_points">积分不足</string>
+    <string name="flow_is_expire">未选购流量</string>
+
+</resources>

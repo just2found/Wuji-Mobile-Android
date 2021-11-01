@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Error-->
+    <string name="ec_request">请求失败，请稍后重试</string>
+    <string name="ec_timeout">连接超时&#8230;</string>
+
+    <string name="ec_invalid_auth_code">无效的验证码</string>
+    <string name="ec_not_found_acount">找不到用户</string>
+    <string name="ec_failed_send_auth_code">验证码无法发送</string>
+    <string name="ec_invalid_share_code">分享码已过期</string>
+    <string name="ec_vip_not_machers_ticket"> IP和票据不匹配</string>
+    <string name="ec_auth_sig_failed"> Sig检查失败</string>
+    <string name="ec_not_found_device">找不到设备</string>
+
+    <string name="ec_invalid_sig">SIG不匹配,参数异常</string>
+    <string name="ec_not_exists_parterid">PARTNERID不存在</string>
+    <string name="ec_appid_partrid_not_match">APPID与PARTNERID不匹配</string>
+    <string name="ec_not_found_user">找不到用户</string>
+    <string name="ec_not_found_device_by_id">找不到对应ID的设备</string>
+    <string name="ec_not_found_device_by_sn">找不到对应SN的设备</string>
+    <string name="ec_sn_not_exist">设备SN不存在</string>
+    <string name="ec_user_attr_not_match">找到的用户属性不匹配,PARTNERID或APPID请求与实际值不一致</string>
+    <string name="ec_dev_attr_not_match_by_id">对应ID设备属性不匹配,PARTNERID或APPID请求与实际值不一致</string>
+    <string name="ec_dev_attr_not_match_by_sn">对应SN设备属性不匹配,PARTNERID或APPID请求与实际值不一致</string>
+    <string name="ec_not_fount_user_by_loginname">没有这个用户</string>
+    <string name="ec_user_not_add_dev">用户未绑定此设备</string>
+    <string name="ec_user_not_admin">用户不是此设备的管理员</string>
+    <string name="ec_batch_over_limit_register_user">批量用户注册用户数超过限制,用户单次不超过100</string>
+    <string name="ec_batch_over_limit_binds_user">批量设备绑定用户数超过限制,绑定用户单次不超过100</string>
+    <string name="ec_batch_over_limit_binds_dev">批量设备绑定设备数超过限制,绑定设备单次不超过100</string>
+    <string name="ec_batch_over_limit_unbinds_user">批量设备解绑用户数超过限制,解绑用户单次不超过100</string>
+    <string name="ec_batch_over_limit_unbinds_dev">批量设备解绑设备数超过限制,解绑设备单次不超过100</string>
+
+    <string name="ec_has_joined_the_network">已加入网络！</string>
+    <string name="ec_has_applyed_to_join_the_network">已申请加入网络！</string>
+    <string name="ec_device_bind_apply_has_been_submit">设备绑定申请已提交！</string>
+    <string name="ec_devices_binded_account_over_limited">设备绑定帐户超限！</string>
+    <string name="ec_network_joined_account_limited">网络加入帐户有限！</string>
+    <string name="ec_user_joined_network_limited">用户加入网络限制！</string>
+    <string name="ec_networkid_not_find">找不到网络！</string>
+    <string name="ec_newsid_not_find">找不到消息！</string>
+
+    <string name="device_has_been_added">设备已添加</string>
+    <string name="ec_invalid_share_t2">无效的共享令牌</string>
+    <string name="unknown_exception">未知的异常</string>
+
+    <string name="ec_exception">服务器异常</string>
+
+    <string name="ec_invalid_ticket">无效的用户标识</string>
+    <string name="ec_invalid_partnerid_or_appid">无效的partnerid或appid</string>
+    <string name="ec_invalid_params">参数错误</string>
+    <string name="ec_invalid_token">无效的验证标识</string>
+    <string name="ec_invalid_downlaodtoken">无效的下载标识</string>
+    <string name="ec_invalid_sharetoken">无效的分享标识</string>
+    <string name="ec_no_permission">无权限</string>
+    <string name="ec_device_offline">设备不在线</string>
+    <string name="ec_auxcode">验证码错误或已经失效</string>
+    <string name="ec_invalid_qrcode">无效的二维码</string>
+    <string name="ec_qrcode_not_scaned">二维码未扫描</string>
+    <string name="ec_invalid_account">找不到此用户</string>
+    <string name="ec_send_auxcode">发送验证码失败</string>
+    <string name="ec_invalid_sharecode">分享码已失效</string>
+    <string name="ec_vip_conflict">vip与ticket不符</string>
+    <string name="ec_sig">校验失败</string>
+    <string name="ec_invalid_device">找不到此设备</string>
+    <string name="ec_qrcode_timeout">二维码超时</string>
+    <string name="ec_userid_confilict">userid与ticket不符</string>
+    <string name="ec_invalid_t2">无效的t2</string>
+    <string name="ec_already_bound">用户已与设备绑定</string>
+
+    <string name="ec_null_partnerid">Partnerid为空</string>
+    <string name="ec_null_appid">Appid为空</string>
+    <string name="ec_null_random">Random为空</string>
+    <string name="ec_null_request_packet">RequestPacket为空</string>
+    <string name="ec_null_sig">Sig为空</string>
+    <string name="ec_null_userid">UserId为空</string>
+    <string name="ec_null_deviceid">设备Id为空</string>
+    <string name="ec_null_devicesn">DeviceSn为空</string>
+    <string name="ec_null_username">用户名为空</string>
+    <string name="ec_null_passwd">密码为空</string>
+    <string name="ec_null_users">Users为空</string>
+    <string name="ec_null_binds">Binds为空</string>
+    <string name="ec_null_unbinds">UnBinds为空</string>
+    <string name="ec_null_devices">Devices为空</string>
+    <string name="ec_null_networkid">networkid为空</string>
+    <string name="ec_null_newsid">newsid为空</string>
+    <string name="ec_null_news_process">new process为空</string>
+    <string name="ec_null_net_name">网络名称为空</string>
+    <string name="ec_null_members">members为空</string>
+    <string name="ec_null_mbpoint">mbpoint为空</string>
+    <string name="ec_null_mgrlevel">mgrlevel为空</string>
+
+    <string name="ec_username_has_registered">此用户名已注册</string>
+    <string name="ec_passwd_no_match">旧密码错误</string>
+    <string name="ec_news_has_been_processed">该消息已被处理</string>
+    <string name="ec_joined_or_applied_to_join_the_network">已加入或已申请加入该网络</string>
+    <string name="ec_bound_or_requested_to_bind_the_device">已绑定或已申请绑定该设备</string>
+    <string name="ec_invalid_news_type">无效的消息类型</string>
+    <string name="ec_this_news_does_not_belong_to_this_user">该消息不属于该用户</string>
+    <string name="ec_invalid_news">无法找到此消息的记录</string>
+    <string name="ec_phone_has_registered">该手机号已注册</string>
+    <string name="ec_email_has_registered">该邮箱已注册</string>
+    <string name="ec_user_is_not_bound_to_this_device">用户没有绑定此设备</string>
+
+    <string name="ec_disabled_appid">App标识已失效</string>
+    <string name="ec_overdue_appid">App标识已过期</string>
+    <string name="ec_api_not_authorized">未授权的操作</string>
+    <string name="ec_over_limit_rigster_user">注册用户数超过限制</string>
+    <string name="ec_over_limit_device_accounts">设备能绑定的帐号数超出限制</string>
+    <string name="ec_over_limit_users_of_the_network">网络可加入用户数超过限制</string>
+    <string name="ec_over_limit_network_of_the_user">用户可加入网络数超过限制</string>
+    <string name="ec_user_create_network_limited">用户可创建网络数超过限制</string>
+    <string name="ec_app_has_forbid_mbpoint_transfer">此APP禁止积分转让</string>
+    <string name="ec_device_owner_cannot_unbind_directly">设备所有者不能直接解绑</string>
+    <string name="ec_must_device_owner_can_grade_user_bind_level">只有设备拥有者才能更改用户权限级别</string>
+
+    <string name="ec_not_found_this_networkid">找不到此网络id</string>
+    <string name="ec_not_found_this_newsid">找不到此消息id</string>
+    <string name="ec_not_the_net_admin">非管理员无法操作</string>
+    <string name="ec_can_not_delete_deault_network">无法删除默认网络</string>
+    <string name="ec_the_user_can_not_be_searched">此用户无法被搜索</string>
+    <string name="ec_joined_or_invited_to_join_the_network">此用户已加入或已被邀请</string>
+    <string name="ec_can_not_delete_admin">无法删除管理员</string>
+    <string name="ec_invalid_chars">不能包含特殊字符，请重新提交！</string>
+
+    <string name="ec_device_not_of_user">设备不属于此用户</string>
+    <string name="ec_no_enough_mbpoion_to_tranfer">积分不足，请刷新后重试</string>
+    <string name="ec_find_more_than_one_user">数据异常，查询到多个用户</string>
+
+    <string name="ec_too_many_requests">请求过于频繁，请稍后再试</string>
+
+    <string name="ec_order_submit_error">支付信息异常，如有疑问请联系客服</string>
+    <string name="ec_order_amount_over_limit">当日支付金额已达上限</string>
+    <string name="ec_user_set_out_of_range">设定的流量单价超出规定范围</string>
+    <string name="api_params_language">zh_cn</string>
+
+    <string name="ec_msg_has_agreed" >此消息已经被同意</string>
+    <string name="ec_msg_has_denied" >此消息已经被拒绝</string>
+    <string name="ec_msg_has_expired" >此消息已过期</string>
+    <string name="ec_en_servers_limited" >圈子中的EN服务器数量已达上线</string>
+    <string name="ec_moving_en_server" >转移EN服务器前,请先取消EN服务</string>
+    <string name="ec_bind_en_server" >无法绑定EN服务器</string>
+    <string name="ec_unbinding_en_server" >解绑EN服务器前，请先取消EN服务</string>
+    <string name="ec_leaving_circle_cancel_EN" >退出圈子前，请先取消在圈子中的EN服务</string>
+    <string name="ec_at_least_one_fee_type" >此费用类型至少需要启用一项</string>
+    <string name="ec_cannot_delete_en_server_owner" >无法删除在圈子中提供EN服务的用户</string>
+    <string name="ec_amount_is_abnormal" >金额异常，请重新购买</string>
+    <string name="ec_insufficient_score" >积分不足</string>
+    <string name="ec_already_applied" >已申请</string>
+    <string name="ec_move_en_server_from_circle" >无法添加其他圈子中的EN服务器</string>
+</resources>

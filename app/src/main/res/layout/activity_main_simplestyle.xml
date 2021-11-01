@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--辅助控件，控制开始边界移动-->
+        <TextView
+            android:id="@+id/vStart"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrierStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="end"
+            app:constraint_referenced_ids="vStart" />
+
+
+        <!--连接状态 辅助控件，不显示，为隐藏加载进度弹框-->
+        <net.linkmate.app.view.TipsBar
+            android:id="@+id/tipsBar"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            app:layout_constraintWidth_percent="1"
+            android:visibility="gone"
+            app:content_text="@string/load_failed"
+            app:icon_visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/barrierStart"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:link_text="@string/back_to_login" />
+
+        <!--    <fragment-->
+        <!--        android:id="@+id/navHostFragment"-->
+        <!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+        <!--        android:layout_width="0dip"-->
+        <!--        android:layout_height="0dip"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"-->
+        <!--        app:defaultNavHost="true"-->
+        <!--        app:navGraph="@navigation/main_navigation_simplestyle" />-->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            app:layout_constraintWidth_percent="1"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
+            app:layout_constraintStart_toStartOf="@+id/barrierStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--itemIconTint 选中的渲染色  itemTextAppearanceActive选中文字样式，固定大小去掉放大效果-->
+        <!-- app:labelVisibilityMode="labeled" 配置shown on all navigation items（默认3个以上不显示标题为LABEL_VISIBILITY_SELECTED）-->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="0dp"
+            android:layout_height="55dip"
+            app:layout_constraintWidth_percent="1"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="#f7f7f7"
+            app:itemTextAppearanceInactive="@style/bottom_navigation_unselected_text"
+            app:itemTextAppearanceActive="@style/bottom_navigation_selected_text"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/barrierStart"
+            app:menu="@menu/main_bottom_nav_menu_simplestyle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/mNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+</androidx.drawerlayout.widget.DrawerLayout>

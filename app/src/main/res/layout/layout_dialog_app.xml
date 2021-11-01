@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/common_6">
+
+        <LinearLayout
+            android:id="@+id/dialog_app_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bg_grey250"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dialog_app_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/common_8"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/txt_15" />
+
+                <TextView
+                    android:id="@+id/dialog_app_tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dialog_app_tv_title"
+                    android:layout_margin="@dimen/common_8"
+                    android:textColor="@color/text_dark_gray"
+                    android:textSize="@dimen/txt_14" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/dialog_app_cb_tips_able"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dialog_app_tv_content"
+                    android:text="@string/not_remind_again"
+                    android:textColor="@color/text_dark_gray"
+                    android:textSize="@dimen/txt_12" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dialog_app_tv_button"
+                style="@style/StyleDialogDesTvBtn"
+                android:text="@string/enter" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

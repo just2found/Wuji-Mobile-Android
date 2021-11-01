@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/hd_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight56"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/common_24"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_12"
+        tools:text="A盘详细信息" />
+
+    <net.linkmate.app.view.ActivityItemLayout1
+        android:id="@+id/capacity_ail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iv_icon_visibility="gone"
+        app:iv_right_arrow_visibility="gone"
+        app:tv_tips_text="@string/disk_not_inserted"
+        app:tv_title_text="@string/capacity" />
+
+    <net.linkmate.app.view.ActivityItemLayout1
+        android:id="@+id/product_version_ail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iv_icon_visibility="gone"
+        app:iv_right_arrow_visibility="gone"
+        app:tv_tips_text="@string/disk_not_inserted"
+        app:tv_title_text="@string/product_version" />
+
+    <net.linkmate.app.view.ActivityItemLayout1
+        android:id="@+id/sn_ail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iv_icon_visibility="gone"
+        app:iv_right_arrow_visibility="gone"
+        app:tv_tips_text="@string/disk_not_inserted"
+        app:tv_title_text="SN" />
+</LinearLayout>
+

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/files_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <net.linkmate.app.ui.function_ui.titlebar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/layout_title_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text_content="@string/root_dir_name_safe_box" />
+
+    <net.sdvn.nascommon.widget.FileSelectPanel
+        android:id="@+id/layout_select_top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_title"
+        android:elevation="@dimen/default_elevation_3"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/title_bar"
+        app:layout_constraintEnd_toEndOf="@+id/title_bar"
+        app:layout_constraintStart_toStartOf="@+id/title_bar"
+        tools:visibility="gone" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/announcement_scroll_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_padding="10dip"
+        app:icon_src="@drawable/icon_circle_right"
+        app:icon_visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipsBar"
+        tools:visibility="visible" />
+
+    <net.sdvn.nascommon.widget.FilePathPanel
+        android:id="@+id/layout_path_panel"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/bg_item_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/announcement_scroll_tv"
+        tools:visibility="visible" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_path_panel">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_end"
+        android:layout_marginBottom="@dimen/view_bottom_end"
+        android:background="@drawable/bg_title"
+        android:backgroundTint="@color/primary"
+        android:src="@drawable/ic_white_add_24dp"
+        android:theme="@style/Theme.AppCompat.DayNight"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_marginBottom="120dp" />
+
+    <net.sdvn.nascommon.widget.FileManagePanel
+        android:id="@+id/layout_file_manage_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:elevation="15dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1080:266"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

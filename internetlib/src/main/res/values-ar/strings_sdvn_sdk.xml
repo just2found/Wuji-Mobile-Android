@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--error code memenet-->
+    <string name="error_string_invalid_account">رقم الحساب أو كلمة المرور خاطئة.</string>
+    <string name="error_string_gw_busy">الخادم مشغول ، يرجى المحاولة مرة أخرى بعد 10 دقائق</string>
+    <string name="error_string_user_diabled">تم تعليق حسابك.</string>
+    <string name="error_string_max_device">بلغ عدد الأجهزة المسجلة الحد الأقصى.</string>
+    <string name="error_string_no_network">شبكة غير قابلة للاستخدام.</string>
+    <string name="error_string_device_disabled">جهازك مقيد لتسجيل الدخول.</string>
+    <string name="error_string_socket">لا يمكن الاتصال بالخادم ، تحقق من الشبكة الخاصة بك.</string>
+    <string name="error_string_device_dup">تم تسجيل معرف الجهاز الحالي.</string>
+    <string name="error_string_device_locked">تم قفل الجهاز الحالي</string>
+    <string name="error_string_user_unactive">الحساب غير مفعل.</string>
+    <string name="error_string_user_locked">تم قفل حسابك.</string>
+    <string name="KR_Device_Removed">تمت إزالة الجهاز من الشبكة.</string>
+    <string name="KR_Member_Removed">تمت إزالة حسابك من الشبكة.</string>
+    <string name="KR_Deivce_Deactived">تم تعطيل الجهاز.</string>
+    <string name="dr_invalid_sms">رسالة قصيرة غير صالحة</string>
+    <string name="dr_vpn_permission_denied">تم رفض إذن VPN</string>
+    <string name="dr_vpn_tunnel_is_occupied">قناة VPN مشغولة بالفعل</string>
+    <string name="dr_read_phone_state_permission_denied">فشلت قراءة ID تعريف الجهاز</string>
+    <string name="success">نجاح</string>
+    <string name="error_string_pending">جار التحميل...</string>
+    <string name="ec_insufficient_points">نقاط غير كافية</string>
+    <string name="flow_is_expire">لا حركة شراء</string>
+
+</resources>

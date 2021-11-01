@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text_color" format="color" />
+    <attr name="text_size" format="dimension" />
+    <attr name="img_drawable" format="reference" />
+    <attr name="clear_drawable" format="reference" />
+    <attr name="img_drawable1" format="reference" />
+    <attr name="img_right1" format="reference" />
+    <attr name="img_right2" format="reference" />
+    <attr name="img_right3" format="reference" />
+    <attr name="text_right" format="string" />
+    <attr name="regular_check" format="enum">
+        <enum name="psw1" value="1" />
+        <enum name="length32" value="2" />
+        <enum name="psw_app" value="3" />
+    </attr>
+    <attr name="non_compliance_color" format="color" />
+    <attr name="text_hint" format="string" />
+    <attr name="separator_color" format="color" />
+    <attr name="separator_focus_color" format="color" />
+    <attr name="show_back" format="boolean" />
+    <attr name="text_content" format="string" />
+
+
+    <declare-styleable name="input_item">
+        <attr name="text_color" />
+        <attr name="text_size" />
+        <attr name="text_hint" />
+        <attr name="text_content" />
+        <attr name="img_drawable" />
+        <attr name="clear_drawable" />
+        <attr name="img_drawable1" />
+        <attr name="regular_check" />
+        <attr name="non_compliance_color" />
+        <attr name="separator_color" />
+        <attr name="separator_focus_color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="title_bar">
+        <attr name="text_color" />
+        <attr name="text_size" />
+        <attr name="show_back" />
+        <attr name="text_content" />
+        <attr name="img_drawable" />
+        <attr name="img_right1" />
+        <attr name="img_right2" />
+        <attr name="img_right3" />
+    </declare-styleable>
+
+</resources>

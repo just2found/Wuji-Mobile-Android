@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Primary color-->
+    <color name="accent">#64dd17</color>
+    <color name="accent_dark">#E4000000</color>
+    <color name="primary">@color/colorPrimary</color>
+    <color name="primary_dark">@color/colorPrimaryDark</color>
+    <color name="primary_black">#F3000000</color>
+    <!-- Base color -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF4444</color>
+    <color name="red_D62036">#D62036</color>
+    <color name="bg_orange">#FF4444</color>
+    <color name="transparent">#00000000</color>
+    <color name="trans_gray">#66D0D0D0</color>
+    <color name="trans_black">#88202020</color>
+    <color name="light_gray">#D0D0D0</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="darker_gray">#AAAAAA</color>
+    <color name="darker">#454545</color>
+    <color name="status_bar_color">#00000000</color>
+
+    <!-- Gray selector -->
+    <color name="gray_normal">@color/gray</color>
+    <color name="gray_selected">@color/darker_gray</color>
+    <color name="gray_disabled">@color/light_gray</color>
+
+    <!-- EditText border selector-->
+    <color name="edittext_border_normal">@color/darker_gray</color>
+    <color name="edittext_border_pressed">@color/primary</color>
+    <color name="edittext_border_disabled">@color/gray_disabled</color>
+
+    <!-- System Status Bar color-->
+    <color name="colorPrimary">#0C8CFC</color>
+    <color name="colorPrimaryDark">#0B6BF8</color>
+    <color name="colorAccent">#0B6BF8</color>
+    <color name="bg_page">@color/color_bg_grey150</color>
+    <color name="bg_title">#0C8CFC</color>
+    <color name="bg_title2">#0B6BF8</color>
+    <color name="bg_title3">#0869F7</color>
+    <!-- Transparent PopupWindows background color -->
+    <color name="translucent_black">#70000000</color>
+    <color name="bg_pop_loading">@color/translucent_black</color>
+    <color name="bg_pop_type">@color/translucent_black</color>
+    <color name="bg_pop_tree_view">@color/translucent_black</color>
+
+    <!-- List selector color -->
+    <color name="bg_list_transparent">@color/transparent</color>
+    <color name="bg_list_pressed_gray">@color/trans_gray</color>
+
+    <color name="line_nav_bar">#C2C2C2</color>
+    <color name="line_dialog">@color/trans_gray</color>
+    <color name="line_settings">@color/trans_gray</color>
+    <color name="line_tree_view">@color/trans_gray</color>
+    <color name="bg_nav_bar">@color/bg_page</color>
+    <color name="bg_manage_bar">@color/bg_nav_bar</color>
+
+    <color name="bg_picture_viewer_title">#884B4B4B</color>
+    <color name="bg_picture_viewer">#505050</color>
+    <color name="circle_progress_base_color">#FFE5E5E5</color>
+    <color name="circle_progress_primary_color">@color/primary</color>
+    <color name="bg_pop_menu">#CC000000</color>
+    <color name="front_anim_progress_bar">#9bc848</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="bg_contact">#F4F3F3</color>
+
+
+    <color name="color_black_secondary_text">#8a000000</color>
+    <color name="color_black_hint_text">#42000000</color>
+    <!--字体颜色 #3c3c3c    设备所有者字体颜色 #898989-->
+    <!--当前网络的字体颜色 #ff5420-->
+    <!--底部导航菜单栏的字切换时的颜色  #4181ec  8e8e8e -->
+    <!--jw device  设置  界面  text name 左title  2c  右内容  3c   线条  c1-->
+    <color name="color_2c">#2c2c2c</color>
+    <color name="color_line">#c1c1c2</color>
+    <!--dark theme-->
+    <!-- txt -->
+    <color name="color_white_text">#ffffff</color>
+    <color name="color_white_hint_text">#4cffffff</color>
+    <color name="color_txt_disable">#a0ffffff</color>
+    <!--bg-->
+    <color name="tab_blue">#4b86ff</color>
+    <color name="tab_gray">#8C969E</color>
+    <color name="color_bg_grey350">#88c8c8c8</color>
+    <color name="color_bg_grey200">#eeeeee</color>
+
+    <color name="color_bg_grey50">#FFfafafa</color>
+    <!--l 灰色背景  #ececec-->
+    <color name="color_bg_grey250">#ececec</color>
+
+    <color name="color_blue_150">#B1D5FD</color>
+    <color name="text333">#333333</color>
+    <color name="progress_bar_1">#21d97f</color>
+    <color name="progress_bar_2">#21a5e4</color>
+    <color name="progress_bar_3">#D0FFE8</color>
+    <color name="black_a85">#D8000000</color>
+
+    <color name="magic_dialog_gray">#88D0D0D0</color>
+    <color name="color_bg_grey150">#f2f2f2</color>
+    <color name="translucent_ripple_gray">#11000000</color>
+    <color name="title_text_color">#333</color>
+    <color name="title_icon_color">#333</color>
+    <color name="bg_title_start_color">#111</color>
+    <color name="color_light_blue">#777</color>
+    <color name="bg_item_title">#F8F9FA</color>
+    <color name="bg_item">#FFfafafa</color>
+    <color name="bg_gray">#F6F6F6</color>
+
+</resources>

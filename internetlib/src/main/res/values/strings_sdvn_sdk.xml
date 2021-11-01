@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--error code memenet-->
+    <string name="error_string_invalid_account">Your user ID or password is incorrect.</string>
+    <string name="error_string_gw_busy">Server is busy, please try again in 10 minutes.</string>
+    <string name="error_string_user_diabled">Your account not found.</string>
+    <string name="error_string_max_device">The number of registered devices has reached the maximum.</string>
+    <string name="error_string_no_network">Unusable Network.</string>
+    <string name="error_string_device_disabled">Your device is restricted to login.</string>
+    <string name="error_string_socket">Can not connect to Server,check your network.</string>
+    <string name="error_string_device_dup">Your device had been online.</string>
+    <string name="error_string_device_locked">Your device had been locked.</string>
+    <string name="error_string_user_unactive">Account is not activated.</string>
+    <string name="error_string_user_locked">Account has been locked.</string>
+    <string name="KR_Device_Removed">Device has been removed from Net.</string>
+    <string name="KR_Member_Removed">Account has been removed from Net.</string>
+    <string name="KR_Deivce_Deactived">Device has been deactivated.</string>
+    <string name="dr_invalid_sms">Invalid SMS</string>
+    <string name="dr_vpn_permission_denied">VPN permission denied</string>
+    <string name="dr_vpn_tunnel_is_occupied">VPN tunel is occupied</string>
+    <string name="dr_read_phone_state_permission_denied">Read phone state permission denied</string>
+    <string name="success">Success</string>
+    <string name="error_string_pending">Loading&#8230;</string>
+    <string name="ec_insufficient_points">Insufficient points</string>
+    <string name="flow_is_expire">No purchase traffic</string>
+
+</resources>

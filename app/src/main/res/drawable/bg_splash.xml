@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="#4366FE"
+                android:startColor="#42D3FF" />
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_launcher"
+            android:tileMode="disabled" />
+    </item>
+    <!--<item>-->
+        <!--<bitmap-->
+            <!--android:gravity="top|center_horizontal"-->
+            <!--android:src="@drawable/ic_launcher"-->
+            <!--android:tileMode="disabled" />-->
+    <!--</item>-->
+</layer-list>

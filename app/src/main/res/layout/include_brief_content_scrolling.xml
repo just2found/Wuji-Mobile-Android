@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_brief">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_32"
+            android:lineSpacingExtra="@dimen/common_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/common_16"
+            android:layout_marginEnd="@dimen/common_16"
+            android:clickable="true"
+            android:hint="@string/no_summary"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="\u3000238408324023424\nsfjk\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n\n\\n\n\n\n\n\n\n\n\n\n\nsfsfsdf"
+             />
+
+        <TextView
+            android:id="@+id/tvTextOpt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_2"
+            android:onClick="onClick"
+            tools:text="@string/full_text"
+            android:textColor="@color/bg_blue"
+            android:textSize="@dimen/txt_10"
+            android:visibility="gone"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="@+id/tvContent"
+            app:layout_constraintTop_toBottomOf="@+id/tvContent"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

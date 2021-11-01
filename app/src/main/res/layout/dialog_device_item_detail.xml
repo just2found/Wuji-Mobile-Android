@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootStatus"
+    android:background="@drawable/item_click_white_ripple"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/ivDeviceDetailIcon"
+        android:layout_width="@dimen/common_icon24"
+        android:layout_height="@dimen/common_icon24"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_share"
+        android:layout_marginStart="@dimen/common_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivDeviceDetailTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDeviceDetailTitle"
+        />
+    <net.linkmate.app.view.CusTextView
+        android:id="@+id/ivDeviceDetailTitle"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/common_ItemHeight56"
+        android:textColor="@color/text_dark_gray"
+        android:text="device"
+        android:layout_marginStart="@dimen/common_16"
+        android:gravity="start|center_vertical"
+        app:layout_constraintStart_toEndOf="@+id/ivDeviceDetailIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/common_16"
+        android:paddingBottom="@dimen/common_16"
+        android:paddingEnd="@dimen/common_16"
+        app:endDrawableHeight="@dimen/common_24"
+        app:endDrawableWidth="@dimen/common_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <!--底部线条-->
+    <View style="@style/common_line_style"
+        app:layout_constraintStart_toStartOf="@+id/ivDeviceDetailTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDeviceDetailTitle"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

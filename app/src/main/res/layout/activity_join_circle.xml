@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title_bar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:background="@color/bg_gray"
+                android:orientation="vertical">
+
+                <net.linkmate.app.view.TitleTextView
+                    android:id="@+id/ajc_ttv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    app:ttv_title_text="@string/circle_name"
+                    app:ttv_icon_visibility="gone"
+                    />
+
+                <net.linkmate.app.view.TitleTextView
+                    android:id="@+id/ajc_ttv_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    app:ttv_title_text="@string/owner"
+                    app:ttv_icon_visibility="gone"
+                    />
+
+                <net.linkmate.app.view.TitleTextView
+                    android:id="@+id/tvUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    app:ttv_title_text="@string/family"
+                    app:ttv_icon_visibility="gone"
+                    />
+
+                <net.linkmate.app.view.TitleTextView
+                    android:id="@+id/tvENDevice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    app:ttv_title_text="@string/en_device_server"
+                    app:ttv_icon_visibility="gone"
+                    />
+
+                <net.linkmate.app.view.TitleTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_12"
+                    android:visibility="gone"
+                    app:ttv_title_text="@string/summary" />
+
+                <TextView
+                    android:id="@+id/ajc_tv_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_12"
+                    android:layout_marginEnd="@dimen/common_12"
+                    android:background="@drawable/bg_square_full_radius_white_6dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:padding="@dimen/common_12"
+                    android:visibility="gone"
+                    android:text="点击查看"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/txt_12" />
+                <!--简介-->
+
+                <TextView
+                    android:id="@+id/tvBriefTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_12"
+                    android:text="@string/summary"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/common_10"
+                    android:layout_marginBottom="@dimen/common_10"
+                    android:textColor="@color/text_dark"
+                    />
+
+                <TextView
+                    android:id="@+id/tvBrief"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/gray_right_arrow"
+                    android:gravity="center_vertical"
+                    android:text="@string/strNotificationClickToView"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/txt_12"
+                    android:visibility="gone"
+                    android:layout_marginStart="@dimen/common_12"
+                    android:layout_marginEnd="@dimen/common_12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingTop="@dimen/common_10"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:paddingEnd="@dimen/common_12"
+                    android:paddingBottom="@dimen/common_10"
+                    android:background="@drawable/bg_square_full_radius_white_6dp"
+                    />
+                <!--加入方式-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_12"
+                    android:text="@string/join_way"
+                    android:textColor="@color/text_dark"
+                    android:layout_marginTop="@dimen/common_10"
+                    android:layout_marginBottom="@dimen/common_10"
+                    />
+
+                <TextView
+                    android:id="@+id/ajc_tv_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/gray_right_arrow"
+                    android:gravity="center_vertical"
+                    android:text="@string/please_select_jion_way"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/txt_12"
+                    android:layout_marginStart="@dimen/common_12"
+                    android:layout_marginEnd="@dimen/common_12"
+                    android:layout_marginBottom="@dimen/common_12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingTop="@dimen/common_10"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:paddingEnd="@dimen/common_12"
+                    android:paddingBottom="@dimen/common_10"
+                    android:background="@drawable/bg_square_full_radius_white_6dp"
+                    />
+                <include
+                    android:id="@+id/iJoinWayType"
+                    layout="@layout/dialog_circle_join_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_6"
+                    android:layout_marginEnd="@dimen/common_6"
+                    android:layout_marginBottom="@dimen/common_12"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/bg_white"
+            android:elevation="@dimen/common_2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ajc_tv_total"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/common_16"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/total"
+                android:textColor="@color/text_dark" />
+
+            <Button
+                android:id="@+id/ajc_btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_button_bg_recharge"
+                android:enabled="false"
+                android:minWidth="120dp"
+                android:onClick="onClick"
+                android:text="@string/apply_to_join_in"
+                android:textColor="@color/text_white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mLoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_trans_black_30"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <net.linkmate.app.view.ProgressView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:dot_color="@color/color_orange"
+            app:dot_count="7" />
+    </FrameLayout>
+</FrameLayout>

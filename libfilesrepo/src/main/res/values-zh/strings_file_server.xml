@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">分享已取消!</string>
+    <string name="tip_error_open_dir">打开目录失败</string>
+    <string name="tip_error_task_running">任务运行中错误</string>
+    <string name="msg_error_exceed_downloads">此分享超过最大下载次数</string>
+    <string name="msg_error_cancel_shared">取消分享失败</string>
+    <string name="msg_error_bind_network">连接远程服务出错</string>
+    <string name="msg_error_user_not_exist">分享用户已不存在</string>
+    <string name="msg_error_illegal_operation">用户无效的操作,请刷新后重试</string>
+    <string name="msg_error_get_device_ip">连接分享服务器失败,请稍后重试</string>
+    <string name="msg_error_broken_network">网络错误</string>
+    <string name="msg_error_dl_not_running">下载不是在运行状态，不能添加新文件</string>
+    <string name="msg_error_source_file_open">源文件打开失败</string>
+    <string name="msg_error_source_file_change">源文件大小改变</string>
+    <string name="msg_error_temp_file">临时文件被删</string>
+    <string name="msg_error_auth">内部认证错误</string>
+    <string name="msg_error_target_file">写目标文件失败</string>
+    <string name="msg_error_token">无效的认证标识</string>
+    <string name="msg_error_more_shared_ticket">下载任务已建立</string>
+    <string name="msg_error_shared_ticket_overtime">分享已过期</string>
+    <string name="tips_warn_cancel_share">未完成的下载将被取消并移除临时文件!</string>
+    <string name="msg_error_disk_full">磁盘已满,请清理空间后重试!</string>
+</resources>

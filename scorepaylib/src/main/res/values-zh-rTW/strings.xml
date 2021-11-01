@@ -1,0 +1,7 @@
+<resources>
+    <string name="wx_no_installed">請先安裝微信後重試</string>
+    <string name="pay_succ">支付成功</string>
+    <string name="pay_failed">支付失敗</string>
+    <string name="pay_cancelled">已取消支付</string>
+    <string name="pay_order_error">支付訂單出錯</string>
+</resources>

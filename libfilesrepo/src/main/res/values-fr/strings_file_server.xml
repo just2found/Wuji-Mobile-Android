@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">Le partage a annulé !</string>
+    <string name="tip_error_open_dir">Échec de l’ouverture du répertoire</string>
+    <string name="tip_error_task_running">Erreur du fonctionnement de la tâche!</string>
+    <string name="msg_error_exceed_downloads">Ce partage dépasse le nombre maximum de téléchargements</string>
+    <string name="msg_error_cancel_shared">Échec de l\'annulation du partage</string>
+    <string name="msg_error_bind_network">Erreur de connexion au service à distance</string>
+    <string name="msg_error_user_not_exist">L\'utilisateur de partage n’existe pas</string>
+    <string name="msg_error_illegal_operation">Opération invalide de l’utilisateur. Rafraîchir et réessayer</string>
+    <string name="msg_error_get_device_ip">Échec de la connexion et du partage du serveur. Réessayer plus tard</string>
+    <string name="msg_error_broken_network">Erreur du réseau</string>
+    <string name="msg_error_dl_not_running">Le téléchargement n’est pas en cours d’exécution, incapable d\'ajouter de nouveaux fichiers</string>
+    <string name="msg_error_source_file_open">Échec de l\'ouverture du fichier source</string>
+    <string name="msg_error_source_file_change">Changer la taille du fichier source</string>
+    <string name="msg_error_temp_file">Les fichiers temporaires sont supprimés</string>
+    <string name="msg_error_auth">Erreur de l\'authentification interne</string>
+    <string name="msg_error_target_file">Échec de la rédaction du fichier cible</string>
+    <string name="msg_error_token">Symbole d\'identification invalide</string>
+    <string name="msg_error_more_shared_ticket">La tâche de téléchargement a été créée</string>
+    <string name="msg_error_shared_ticket_overtime">Le partage a expiré</string>
+    <string name="tips_warn_cancel_share">Les téléchargements inachevés seront annulés et les fichiers temporaires seront supprimés!</string>
+    <string name="msg_error_disk_full">Le disque dur est plein. Vider l\'espace et réessayer !</string>
+</resources>

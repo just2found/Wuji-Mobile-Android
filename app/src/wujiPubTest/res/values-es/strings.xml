@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connecting_message">Conectando al microenlace&#8230;</string>
+    <string name="error_string_no_account">La ID o contraseña del microenlace no está completada.</string>
+    <string name="error_string_invalid_account">La ID o contraseña del microenlace es incorrecta.</string>
+    <string name="error_string_gw_busy">El servicio de microenlace está ocupado, intente iniciar sesión nuevamente después de 10 minutos.</string>
+    <string name="error_string_socket">No se puede conectar al servicio, verifique su entorno de red.</string>
+    <string name="string_notification_ticker">La conexión del microenlace se ha desconectado.</string>
+    <string name="string_notification_text">El microenlace está desconectado, toque para abrir.</string>
+    <string name="DownloadFail">La descarga de la actualización del microenlace falla.</string>
+    <string name="update_title">Actualización de microenlace</string>
+    <string name="update_content">Hay una nueva versión del software de microenlace ($VERSION$), se recomienda actualizar de inmediato.</string>
+    <string name="agree_privacy">He leído, acepto el acuerdo de privacidad del usuario.</string>
+    <string name="if_not_agree_privacy">Solo aceptando el acuerdo de privacidad puede continuar utilizando el microenlace.</string>
+</resources>

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans_black"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_button_white_radius_top"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_16"
+            android:layout_marginTop="@dimen/common_28"
+            android:layout_marginBottom="@dimen/common_10"
+            android:text="@string/by_file_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_15" />
+
+        <TextView
+            android:id="@+id/longer_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_52"
+            android:drawableEnd="@drawable/gray_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_icon36"
+            android:paddingEnd="@dimen/common_8"
+            android:text="@string/select_longer_name"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_13" />
+
+        <View style="@style/HorizontalSplitLine" />
+
+        <TextView
+            android:id="@+id/shorter_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_52"
+            android:drawableEnd="@drawable/gray_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_icon36"
+            android:paddingEnd="@dimen/common_8"
+            android:text="@string/select_shorter_name"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_13" />
+
+        <View style="@style/HorizontalSplitLine" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_16"
+            android:layout_marginTop="@dimen/common_28"
+            android:layout_marginBottom="@dimen/common_10"
+            android:text="@string/by_file_path"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_15" />
+
+        <TextView
+            android:id="@+id/longer_path_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_52"
+            android:drawableEnd="@drawable/gray_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_icon36"
+            android:paddingEnd="@dimen/common_8"
+            android:text="@string/select_longer_path"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_13" />
+
+        <View style="@style/HorizontalSplitLine" />
+
+
+        <TextView
+            android:id="@+id/shorter_path_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_52"
+            android:drawableEnd="@drawable/gray_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_icon36"
+            android:paddingEnd="@dimen/common_8"
+            android:text="@string/select_shorter_path"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_13" />
+
+        <View style="@style/HorizontalSplitLine" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_16"
+            android:layout_marginTop="@dimen/common_28"
+            android:layout_marginBottom="@dimen/common_10"
+            android:text="@string/by_file_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_15" />
+
+        <TextView
+            android:id="@+id/earlier_time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_52"
+            android:drawableEnd="@drawable/gray_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_icon36"
+            android:paddingEnd="@dimen/common_8"
+            android:text="@string/select_earlier_time"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_13" />
+
+        <View style="@style/HorizontalSplitLine" />
+
+
+        <TextView
+            android:id="@+id/later_time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_52"
+            android:drawableEnd="@drawable/gray_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_icon36"
+            android:paddingEnd="@dimen/common_8"
+            android:text="@string/select_later_time"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_13" />
+
+        <View
+            style="@style/HorizontalSplitLine"
+            android:layout_marginBottom="@dimen/common_20" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

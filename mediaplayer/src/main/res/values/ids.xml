@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="player_back"/>
+    <item type="id" name="player_back_top"/>
+    <item type="id" name="player_full_screen_enter"/>
+    <item type="id" name="player_full_screen_exit"/>
+    <item type="id" name="player_float_screen"/>
+    <item type="id" name="player_lock_f"/>
+    <item type="id" name="player_lock_n"/>
+</resources>

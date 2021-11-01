@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/negative"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_bg_white_grey"
+        android:gravity="center"
+        android:padding="@dimen/common_12"
+        android:text="@string/cancel"
+        android:textColor="#666666"
+        android:textSize="@dimen/text_size_mid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/view_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="negative" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:background="@color/line_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/positive"
+        app:layout_constraintStart_toEndOf="@+id/negative"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/positive"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_bg_white_grey"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textAllCaps="false"
+        android:textColor="@color/selector_primary_to_white"
+        android:textSize="@dimen/text_size_mid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_line"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="positive" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_positive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="positive,view_line" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_negative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="negative,view_line" />
+</androidx.constraintlayout.widget.ConstraintLayout>

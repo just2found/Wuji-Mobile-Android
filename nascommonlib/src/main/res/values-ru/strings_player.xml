@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unexpected_intent_action">Неожиданное намеренное действие:%1$s </string>
+    <string name="error_cleartext_not_permitted">Открытый текстовый трафик не разрешен</string>
+    <string name="error_generic">Воспроизведение не удалось</string>
+    <string name="error_unrecognized_abr_algorithm">Нераспознанный алгоритм ABR</string>
+    <string name="error_unrecognized_stereo_mode">Нераспознанный стерео режим</string>
+    <string name="error_drm_not_supported">Защищенный контент не поддерживается на уровнях API ниже 18</string>
+    <string name="error_drm_unsupported_scheme">Это устройство не поддерживает требуемую схему DRM</string>
+    <string name="error_drm_unknown">Произошла неизвестная ошибка DRM</string>
+    <string name="error_no_decoder">Это устройство не предоставляет декодер %1$s</string>
+    <string name="error_no_secure_decoder">Это устройство не обеспечивает безопасный декодер %1$s</string>
+    <string name="error_querying_decoders">Невозможно запросить декодеры устройства</string>
+    <string name="error_instantiating_decoder">Не удалось создать декодер %1$s</string>
+    <string name="error_unsupported_video">Содержит видео, но это устройство не может воспроизводить</string>
+    <string name="error_unsupported_audio">Содержит аудиодорожки, но это устройство не может воспроизводить</string>
+    <string name="storage_permission_denied">В доступе к хранилищу было отказано</string>
+    <string name="download_start_error">Не удалось начать загрузку</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strNetworkTipsCancelBtn">キャンセル</string>
+    <string name="strNetworkTipsConfirmBtn">ダウンロードを続けます</string>
+    <string name="strNetworkTipsMessage">モバイルネットワークに切り替えましたが、現在のダウンロードを続けますか？</string>
+    <string name="strNetworkTipsTitle">ネットワークのヒント</string>
+    <string name="strNotificationClickToContinue">ダウンロードを続けます</string>
+    <string name="strNotificationClickToInstall">インストールをクリックします</string>
+    <string name="strNotificationClickToRetry">クリックしてやり直します</string>
+    <string name="strNotificationClickToView">クリックして確認してください</string>
+    <string name="strNotificationDownloadError">ダウンロード失敗</string>
+    <string name="strNotificationDownloadSucc">ダウンロード完了</string>
+    <string name="strNotificationDownloading">ダウンロード中</string>
+    <string name="strNotificationHaveNewVersion">新しいバージョンがあります</string>
+    <string name="strToastCheckUpgradeError">新しいバージョンの検出に失敗しました。後でやり直してください。</string>
+    <string name="strToastCheckingUpgrade">検出中です。少々お待ちください。</string>
+    <string name="strToastYourAreTheLatestVersion">既に最新版に更新しました。</string>
+    <string name="strUpgradeDialogCancelBtn">次回</string>
+    <string name="strUpgradeDialogContinueBtn">続行</string>
+    <string name="strUpgradeDialogFeatureLabel">更新説明</string>
+    <string name="strUpgradeDialogFileSizeLabel">パッケージサイズ</string>
+    <string name="strUpgradeDialogInstallBtn">インストール</string>
+    <string name="strUpgradeDialogRetryBtn">再試行</string>
+    <string name="strUpgradeDialogUpdateTimeLabel">更新日時</string>
+    <string name="strUpgradeDialogUpgradeBtn">すぐに更新します</string>
+    <string name="strUpgradeDialogVersionLabel">バージョン</string>
+</resources>

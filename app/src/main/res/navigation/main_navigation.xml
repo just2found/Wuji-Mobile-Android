@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation.xml"
+    app:startDestination="@+id/navigation_home">
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="net.linkmate.app.ui.fragment.main.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="net.linkmate.app.ui.fragment.main.StoreFragment"
+        android:label="StoreFragment"
+        tools:layout="@layout/fragment_store" />
+    <fragment
+        android:id="@+id/navigation_app"
+        android:name="net.linkmate.app.ui.fragment.main.AppFragment"
+        android:label="AppFragment"
+        tools:layout="@layout/fragment_app" />
+    <fragment
+        android:id="@+id/navigation_msg"
+        android:name="net.linkmate.app.ui.fragment.main.MsgFragment"
+        android:label="MsgFragment"
+        tools:layout="@layout/fragment_msg" />
+    <fragment
+        android:id="@+id/navigation_me"
+        android:name="net.linkmate.app.ui.fragment.main.MeFragment"
+        android:label="MeFragment"
+        tools:layout="@layout/fragment_me" />
+
+</navigation>

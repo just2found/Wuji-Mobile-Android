@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strNetworkTipsCancelBtn">Annuler</string>
+    <string name="strNetworkTipsConfirmBtn">Continuer le téléchargement</string>
+    <string name="strNetworkTipsMessage">Déjà passé au réseau mobile, continuer?</string>
+    <string name="strNetworkTipsTitle">Rappel du réseau</string>
+    <string name="strNotificationClickToContinue">Continuer le téléchargement</string>
+    <string name="strNotificationClickToInstall">Cliquer pour installer</string>
+    <string name="strNotificationClickToRetry">Cliquer pour réessayer</string>
+    <string name="strNotificationClickToView">Cliquer pour vérifier</string>
+    <string name="strNotificationDownloadError">Échec du téléchargement</string>
+    <string name="strNotificationDownloadSucc">Téléchargement fini</string>
+    <string name="strNotificationDownloading">En cours de téléchargement…</string>
+    <string name="strNotificationHaveNewVersion">Il existe une nouvelle version</string>
+    <string name="strToastCheckUpgradeError">Vérifier l\'échec de la nouvelle version. Réessayer plus tard.</string>
+    <string name="strToastCheckingUpgrade">Vérification en cours. Attendre&#8230;</string>
+    <string name="strToastYourAreTheLatestVersion">C’est la dernière version</string>
+    <string name="strUpgradeDialogCancelBtn">La prochaine fois</string>
+    <string name="strUpgradeDialogContinueBtn">Continuer</string>
+    <string name="strUpgradeDialogFeatureLabel">Description sur la mise à jour</string>
+    <string name="strUpgradeDialogFileSizeLabel">Taille du paquet</string>
+    <string name="strUpgradeDialogInstallBtn">Installer</string>
+    <string name="strUpgradeDialogRetryBtn">Réessayer</string>
+    <string name="strUpgradeDialogUpdateTimeLabel">Temps de mise à jour</string>
+    <string name="strUpgradeDialogUpgradeBtn">Mettre à jour immédiatement</string>
+    <string name="strUpgradeDialogVersionLabel">Version</string>
+</resources>

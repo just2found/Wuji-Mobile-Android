@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.nas.group.GroupSpaceUserDetailFragment">
+
+    <net.linkmate.app.ui.function_ui.titlebar.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/layout_title_height"
+        app:text_content="@string/user_details" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+
+    <net.linkmate.app.view.ActivityItemLayout
+        android:layout_marginTop="@dimen/common_24"
+        android:id="@+id/group_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iv_icon_visibility="gone"
+        app:iv_right_arrow_visibility="invisible"
+        app:tv_title_text="@string/account" />
+
+    <include layout="@layout/include_line" />
+
+    <net.linkmate.app.view.ActivityItemLayout
+        android:id="@+id/group_mark_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:iv_icon_visibility="gone"
+        app:tv_title_text="@string/mark_name"
+        tools:visibility="visible" />
+
+    <include layout="@layout/include_line" />
+
+    <net.linkmate.app.view.ActivityItemLayout
+        android:id="@+id/group_transfer_management_authority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iv_icon_visibility="gone"
+        app:tv_title_text="@string/transfer_management_authority" />
+
+    <include layout="@layout/include_line" />
+
+    <Switch
+        android:id="@+id/group_allow_upload_of_group_files"
+        style="@style/StyleDialogDesSwitch"
+        android:layout_marginTop="@dimen/common_24"
+        android:background="@color/bg_white"
+        android:checked="false"
+        android:paddingStart="@dimen/common_12"
+        android:paddingEnd="@dimen/common_12"
+        android:text="@string/allow_upload_of_group_files"
+        android:textSize="@dimen/txt_13" />
+
+    <include layout="@layout/include_line" />
+
+    <Switch
+        android:id="@+id/group_allow_management_of_group_files"
+        style="@style/StyleDialogDesSwitch"
+        android:background="@color/bg_white"
+        android:checked="false"
+        android:paddingStart="@dimen/common_12"
+        android:paddingEnd="@dimen/common_12"
+        android:text="@string/allow_management_of_group_files"
+        android:textSize="@dimen/txt_13" />
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight56"
+        android:layout_marginTop="@dimen/common_24"
+        android:background="@drawable/bg_button_white_ripple_trans_gray"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/red"
+        android:textSize="@dimen/txt_15" />
+</LinearLayout>

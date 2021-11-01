@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dynamic_toolbar_color"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/flToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolbar_grey_style"
+            app:navigationIcon="@drawable/icon_return_black"
+            app:title="@string/my_identify_code" />
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/clQrCode1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="22dip"
+            android:layout_marginEnd="22dip"
+            android:background="@drawable/bg_square_full_radius_white"
+            android:paddingStart="14dip"
+            android:paddingTop="14dip"
+            android:paddingEnd="14dip"
+            android:paddingBottom="35dip">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivPortrait"
+                android:layout_width="43dip"
+                android:layout_height="43dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_default_user_new"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_6dp" />
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dip"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/ivPortrait"
+                app:layout_constraintStart_toEndOf="@+id/ivPortrait"
+                app:layout_constraintTop_toTopOf="@+id/ivPortrait">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:text="888" />
+
+                <TextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:textSize="12sp"
+                    tools:text="12387493888" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrierTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="ivPortrait,llContent" />
+
+            <ImageView
+                android:id="@+id/ivQRCode"
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_marginStart="24dip"
+                android:layout_marginTop="35dip"
+                android:layout_marginEnd="24dip"
+                app:layout_constraintDimensionRatio="h,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrierTop" />
+
+            <ProgressBar
+                android:id="@+id/mProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/ivQRCode"
+                app:layout_constraintEnd_toEndOf="@+id/ivQRCode"
+                app:layout_constraintStart_toStartOf="@+id/ivQRCode"
+                app:layout_constraintTop_toTopOf="@+id/ivQRCode" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

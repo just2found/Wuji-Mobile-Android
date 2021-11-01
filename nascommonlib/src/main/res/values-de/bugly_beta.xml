@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strNetworkTipsCancelBtn">Abbrechen</string>
+    <string name="strNetworkTipsConfirmBtn">Weiter</string>
+    <string name="strNetworkTipsMessage">Sie sind auf ein Mobilfunknetz umgestiegen, fahren Sie mit dem aktuellen Herunterladen fort?</string>
+    <string name="strNetworkTipsTitle">Hinweise zum Netzwerk</string>
+    <string name="strNotificationClickToContinue">Herunterladen fortsetzen</string>
+    <string name="strNotificationClickToInstall">Zum Installieren anklicken</string>
+    <string name="strNotificationClickToRetry">Zum erneuten Versuch anklicken</string>
+    <string name="strNotificationClickToView">Zur Überprüfung anklicken</string>
+    <string name="strNotificationDownloadError">Herunterladen fehlgeschlagen</string>
+    <string name="strNotificationDownloadSucc">Herunterladen abgeschlossen</string>
+    <string name="strNotificationDownloading">Herunterladen…</string>
+    <string name="strNotificationHaveNewVersion">Neue Version verfügbar.</string>
+    <string name="strToastCheckUpgradeError">Die Überprüfung auf eine neue Version ist fehlgeschlagen, bitte versuchen Sie es später noch einmal</string>
+    <string name="strToastCheckingUpgrade">Überprüfung, bitte warten Sie&#8230;</string>
+    <string name="strToastYourAreTheLatestVersion">Es ist die neueste Version</string>
+    <string name="strUpgradeDialogCancelBtn">Beim nächsten Mal</string>
+    <string name="strUpgradeDialogContinueBtn">Fortsetzen</string>
+    <string name="strUpgradeDialogFeatureLabel">Upgrade-Eigenschaft</string>
+    <string name="strUpgradeDialogFileSizeLabel">Packungsgröße</string>
+    <string name="strUpgradeDialogInstallBtn">installieren</string>
+    <string name="strUpgradeDialogRetryBtn">Wiederholen</string>
+    <string name="strUpgradeDialogUpdateTimeLabel">Zeitpunkt des Upgrades</string>
+    <string name="strUpgradeDialogUpgradeBtn">Jetzt aktualisieren</string>
+    <string name="strUpgradeDialogVersionLabel">Version</string>
+</resources>

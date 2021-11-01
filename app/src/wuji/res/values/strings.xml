@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeLine</string>
+    <string name="connecting_message">Logging in &#8230;</string>
+    <string name="error_string_no_account">You must enter user ID and password.</string>
+    <string name="error_string_invalid_account">Your user ID or password is incorrect.</string>
+    <string name="error_string_gw_busy">Server is busy, please try again in 10 minutes.</string>
+    <string name="error_string_socket">Can not connect to Service,check your network.</string>
+    <string name="string_notification_ticker">WeLine disconnected.</string>
+    <string name="string_notification_text">WeLine disconnected, touch here to open.</string>
+    <string name="DownloadFail">WeLine Update download fail.</string>
+    <string name="update_title">WeLine update</string>
+    <string name="update_content">A new software update ($VERSION$) is provided to improve stability.
+        Download it now ?</string>
+
+    <string name="HomePage" translatable="false">http://www.memenet.net</string>
+    <string name="HomePageWithoutPrefix" translatable="false">www.memenet.net</string>
+    <string name="SignupURL" translatable="false">http://www.memenet.net/reg.html</string>
+    <string name="ForgotPassURL" translatable="false">https://app.memenet.net/forgetpw.html</string>
+    <string name="ControlPanelURL" translatable="false">https://app.memenet.net/index.html?ticket=</string>
+    <string name="downloadURL" translatable="false">https://www.weline.io/</string>
+    <string name="supportEmail" translatable="false">support@memenet.net</string>
+    <string name="copyright" translatable="false">Powered by weline.io.</string>
+    <string name="all_rights_reserved" translatable="false">All Rights Reserved</string>
+
+    <string name="privacy_policy_url" translatable="false">https://izzbie.com/support/privacy#top</string>
+    <string name="terms_and_conditions_url" translatable="false">https://izzbie.com/support/terms#top</string>
+    <string name="subscriber_agreement_url" translatable="false">https://izzbie.com/support/agreement#top</string>
+    <string name="agree_privacy">I have read. I agree with this privacy policy.</string>
+    <string name="if_not_agree_privacy">Only agree to the privacy agreement before you can continue to use the WeLine.</string>
+    <string name="agree_user_agreement">Have read and agree</string>
+</resources>

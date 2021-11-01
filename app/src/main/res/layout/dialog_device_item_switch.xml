@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    >
+    <Switch
+        android:id="@+id/mSwitch"
+        style="@style/StyleDialogDesSwitch"
+        android:background="@color/bg_white"
+        android:checked="false"
+        android:text="name"
+        android:paddingTop="@dimen/common_4"
+        android:paddingBottom="@dimen/common_4"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/txt_13" />
+    <!--底部线条-->
+    <View
+        android:id="@+id/vSwitchBottom"
+        style="@style/common_line_style"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        />
+</FrameLayout>

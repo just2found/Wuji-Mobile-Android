@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivImage0"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPlay0"
+        style="@style/dynamic_play_style"
+        android:layout_height="@dimen/common_icon42"
+        android:layout_width="@dimen/common_icon42"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage0"
+        app:layout_constraintEnd_toEndOf="@+id/ivImage0"
+        app:layout_constraintStart_toStartOf="@+id/ivImage0"
+        app:layout_constraintTop_toTopOf="@+id/ivImage0" />
+    <!--第一行-->
+    <ImageView
+        android:id="@+id/ivImage1"
+        style="@style/dynamic_image_style"
+        android:src="@drawable/icon_device_a9"
+        app:layout_constraintEnd_toStartOf="@+id/ivImage2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivPlay1"
+        style="@style/dynamic_play_style"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage1"
+        app:layout_constraintEnd_toEndOf="@+id/ivImage1"
+        app:layout_constraintStart_toStartOf="@+id/ivImage1"
+        app:layout_constraintTop_toTopOf="@+id/ivImage1" />
+
+    <ImageView
+        android:id="@+id/ivImage2"
+        style="@style/dynamic_image_style_mid"
+        android:src="@drawable/icon_device_a9"
+        app:layout_constraintEnd_toStartOf="@+id/ivImage3"
+        app:layout_constraintStart_toEndOf="@+id/ivImage1"
+        app:layout_constraintTop_toTopOf="@+id/ivImage1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivPlay2"
+        style="@style/dynamic_play_style"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage2"
+        app:layout_constraintEnd_toEndOf="@+id/ivImage2"
+        app:layout_constraintStart_toStartOf="@+id/ivImage2"
+        app:layout_constraintTop_toTopOf="@+id/ivImage2" />
+
+    <ImageView
+        android:id="@+id/ivImage3"
+        style="@style/dynamic_image_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivImage2"
+        app:layout_constraintTop_toTopOf="@+id/ivImage1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivPlay3"
+        style="@style/dynamic_play_style"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage3"
+        app:layout_constraintEnd_toEndOf="@+id/ivImage3"
+        app:layout_constraintStart_toStartOf="@+id/ivImage3"
+        app:layout_constraintTop_toTopOf="@+id/ivImage3" />
+    <!--第2行-->
+    <ImageView
+        android:id="@+id/ivImage4"
+        style="@style/dynamic_image_style_start"
+        app:layout_constraintEnd_toStartOf="@+id/ivImage5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivPlay4"
+        style="@style/dynamic_play_style"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage4"
+        app:layout_constraintEnd_toEndOf="@+id/ivImage4"
+        app:layout_constraintStart_toStartOf="@+id/ivImage4"
+        app:layout_constraintTop_toTopOf="@+id/ivImage4" />
+
+    <ImageView
+        android:id="@+id/ivImage5"
+        style="@style/dynamic_image_style_mid"
+        app:layout_constraintEnd_toStartOf="@+id/ivImage6"
+        app:layout_constraintStart_toEndOf="@+id/ivImage4"
+        app:layout_constraintTop_toTopOf="@+id/ivImage4"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivPlay5"
+        style="@style/dynamic_play_style"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage5"
+        app:layout_constraintEnd_toEndOf="@+id/ivImage5"
+        app:layout_constraintStart_toStartOf="@+id/ivImage5"
+        app:layout_constraintTop_toTopOf="@+id/ivImage5" />
+
+
+    <ImageView
+        android:id="@+id/ivImage6"
+        style="@style/dynamic_image_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivImage5"
+        app:layout_constraintTop_toTopOf="@+id/ivImage4"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivPlay6"
+        style="@style/dynamic_play_style"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage6"
+        app:layout_constraintEnd_toEndOf="@+id/ivImage6"
+        app:layout_constraintStart_toStartOf="@+id/ivImage6"
+        app:layout_constraintTop_toTopOf="@+id/ivImage6" />
+    <!--第3行-->
+
+    <ImageView
+        android:id="@+id/ivImage7"
+        style="@style/dynamic_image_style_start"
+        app:layout_constraintEnd_toStartOf="@+id/ivImage8"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage4"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivPlay7"
+        style="@style/dynamic_play_style"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage7"
+        app:layout_constraintEnd_toEndOf="@+id/ivImage7"
+        app:layout_constraintStart_toStartOf="@+id/ivImage7"
+        app:layout_constraintTop_toTopOf="@+id/ivImage7" />
+
+    <ImageView
+        android:id="@+id/ivImage8"
+        style="@style/dynamic_image_style_mid"
+        app:layout_constraintEnd_toStartOf="@+id/ivImage9"
+        app:layout_constraintStart_toEndOf="@+id/ivImage7"
+        app:layout_constraintTop_toTopOf="@+id/ivImage7"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivPlay8"
+        style="@style/dynamic_play_style"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage8"
+        app:layout_constraintEnd_toEndOf="@+id/ivImage8"
+        app:layout_constraintStart_toStartOf="@+id/ivImage8"
+        app:layout_constraintTop_toTopOf="@+id/ivImage8" />
+
+    <ImageView
+        android:id="@+id/ivImage9"
+        style="@style/dynamic_image_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivImage8"
+        app:layout_constraintTop_toTopOf="@+id/ivImage7"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivPlay9"
+        style="@style/dynamic_play_style"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage9"
+        app:layout_constraintEnd_toEndOf="@+id/ivImage9"
+        app:layout_constraintStart_toStartOf="@+id/ivImage9"
+        app:layout_constraintTop_toTopOf="@+id/ivImage9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/open_by_other_app"
+        android:title="@string/other_ways" />
+    <item
+        android:id="@+id/prefer_extension_decoders"
+        android:checkable="true"
+        android:title="@string/prefer_extension_decoders"
+        app:showAsAction="never" />
+</menu>
+
+

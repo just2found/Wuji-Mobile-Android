@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="42dip"
+    android:layout_gravity="center"
+    android:paddingStart="@dimen/common_16"
+    android:paddingEnd="@dimen/common_16">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_a85"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_mid"
+        tools:text="test" />
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/common_4"
+        android:paddingEnd="@dimen/common_4"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|end"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_sm"
+        android:singleLine="true"
+        android:visibility="visible"
+        tools:text="more >"
+        tools:visibility="visible" />
+</RelativeLayout>

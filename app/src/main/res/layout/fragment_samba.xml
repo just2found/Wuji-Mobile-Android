@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Samba协议-->
+        <!--背景-->
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mSwitch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/mSwitch"
+            />
+        <TextView
+            android:id="@+id/tvStatusTitle"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:text="@string/samba_protocol"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintEnd_toStartOf="@+id/mSwitchBarrier"
+            app:layout_constraintBottom_toBottomOf="@+id/mSwitch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mSwitch" />
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/mSwitchBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="start"
+            app:constraint_referenced_ids="mSwitch,tvStatusText"
+            />
+        <Switch
+            android:id="@+id/mSwitch"
+            style="@style/StyleDialogDesSwitch"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/common_16"
+            android:checked="false"
+            android:background="@null"
+            android:paddingTop="@dimen/common_4"
+            android:paddingBottom="@dimen/common_4"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:gravity="end|right|center_vertical"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingRight="@dimen/common_16"
+            android:visibility="gone"
+            android:textSize="13sp"
+            android:textColor="@color/text_light_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mSwitch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mSwitch"
+            tools:text="@string/enabled" />
+        <!--底部线条-->
+        <View
+            android:id="@+id/vSwitchBottom"
+            style="@style/common_line_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mSwitch" />
+        <!--匿名访问-->
+        <!--背景-->
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mAnonymousAccessSwitch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/mAnonymousAccessSwitch"
+            />
+        <TextView
+            android:id="@+id/tvAnonymousAccessTitle"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:text="@string/anonymous_access"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintEnd_toStartOf="@+id/mAnonymousAccessSwitchBarrier"
+            app:layout_constraintBottom_toBottomOf="@+id/mAnonymousAccessSwitch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mAnonymousAccessSwitch" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/mAnonymousAccessSwitchBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="start"
+            app:constraint_referenced_ids="mAnonymousAccessSwitch,tvAnonymousAccessText"
+            />
+
+        <Switch
+            android:id="@+id/mAnonymousAccessSwitch"
+            style="@style/StyleDialogDesSwitch"
+            android:layout_width="wrap_content"
+            android:checked="false"
+            android:background="@null"
+            android:paddingTop="@dimen/common_4"
+            android:paddingBottom="@dimen/common_4"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vSwitchBottom" />
+
+        <TextView
+            android:id="@+id/tvAnonymousAccessText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:gravity="end|right|center_vertical"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingRight="@dimen/common_16"
+            android:visibility="gone"
+            android:textSize="13sp"
+            android:textColor="@color/text_light_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mAnonymousAccessSwitch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mAnonymousAccessSwitch"
+            tools:text="@string/enabled" />
+
+        <View
+            android:id="@+id/vAnonymousAccessSwitchBottom"
+            style="@style/common_line_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mAnonymousAccessSwitch" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/anonymousAccessGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tvAnonymousAccessTitle,mAnonymousAccessSwitch,tvAnonymousAccessText,vAnonymousAccessSwitchBottom" />
+        <!--局域网扫描可见-->
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mLanScanVisibleSwitch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/mLanScanVisibleSwitch"
+            />
+        <TextView
+            android:id="@+id/tvLanScanVisibleTitle"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:text="@string/lan_scan_visible"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintEnd_toStartOf="@+id/mLanScanVisibleSwitchBarrier"
+            app:layout_constraintBottom_toBottomOf="@+id/mLanScanVisibleSwitch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mLanScanVisibleSwitch" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/mLanScanVisibleSwitchBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="start"
+            app:constraint_referenced_ids="mLanScanVisibleSwitch,tvLanScanVisibleText"
+            />
+
+        <Switch
+            android:id="@+id/mLanScanVisibleSwitch"
+            style="@style/StyleDialogDesSwitch"
+            android:layout_width="wrap_content"
+            android:checked="false"
+            android:background="@null"
+            android:paddingTop="@dimen/common_4"
+            android:paddingBottom="@dimen/common_4"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vAnonymousAccessSwitchBottom" />
+
+        <TextView
+            android:id="@+id/tvLanScanVisibleText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:gravity="end|right|center_vertical"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingRight="@dimen/common_16"
+            android:visibility="gone"
+            android:textSize="13sp"
+            android:textColor="@color/text_light_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mLanScanVisibleSwitch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mLanScanVisibleSwitch"
+            tools:text="@string/enabled" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/configBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="mSwitch,vSwitchBottom,mAnonymousAccessSwitch,vAnonymousAccessSwitchBottom,mLanScanVisibleSwitch" />
+        <!--samba用户名-->
+        <TextView
+            android:id="@+id/tvUserNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:paddingStart="@dimen/common_16"
+            android:paddingLeft="@dimen/common_16"
+            android:paddingTop="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingRight="@dimen/common_16"
+            android:paddingBottom="@dimen/common_16"
+            android:text="@string/current_samba_user_name"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintBottom_toBottomOf="@+id/tvUserName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvUserName" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_16"
+            android:background="@color/white"
+            android:gravity="end|right"
+            android:paddingStart="@dimen/common_16"
+            android:paddingLeft="@dimen/common_16"
+            android:paddingTop="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingRight="@dimen/common_16"
+            android:paddingBottom="@dimen/common_16"
+            android:text="@string/current_samba_user_name"
+            android:textColor="@color/text_light_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvUserNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/configBarrier" />
+
+        <View
+            android:id="@+id/vUserNameBottom"
+            style="@style/common_line_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+        <net.linkmate.app.view.CusTextView
+            android:id="@+id/tvSettingPassword"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:drawableEnd="@drawable/gray_right_arrow"
+            android:paddingStart="@dimen/common_16"
+            android:paddingLeft="@dimen/common_16"
+            android:paddingTop="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingRight="@dimen/common_16"
+            android:paddingBottom="@dimen/common_16"
+            android:text="@string/setting_samba_password"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vUserNameBottom" />
+
+        <TextView
+            android:id="@+id/tvFunctionDescriptionTitle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/common_16"
+            android:paddingTop="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingBottom="@dimen/common_16"
+            android:text="@string/function_description"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="@dimen/txt_15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSettingPassword" />
+
+        <TextView
+            android:id="@+id/tvFunctionDescriptionContent"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dip"
+            android:paddingStart="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:paddingBottom="@dimen/common_16"
+            android:text="@string/samba_function_content"
+            android:textColor="@color/text_light_gray"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFunctionDescriptionTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

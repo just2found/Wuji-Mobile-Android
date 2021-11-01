@@ -1,0 +1,71 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    android.libraryVariants.all { variant ->
+        changeOutput(variant)
+    }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.exifinterface:exifinterface:1.3.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    //implementation 'com.github.yalantis:ucrop:2.2.4'
+    api 'com.joker.HuanTanSheng:UCrop:andX-2.5.1'
+}
+
+
+static def getVersionNumber() {
+    def count = "git rev-list HEAD --count".execute().text.trim()
+//    def count = "svn info --show-item last-changed-revision".execute().text.trim()
+//    def count = "2320"
+    println("count: $count")
+    if (count.isInteger()) return count.toInteger()
+    return 1
+}
+
+static def getVersionName() {
+    return "2_5_6_" + getVersionNumber()
+}
+
+def changeOutput(variant) {
+    def name = project.name + "_v" + getVersionName() + '_' + variant.buildType.name
+    println(name)
+    variant.outputs.all { output ->
+        outputFileName = name + '.aar'
+    }
+    variant.assembleProvider.get().doLast { assemble ->
+        if ("release".equalsIgnoreCase(variant.buildType.name)) {
+            copy {
+                from variant.outputs*.outputFile
+//            File aar = new File(projectDir, "/aar")
+//            if (!aar.exists()) {
+//                aar.mkdir()
+//            }
+//            into "${aar}"
+                File libs = new File(rootDir, "/libs")
+                println("libs === " + libs.getAbsolutePath())
+                into("${libs}")
+            }
+        }
+    }
+}
+

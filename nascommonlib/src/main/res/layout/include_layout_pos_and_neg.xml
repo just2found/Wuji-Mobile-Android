@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/negative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_size_mid"
+            android:layout_gravity="center_vertical"
+            android:padding="10dip"
+            android:minHeight="@dimen/common_ItemHeight48"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/spit_line"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="negative" />
+
+        <View
+            android:id="@+id/spit_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_dialog"
+            app:layout_constraintBottom_toBottomOf="@+id/negative"
+            app:layout_constraintEnd_toStartOf="@+id/positive"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/negative" />
+
+        <TextView
+            android:id="@+id/positive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/selector_primary_to_pressed_grey"
+            android:textSize="@dimen/text_size_mid"
+            android:padding="10dip"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:minHeight="@dimen/common_ItemHeight48"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/spit_line"
+            tools:text="positive" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:minHeight="@dimen/layout_title_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_10"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:minHeight="@dimen/common_icon48"
+            android:padding="@dimen/common_6"
+            app:layout_constraintBottom_toBottomOf="@+id/title_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:id="@+id/forget_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:padding="@dimen/common_10"
+            android:text="@string/reset"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/txt_14"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_close" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="@dimen/txt_24"
+        android:autoSizeMinTextSize="@dimen/txt_16"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/find_the_password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_24"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="@dimen/txt_24"
+        app:autoSizeMinTextSize="@dimen/txt_16"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/describe_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_24"
+        android:text="@string/password_description_20"
+        android:textSize="@dimen/txt_15"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/title_tv"
+        app:layout_constraintStart_toStartOf="@+id/title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+
+    <TextView
+        android:id="@+id/question_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/txt_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv"
+        app:layout_constraintVertical_bias="0.1"
+        tools:text="密保的答案是什么？" />
+
+    <org.view.libwidget.item.InputItem1
+        android:id="@+id/old_answer_it"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight56"
+        android:layout_marginStart="@dimen/common_20"
+        android:layout_marginEnd="@dimen/common_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv"
+        app:layout_constraintVertical_bias="0.17000002"
+        app:regular_check="length32"
+        app:separator_color="@color/gray_b3"
+        app:separator_focus_color="@color/color_0C81FB"
+        app:text_color="@color/black_a85"
+        app:text_hint="@string/security_answer"
+        app:text_size="@dimen/sp_16" />
+
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_48"
+        android:background="@drawable/bg_button_theme_primary_radius"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/old_answer_it"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.80" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

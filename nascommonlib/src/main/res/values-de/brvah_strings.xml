@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brvah_loading">Laden&#8230;</string>
+    <string name="brvah_load_failed">Laden fehlgeschlagen. Bitte klicken Sie hier, um es erneut zu versuchen.</string>
+    <string name="brvah_load_end">Keine weiteren Daten verfügbar</string>
+</resources>

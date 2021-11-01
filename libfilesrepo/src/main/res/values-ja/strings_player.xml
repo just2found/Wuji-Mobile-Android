@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unexpected_intent_action">予想外の意図的な行動:%1$s </string>
+    <string name="error_cleartext_not_permitted">クリアテキストトラフィックの使用は禁止されています。</string>
+    <string name="error_generic">再生に失敗しました</string>
+    <string name="error_unrecognized_abr_algorithm">認識できないABRアルゴリズム</string>
+    <string name="error_unrecognized_stereo_mode">認識できないステレオモード</string>
+    <string name="error_drm_not_supported">APIレベルが18以下で、保護されていないコンテンツがサポートされていません。</string>
+    <string name="error_drm_unsupported_scheme">このデバイスはDRMプログラムをサポートしていません。</string>
+    <string name="error_drm_unknown">未知のDRMエラーが発生しました。</string>
+    <string name="error_no_decoder">このデバイスはデコーダ%1$s を提供していません。</string>
+    <string name="error_no_secure_decoder">このデバイスはセキュリティデコーダ%1$sを提供していません。</string>
+    <string name="error_querying_decoders">デバイスデコーダを確認できませんでした。</string>
+    <string name="error_instantiating_decoder">デコーダ%1$sをインスタンス化できません。</string>
+    <string name="error_unsupported_video">メディアにはビデオの曲が含まれていますが、このデバイスは再生できません。</string>
+    <string name="error_unsupported_audio">メディアにはオーディオトラックが含まれていますが、このデバイスで再生できません</string>
+    <string name="storage_permission_denied">保存にアクセスする権限が拒否されました。</string>
+    <string name="download_start_error">ダウンロードを開始できませんでした</string>
+</resources>

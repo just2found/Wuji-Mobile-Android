@@ -1,0 +1,92 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dialog_radius">
+
+    <LinearLayout
+        android:id="@+id/root_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <net.sdvn.nascommon.widget.AutoGoneTextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_start"
+            android:layout_marginTop="@dimen/view_top_start"
+            android:layout_marginEnd="@dimen/view_end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:text="text title"
+            tools:visibility="visible" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_start"
+            android:layout_marginTop="@dimen/view_top_start"
+            android:layout_marginEnd="@dimen/view_end"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title"
+            >
+
+            <net.sdvn.nascommon.widget.ClearEditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_full_radius_gray"
+                android:gravity="center"
+                android:inputType="text"
+                android:minHeight="@dimen/common_ItemHeight48"
+                android:singleLine="true"
+                android:textDirection="anyRtl"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_mid"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minHeight="@dimen/common_ItemHeight48"
+                android:textColor="@color/color_black_hint_text"
+                app:autoSizeMaxTextSize="@dimen/text_size_mid"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeTextType="uniform"
+                tools:text="testsfsfdsf" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/txt_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_start"
+            android:layout_marginTop="@dimen/view_top_start"
+            android:layout_marginEnd="@dimen/view_end"
+            android:minHeight="@dimen/common_ItemHeight32"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_content"
+            tools:visibility="visible" />
+
+        <include
+            layout="@layout/include_layout_pos_and_neg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_top_start" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

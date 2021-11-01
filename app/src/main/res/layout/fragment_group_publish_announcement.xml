@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--头部-->
+
+    <FrameLayout
+        android:id="@+id/flToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dynamic_toolbar_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_ItemHeight48"
+            app:contentInsetStartWithNavigation="0dip"
+            app:layout_collapseMode="pin"
+            app:layout_collapseParallaxMultiplier="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/icon_return_black"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/common_12"
+                    android:layout_weight="1"
+                    android:text="@string/announcement_editor"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/txt_15"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPublish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="11dip"
+                    android:background="@drawable/selector_button_bg_primary"
+                    android:clickable="true"
+                    android:enabled="false"
+                    android:gravity="end|center_vertical"
+                    android:onClick="onClick"
+                    android:paddingStart="9dip"
+                    android:paddingTop="5dip"
+                    android:paddingEnd="9dip"
+                    android:paddingBottom="5dip"
+                    android:text="@string/publish_dynamic"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_13" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flToolbar"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/view_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipsBar">
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_radius_grey_stroke"
+            android:lines="12"
+            android:maxLength="500"
+            android:paddingStart="13dip"
+            android:paddingTop="13dip"
+            android:paddingEnd="13dip"
+            android:paddingBottom="26dip"
+            android:textSize="13sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-8dp" />
+        <!--设备数-->
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="@dimen/common_24"
+            android:layout_marginBottom="@dimen/common_5"
+            android:text="0/500"
+            android:textColor="@color/text_dark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etContent"
+            app:layout_constraintStart_toStartOf="@+id/etContent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

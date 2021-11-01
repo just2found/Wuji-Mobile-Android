@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:clipChildren="true"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/common_8"
+    android:paddingEnd="@dimen/common_8">
+
+    <View
+        android:id="@+id/viewItemHead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--标题-->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/gTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tvTitle,vTitleLeft,vTitleRight"
+        />
+    <View
+        android:id="@+id/vTitleLeft"
+        style="@style/common_line_style"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="@+id/clItemPanel"
+        app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+        android:layout_marginStart="@dimen/common_28"
+        />
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/common_6"
+        android:layout_marginTop="3dip"
+        android:layout_marginEnd="@dimen/common_6"
+        android:layout_marginBottom="5dip"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/txt_12"
+        tools:text="0283402"
+        android:paddingStart="@dimen/common_28"
+        android:paddingEnd="@dimen/common_28"
+        app:layout_constraintEnd_toEndOf="@+id/clItemPanel"
+        app:layout_constraintStart_toStartOf="@+id/clItemPanel"
+        app:layout_constraintTop_toBottomOf="@+id/viewItemHead" />
+    <View
+        android:id="@+id/vTitleRight"
+        style="@style/common_line_style"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="@+id/clItemPanel"
+        app:layout_constraintStart_toEndOf="@+id/tvTitle"
+        android:layout_marginEnd="@dimen/common_28"
+        />
+    <!--面板-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clItemPanel"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/common_8"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+        <!--背景-->
+        <CheckBox
+            android:id="@+id/cbCircleTypeCheck"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:background="@drawable/bg_item_dev"
+            android:button="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/selector_black_to_gray"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:checked="true" />
+
+        <TextView
+            android:id="@+id/tvCircleTypeName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_20"
+            android:layout_marginTop="12dip"
+            android:layout_marginEnd="20dip"
+            android:paddingEnd="@dimen/common_8"
+            android:text="AAA"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--最大用户数-->
+        <LinearLayout
+            android:id="@+id/llCircleTypeForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_4"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_4"
+            android:paddingBottom="@dimen/common_8"
+            app:layout_constraintStart_toStartOf="@+id/tvCircleTypeName"
+            app:layout_constraintTop_toBottomOf="@+id/tvCircleTypeName"></LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivTypeChecked"
+        android:layout_width="@dimen/common_icon28"
+        android:layout_height="@dimen/common_icon28"
+        android:src="@drawable/icon_network_checked"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/clItemPanel"
+        app:layout_constraintTop_toTopOf="@+id/clItemPanel"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/viewItemFoot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clItemPanel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

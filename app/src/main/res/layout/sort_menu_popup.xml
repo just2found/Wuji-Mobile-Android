@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black_a85"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/common_12"
+    android:paddingEnd="@dimen/common_12"
+    android:paddingBottom="@dimen/common_12"
+    android:paddingStart="@dimen/common_6">
+
+    <Switch
+        android:id="@+id/sort_by_name"
+        style="@style/custom_radio_text"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:checked="true"
+        android:text="@string/sort_by_name" />
+
+    <Switch
+        android:id="@+id/sort_by_time"
+        style="@style/custom_radio_text"
+        android:layout_width="wrap_content"
+        android:checked="false"
+        android:text="@string/sort_by_time" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_bg_grey50"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="@dimen/common_6"
+        android:layout_height="0.5dp" />
+    <Switch
+        android:id="@+id/display_by_grid"
+        style="@style/custom_radio_text"
+        android:layout_width="wrap_content"
+        android:checked="true"
+        android:text="@string/display_by_grid" />
+
+    <Switch
+        android:id="@+id/display_by_list"
+        style="@style/custom_radio_text"
+        android:layout_width="wrap_content"
+        android:checked="false"
+        android:text="@string/display_by_list" />
+
+
+</LinearLayout>

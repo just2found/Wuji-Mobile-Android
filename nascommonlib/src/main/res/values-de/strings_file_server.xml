@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">Freigabe abgebrochen oder abgelaufen!</string>
+    <string name="tip_error_open_dir">Verzeichnis konnte nicht geöffnet werden</string>
+    <string name="tip_error_task_running">Fehler beim Ausführen der Aufgabe!</string>
+    <string name="msg_error_exceed_downloads">Dieser Anteil übersteigt die maximale Anzahl von Herunterladungen.</string>
+    <string name="msg_error_cancel_shared">Abbrechen der Freigabe fehlgeschlagen</string>
+    <string name="msg_error_bind_network">Fehler bei der Verbindung zu Remote-Diensten</string>
+    <string name="msg_error_user_not_exist">freigegebene Benutzer existieren nicht mehr</string>
+    <string name="msg_error_illegal_operation">Ungültige Operation, bitte aktualisieren und erneut versuchen.</string>
+    <string name="msg_error_get_device_ip">Die Verbindung zum Freigabeserver ist fehlgeschlagen, bitte versuchen Sie es später noch einmal.</string>
+    <string name="msg_error_broken_network">Netzwerkfehler</string>
+    <string name="msg_error_dl_not_running">Das Herunterladen läuft nicht, es können keine neuen Dateien hinzugefügt werden.</string>
+    <string name="msg_error_source_file_open">Quelldatei konnte nicht geöffnet werden</string>
+    <string name="msg_error_source_file_change">Änderung der Größe der Quelldatei</string>
+    <string name="msg_error_temp_file">Provisorisches Dokument wurde gelöscht.</string>
+    <string name="msg_error_auth">Interne Authentifizierungsfehler</string>
+    <string name="msg_error_target_file">Schreiben der Zieldatei fehlgeschlagen</string>
+    <string name="msg_error_token">Ungültige Token</string>
+    <string name="msg_error_more_shared_ticket">Herunterladen-Aufgabe wurde erstellt.</string>
+    <string name="msg_error_shared_ticket_overtime">Freigabe ist abgelaufen</string>
+    <string name="tips_warn_cancel_share">Unvollständige Herunterladungen werden abgebrochen und temporäre Dateien entfernt!</string>
+    <string name="msg_error_disk_full">Die Festplatte ist voll, bitte räumen Sie den Speicherplatz und versuchen Sie es erneut!</string>
+</resources>

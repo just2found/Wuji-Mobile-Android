@@ -1,0 +1,3 @@
+def basePath = '../libs/'
+configurations.maybeCreate("default")
+artifacts.add("default", file(basePath+rootProject.ext.libName+'.aar'))

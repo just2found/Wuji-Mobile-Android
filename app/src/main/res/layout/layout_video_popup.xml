@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--   配置默认加载图片 app:default_artwork="@drawable/loading_video"-->
+<com.google.android.exoplayer2.ui.PlayerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mExoplayerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:fastforward_increment="@integer/exoplayer_playback_fastforward_increment_ms"
+    app:repeat_toggle_modes="one"
+    app:rewind_increment="@integer/exoplayer_playback_rewind_increment_ms"
+    app:show_timeout="@integer/exoplayer_show_control_timeout_ms"
+    app:use_artwork="true"
+    app:use_controller="false" /><!--repeat_toggle_modes 设置单项循环播放模式-->
+

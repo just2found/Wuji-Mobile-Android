@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/common_16"
+    android:background="@color/color_bg_grey150"
+    app:cardCornerRadius="@dimen/card_view_radius"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/group_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/sort_by_time"
+                style="@style/custom_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginBottom="@dimen/common_1"
+                android:text="@string/time"
+                tools:checked="true"
+                app:tint="@color/primary"
+                app:tintMode="src_in"
+                tools:drawableEnd="@drawable/selector_check_box_uncheck_null"
+                tools:drawableStart="@drawable/selector_checked_up_uncheck_null" />
+
+            <RadioButton
+                android:id="@+id/sort_by_name"
+                style="@style/custom_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginBottom="@dimen/common_1"
+                android:text="@string/name"
+                app:tint="@color/primary"
+                app:tintMode="src_in"
+                tools:drawableEnd="@drawable/icon_sorting"
+                tools:drawableStart="@drawable/icon_checked" />
+
+            <RadioButton
+                android:id="@+id/sort_by_size"
+                style="@style/custom_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:text="@string/size"
+                app:tint="@color/primary"
+                app:tintMode="src_in"
+                tools:drawableEnd="@drawable/icon_sorting"
+                tools:drawableStart="@drawable/icon_checked" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/group_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_4"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/display_by_list"
+                style="@style/custom_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginBottom="@dimen/common_1"
+                android:text="@string/list"
+                app:tint="@color/primary"
+                app:tintMode="src_in"
+                tools:drawableEnd="@drawable/icon_sorting" />
+
+            <RadioButton
+                android:id="@+id/display_by_grid"
+                style="@style/custom_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:text="@string/grid"
+                tools:drawableEnd="@drawable/icon_sorting"
+                app:tint="@color/primary"
+                app:tintMode="src_in"
+                tools:drawableStart="@drawable/icon_checked" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connecting_message">En cours de connexion au micro-lien&#8230;</string>
+    <string name="error_string_no_account">Pas encore rempli l\'ID ou le mot de passe du micro-lien.</string>
+    <string name="error_string_invalid_account">L\'ID ou le mot de passe du micro-lien est incorrect.</string>
+    <string name="error_string_gw_busy">Le serveur est occupé. Réessayer au bout de 10 minutes.</string>
+    <string name="error_string_socket">Échec de la connexion au service. Vérifier votre réseau.</string>
+    <string name="string_notification_ticker">Le micro-lien déconnecté.</string>
+    <string name="string_notification_text">Le micro-lien déconnecté. Toucher doucement pour ouvrir.</string>
+    <string name="DownloadFail">Échec du téléchargement et de la mise à jour du micro-lien.</string>
+    <string name="update_title">Mise à jour du micro-lien</string>
+    <string name="update_content">Une nouvelle version du logiciel Micro-lien ($VERSION$) est fournie. Mettre à jour immédiatement.</string>
+    <string name="agree_privacy">J’ai lu. J\'accepte l’accord de confidentialité.</string>
+    <string name="if_not_agree_privacy">Accepter l’accord de confidentialité avant que vous ne puissiez continuer à utiliser le Micro-lien.</string>
+</resources>

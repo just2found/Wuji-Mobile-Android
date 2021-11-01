@@ -1,0 +1,26 @@
+<resources>
+    <plurals name="users">
+        <item quantity="other">%1$s 位用户</item>
+    </plurals>
+    <plurals name="folders">
+        <item quantity="other">%d 个文件夹</item>
+    </plurals>
+    <plurals name="files">
+        <item quantity="other">%d 个文件</item>
+    </plurals>
+    <plurals name="plurals_hour">
+        <item quantity="other">%d小时</item>
+    </plurals>
+    <plurals name="plurals_day">
+        <item quantity="other">%d天</item>
+    </plurals>
+    <plurals name="plurals_minutes">
+        <item quantity="other">%d分钟</item>
+    </plurals>
+    <plurals name="shared_users">
+        <item quantity="other">分享绑定用户%d位</item>
+    </plurals>
+    <plurals name="local_accounts">
+        <item quantity="other">本地账号%d位</item>
+    </plurals>
+</resources>

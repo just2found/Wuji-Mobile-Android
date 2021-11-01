@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/account_srl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginTop="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/account_ail_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:iv_right_arrow_visibility="gone"
+                tools:tv_tips_text="1866666666"
+                app:tv_title_text="@string/my_account" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginStart="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/account_qrCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:tv_title_text="@string/identify_code" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/account_ail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                tools:tv_tips_text="张三"
+                app:tv_title_text="@string/name" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/account_ail_modify_nick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                tools:tv_tips_text="一个简单的名字"
+                app:tv_title_text="@string/nickname" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/account_ail_bind_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:tv_title_text="@string/phone"
+                app:tv_tips_text="@string/unbound" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/account_ail_modify_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:tv_title_text="@string/modify_pwd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_msg_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_button_white_ripple_trans_gray"
+    android:foreground="@drawable/bg_ripple_trans_gray"
+    android:minHeight="@dimen/common_icon64"
+    tools:targetApi="m">
+
+    <ImageView
+        android:id="@+id/icon_news"
+        android:layout_width="@dimen/common_icon64"
+        android:layout_height="@dimen/common_icon64"
+        android:padding="@dimen/common_10"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/icon_msg_sysmsg" />
+
+    <net.sdvn.nascommon.widget.AutoGoneTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingEnd="@dimen/common_6"
+        android:singleLine="true"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_15"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/tv_msg_time"
+        app:layout_constraintStart_toEndOf="@+id/icon_news"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        tools:text="Mr.Liu" />
+
+    <ImageView
+        android:id="@+id/iv_red_dot"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_red_dot"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/icon_news"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/common_6"
+        android:paddingEnd="@dimen/common_6"
+        android:textColor="@color/text_light_gray"
+        android:textSize="@dimen/txt_11"
+        app:layout_constraintTop_toTopOf="@id/tv_title"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="2017-12-18 22:05:10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <net.sdvn.nascommon.widget.AutoGoneTextView
+        android:id="@+id/tv_msg_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:paddingEnd="@dimen/common_6"
+        android:singleLine="true"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/txt_13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_msg_status"
+        app:layout_constraintStart_toEndOf="@+id/icon_news"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.2"
+        tools:text="Mr" />
+
+    <net.sdvn.nascommon.widget.AutoGoneTextView
+        android:id="@+id/tv_msg_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/common_6"
+        android:paddingEnd="@dimen/common_6"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/txt_13"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_msg_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_msg_content"
+        tools:text="@string/wait_for_consent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_line"
+        android:layout_marginLeft="@dimen/common_2"
+        android:background="@color/line_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_news" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

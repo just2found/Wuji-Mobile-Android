@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/root"
+    >
+    <View
+        android:id="@+id/vEmptyItemHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_48"
+        android:layout_weight="0"
+        />
+    <View
+        android:id="@+id/vEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        >
+        <!-- 需设置fitsSystemWindows="true"，否则输入框布局无法被键盘顶起-->
+        <!--头部-->
+        <include
+            layout="@layout/include_dialog_device_header"
+            />
+        <!--中间-->
+        <net.linkmate.app.ui.activity.nasApp.deviceDetial.LimitRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+        <!--底部-->
+        <include
+            layout="@layout/include_dialog_device_bottom"
+            />
+    </LinearLayout>
+</LinearLayout>

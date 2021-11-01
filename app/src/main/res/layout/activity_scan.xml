@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_scan_root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    <FrameLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <FrameLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <FrameLayout-->
+    <!--                android:id="@+id/activity_scan_container"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="bottom"-->
+    <!--                android:layout_marginBottom="128dp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="@string/qrcode_notice"-->
+    <!--                android:textColor="@color/color_bg_grey50" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/activity_scan_tv_open_album"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="48dp"-->
+    <!--                android:layout_gravity="bottom"-->
+    <!--                android:background="@color/translucent_black"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="@string/choose_from_album"-->
+    <!--                android:textColor="@color/color_bg_grey50"-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:visibility="visible" />-->
+    <!--        </FrameLayout>-->
+
+
+    <fragment
+        android:id="@+id/activity_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/scan_nav" />
+    <!--    </FrameLayout>-->
+    <include layout="@layout/include_title_bar" />
+
+
+
+</RelativeLayout>

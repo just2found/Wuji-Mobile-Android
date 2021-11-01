@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dlna_navigation"
+    app:startDestination="@id/DLNA">
+    <fragment
+        android:id="@+id/DLNA"
+        android:name="net.linkmate.app.ui.nas.dnla.DNLAFragment"
+        android:label="DLNAFragment">
+        <action
+            android:id="@+id/enterSettingScanPath"
+            app:destination="@id/settingScanPath" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingScanPath"
+        android:name="net.linkmate.app.ui.nas.dnla.DNLASettingScanPathFragment"
+        android:label="DLNASettingScanPathFragment" />
+</navigation>

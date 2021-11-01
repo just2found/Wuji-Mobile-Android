@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg_grey50"
+        app:cardCornerRadius="@dimen/common_6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/laout_setup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_upgrade_title"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/flow_unit_price"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_20"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:text="@string/device"
+                android:textSize="@dimen/text_size_mid"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+            <TextView
+                android:id="@+id/device_sn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:padding="6dp"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_mid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:text="@string/flow_unit_price"
+                android:textSize="@dimen/text_size_mid"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/device_sn" />
+
+            <EditText
+                android:id="@+id/editText_price"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/selector_bg_grey_stroke"
+                android:ems="8"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_current_price_unit"
+                app:layout_constraintEnd_toStartOf="@+id/tv_current_price_unit"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="2"
+                tools:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_current_price_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:padding="@dimen/common_6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/editText_price"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_current_price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginStart="@dimen/common_24"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:padding="@dimen/common_6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:text="TextView" />
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toEndOf="@+id/editText_price"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/textView14"-->
+            <ImageView
+                android:id="@+id/button_edit"
+                android:layout_width="@dimen/common_ItemHeight42"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_edit2"
+                android:textColor="@color/bg_blue"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_current_price"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="tv_current_price_unit,tv_current_price" />
+
+            <TextView
+                android:id="@+id/tips_price_limit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textColor="@color/text_blue"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrier33"
+                tools:text="100"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="tips_price_limit,tv_current_price,tv_current_price_unit" />
+
+            <TextView
+                android:id="@+id/textView_line3_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:text="@string/delay_time_title"
+                android:textSize="@dimen/text_size_mid"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrier10" />
+
+            <TextView
+                android:id="@+id/textView_line3_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:text="@string/last_flow_unit_price"
+                android:textSize="@dimen/text_size_mid"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrier10" />
+
+            <EditText
+                android:id="@+id/editText_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/selector_bg_grey_stroke"
+                android:ems="3"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:hint="1"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView_hours"
+                app:layout_constraintEnd_toStartOf="@+id/textView_hours"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="1" />
+
+            <TextView
+                android:id="@+id/textView_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="@dimen/common_6"
+                android:text="@string/hours"
+                app:layout_constraintEnd_toStartOf="@+id/editText_minutes"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/editText_hours"
+                app:layout_constraintTop_toBottomOf="@+id/textView_line3_title"
+                tools:text="@tools:sample/date/hhmm" />
+
+            <EditText
+                android:id="@+id/editText_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:background="@drawable/selector_bg_grey_stroke"
+                android:ems="3"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:textAlignment="center"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView_hours"
+                app:layout_constraintEnd_toStartOf="@+id/textView_minutes"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView_hours"
+                tools:text="12" />
+
+            <TextView
+                android:id="@+id/textView_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:padding="@dimen/common_6"
+                android:text="@string/minutes"
+                app:layout_constraintBaseline_toBaselineOf="@+id/editText_minutes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/editText_minutes" />
+
+            <TextView
+                android:id="@+id/textView_new_price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginStart="@dimen/common_24"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:padding="@dimen/common_6"
+                android:text="@string/hours"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_line3_title2"
+                tools:text="@tools:sample/date/hhmm" />
+
+            <ImageView
+                android:id="@+id/button_undo"
+                android:layout_width="@dimen/common_ItemHeight42"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_undo"
+                android:textColor="@color/bg_blue"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_new_price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView_new_price" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="textView_new_price,textView_hours" />
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="@dimen/common_6"
+                android:textColor="@color/text_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrier9"
+                tools:text="TextView" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/not_remind_again"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tips"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="checkBox,barrier9,tv_tips" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_editing"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:constraint_referenced_ids="editText_hours,textView_minutes,editText_minutes,editText_price,textView_hours,textView_minutes,tv_current_price_unit,textView_line3_title"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_edit"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:constraint_referenced_ids="tv_current_price,textView_line3_title2,textView_new_price" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="textView_line3_title2,textView_new_price" />
+
+
+            <include
+                layout="@layout/layout_negative_and_positive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrier20" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include layout="@layout/layout_loading" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

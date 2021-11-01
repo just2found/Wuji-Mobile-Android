@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/itb_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar_gradient"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_ItemHeight48"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/itb_iv_left"
+                android:layout_width="@dimen/common_icon48"
+                android:layout_height="@dimen/common_icon48"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:padding="@dimen/common_12"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                app:tint="@color/title_icon_color"
+                app:tintMode="src_in"
+                tools:src="@drawable/icon_return"
+                tools:visibility="visible" />
+
+            <net.linkmate.app.view.MarqueeTextView
+                android:id="@+id/itb_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/title_start"
+                android:layout_marginEnd="@dimen/common_8"
+                android:layout_weight="1"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/txt_17" />
+
+            <ImageView
+                android:id="@+id/itb_iv_right"
+                android:layout_width="@dimen/common_icon48"
+                android:layout_height="@dimen/common_icon48"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:padding="@dimen/common_12"
+                app:tint="@color/title_icon_color"
+                app:tintMode="src_in"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/adfd_ll_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="14dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <net.linkmate.app.view.CusTextView
+                android:id="@+id/adfd_tv_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext_comment_white"
+                android:drawableEnd="@drawable/ic_filter_unselected"
+                android:drawablePadding="6dip"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingStart="10dip"
+                android:paddingTop="7dip"
+                android:paddingEnd="10dip"
+                android:paddingBottom="7dip"
+                android:text="@string/filter"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/txt_11"
+                app:endDrawableHeight="5dip"
+                app:endDrawableWidth="8dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/adfd_srl_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/adfd_rv_devices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

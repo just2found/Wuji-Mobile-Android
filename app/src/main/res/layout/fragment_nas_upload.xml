@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_upload_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/common_8"
+        android:paddingBottom="@dimen/common_8">
+
+        <TextView
+            android:id="@+id/tv_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_16"
+            android:layout_marginEnd="@dimen/common_16"
+            android:background="@color/color_bg_grey50"
+            android:drawableEnd="@drawable/ic_chevron_right_gray_18dp"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/layout_btn_height"
+            android:padding="4dp"
+            android:visibility="gone"
+            tools:text="我的文件/"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_btn_height"
+            android:layout_marginStart="@dimen/common_16"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/common_16"
+            android:background="@drawable/bg_button_radius"
+            android:gravity="center"
+            android:paddingStart="@dimen/common_16"
+            android:paddingEnd="@dimen/common_16"
+            android:text="@string/upload_file"
+            android:textColor="@color/bg_page" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/fragment_quick_nav_cloud_dir"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_upload_btn"
+        android:layout_below="@+id/tipsBar" />
+
+
+    <net.sdvn.nascommon.widget.FileSelectPanel
+        android:id="@+id/layout_select_top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_title_bar_gradient"
+        android:clipToPadding="false"
+        android:elevation="@dimen/default_elevation_3"
+        android:fitsSystemWindows="true"
+        android:visibility="gone" />
+    <!--
+        <net.sdvn.nascommon.widget.FileManagePanel
+            android:id="@+id/layout_operate_bottom_panel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_nav_bar_height"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />-->
+
+    <net.sdvn.nascommon.widget.TitleBackLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_title_bar_gradient"
+        android:elevation="@dimen/default_elevation"
+        android:visibility="visible" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+</RelativeLayout>

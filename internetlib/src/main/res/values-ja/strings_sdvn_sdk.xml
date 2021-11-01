@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_string_invalid_account">ユーザーネームまたはパスワードが違います。</string>
+    <string name="error_string_gw_busy">サーバーが忙しいです。10分後にもう一度ログインしてください。</string>
+    <string name="error_string_user_diabled">あなたのアカウントは停止されています。</string>
+    <string name="error_string_max_device">デバイスの数が制限を超えました。</string>
+    <string name="error_string_no_network">現在のネットワークは利用できません。</string>
+    <string name="error_string_device_disabled">現在のデバイスはログインが禁止されています</string>
+    <string name="error_string_socket">サーバーに接続できません。ネットワーク環境を確認してください。</string>
+    <string name="error_string_device_dup">現在のデバイスIDはログインしています。</string>
+    <string name="error_string_device_locked">現在のデバイスはロックされています。</string>
+    <string name="error_string_user_unactive">アカウントは起動しません。</string>
+    <string name="error_string_user_locked">あなたのアカウントはロックされています。</string>
+    <string name="KR_Device_Removed">このデバイスはネットワークから削除されました。</string>
+    <string name="KR_Member_Removed">あなたのアカウントはネットワークから削除されました。</string>
+    <string name="KR_Deivce_Deactived">あなたのデバイスは無効になりました。</string>
+    <string name="dr_invalid_sms">メールは無効です</string>
+    <string name="dr_vpn_permission_denied">VPN権限が拒否されました</string>
+    <string name="dr_vpn_tunnel_is_occupied">VPNチャネルが占有されました。</string>
+    <string name="dr_read_phone_state_permission_denied">デバイス識別IDの読み取りに失敗しました。</string>
+    <string name="success">成功</string>
+    <string name="error_string_pending">読み込み中..</string>
+    <string name="ec_insufficient_points">ポイントが足りません</string>
+    <string name="flow_is_expire">トラフィックなし</string>
+
+</resources>

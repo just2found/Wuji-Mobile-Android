@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strNetworkTipsCancelBtn">取消</string>
+        
+    <string name="strNetworkTipsConfirmBtn">繼續下載</string>
+        
+    <string name="strNetworkTipsMessage">你已切換到移動網絡，是否繼續當前下載? </string>
+        
+    <string name="strNetworkTipsTitle">網絡提示</string>
+        
+    <string name="strNotificationClickToContinue">繼續下載</string>
+        
+    <string name="strNotificationClickToInstall">點擊安裝</string>
+        
+    <string name="strNotificationClickToRetry">點擊重試</string>
+        
+    <string name="strNotificationClickToView">點擊查看</string>
+        
+    <string name="strNotificationDownloadError">下載失敗</string>
+        
+    <string name="strNotificationDownloadSucc">下載完成</string>
+        
+    <string name="strNotificationDownloading">正在下載</string>
+        
+    <string name="strNotificationHaveNewVersion">有新版本</string>
+        
+    <string name="strToastCheckUpgradeError">檢查新版本失敗，請稍後重試</string>
+        
+    <string name="strToastCheckingUpgrade">正在檢查，請稍候&#8230;</string>
+        
+    <string name="strToastYourAreTheLatestVersion">已經是最新版了</string>
+        
+    <string name="strUpgradeDialogCancelBtn">下次再說</string>
+        
+    <string name="strUpgradeDialogContinueBtn">繼續</string>
+        
+    <string name="strUpgradeDialogFeatureLabel">更新說明</string>
+        
+    <string name="strUpgradeDialogFileSizeLabel">包大小</string>
+        
+    <string name="strUpgradeDialogInstallBtn">安裝</string>
+        
+    <string name="strUpgradeDialogRetryBtn">重試</string>
+        
+    <string name="strUpgradeDialogUpdateTimeLabel">更新時間</string>
+        
+    <string name="strUpgradeDialogUpgradeBtn">立即更新</string>
+        
+    <string name="strUpgradeDialogVersionLabel">版本</string>
+</resources>

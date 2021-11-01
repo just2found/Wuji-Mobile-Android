@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_trans_to_gray"
+    android:descendantFocusability="afterDescendants"
+    android:padding="@dimen/common_8">
+
+    <RelativeLayout
+        android:id="@+id/layout_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/file_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_device_folder" />
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/file_select"
+            android:layout_toEndOf="@+id/file_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/darker"
+            android:textSize="@dimen/text_size_mid" />
+
+        <net.sdvn.nascommon.widget.CheckableImageButton
+            android:id="@+id/file_select"
+            style="@style/checkableImageButton"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+</LinearLayout>

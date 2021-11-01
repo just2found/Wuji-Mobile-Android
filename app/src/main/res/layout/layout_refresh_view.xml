@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_grey50"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/loading_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:progressDrawable="@drawable/progress_horizontal_material" />
+
+        <TextView
+            android:id="@+id/tv_loading_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/loading"
+            android:textColor="@color/primary_black"
+            android:textSize="@dimen/text_size_mid"
+            tools:text="klsjdflsjdfkljsakfljskldfjskldafjskld" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_loading_cancel"
+        android:layout_width="@dimen/common_icon42"
+        android:layout_height="@dimen/common_icon42"
+        android:layout_above="@+id/loading_container"
+        android:layout_toEndOf="@+id/loading_container"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_cancel_blue_24dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>

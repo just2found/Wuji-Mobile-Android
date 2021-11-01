@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="@dimen/common_16"
+        android:paddingBottom="@dimen/common_16"
+        android:text="1分钟前"
+        android:textColor="#808080"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvDelete"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dip"
+        android:background="@drawable/item_click_transparent"
+        android:padding="@dimen/common_6"
+        android:text="@string/delete"
+        android:visibility="gone"
+        android:textColor="@color/dynamic_name_color"
+        android:textSize="@dimen/txt_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <net.linkmate.app.view.CusTextView
+        android:id="@+id/tvLike"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:drawableStart="@drawable/icon_unlike"
+        android:drawablePadding="9dip"
+        android:gravity="center"
+        android:paddingStart="@dimen/common_10"
+        android:text="16"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startDrawableHeight="16dip"
+        app:startDrawableWidth="16dip" />
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:id="@+id/barraierComment"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:barrierDirection="start"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/ivComment"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="0dip"-->
+<!--        android:paddingStart="@dimen/common_5"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="15dip"-->
+<!--            android:layout_height="11dip"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:src="@drawable/selector_button_comment" />-->
+<!--    </FrameLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

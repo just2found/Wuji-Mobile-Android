@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">Отменил поделиться!</string>
+    <string name="tip_error_open_dir">Не удалось открыть каталог</string>
+    <string name="tip_error_task_running">Ошибка при выполнении задачи!</string>
+    <string name="msg_error_exceed_downloads">Это разделение превышает максимальное количество загрузок</string>
+    <string name="msg_error_cancel_shared">Отменить поделиться удалось</string>
+    <string name="msg_error_bind_network">Ошибка подключения к удаленному сервису</string>
+    <string name="msg_error_user_not_exist">Пользователь для разделения не существует</string>
+    <string name="msg_error_illegal_operation">Недействительная операция, обновите и попробуйте снова</string>
+    <string name="msg_error_get_device_ip">Не удалось подключиться к серверу общего доступа, повторите позже.</string>
+    <string name="msg_error_broken_network">Ошибка сети</string>
+    <string name="msg_error_dl_not_running">Загрузка не запущена, нельзя добавлять новые файлы</string>
+    <string name="msg_error_source_file_open">Ошибка открытия исходного файла</string>
+    <string name="msg_error_source_file_change">Изменение размера исходного файла</string>
+    <string name="msg_error_temp_file">Временные файлы удаляются</string>
+    <string name="msg_error_auth">Ошибка внутренней аутентификации</string>
+    <string name="msg_error_target_file">Не удалось записать целевой файл</string>
+    <string name="msg_error_token">Неверный сертификационный знак</string>
+    <string name="msg_error_more_shared_ticket">Задача загрузки была создана</string>
+    <string name="msg_error_shared_ticket_overtime">Срок разделения истек</string>
+    <string name="tips_warn_cancel_share">Незавершенные загрузки будут отменены, а временные файлы удалены!</string>
+    <string name="msg_error_disk_full">Диск заполнен, освободите место и попробуйте снова!</string>
+</resources>

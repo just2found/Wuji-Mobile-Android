@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strNetworkTipsCancelBtn">취소</string>
+    <string name="strNetworkTipsConfirmBtn">계속하기</string>
+    <string name="strNetworkTipsMessage">모바일 네트워크로 전환됨, 계속하여 다운로드 하겠습니까?</string>
+    <string name="strNetworkTipsTitle">네트워크 팁</string>
+    <string name="strNotificationClickToContinue">계속하여 다운로드</string>
+    <string name="strNotificationClickToInstall">클릭하여 설치</string>
+    <string name="strNotificationClickToRetry">클릭하여 다시 시도</string>
+    <string name="strNotificationClickToView">클릭하여 체크</string>
+    <string name="strNotificationDownloadError">다운로드 실패</string>
+    <string name="strNotificationDownloadSucc">다운로드 성공</string>
+    <string name="strNotificationDownloading">다운로드 중</string>
+    <string name="strNotificationHaveNewVersion">새로운 버전 있음</string>
+    <string name="strToastCheckUpgradeError">새로운 버전 체크 실패 나중에 다시 시도하십시오</string>
+    <string name="strToastCheckingUpgrade">체크 중, 잠시만 기다려 주십시오</string>
+    <string name="strToastYourAreTheLatestVersion">이미 최신 버전입니다</string>
+    <string name="strUpgradeDialogCancelBtn">다음에 </string>
+    <string name="strUpgradeDialogContinueBtn">계속 하기</string>
+    <string name="strUpgradeDialogFeatureLabel">업그레이드 설명</string>
+    <string name="strUpgradeDialogFileSizeLabel">팩 사이즈</string>
+    <string name="strUpgradeDialogInstallBtn">설치</string>
+    <string name="strUpgradeDialogRetryBtn">다시 시도</string>
+    <string name="strUpgradeDialogUpdateTimeLabel">시간 업그레이드</string>
+    <string name="strUpgradeDialogUpgradeBtn">업그레이드 </string>
+    <string name="strUpgradeDialogVersionLabel">버전</string>
+</resources>

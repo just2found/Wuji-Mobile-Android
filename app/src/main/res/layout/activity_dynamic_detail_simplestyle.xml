@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <!--NestedScrollView 嵌套上滑问题
+    根布局使用 :android:focusable="true"android:focusableInTouchMode="true"
+    -->
+    <!--处理输入框被遮挡问题，输入框ScrollView，不可配置adjust ，必须配置fitsSystemWindows=true-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dynamic_toolbar_color"
+        android:fitsSystemWindows="true"
+        app:layout_collapseMode="pin"
+        app:layout_collapseParallaxMultiplier="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:contentInsetStartWithNavigation="0dip"
+        app:navigationIcon="@drawable/icon_return_black"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="@string/dynamic_detail"
+        app:titleTextAppearance="@style/toolbar_title_bold"
+        app:titleTextColor="@color/text_dark" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/flProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="gone">
+
+        <net.linkmate.app.view.CusTextView
+            android:id="@+id/tvTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/default_page_nofile"
+            android:gravity="center"
+            android:text="@string/the_dynamic_is_deleted"
+            app:topDrawableHeight="168dip"
+            app:topDrawableWidth="200dip"
+            android:textColor="@color/gray"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_mid" />
+
+        <ProgressBar
+            android:id="@+id/mProgressBar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/progress_horizontal_material" />
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mNestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <include layout="@layout/item_dynamic_detail_simplestyle" />
+    </androidx.core.widget.NestedScrollView>
+    <!--处理输入框被遮挡问题，输入框ScrollView，不可配置adjust ，配置fitsSystemWindows=true-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/popwindow_comment" />
+    </ScrollView>
+
+</LinearLayout>

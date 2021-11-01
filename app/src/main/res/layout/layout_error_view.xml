@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.sdvn.nascommon.widget.InterceptEventRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_grey50"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_page_nonet" />
+
+        <TextView
+            android:id="@+id/txt_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/network_request_failed"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_mid" />
+
+        <TextView
+            android:id="@+id/btn_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button_radius"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="5dp"
+            android:text="@string/try_again"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_min" />
+    </LinearLayout>
+
+</net.sdvn.nascommon.widget.InterceptEventRelativeLayout>

@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dialog_radius">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginTop="@dimen/view_top_start"
+                android:layout_marginEnd="@dimen/view_end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="text title" />
+
+            <Switch
+                android:id="@+id/switch_unlimited"
+                style="@style/StyleDialogDesSwitch"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginTop="@dimen/view_top_middle"
+                android:layout_marginEnd="@dimen/view_end"
+                android:background="@color/bg_white"
+                android:checked="false"
+                android:paddingStart="@dimen/common_12"
+                android:paddingEnd="@dimen/common_12"
+                android:text="@string/unlimited"
+                android:textSize="@dimen/txt_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+            <FrameLayout
+                android:id="@+id/fl_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/txt_unit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch_unlimited"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginTop="@dimen/view_top_middle"
+                >
+                <net.sdvn.nascommon.widget.ClearEditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_square_stroke_full_radius_primary_pressed"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:minHeight="@dimen/layout_edit_height"
+                    android:padding="8dp"
+                    android:hint="@string/tips_modify_user_space"
+                    android:singleLine="true"
+                    android:textDirection="anyRtl"
+                    android:textColor="@color/selector_black_to_gray"
+                    android:textSize="@dimen/text_size_mid"
+                    tools:enabled="false"
+                    />
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="@dimen/layout_edit_height"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    android:textColor="@color/selector_black_to_gray"
+                    tools:text="input hint"
+                    android:autoSizeMaxTextSize="@dimen/text_size_mid"
+                    android:autoSizeMinTextSize="1sp"
+                    android:autoSizeTextType="uniform"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="1sp"
+                    app:autoSizeMaxTextSize="@dimen/text_size_mid"
+                    android:maxLines="1"
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txt_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_middle"
+                android:layout_marginEnd="@dimen/view_end"
+                android:gravity="center"
+                android:text="GB"
+                android:textColor="@color/darker"
+                android:textSize="@dimen/text_size_mid"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fl_content"
+                app:layout_constraintBottom_toBottomOf="@+id/fl_content"
+                app:layout_constraintStart_toEndOf="@+id/fl_content"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txt_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginTop="@dimen/view_top_middle"
+                android:layout_marginEnd="@dimen/view_end"
+                android:gravity="center"
+                android:padding="@dimen/tv_padding"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fl_content"
+                tools:text="tips"
+                tools:visibility="visible" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_top_start"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_tips">
+
+                <include layout="@layout/include_layout_pos_and_neg" />
+
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

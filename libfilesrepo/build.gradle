@@ -1,0 +1,100 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode getVersionNumber()
+        versionName getVersionName()
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    android.libraryVariants.all { variant ->
+//        changeOutput(variant)
+    }
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //kotlin std
+    implementation deps.kotlin.stdlib
+    implementation deps.kotlin.test
+    implementation deps.kotlin.allopen
+    implementation deps.kotlin.coroutines
+
+    implementation deps.retrofit.runtime
+    implementation deps.retrofit.rxjava
+    implementation deps.retrofit.gson
+    implementation deps.okhttp3
+    implementation deps.okhttp_logging_interceptor
+    implementation deps.lifecycle.livedata_ktx
+    implementation deps.gson
+    implementation deps.timber
+    implementation deps.support.core
+    implementation deps.rxjava2
+    implementation deps.rx_android
+
+    testImplementation deps.mock_web_server
+    testImplementation deps.mockito.core
+
+    testImplementation deps.junit
+    androidTestImplementation deps.atsl.ext_junit
+    androidTestImplementation deps.espresso.core
+
+    implementation project(':common')
+    implementation project(':internetlib')
+}
+
+static def getVersionNumber() {
+    def count = "git rev-list HEAD --count".execute().text.trim()
+//    def count = "svn info --show-item last-changed-revision".execute().text.trim()
+//    def count = "2320"
+    println("count: $count")
+    if (count.isInteger()) return count.toInteger() + 3023
+    return 1
+}
+
+static def getVersionName() {
+    return "1_0_" + getVersionNumber()
+}
+
+def changeOutput(variant) {
+    def name = project.name + "_v" + getVersionName() + '_' + variant.buildType.name
+    println(name)
+    variant.outputs.all { output ->
+        outputFileName = name + '.aar'
+    }
+    variant.assembleProvider.get().doLast { assemble ->
+        copy {
+            from variant.outputs*.outputFile
+            def moduleDir = project.buildDir.getParent()
+            File aar = new File(moduleDir, "/aar")
+            if (!aar.exists()) {
+                aar.mkdir()
+            }
+            into "${aar}"
+        }
+    }
+}
+

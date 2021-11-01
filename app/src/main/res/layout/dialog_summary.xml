@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_upgrade_title"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_20"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/summary" />
+
+            <ImageView
+                android:id="@+id/img_setting"
+                android:layout_width="@dimen/common_icon48"
+                android:layout_height="@dimen/common_icon48"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:padding="@dimen/common_12"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_setting_white"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_16"
+                android:minHeight="@dimen/common_ItemHeight64"
+                android:padding="8dp"
+                android:text="@string/no_summary"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/txt_14"
+                app:layout_constraintBottom_toTopOf="@+id/view_line_h"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_16"
+                android:background="@drawable/bg_stroke_full_radius_gray"
+                android:hint="@string/pls_input_summary"
+                android:minHeight="@dimen/common_ItemHeight64"
+                android:minLines="3"
+                android:padding="8dp"
+                android:textColor="@color/text_dark"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/txt_14"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/view_line_h"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+            <View
+                android:id="@+id/view_line_h"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray"
+                app:layout_constraintBottom_toTopOf="@+id/positive"
+                app:layout_constraintEnd_toEndOf="@+id/positive"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/negative"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:padding="@dimen/common_12"
+                android:text="@string/cancel"
+                android:textColor="#666666"
+                android:textSize="@dimen/text_size_mid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/view_line"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="@dimen/common_line"
+                android:layout_height="0dp"
+                android:background="@color/line_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/positive"
+                app:layout_constraintStart_toEndOf="@+id/negative"
+                app:layout_constraintTop_toTopOf="@+id/negative" />
+
+            <TextView
+                android:id="@+id/positive"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_mid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_line" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_negative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="negative,view_line"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

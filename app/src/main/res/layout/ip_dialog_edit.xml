@@ -1,0 +1,160 @@
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/dialog_radius">
+
+    <LinearLayout
+        android:id="@+id/root_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <net.sdvn.nascommon.widget.AutoGoneTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/view_start"
+            android:paddingTop="@dimen/view_top_start"
+            android:paddingEnd="@dimen/view_end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            tools:text="text title"
+            tools:visibility="visible" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/view_start"
+            android:paddingTop="@dimen/view_top_start"
+            android:paddingEnd="@dimen/view_end"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title"
+            >
+
+            <EditText
+                android:id="@+id/etIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_full_radius_gray"
+                android:gravity="center"
+                android:inputType="text"
+                android:minHeight="@dimen/common_ItemHeight48"
+                android:digits="0123456789."
+                android:singleLine="true"
+                android:textDirection="anyRtl"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_mid"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/tvIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="@dimen/common_ItemHeight48"
+                android:textColor="@color/color_black_hint_text"
+                android:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:maxLines="1"
+                android:text="@string/ip"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/view_start"
+            android:paddingTop="@dimen/view_top_start"
+            android:paddingEnd="@dimen/view_end"
+            android:gravity="center"
+            android:paddingBottom="@dimen/view_top_start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title"
+            >
+
+            <EditText
+                android:id="@+id/etMark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_full_radius_gray"
+                android:gravity="center"
+                android:inputType="text"
+                android:minHeight="@dimen/common_ItemHeight48"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:digits="0123456789."
+                android:textAlignment="center"
+                android:textDirection="anyRtl"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_mid"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/tvMark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="@dimen/common_ItemHeight48"
+                android:textColor="@color/color_black_hint_text"
+                android:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_mid"
+                android:maxLines="1"
+                android:text="Mask"
+                />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/vDeleteLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_size_mid"
+            android:layout_gravity="center_vertical"
+            android:padding="10dip"
+            android:minHeight="@dimen/common_ItemHeight48"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/spit_line"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <include
+            layout="@layout/include_layout_pos_and_neg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

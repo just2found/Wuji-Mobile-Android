@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clHeaderPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--隐藏头部 辅助线-->
+    <View
+        android:id="@+id/vHideHeaderHelper"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/common_ItemHeight48"
+        app:layout_constraintBottom_toBottomOf="@+id/barrierTipsBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/vStatusBar"
+        android:layout_width="0dip"
+        android:layout_height="20dip"
+        android:background="@drawable/bg_title_bar_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fragment_nav_host"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vHideHeaderHelper" />
+    <!--        app:layout_constraintTop_toBottomOf="@+id/barrierTipsBar" />-->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/mGroupHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="ivHeaderBg,toolbar,ivIcon,llTitle,vHeaderHelper,vHideHeaderHelper"
+
+        />
+
+    <ImageView
+        android:id="@+id/ivHeaderBg"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:background="#454545"
+        android:fitsSystemWindows="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/vHeaderHelper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false"
+        android:background="@drawable/bg_brief_title_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/icon_return" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/common_icon64"
+        android:layout_height="@dimen/common_icon64"
+        android:layout_marginStart="@dimen/common_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_4dp"
+        tools:src="@drawable/icon_device_wz" />
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_12"
+        android:layout_marginEnd="@dimen/common_12"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/common_icon64"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/text_dark"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_17"
+            android:textStyle="bold"
+            tools:text="xx圈子" />
+
+        <TextView
+            android:id="@+id/tvBrief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_3"
+            android:layout_marginBottom="@dimen/common_4"
+            android:ellipsize="end"
+            android:shadowColor="@color/text_dark"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_12"
+            tools:text="zhangsan-394-5394-5930-59-3495-4395-943-5-3945-3495-349-593-495-3495" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="ivIcon,llTitle" />
+
+    <View
+        android:id="@+id/vHeaderHelper"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/common_8"
+        app:layout_constraintTop_toBottomOf="@+id/barrierHeader" />
+    <!--连接状态-->
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vHeaderHelper"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierTipsBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="vHeaderHelper,tipsBar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.circle.CircleBriefActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#454545"
+            android:theme="@style/AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/common_ItemHeight48"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/ivTitleBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0" />
+                <!--            android:src="@drawable/ic_group_home"-->
+
+                <ImageView
+                    android:id="@+id/ivTitleTransparentBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_brief_title_transparent"
+                    app:layout_collapseMode="pin"
+                    tools:layout_height="70dp" />
+
+                <LinearLayout
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_collapseMode="pin">
+
+                    <ImageView
+                        android:id="@+id/ab_iv_left"
+                        android:layout_width="@dimen/common_icon48"
+                        android:layout_height="@dimen/common_icon48"
+                        android:background="@drawable/bg_ripple_trans_gray"
+                        android:padding="@dimen/common_12"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_return"
+                        tools:visibility="visible" />
+
+                    <net.linkmate.app.view.MarqueeTextView
+                        android:id="@+id/ab_tv_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_12"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/txt_17"
+                        tools:text="titlie" />
+
+                    <ImageView
+                        android:id="@+id/ab_iv_right"
+                        android:layout_width="@dimen/common_icon48"
+                        android:layout_height="@dimen/common_icon48"
+                        android:background="@drawable/bg_ripple_trans_gray"
+                        android:padding="@dimen/common_12"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_setting_white" />
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!--icon-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeaderPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/app_bar"
+            app:layout_anchorGravity="bottom|start">
+
+            <View
+                android:id="@+id/vHelper"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dip"
+                android:shadowColor="@color/text_dark"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="xx圈子" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_4"
+                android:shadowColor="@color/text_dark"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_12"
+                app:layout_constraintBottom_toBottomOf="@+id/vHelper"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                tools:text="zhangsan" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="@dimen/common_icon56"
+                android:layout_height="@dimen/common_icon56"
+                android:layout_marginStart="@dimen/common_12"
+                android:layout_marginBottom="@dimen/common_32"
+                android:background="@drawable/bg_circle_breif_icon"
+                android:src="@drawable/icon_device_wz"
+                app:layout_constraintBottom_toBottomOf="@+id/vHelper"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/vHelper"
+                app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <include layout="@layout/include_brief_content_scrolling" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

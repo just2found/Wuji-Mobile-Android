@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+    <!--边界辅助线-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/common_12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="11dip" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="11dip" />
+    <!--内容-->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivPortrait"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="@dimen/common_10"
+        android:src="@color/color_bg_grey300"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_6dp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dip"
+        android:includeFontPadding="false"
+        android:text="张三"
+        android:textColor="@color/dynamic_name_color"
+        android:textSize="@dimen/txt_15"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@+id/ivPortrait"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dip"
+        android:background="@drawable/item_click_transparent"
+        android:clickable="true"
+        android:ellipsize="none"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_15"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:text="sdfsf" />
+
+    <TextView
+        android:id="@+id/tvExpandOrFold"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/item_click_transparent"
+        android:clickable="true"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="全文"
+        android:textColor="@color/dynamic_name_color"
+        android:textSize="@dimen/txt_15"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvContent" />
+
+    <!--图片-->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierImageTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvContent,tvExpandOrFold" />
+
+    <net.linkmate.app.view.DynamicImageLayout
+        android:id="@+id/clImagePanel"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dip"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/barrierImageTop" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierRecyclerViewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="barrierImageTop,clImagePanel" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemRecyclerView"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/clImagePanel" />
+
+    <View
+        android:id="@+id/vBottomLineGap"
+        android:layout_width="0dip"
+        android:layout_height="10dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemRecyclerView" />
+    <!--底部线条-->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvContent,tvExpandOrFold,itemRecyclerView,vBottomLineGap" />
+
+    <View
+        android:id="@+id/vBottomLine"
+        style="@style/common_line_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrierBottom" />
+    <!--底部加载更多-->
+    <include
+        android:id="@+id/iFooter"
+        layout="@layout/layout_footer_view"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vBottomLine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

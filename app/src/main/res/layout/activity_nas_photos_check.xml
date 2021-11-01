@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/easy_photos_bg_primary"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:id="@+id/m_tool_bar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/toolbar_size_easy_photos"
+        android:background="@color/easy_photos_bar_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.yalantis.ucrop.view.UCropView
+        android:id="@+id/mUCropView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_tool_bar_bottom_line" />
+
+    <com.huantansheng.easyphotos.ui.widget.PressedTextView
+        android:id="@+id/tvDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_menu_done_easy_photos"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="@string/confirm"
+        android:textColor="@color/menu_text_easy_photos"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/m_tool_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/m_tool_bar" />
+
+    <View
+        android:id="@+id/m_back_line"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:background="@color/easy_photos_bar_primary_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/m_tool_bar"
+        app:layout_constraintStart_toEndOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="@+id/m_tool_bar" />
+
+    <View
+        android:id="@+id/m_tool_bar_bottom_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/easy_photos_bar_primary_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_tool_bar" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="54dp"
+        android:layout_height="42dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/m_tool_bar"
+        app:layout_constraintStart_toStartOf="@+id/m_tool_bar"
+        app:layout_constraintTop_toTopOf="@+id/m_tool_bar"
+        app:srcCompat="@drawable/ic_arrow_back_easy_photos" />
+
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:text="@string/crop_picture"
+        android:textColor="@color/easy_photos_fg_primary"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/m_tool_bar"
+        app:layout_constraintStart_toStartOf="@+id/m_back_line"
+        app:layout_constraintTop_toTopOf="@+id/m_tool_bar" />
+
+
+    <FrameLayout
+        android:id="@+id/frame_progress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_progress_background_easy_photos"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/mProgressBar"
+                android:visibility="visible"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:textColor="@color/easy_photos_fg_primary"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

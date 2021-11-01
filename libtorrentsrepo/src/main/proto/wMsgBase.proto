@@ -1,0 +1,43 @@
+syntax = "proto3";
+option go_package ="./;chainspace";
+package chainspace;
+message WMsgRQ {
+  int32  main_id	= 1;
+  int32  sub_id  =2;
+  int64  sn = 3;
+  bytes  data = 4;
+}
+/*
+    所有包如果resutl 为 true ，就返回对应的data协议。
+    如果reuslt为false，就返回Error
+*/
+message WMsgRP {
+  bool result = 1;
+  int32 main_id = 2;
+  int32 sub_id = 3;
+  int64 sn  = 4;
+  bytes data = 5;
+  WMsgError err=6;
+}
+message WMsgError {
+	int32 err_no   = 1;
+    string err_msg =2;
+}
+message Create_BT_RQ {
+	string path =1 ;
+	string session =2;
+	int32  path_type =3 ;
+
+}
+
+message Create_BT_RP {
+	string bt_ticket  =1;
+	string remote_server  =2 ;
+	int64 length =3 ;
+	string  name =4;
+	int64  createdate=5;
+	string device_id = 6;
+	string network_id = 7;
+	//default is 2, 0 home 1 virtual 2 public
+
+}

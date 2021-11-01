@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brvah_loading">Загрузка&#8230;</string>
+    <string name="brvah_load_failed">Загрузка не удалась, нажмите и повторите</string>
+    <string name="brvah_load_end">Нет больше данных</string>
+</resources>

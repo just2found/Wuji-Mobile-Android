@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/sort">
+        <item
+            android:id="@+id/sort_by_name"
+            android:checkable="true"
+            android:checked="true"
+            android:title="@string/sort_by_name" />
+        <item
+            android:id="@+id/sort_by_time"
+            android:checkable="true"
+            android:title="@string/sort_by_time" />
+    </group>
+    <group android:id="@+id/display">
+        <item
+            android:id="@+id/display_by_grid"
+            android:checkable="true"
+            android:title="@string/display_by_grid" />
+        <item
+            android:id="@+id/display_by_list"
+            android:checkable="true"
+            android:checked="true"
+            android:title="@string/display_by_list" />
+    </group>
+</menu>

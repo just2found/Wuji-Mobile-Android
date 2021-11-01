@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/common_12"
+        android:layout_marginTop="@dimen/common_12"
+        android:layout_marginBottom="@dimen/common_6"
+        android:gravity="center_vertical"
+        android:text="@string/old_pwd"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="center_vertical"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/common_12"
+        android:paddingEnd="@dimen/common_12">
+
+        <EditText
+            android:id="@+id/amp_et_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:inputType="textPassword"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_14" />
+
+        <TextView
+            android:id="@+id/amp_tv_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:autoSizeMaxTextSize="@dimen/txt_14"
+            android:autoSizeMinTextSize="1sp"
+            android:autoSizeTextType="uniform"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:text="@string/pls_input_old_pwd"
+            android:textColor="@color/text_light_gray"
+            app:autoSizeMaxTextSize="@dimen/txt_14"
+            app:autoSizeMinTextSize="1sp"
+            app:autoSizeTextType="uniform" />
+
+        <ImageView
+            android:id="@+id/iv_visible"
+            android:layout_width="@dimen/common_icon48"
+            android:layout_height="@dimen/common_icon48"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:padding="@dimen/common_12"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_visible_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/black"
+            app:tintMode="src_in" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/common_12"
+        android:layout_marginTop="@dimen/common_12"
+        android:layout_marginBottom="@dimen/common_6"
+        android:gravity="center_vertical"
+        android:text="@string/new_pwd"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_15" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="center_vertical"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/common_12"
+        android:paddingEnd="@dimen/common_12">
+
+        <EditText
+            android:id="@+id/amp_et_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:inputType="textPassword"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_14" />
+
+        <TextView
+            android:id="@+id/amp_tv_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:autoSizeMaxTextSize="@dimen/txt_14"
+            android:autoSizeMinTextSize="1sp"
+            android:autoSizeTextType="uniform"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:text="@string/pls_input_new_pwd"
+            android:textColor="@color/text_light_gray"
+            app:autoSizeMaxTextSize="@dimen/txt_14"
+            app:autoSizeMinTextSize="1sp"
+            app:autoSizeTextType="uniform" />
+
+        <ImageView
+            android:id="@+id/iv_visible_1"
+            android:layout_width="@dimen/common_icon48"
+            android:layout_height="@dimen/common_icon48"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:padding="@dimen/common_12"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_visible_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/black"
+            app:tintMode="src_in" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/common_12"
+        android:layout_marginTop="@dimen/common_12"
+        android:layout_marginBottom="@dimen/common_6"
+        android:gravity="center_vertical"
+        android:text="@string/confirm_pwd"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="center_vertical"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/common_12"
+        android:paddingEnd="@dimen/common_12">
+
+        <EditText
+            android:id="@+id/amp_et_confirm_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:inputType="textPassword"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_14" />
+
+        <TextView
+            android:id="@+id/amp_tv_confirm_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:autoSizeMaxTextSize="@dimen/txt_14"
+            android:autoSizeMinTextSize="1sp"
+            android:autoSizeTextType="uniform"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:text="@string/pls_input_new_pwd_again"
+            android:textColor="@color/text_light_gray"
+            app:autoSizeMaxTextSize="@dimen/txt_14"
+            app:autoSizeMinTextSize="1sp"
+            app:autoSizeTextType="uniform" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:layout_marginBottom="@dimen/common_8"
+        android:background="@color/line_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_start"
+        android:layout_marginEnd="@dimen/view_end"
+        android:layout_marginBottom="@dimen/common_8"
+        android:text="@string/password_must_contains_num_letter_char" />
+
+    <Button
+        android:id="@+id/amp_btn_confirm"
+        style="@style/Style_btn_bg_primary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight42"
+        android:layout_margin="@dimen/common_12"
+        android:elevation="@dimen/common_10"
+        android:text="@string/confirm"
+        android:textColor="@color/text_white" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CusTextViewAttrs">
+        <attr name="startDrawableWidth" format="dimension" />
+        <attr name="startDrawableHeight" format="dimension" />
+        <attr name="endDrawableWidth" format="dimension" />
+        <attr name="endDrawableHeight" format="dimension" />
+        <attr name="topDrawableWidth" format="dimension" />
+        <attr name="topDrawableHeight" format="dimension" />
+        <attr name="bottomDrawableWidth" format="dimension" />
+        <attr name="bottomDrawableHeight" format="dimension" />
+        <attr name="drawableCenter" format="boolean" />
+    </declare-styleable>
+
+</resources>

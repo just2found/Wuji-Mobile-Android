@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_local"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page">
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar_gradient">
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_ItemHeight48"
+            android:layout_alignParentTop="true">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/common_icon36"
+                android:layout_height="@dimen/common_icon36"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/common_6"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_return" />
+
+            <TextView
+                android:id="@+id/txt_title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/btn_back"
+                android:gravity="center"
+                android:text="@string/title_back"
+                android:textColor="@color/selector_white_to_gray"
+                android:textSize="@dimen/text_size_mid"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/title_aria"
+                android:textColor="@color/selector_white_to_gray"
+                android:textSize="@dimen/text_size_title" />
+
+            <ImageButton
+                android:id="@+id/btn_add_task"
+                android:layout_width="@dimen/common_icon36"
+                android:layout_height="@dimen/common_icon36"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/btn_control_task"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/common_6"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_device_more" />
+
+            <ImageButton
+                android:id="@+id/btn_control_task"
+                android:layout_width="@dimen/common_icon36"
+                android:layout_height="@dimen/common_icon36"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_button_title_menu" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/view_order_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_view"
+        android:orientation="vertical"
+        >
+        <View
+            android:id="@+id/v_view_order_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_common_weight"
+            android:background="@color/line_nav_bar"
+            android:visibility="gone" />
+        <net.linkmate.app.view.TipsBar
+            android:id="@+id/tipsBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            app:icon_visibility="visible"
+            app:content_text="@string/load_failed"
+            app:link_text="@string/back_to_login"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/segmented_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_32"
+        android:layout_below="@+id/view_order_line"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_downloading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/downloading_list"
+            android:textColor="@color/selector_gray_to_primary"
+            android:textSize="@dimen/text_size_sm" />
+
+        <ImageView
+            android:id="@+id/line_view"
+            android:layout_width="@dimen/line_common_weight"
+            android:layout_height="match_parent"
+            android:background="@color/line_dialog" />
+
+        <RadioButton
+            android:id="@+id/rb_record"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/download_record"
+            android:textColor="@color/selector_gray_to_primary"
+            android:textSize="@dimen/text_size_sm" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/line_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_common_weight"
+        android:layout_below="@+id/segmented_radiogroup"
+        android:background="@color/line_dialog" />
+
+    <FrameLayout
+        android:id="@+id/transfer_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_title"
+        android:cacheColorHint="@android:color/transparent" />
+
+</RelativeLayout>

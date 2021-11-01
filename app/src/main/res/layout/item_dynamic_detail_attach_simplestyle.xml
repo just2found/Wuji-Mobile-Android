@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootAttachItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAttachItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_attach_click_bg"
+        android:orientation="horizontal"
+        android:paddingStart="10dip"
+        android:paddingTop="5dip"
+        android:paddingEnd="10dip"
+        android:paddingBottom="5dip">
+
+        <ImageView
+            android:id="@+id/ivAttachLogo"
+            android:layout_width="39dip"
+            android:layout_height="45dip"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_file_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAttach"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dip"
+            android:layout_marginTop="7dip"
+            android:linksClickable="true"
+            android:textColor="@color/dynamic_name_color"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivAttachLogo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="附件XX" />
+
+        <TextView
+            android:id="@+id/tvAttachDetail"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:linksClickable="true"
+            android:textColor="@color/text_dark"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvAttach"
+            app:layout_constraintTop_toBottomOf="@+id/tvAttach"
+            tools:text="50GB，免费" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

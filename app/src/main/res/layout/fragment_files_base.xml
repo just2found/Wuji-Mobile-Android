@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/files_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_ItemHeight48">
+
+
+            <ImageButton
+                android:id="@+id/ibtn_nav_title_right"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/ibtn_nav_title_right2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/title_icon_color"
+                app:tintMode="src_in" />
+
+            <ImageButton
+                android:id="@+id/ibtn_nav_title_right2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_cloud_transfer_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/title_icon_color"
+                app:tintMode="src_in" />
+
+            <FrameLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_ItemHeight48"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ibtn_nav_title_right"
+                app:layout_constraintStart_toEndOf="@+id/btn_trans"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/btn_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_ripple_trans_gray"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down_white_24dp"
+                    android:drawablePadding="5dp"
+                    android:elevation="0dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/text_size_title"
+                    tools:text="@string/file_type_private" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_nav_bar"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btn_trans"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:elevation="@dimen/default_elevation_3"
+                android:focusable="false"
+                android:gravity="center"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_return"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/title_icon_color"
+                app:tintMode="src_in" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+    <net.linkmate.app.ui.nas.widget.SearchPanelV2
+        android:id="@+id/layout_search_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_title_bar_gradient"
+        android:elevation="@dimen/default_elevation_3"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_title"
+        app:layout_constraintEnd_toEndOf="@+id/layout_title"
+        app:layout_constraintStart_toStartOf="@+id/layout_title"
+        app:layout_constraintTop_toTopOf="@+id/layout_title" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/layout_title"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout_place_holder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipsBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <net.sdvn.nascommon.widget.FileSelectPanel
+        android:id="@+id/layout_select_top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/layout_search_panel"
+        android:background="@drawable/bg_title_bar_gradient"
+        android:elevation="@dimen/default_elevation_3"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_title"
+        app:layout_constraintEnd_toEndOf="@+id/layout_title"
+        app:layout_constraintStart_toStartOf="@+id/layout_title"
+        app:layout_constraintTop_toTopOf="@+id/layout_title"
+        tools:visibility="gone" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_end"
+        android:layout_marginBottom="@dimen/view_bottom_end"
+        android:background="@drawable/bg_button_theme_primary"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:borderWidth="0dp"
+        android:foreground="@drawable/bg_ripple_trans_gray"
+        android:src="@drawable/ic_white_add_24dp"
+        android:theme="@style/Theme.AppCompat.DayNight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_marginBottom="120dp" />
+
+    <net.sdvn.nascommon.widget.FileManagePanel
+        android:id="@+id/layout_file_manage_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:elevation="15dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1080:266"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

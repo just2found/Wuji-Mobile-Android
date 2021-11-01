@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height"
+        android:visibility="gone"
+        android:padding="2dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/view_start"
+            android:layout_marginEnd="@dimen/view_end"
+            android:background="@drawable/bg_stroke_full_radius_gray"
+            android:hint="@string/hint_search"
+            android:paddingStart="@dimen/view_start"
+            android:paddingEnd="@dimen/view_end"
+            android:textSize="@dimen/text_size_mid"
+            app:searchIcon="@drawable/icon_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:padding="2dp"
+            android:text="@string/cancel"
+            android:layout_marginEnd="@dimen/view_end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight48"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_start"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:text="@string/search" />
+
+        <net.sdvn.nascommon.widget.FilePathPanel
+            android:id="@+id/file_path_panel"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/view_middle"
+            android:layout_height="@dimen/layout_path_height" />
+    </LinearLayout>
+
+    <include layout="@layout/include_swipe_refresh_and_recycle_view" />
+
+</LinearLayout>

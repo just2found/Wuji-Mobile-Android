@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wx_no_installed">위챗을 먼저 설치 후 다시 시도하십시오</string>
+    <string name="pay_succ">지불 성공</string>
+    <string name="pay_failed">지불 실패</string>
+    <string name="pay_cancelled">지불 취소 함</string>
+    <string name="pay_order_error">지불 오더 오류</string>
+</resources>

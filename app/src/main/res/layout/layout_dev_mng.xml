@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_bg_grey250"
+    android:minWidth="300dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight48"
+        android:background="@color/bg_white">
+
+        <ImageView
+            android:id="@+id/ldm_iv_back"
+            android:layout_width="@dimen/common_icon42"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_return_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ls_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/device_des_btn_sn"
+        style="@style/StyleDialogDesTvBtn"
+        android:text="@string/node_config"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/device_des_btn_remote_manage"
+        style="@style/StyleDialogDesTvBtn"
+        android:text="@string/view_remote_management"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/device_mng_des_ll_m3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/device_mng_des_btn_space"
+            style="@style/StyleDialogDesTvBtn"
+            android:layout_width="match_parent"
+            android:text="@string/device_space" />
+
+        <TextView
+            android:id="@+id/device_mng_des_btn_app"
+            style="@style/StyleDialogDesTvBtn"
+            android:layout_width="match_parent"
+            android:text="@string/tool_app" />
+
+        <TextView
+            android:id="@+id/device_mng_des_btn_reboot"
+            style="@style/StyleDialogDesTvBtn"
+            android:layout_width="match_parent"
+            android:text="@string/device_reboot" />
+
+        <TextView
+            android:id="@+id/device_mng_des_btn_shutdown"
+            style="@style/StyleDialogDesTvBtn"
+            android:layout_width="match_parent"
+            android:text="@string/device_power_off"
+            android:textColor="@color/text_orange" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/device_mng_des_btn_delete"
+        style="@style/StyleDialogDesTvBtn"
+        android:text="@string/remove"
+        android:textColor="@color/text_orange"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight32"
+        android:layout_marginTop="@dimen/common_line"
+        android:background="@color/bg_white" />
+</LinearLayout>

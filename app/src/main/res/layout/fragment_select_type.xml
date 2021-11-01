@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#454545">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/common_ItemHeight48"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/ivTitleBg"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0" />
+            <!--            android:src="@drawable/ic_group_home"-->
+
+            <ImageView
+                android:id="@+id/ivTitleTransparentBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_brief_title_transparent"
+                app:layout_collapseMode="pin"
+                tools:layout_height="72dp" />
+
+            <LinearLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_ItemHeight48"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/ab_iv_left"
+                    android:layout_width="@dimen/common_icon48"
+                    android:layout_height="@dimen/common_icon48"
+                    android:background="@drawable/bg_ripple_trans_gray"
+                    android:padding="@dimen/common_12"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_return"
+                    app:tint="@color/title_icon_color"
+                    app:tintMode="src_in"
+                    tools:visibility="visible" />
+
+                <net.linkmate.app.view.MarqueeTextView
+                    android:id="@+id/ab_tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_12"
+                    android:layout_weight="1"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/txt_17"
+                    tools:text="titlie" />
+
+                <ImageView
+                    android:id="@+id/ab_iv_right"
+                    android:layout_width="@dimen/common_icon48"
+                    android:layout_height="@dimen/common_icon48"
+                    android:background="@drawable/bg_ripple_trans_gray"
+                    android:padding="@dimen/common_12"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_more_horiz_24"
+                    app:tint="@color/title_icon_color"
+                    app:tintMode="src_in" />
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--连接状态-->
+            <net.linkmate.app.view.TipsBar
+                android:id="@+id/tipsBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:content_text="@string/load_failed"
+                app:icon_visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vHeaderHelper"
+                app:link_text="@string/back_to_login"
+                tools:visibility="visible" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_16"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/card_view_radius"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_view_file_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_middle0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_16"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/card_view_radius"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_view_top">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_view_file_type0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_16"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/card_view_radius"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_view_middle0">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_view_file_type1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_16"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/card_view_radius"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_view_middle">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_view_file_tool"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_16"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/card_view_radius"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_view_tool">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_view_file_type2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!--icon-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeaderPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/view_end"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|start">
+
+        <View
+            android:id="@+id/vHelper"
+            android:layout_width="1dip"
+            android:layout_height="1dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dip"
+            android:ellipsize="end"
+            android:shadowColor="@color/text_dark"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_14"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="xx圈子" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_8"
+            android:layout_marginBottom="@dimen/common_4"
+            android:ellipsize="end"
+            android:shadowColor="@color/text_dark"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_12"
+            app:layout_constraintBottom_toBottomOf="@+id/vHelper"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivIcon"
+            tools:text="圈子zhangsanasfjsdklfjaslkdfjlsdjflksjdaflksjdlfjsdlfjsldafjlskajdflksadjf;lsafjlksdjfl;sajdflsjdflasjdflj" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/common_icon56"
+            android:layout_height="@dimen/common_icon56"
+            android:layout_marginStart="@dimen/common_12"
+            android:layout_marginBottom="@dimen/common_32"
+            android:background="@drawable/bg_circle_breif_icon"
+            android:src="@drawable/icon_device_wz"
+            app:layout_constraintBottom_toBottomOf="@+id/vHelper"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/vHelper"
+            app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_4dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

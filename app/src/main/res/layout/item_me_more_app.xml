@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_ripple_trans_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/common_2"
+    android:paddingTop="@dimen/common_8"
+    android:paddingEnd="@dimen/common_2"
+    android:paddingBottom="@dimen/common_8">
+
+    <ImageView
+        android:id="@+id/item_iv_app_icon"
+        android:layout_width="@dimen/common_icon42"
+        android:layout_height="@dimen/common_icon42"
+        android:padding="@dimen/common_2" />
+
+    <TextView
+        android:id="@+id/item_tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="@dimen/txt_11"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeTextType="uniform"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeMaxTextSize="@dimen/txt_11"
+        android:maxLines="2"
+        android:gravity="center"
+        android:textColor="@color/text_dark"
+        />
+</LinearLayout>

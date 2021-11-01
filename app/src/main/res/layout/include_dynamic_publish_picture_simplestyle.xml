@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_dynamic_publish_simplestyle">
+
+    <!--灰色背景-->
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:background="@drawable/bg_dynamic_publish"
+        app:layout_constraintBottom_toBottomOf="@+id/barrierPicture"
+        app:layout_constraintEnd_toEndOf="@+id/vContentBackgroud"
+        app:layout_constraintStart_toStartOf="@+id/vContentBackgroud"
+        app:layout_constraintTop_toTopOf="@+id/tvPictureTitle"
+        />
+
+    <CheckBox
+        android:id="@+id/tvPictureTitle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:background="@null"
+        android:button="@drawable/selector_public_dynamic_display"
+        android:drawableStart="@color/white"
+        android:drawablePadding="9dip"
+        android:enabled="false"
+        android:gravity="start|center_vertical"
+        android:minWidth="0dip"
+        android:minHeight="0dip"
+        android:onClick="onClick"
+        android:paddingTop="14dip"
+        android:paddingBottom="14dip"
+        android:text="图片 0/1"
+        android:textColor="@color/text_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/barrierbtnPictureAddStart"
+        app:layout_constraintStart_toStartOf="@+id/tvVideoTitle"
+        app:layout_constraintTop_toBottomOf="@+id/barrierVideo" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierbtnPictureAddStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="btnPictureAdd" />
+
+    <ImageView
+        android:id="@+id/btnPictureAdd"
+        android:layout_width="36dip"
+        android:layout_height="0dip"
+        android:layout_marginEnd="12dip"
+        android:onClick="onClick"
+        android:paddingStart="12dip"
+        android:paddingEnd="12dip"
+        android:src="@drawable/icon_add_dynamic"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPictureTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPictureTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvPictureTitle" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pictureRecyclerView"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dip"
+        android:overScrollMode="never"
+        android:paddingBottom="14dip"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvPictureTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvPictureTitle" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvPictureTitle,pictureRecyclerView" />
+
+    <!--底部间距-->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pictureRecyclerView" />
+
+</merge>

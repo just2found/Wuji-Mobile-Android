@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation_simplestyle"
+    app:startDestination="@id/navigation_home"
+    >
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="net.linkmate.app.ui.simplestyle.home.HomeFragment"
+        android:label="HomeFragment"
+        />
+    <fragment
+        android:id="@+id/navigation_circle"
+        android:name="net.linkmate.app.ui.simplestyle.circle.CircleFragment"
+        android:label="CircleFragment"
+        />
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="net.linkmate.app.ui.fragment.main.MsgFragment"
+        android:label="MessageFragment"
+        />
+    <fragment
+        android:id="@+id/navigation_mine"
+        android:name="net.linkmate.app.ui.fragment.main.MeFragment"
+        android:label="MineFragment"
+        />
+
+</navigation>

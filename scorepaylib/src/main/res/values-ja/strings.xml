@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wx_no_installed">WeChatをインストールして、やり直してください。</string>
+    <string name="pay_succ">成功に支払いました。</string>
+    <string name="pay_failed">支払いに失敗しました</string>
+    <string name="pay_cancelled">支払いをキャンセルしました</string>
+    <string name="pay_order_error">注文書の支払いエラー</string>
+</resources>

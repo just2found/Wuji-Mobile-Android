@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_alter_flow_fee_payer"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/mRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <net.linkmate.app.view.CusRadioButton
+            android:id="@+id/rbUserToPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/selector_alter_flow_fee_payer"
+            android:button="@null"
+            android:drawablePadding="9dip"
+            android:drawableStart="@drawable/selector_blue_check_box"
+            android:checked="true"
+            android:paddingStart="14dip"
+            android:paddingEnd="14dip"
+            android:paddingBottom="21dip"
+            android:paddingTop="21dip"
+            app:startDrawableHeight="16dip"
+            app:startDrawableWidth="16dip"
+            android:text="@string/user_to_pay" />
+        <View
+           style="@style/common_line_style"
+            android:layout_width="match_parent"
+            />
+
+        <net.linkmate.app.view.CusRadioButton
+            android:id="@+id/rbOwnerToPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/selector_alter_flow_fee_payer"
+            android:paddingStart="14dip"
+            android:paddingEnd="14dip"
+            android:paddingBottom="21dip"
+            android:paddingTop="21dip"
+            android:textSize="14sp"
+            android:button="@null"
+            app:startDrawableHeight="16dip"
+            app:startDrawableWidth="16dip"
+            android:drawablePadding="9dip"
+            android:drawableStart="@drawable/selector_blue_check_box"
+            android:text="@string/onwer_to_pay" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="17dip"
+        android:background="#F5F5F5" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:includeFontPadding="false"
+        android:minWidth="0dip"
+        android:minHeight="0dip"
+        android:padding="20dip"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="#999999"
+        android:textSize="15sp" />
+
+</LinearLayout>

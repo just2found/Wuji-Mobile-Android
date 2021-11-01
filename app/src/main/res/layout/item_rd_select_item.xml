@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/file_parent_cv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_ItemHeight64">
+
+    <net.sdvn.nascommon.widget.CheckableImageButton
+        style="@style/checkableImageButton"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/checkBox2"
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/file_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_22"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_15"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintWidth_percent="0.65"
+        tools:text="1690942994084545.jpg" />
+
+
+    <TextView
+        android:id="@+id/file_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/txt_13"
+        app:layout_constraintStart_toStartOf="@+id/file_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/file_name_tv"
+        android:layout_marginTop="@dimen/common_2"
+        tools:layout_editor_absoluteY="44dp"
+        tools:text="2021-01-16 13:20:29" />
+
+    <TextView
+        android:id="@+id/file_size_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_12"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/txt_13"
+        app:layout_constraintBottom_toBottomOf="@+id/file_time_tv"
+        app:layout_constraintStart_toEndOf="@+id/file_time_tv"
+        app:layout_constraintTop_toTopOf="@+id/file_time_tv"
+        tools:text="812.8KB" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/common_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gray_right_arrow" />
+
+    <View
+        style="@style/HorizontalSplitLine"
+        android:layout_marginStart="@dimen/common_10"
+        android:layout_marginEnd="@dimen/common_10"
+        android:layout_height="@dimen/common_half"
+        android:background="@color/line_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

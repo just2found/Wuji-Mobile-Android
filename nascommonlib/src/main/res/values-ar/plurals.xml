@@ -1,0 +1,66 @@
+<resources>
+    <plurals name="users">
+        <item quantity="few">%1$s من المستخدمين</item>
+        <item quantity="many">%1$s من المستخدمين</item>
+        <item quantity="one">%1$s من المستخدمين</item>
+        <item quantity="two">%1$s من المستخدمين</item>
+        <item quantity="zero">%1$s من المستخدمين</item>
+        <item quantity="other">%1$s من المستخدمين</item>
+    </plurals>
+    <plurals name="folders">
+        <item quantity="few">%d من المجلدات</item>
+        <item quantity="many">%d من المجلدات</item>
+        <item quantity="one">%d من المجلدات</item>
+        <item quantity="two">%d من المجلدات</item>
+        <item quantity="zero">%d من المجلدات</item>
+        <item quantity="other">%d من المجلدات</item>
+    </plurals>
+    <plurals name="files">
+        <item quantity="few">%d من الملفات</item>
+        <item quantity="many">%d من الملفات</item>
+        <item quantity="one">%d من الملفات</item>
+        <item quantity="two">%d من الملفات</item>
+        <item quantity="zero">%d من الملفات</item>
+        <item quantity="other">%d من الملفات</item>
+    </plurals>
+    <plurals name="plurals_hour">
+        <item quantity="few">%d ساعة</item>
+        <item quantity="many">%d ساعة</item>
+        <item quantity="one">%d ساعة</item>
+        <item quantity="two">%d ساعة</item>
+        <item quantity="zero">%d ساعة</item>
+        <item quantity="other">%d ساعة</item>
+    </plurals>
+    <plurals name="plurals_day">
+        <item quantity="few">%d يوم</item>
+        <item quantity="many">%d يوم</item>
+        <item quantity="one">%d يوم</item>
+        <item quantity="two">%d يوم</item>
+        <item quantity="zero">%d يوم</item>
+        <item quantity="other">%d يوم</item>
+    </plurals>
+    <plurals name="plurals_minutes">
+        <item quantity="few">%d دقيقة</item>
+        <item quantity="many">%d دقيقة</item>
+        <item quantity="one">%d دقيقة</item>
+        <item quantity="two">%d دقيقة</item>
+        <item quantity="zero">%d دقيقة</item>
+        <item quantity="other">%d دقيقة</item>
+    </plurals>
+    <plurals name="shared_users">
+        <item quantity="few">مشاركة لربط %d من المستخدمين</item>
+        <item quantity="many">مشاركة لربط %d من المستخدمين</item>
+        <item quantity="one">مشاركة لربط %d من المستخدمين</item>
+        <item quantity="two">مشاركة لربط %d من المستخدمين</item>
+        <item quantity="zero">مشاركة لربط %d من المستخدمين</item>
+        <item quantity="other">مشاركة لربط %d من المستخدمين</item>
+    </plurals>
+    <plurals name="local_accounts">
+        <item quantity="few">%d حساب محلي</item>
+        <item quantity="many">%d حساب محلي</item>
+        <item quantity="one">%d حساب محلي</item>
+        <item quantity="two">%d حساب محلي</item>
+        <item quantity="zero">%d حساب محلي</item>
+        <item quantity="other">%d حساب محلي</item>
+    </plurals>
+</resources>

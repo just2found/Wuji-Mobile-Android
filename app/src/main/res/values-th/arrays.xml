@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="secure_option">
+        <item>ไม่มีการเข้ารหัส</item>
+        <item>RC4,MD5-HMAC</item>
+        <item>AES256,SHA1-HMAC</item>
+    </array>
+
+</resources>

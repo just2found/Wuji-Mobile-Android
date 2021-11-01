@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_dynamic_publish_simplestyle">
+    <!--灰色背景-->
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:background="@drawable/bg_dynamic_publish"
+        app:layout_constraintBottom_toBottomOf="@+id/barrierVideo"
+        app:layout_constraintEnd_toEndOf="@+id/vContentBackgroud"
+        app:layout_constraintStart_toStartOf="@+id/vContentBackgroud"
+        app:layout_constraintTop_toTopOf="@+id/tvVideoTitle"
+        />
+
+    <CheckBox
+        android:id="@+id/tvVideoTitle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dip"
+        android:background="@null"
+        android:button="@drawable/selector_public_dynamic_display"
+        android:checked="false"
+        android:drawableStart="@color/white"
+        android:drawablePadding="9dip"
+        android:enabled="false"
+        android:gravity="start|center_vertical"
+        android:minWidth="0dip"
+        android:minHeight="0dip"
+        android:onClick="onClick"
+        android:paddingTop="14dip"
+        android:paddingBottom="14dip"
+        android:text="视频 0/1"
+        android:textColor="@color/text_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/barrierbtnVideoAddStart"
+        app:layout_constraintStart_toStartOf="@+id/tvNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumber" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierbtnVideoAddStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="btnVideoAdd" />
+
+    <ImageView
+        android:id="@+id/btnVideoAdd"
+        android:layout_width="36dip"
+        android:layout_height="0dip"
+        android:layout_marginEnd="12dip"
+        android:onClick="onClick"
+        android:paddingStart="12dip"
+        android:paddingEnd="12dip"
+        android:src="@drawable/icon_add_dynamic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/tvVideoTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvVideoTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvVideoTitle" />
+
+    <ImageView
+        android:id="@+id/ivVideo"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_marginEnd="@dimen/common_4"
+        android:onClick="onClick"
+        android:scaleType="centerCrop"
+        android:src="@color/color_bg_grey500"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/vVideoMid"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/tvVideoTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvVideoTitle" />
+
+    <View
+        android:id="@+id/vVideoBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="14dip"
+        app:layout_constraintTop_toBottomOf="@+id/ivVideo" />
+
+    <ImageView
+        android:id="@+id/ivVideoPlay"
+        android:layout_width="@dimen/common_icon36"
+        android:layout_height="@dimen/common_icon36"
+        android:src="@drawable/video_play_show"
+        app:layout_constraintBottom_toBottomOf="@+id/ivVideo"
+        app:layout_constraintEnd_toEndOf="@+id/ivVideo"
+        app:layout_constraintStart_toStartOf="@+id/ivVideo"
+        app:layout_constraintTop_toTopOf="@+id/ivVideo" />
+    <!--辅助控件 控件均分-->
+    <View
+        android:id="@+id/vVideoMid"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_marginEnd="@dimen/common_4"
+        app:layout_constraintEnd_toStartOf="@+id/vVideoEnd"
+        app:layout_constraintStart_toEndOf="@+id/ivVideo"
+        app:layout_constraintTop_toTopOf="@+id/ivVideo" />
+
+    <View
+        android:id="@+id/vVideoEnd"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_marginStart="@dimen/common_4"
+        android:layout_marginEnd="@dimen/common_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vVideoMid"
+        app:layout_constraintTop_toTopOf="@+id/ivVideo" />
+
+    <ImageView
+        android:id="@+id/ivVideoDelete"
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        android:layout_marginTop="13dip"
+        android:onClick="onClick"
+        android:paddingStart="@dimen/common_8"
+        android:paddingBottom="@dimen/common_8"
+        android:src="@drawable/icon_delete_red"
+        app:layout_constraintBottom_toBottomOf="@+id/vVideoMid"
+        app:layout_constraintEnd_toStartOf="@+id/vVideoMid"
+        app:layout_constraintTop_toTopOf="@+id/vVideoMid" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/mGroupVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="ivVideoPlay,vVideoBottom,ivVideoDelete,ivVideo,vVideoMid,vVideoEnd"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="vVideoBottom,tvVideoTitle,btnVideoAdd,ivVideo" />
+
+
+</merge>

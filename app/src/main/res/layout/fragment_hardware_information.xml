@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5f8"
+    android:orientation="vertical"
+    tools:context=".ui.nas.info.HardwareInformationFragment">
+
+    <net.linkmate.app.ui.function_ui.titlebar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/layout_title_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text_content="@string/hardware_information" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <net.linkmate.app.view.ActivityItemLayout1
+                android:id="@+id/product_model_ail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10"
+                app:iv_icon_visibility="gone"
+                app:iv_right_arrow_visibility="gone"
+                app:tv_title_text="@string/product_model"
+                tools:tv_tips_text="EIDLSISLDKSL" />
+
+            <net.linkmate.app.view.ActivityItemLayout1
+                android:id="@+id/sn_ail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_1"
+                app:iv_icon_visibility="gone"
+                app:iv_right_arrow_visibility="gone"
+                app:tv_title_text="SN"
+                tools:tv_tips_text="EIDLSISLDKSL" />
+
+            <net.linkmate.app.view.ActivityItemLayout1
+                android:id="@+id/mac_ail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_1"
+                app:iv_icon_visibility="gone"
+                app:iv_right_arrow_visibility="gone"
+                app:tv_title_text="MAC"
+                tools:tv_tips_text="82::30:9d:02:28:01" />
+
+            <net.linkmate.app.view.ActivityItemLayout1
+                android:id="@+id/system_version_number_ail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_1"
+                app:iv_icon_visibility="gone"
+                app:iv_right_arrow_visibility="gone"
+                app:tv_title_text="@string/system_version_number"
+                tools:tv_tips_text="4.0.0.2222" />
+
+            <net.linkmate.app.view.ActivityItemLayout1
+                android:id="@+id/cpu_ail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10"
+                app:iv_icon_visibility="gone"
+                app:iv_right_arrow_visibility="gone"
+                app:tv_title_text="CPU"
+                tools:tv_tips_text="Intel(R) Celeron(R) N4120 CPU @ 1.10GHz" />
+
+            <net.linkmate.app.view.ActivityItemLayout1
+                android:id="@+id/memory_ail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_1"
+                app:iv_icon_visibility="gone"
+                app:iv_right_arrow_visibility="gone"
+                app:tv_title_text="@string/memory"
+                tools:tv_tips_text="1GB" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/disk_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_string_invalid_account">잘못 된 계정 혹은 패스워드</string>
+    <string name="error_string_gw_busy">서버가 바쁘니 10분 후에 다시 로그인하십시오</string>
+    <string name="error_string_user_diabled">계정이 사용 중단 됨</string>
+    <string name="error_string_max_device">디바이스 수가 한도 초과</string>
+    <string name="error_string_no_network">현재 네트워크 사용 불가</string>
+    <string name="error_string_device_disabled">현재 디바이스 로그인 중단 됨</string>
+    <string name="error_string_socket">서버에 연결할 수 없습니다. 네트워크를 확인 하십시오</string>
+    <string name="error_string_device_dup">현재 디바이스는 이미 로그인 됨</string>
+    <string name="error_string_device_locked">현재 디바이스는 잠김</string>
+    <string name="error_string_user_unactive">계정이 활성화되지 않았습니다</string>
+    <string name="error_string_user_locked">계정이 잠겼습니다</string>
+    <string name="KR_Device_Removed">디바이스가 네트워크에서 제거되었습니다</string>
+    <string name="KR_Member_Removed">계정이 네트워크에서 제거되었습니다</string>
+    <string name="KR_Deivce_Deactived">디바이스 사용 중단 됨</string>
+    <string name="dr_invalid_sms">알수 없는 SMS</string>
+    <string name="dr_vpn_permission_denied">VPN권한이 거절 됨</string>
+    <string name="dr_vpn_tunnel_is_occupied">VPN 터널이 사용 됨</string>
+    <string name="dr_read_phone_state_permission_denied">디바이스 ID 식별 실패</string>
+    <string name="success">성공</string>
+    <string name="error_string_pending">로딩중…</string>
+    <string name="ec_insufficient_points">포인트가 부족</string>
+    <string name="flow_is_expire">교통 체증 없음</string>
+
+</resources>

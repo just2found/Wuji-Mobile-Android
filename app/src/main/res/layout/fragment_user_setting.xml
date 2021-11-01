@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context=".ui.nas.user.UserSettingFragment">
+
+    <include layout="@layout/include_title_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/common_24">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginTop="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/setting_ail_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:iv_right_arrow_visibility="invisible"
+                app:tv_title_text="@string/account"
+                tools:tv_tips_text="xxx" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginStart="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/setting_ail_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:tv_title_text="@string/mark_name"
+                tools:tv_tips_text="xxx" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginStart="@dimen/common_12"
+                android:background="@color/line_gray"
+                android:visibility="visible" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/setting_ail_used_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:iv_icon_visibility="gone"
+                app:iv_right_arrow_visibility="invisible"
+                app:tv_title_text="@string/used_space"
+                tools:tv_tips_text="13GB" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginStart="@dimen/common_12"
+                android:background="@color/line_gray"
+                android:visibility="visible" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/setting_ail_avilable_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:iv_icon_visibility="gone"
+                app:tv_title_text="@string/available_space"
+                tools:tv_tips_text="无限制" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginBottom="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:id="@+id/layout_common_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/setting_ail_change_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:iv_icon_visibility="gone"
+                    app:tv_title_text="@string/transfer_ownership_of_this_device"
+                    tools:tv_tips_text="" />
+
+                <View
+                    android:id="@+id/setting_line_view"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/setting_ail_change_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:iv_icon_visibility="gone"
+                    app:tv_title_text="@string/Downgrad_to_a_common_user"
+                    tools:tv_tips_text="" />
+
+                <View
+                    android:id="@+id/setting_line_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:layout_marginBottom="@dimen/common_12"
+                    android:visibility="gone"
+                    android:background="@color/line_gray" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <Switch
+                    android:id="@+id/user_settings_switch_personal"
+                    style="@style/StyleDialogDesSwitch"
+                    android:background="@color/bg_white"
+                    android:checked="true"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    android:text="@string/available_user_space"
+                    android:textSize="@dimen/txt_13"
+                    tools:enabled="false" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <Switch
+                    android:id="@+id/user_settings_switch_public_read"
+                    style="@style/StyleDialogDesSwitch"
+                    android:background="@drawable/bg_button_white_ripple_trans_gray"
+                    android:checked="true"
+                    android:foreground="@drawable/bg_ripple_trans_gray"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    android:text="@string/available_read_public_space"
+                    android:textSize="@dimen/txt_13" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <Switch
+                    android:id="@+id/user_settings_switch_public_write"
+                    style="@style/StyleDialogDesSwitch"
+                    android:background="@drawable/bg_button_white_ripple_trans_gray"
+                    android:checked="true"
+                    android:foreground="@drawable/bg_ripple_trans_gray"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    android:text="@string/available_write_public_space"
+                    android:textSize="@dimen/txt_13" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <Switch
+                    android:id="@+id/user_settings_switch_ext_read"
+                    style="@style/StyleDialogDesSwitch"
+                    android:background="@drawable/bg_button_white_ripple_trans_gray"
+                    android:checked="false"
+                    android:drawableBottom="@drawable/shape_horizontal_dividing_line"
+                    android:foreground="@drawable/bg_ripple_trans_gray"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    android:text="@string/available_read_ext_storage"
+                    android:textSize="@dimen/txt_13" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@drawable/shape_horizontal_dividing_line" />
+
+                <Switch
+                    android:id="@+id/user_settings_switch_ext_write"
+                    style="@style/StyleDialogDesSwitch"
+                    android:background="@drawable/bg_button_white_ripple_trans_gray"
+                    android:checked="false"
+                    android:foreground="@drawable/bg_ripple_trans_gray"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    android:text="@string/available_write_ext_storage"
+                    android:textSize="@dimen/txt_13" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <Switch
+                    android:id="@+id/user_settings_switch_group_read"
+                    style="@style/StyleDialogDesSwitch"
+                    android:background="@drawable/bg_button_white_ripple_trans_gray"
+                    android:checked="true"
+                    android:foreground="@drawable/bg_ripple_trans_gray"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    android:text="@string/available_use_group_storage"
+                    android:textSize="@dimen/txt_13" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <Switch
+                    android:id="@+id/user_settings_switch_group_write"
+                    style="@style/StyleDialogDesSwitch"
+                    android:background="@drawable/bg_button_white_ripple_trans_gray"
+                    android:checked="true"
+                    android:foreground="@drawable/bg_ripple_trans_gray"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12"
+                    android:text="@string/available_create_group_storage"
+                    android:textSize="@dimen/txt_13" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:layout_marginBottom="@dimen/common_12"
+                    android:background="@color/line_gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+
+                <TextView
+                    android:id="@+id/account_ail_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_button_white_ripple_trans_gray"
+                    android:foreground="@drawable/bg_ripple_trans_gray"
+                    android:gravity="center"
+                    android:text="@string/delete"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/txt_15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

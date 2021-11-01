@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        app:cardCornerRadius="@dimen/common_6">
+
+        <ScrollView
+            android:id="@+id/device_mng_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg_grey250"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/device_mng_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_16"
+                    android:layout_marginBottom="@dimen/common_16"
+                    android:background="@color/color_bg_grey50"
+                    android:orientation="vertical">
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/device_mng_dil_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_data_text="M3"
+                        app:tv_text="@string/dev_name" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/device_mng_des_dil_remark_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:tv_data_text="N/A"
+                        app:tv_text="@string/mark_name" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/device_mng_dil_owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_data_text="admin(18666666666)"
+                        app:tv_text="@string/owner" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/device_mng_dil_add_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_data_text="2019-03-14 11:12:13"
+                        app:tv_text="@string/bind_time" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/device_mng_dil_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_data_text="3.0.1.1888"
+                        app:tv_text="@string/version_no" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/device_mng_dil_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_data_text="567891234567890"
+                        app:tv_text="ID" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/device_mng_dil_sn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_data_text="DCBA6A123456"
+                        app:tv_text="SN" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/device_mng_des_btn_share"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/share_device"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_mng_des_btn_user_mng"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/members_mng"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_mng_des_btn_sn"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/node_config"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_mng_btn_networks"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/network_location"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/device_mng_des_ll_m3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/device_mng_des_btn_space"
+                        style="@style/StyleDialogDesTvBtn"
+                        android:layout_width="match_parent"
+                        android:text="@string/device_space" />
+
+                    <TextView
+                        android:id="@+id/device_mng_des_btn_app"
+                        style="@style/StyleDialogDesTvBtn"
+                        android:layout_width="match_parent"
+                        android:text="@string/tool_app" />
+
+                    <TextView
+                        android:id="@+id/device_mng_des_btn_reboot"
+                        style="@style/StyleDialogDesTvBtn"
+                        android:layout_width="match_parent"
+                        android:text="@string/device_reboot" />
+
+                    <TextView
+                        android:id="@+id/device_mng_des_btn_shutdown"
+                        style="@style/StyleDialogDesTvBtn"
+                        android:layout_width="match_parent"
+                        android:text="@string/device_power_off"
+                        android:textColor="@color/text_orange" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/device_mng_des_btn_delete"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/remove"
+                    android:textColor="@color/text_orange" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            layout="@layout/layout_upgrade_progress"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_share_code"
+            layout="@layout/layout_share_code"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_user_mng"
+            layout="@layout/layout_user_mng"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_subnet"
+            layout="@layout/layout_subnet"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_node_setting"
+            layout="@layout/layout_node_setting"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_dev_space"
+            layout="@layout/layout_dev_space"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layout_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_trans_black_30"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <net.linkmate.app.view.ProgressView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                app:dot_color="@color/color_orange"
+                app:dot_count="7" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="@dimen/common_icon36"
+            android:layout_height="@dimen/common_icon36"
+            android:layout_gravity="end"
+            android:paddingStart="8dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="2dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/device_des_iv_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon36"
+        android:layout_marginTop="@dimen/common_4"
+        android:layout_marginBottom="@dimen/common_4"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_cancel" />
+</LinearLayout>

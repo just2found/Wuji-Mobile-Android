@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/view_top_middle"
+    android:paddingBottom="@dimen/view_bottom_middle"
+    tools:background="@color/color_bg_grey250">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_line"
+        android:layout_marginStart="@dimen/common_48"
+        android:layout_weight="2"
+        android:background="@color/color_bg_grey350" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_middle"
+        android:layout_marginEnd="@dimen/view_middle"
+        android:textSize="@dimen/text_size_mid"
+        tools:text="分享绑定用户4位" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_line"
+        android:layout_marginEnd="@dimen/common_48"
+        android:layout_weight="2"
+        android:background="@color/color_bg_grey350" />
+
+
+</LinearLayout>

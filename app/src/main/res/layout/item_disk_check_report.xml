@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/common_15"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_device_white">
+
+    <TextView
+        android:id="@+id/disk_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_20"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="硬盘1" />
+
+    <TextView
+        android:id="@+id/disk_name_tv"
+        style="@style/disk_report_tv"
+        android:layout_marginTop="@dimen/common_12"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="@+id/disk_number_tv"
+        app:layout_constraintTop_toBottomOf="@+id/disk_number_tv" />
+
+    <TextView
+        android:id="@+id/disk_size_tv"
+        style="@style/disk_report_tv"
+        android:text="@string/hd_info_capacity"
+        app:layout_constraintStart_toStartOf="@+id/disk_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/disk_name_tv" />
+
+    <TextView
+        android:id="@+id/disk_time_tv"
+        style="@style/disk_report_tv"
+        android:text="@string/disk_use_time"
+        app:layout_constraintStart_toStartOf="@+id/disk_size_tv"
+        app:layout_constraintTop_toBottomOf="@+id/disk_size_tv" />
+
+    <TextView
+        android:id="@+id/disk_serial_number_tv"
+        style="@style/disk_report_tv"
+        android:layout_marginBottom="@dimen/common_20"
+        android:text="@string/hd_info_serial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/disk_time_tv"
+        app:layout_constraintTop_toBottomOf="@+id/disk_time_tv" />
+
+    <TextView
+        android:id="@+id/disk_name_content_tv"
+        style="@style/disk_report_tv1"
+        android:layout_width="0dp"
+        android:layout_marginEnd="@dimen/view_end"
+        app:layout_constraintStart_toEndOf="@+id/disk_name_tv"
+        app:layout_constraintTop_toTopOf="@+id/disk_name_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/disk_size_content_tv"
+        style="@style/disk_report_tv1"
+        app:layout_constraintStart_toEndOf="@+id/disk_size_tv"
+        app:layout_constraintTop_toTopOf="@+id/disk_size_tv"
+        tools:text="400G" />
+
+    <TextView
+        android:id="@+id/disk_time_content_tv"
+        style="@style/disk_report_tv1"
+        app:layout_constraintStart_toEndOf="@+id/disk_time_tv"
+        app:layout_constraintTop_toTopOf="@+id/disk_time_tv"
+        tools:text="400G" />
+
+    <TextView
+        android:id="@+id/disk_serial_number_content_tv"
+        style="@style/disk_report_tv1"
+        app:layout_constraintStart_toEndOf="@+id/disk_serial_number_tv"
+        app:layout_constraintTop_toTopOf="@+id/disk_serial_number_tv"
+        tools:text="400G" />
+
+    <ImageView
+        android:id="@+id/disk_status_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/common_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002"
+        tools:srcCompat="@drawable/ic_disk_normal" />
+
+    <TextView
+        android:id="@+id/disk_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_6"
+        android:textColor="@color/color_49B811"
+        android:textSize="@dimen/txt_12"
+        app:layout_constraintEnd_toEndOf="@+id/disk_status_img"
+        app:layout_constraintStart_toStartOf="@+id/disk_status_img"
+        app:layout_constraintTop_toBottomOf="@+id/disk_status_img"
+        tools:text="@string/disk_status_good" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

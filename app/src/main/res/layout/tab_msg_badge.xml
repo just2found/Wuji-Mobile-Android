@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_msg_count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_12"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/common_16"
+        android:layout_marginTop="@dimen/common_6"
+        android:background="@drawable/bg_orange_small_bubble"
+        android:gravity="center"
+        android:minWidth="@dimen/common_12"
+        android:paddingStart="@dimen/common_2"
+        android:paddingEnd="@dimen/common_2"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/txt_9"
+        android:visibility="gone" />
+
+</FrameLayout>

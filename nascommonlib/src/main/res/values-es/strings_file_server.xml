@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">¡Se ha cancelado el compartido!</string>
+    <string name="tip_error_open_dir">Error al abrir el directorio</string>
+    <string name="tip_error_task_running">Error al ejecutar la tarea</string>
+    <string name="msg_error_exceed_downloads">Este compartido supera el número máximo de descargas.</string>
+    <string name="msg_error_cancel_shared">Error al cancelar el compartido</string>
+    <string name="msg_error_bind_network">Error al conectarse al servicio remoto</string>
+    <string name="msg_error_user_not_exist">El usuario compartido ya no existe</string>
+    <string name="msg_error_illegal_operation">Operación no válida del usuario, actualice e intente nuevamente</string>
+    <string name="msg_error_get_device_ip">No se puede conectar con el servidor compartido, intente nuevamente más tarde</string>
+    <string name="msg_error_broken_network">Error de red</string>
+    <string name="msg_error_dl_not_running">La descarga no está en estado ejecución y no se puede añadir nuevos archivos</string>
+    <string name="msg_error_source_file_open">El archivo de origen no se puede abrir</string>
+    <string name="msg_error_source_file_change">Cambio del tamaño del archivo de origen</string>
+    <string name="msg_error_temp_file">El archivo temporal de eliminado.</string>
+    <string name="msg_error_auth">Error de autenticación interna</string>
+    <string name="msg_error_target_file">Error al escribir el archivo de destino</string>
+    <string name="msg_error_token">Marca de certificación inválida</string>
+    <string name="msg_error_more_shared_ticket">Tarea de descarga creada</string>
+    <string name="msg_error_shared_ticket_overtime">El compartido ha caducado</string>
+    <string name="tips_warn_cancel_share">¡Las descargas inacabadas se cancelarán y se eliminarán los archivos temporales!</string>
+    <string name="msg_error_disk_full">El disco está lleno, ¡despeje el espacio e intente nuevamente!</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/ihn_view_item_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_4" />
+
+    <RelativeLayout
+        android:id="@+id/ihn_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_12"
+        android:layout_marginTop="@dimen/common_6"
+        android:layout_marginEnd="@dimen/common_12"
+        android:layout_marginBottom="@dimen/common_6"
+        android:background="@drawable/bg_item_network"
+        tools:background="@drawable/bg_item_network_stroke">
+
+        <ImageView
+            android:id="@+id/ihn_iv_checked"
+            android:layout_width="@dimen/common_icon28"
+            android:layout_height="@dimen/common_icon28"
+            android:src="@drawable/icon_network_checked"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/common_4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/common_16"
+                    android:paddingTop="@dimen/common_12"
+                    android:paddingRight="@dimen/common_16"
+                    android:paddingBottom="@dimen/common_16">
+
+                    <TextView
+                        android:id="@+id/ihn_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="middle"
+                        android:singleLine="true"
+                        android:text="@string/circle"
+                        android:textColor="@color/text_dark_gray"
+                        android:textSize="@dimen/txt_16"
+                        android:textStyle="bold"
+                        tools:text="aflsdjlfkjasdfljasdlkfjsadlfjsalfjalsjlksjfalsafjlkdsajflkdsajflkdsajfldsf;jafjlkdsafjldsafjlsdajfa" />
+
+                    <TextView
+                        android:id="@+id/ihn_tv_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/txt_12"
+                        tools:text="198.18.1.100" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/ihn_tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sssss"
+                    android:textColor="@color/red"
+                    android:visibility="gone"
+                    android:textSize="@dimen/txt_10"
+                    android:paddingEnd="@dimen/common_8"
+                    tools:visibility="visible"
+                    />
+
+                <View
+                    android:layout_width="@dimen/common_half"
+                    android:layout_height="match_parent"
+                    android:background="#DBDDDE"
+                    android:layout_marginTop="@dimen/common_20"
+                    android:layout_marginBottom="@dimen/common_20"/>
+
+                <ImageView
+                    android:id="@+id/ihn_iv_setting"
+                    android:layout_width="@dimen/common_icon56"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_ripple_trans_gray"
+                    android:paddingLeft="@dimen/common_20"
+                    android:paddingRight="@dimen/common_20"
+                    android:src="@drawable/icon_item_setting_gray" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/ihn_view_item_foot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_4" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <plurals name="users">
+        <item quantity="one">%1$s utente</item>
+        <item quantity="other">%1$s utenti</item>
+    </plurals>
+    <plurals name="folders">
+        <item quantity="one">%d cartella</item>
+        <item quantity="other">%d cartellette</item>
+    </plurals>
+    <plurals name="files">
+        <item quantity="one">%d file</item>
+        <item quantity="other">%d file</item>
+    </plurals>
+    <plurals name="plurals_hour">
+        <item quantity="one">%d ora</item>
+        <item quantity="other">%d ore</item>
+    </plurals>
+    <plurals name="plurals_day">
+        <item quantity="one">%d giorno</item>
+        <item quantity="other">%d giorni</item>
+    </plurals>
+    <plurals name="plurals_minutes">
+        <item quantity="one">%d minuti</item>
+        <item quantity="other">%d minuti</item>
+    </plurals>
+    <plurals name="shared_users">
+        <item quantity="one">%d utente condiviso</item>
+        <item quantity="other">%d utenti condivisi</item>
+    </plurals>
+    <plurals name="local_accounts">
+        <item quantity="one">%d conto locale</item>
+        <item quantity="other">%d conti locali</item>
+    </plurals>
+</resources>

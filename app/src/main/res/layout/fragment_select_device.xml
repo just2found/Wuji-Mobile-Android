@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <net.sdvn.nascommon.widget.TitleBackLayout
+        android:id="@+id/titleBackLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar_gradient"
+        android:minHeight="@dimen/layout_title_height"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/layout_title"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <include layout="@layout/include_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_the_download_path"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_black"
+        android:paddingTop="@dimen/common_10"
+        android:paddingBottom="@dimen/common_10"
+        android:paddingStart="@dimen/view_start"/>
+
+    <include layout="@layout/include_swipe_refresh_and_recycle_view" />
+
+</LinearLayout>

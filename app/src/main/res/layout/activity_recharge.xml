@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/recharge_srl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/mNestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_gray"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/recharge_ll_pay_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/bg_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/recharge_tv_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/common_12"
+                        android:layout_weight="1"
+                        android:text="@string/pay_type"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/txt_15" />
+
+                    <ImageView
+                        android:id="@+id/recharge_iv_type"
+                        android:layout_width="@dimen/common_icon24"
+                        android:layout_height="@dimen/common_icon24"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/common_6"
+                        android:layout_toStartOf="@+id/recharge_tv_type"
+                        android:src="@drawable/icon_logo_alipay" />
+
+                    <TextView
+                        android:id="@+id/recharge_tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/common_8"
+                        android:layout_toStartOf="@+id/ial_iv_right_arrow"
+                        android:text="@string/alipay"
+                        android:textColor="@color/text_dark_gray"
+                        android:textSize="@dimen/txt_14" />
+
+                    <ImageView
+                        android:id="@+id/ial_iv_right_arrow"
+                        android:layout_width="@dimen/common_icon28"
+                        android:layout_height="@dimen/common_icon28"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_chevron_right_gray_24dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/common_12"
+                    android:layout_marginTop="@dimen/common_12"
+                    android:text="@string/currency"
+                    android:textColor="@color/text_dark_gray"
+                    android:textSize="@dimen/txt_13" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recharge_rv_currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_12"
+                    android:overScrollMode="never" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/common_12"
+                    android:layout_marginTop="@dimen/common_4"
+                    android:text="@string/recharge_amount"
+                    android:textColor="@color/text_dark_gray"
+                    android:textSize="@dimen/txt_13" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recharge_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_12"
+                    android:overScrollMode="never" />
+
+                <include layout="@layout/include_bottom_container" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/common_12"
+                    android:layout_marginTop="@dimen/common_16"
+                    android:text="@string/recharge_description"
+                    android:textColor="@color/text_dark_gray"
+                    android:textSize="@dimen/txt_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/common_16"
+                    android:layout_marginTop="@dimen/common_6"
+                    android:layout_marginEnd="@dimen/common_16"
+                    android:layout_marginBottom="@dimen/common_16"
+                    android:text="@string/recharge_description_content"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="@dimen/txt_11" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal"
+        android:elevation="@dimen/common_2">
+
+        <TextView
+            android:id="@+id/recharge_tv_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/common_16"
+            android:textColor="@color/text_dark"
+            android:text="@string/total"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:id="@+id/recharge_btn_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_button_bg_primary"
+            android:minWidth="120dp"
+            android:text="@string/pay_now"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+</LinearLayout>

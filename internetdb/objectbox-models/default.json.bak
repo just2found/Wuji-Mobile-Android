@@ -1,0 +1,349 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5726237519099966480",
+      "lastPropertyId": "11:6716605689405151905",
+      "name": "EnMbPointMsgModel",
+      "properties": [
+        {
+          "id": "1:524294565257438676",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5035933660735309127",
+          "name": "content",
+          "type": 9
+        },
+        {
+          "id": "4:3355815204612484870",
+          "name": "msgId",
+          "indexId": "2:5628948111031505829",
+          "type": 9,
+          "flags": 2080
+        },
+        {
+          "id": "6:8997378203710412432",
+          "name": "userId",
+          "type": 9
+        },
+        {
+          "id": "8:3900018650019215074",
+          "name": "timestamp",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "9:504928649764579418",
+          "name": "type",
+          "type": 9
+        },
+        {
+          "id": "10:158988886468301423",
+          "name": "wasRead",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "11:6716605689405151905",
+          "name": "display",
+          "type": 1,
+          "flags": 4
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:3315958286485749196",
+      "lastPropertyId": "14:175631070482375597",
+      "name": "SdvnMessageModel",
+      "properties": [
+        {
+          "id": "1:5664700474717207439",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5901187485106366579",
+          "name": "userId",
+          "type": 9
+        },
+        {
+          "id": "3:2649692699154575095",
+          "name": "username",
+          "type": 9
+        },
+        {
+          "id": "5:728630481675391647",
+          "name": "message",
+          "type": 9
+        },
+        {
+          "id": "6:4810768375937991596",
+          "name": "status",
+          "type": 9
+        },
+        {
+          "id": "9:3002696206603383870",
+          "name": "timestamp",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "11:2573208159504967744",
+          "name": "msgId",
+          "indexId": "3:1889503259168191098",
+          "type": 9,
+          "flags": 2080
+        },
+        {
+          "id": "12:1861808696968691974",
+          "name": "type",
+          "type": 9
+        },
+        {
+          "id": "13:2985806010880304697",
+          "name": "wasRead",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "14:175631070482375597",
+          "name": "display",
+          "type": 1,
+          "flags": 4
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:1358132505986162052",
+      "lastPropertyId": "32:4572207682353589870",
+      "name": "BindDeviceModel",
+      "properties": [
+        {
+          "id": "1:4990525950489325756",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:9135514732745581907",
+          "name": "userId",
+          "type": 9
+        },
+        {
+          "id": "3:6257065708756517608",
+          "name": "devId",
+          "type": 9
+        },
+        {
+          "id": "4:8260808308402581517",
+          "name": "devDomain",
+          "type": 9
+        },
+        {
+          "id": "5:455372039708190453",
+          "name": "devSN",
+          "type": 9
+        },
+        {
+          "id": "6:8875753939803920279",
+          "name": "devClass",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "7:1566380831705998191",
+          "name": "devName",
+          "type": 9
+        },
+        {
+          "id": "8:7765813159967976988",
+          "name": "devMarkName",
+          "type": 9
+        },
+        {
+          "id": "9:5981297974573856715",
+          "name": "enTimestamp",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "10:6928618571399125370",
+          "name": "mgrLevel",
+          "type": 9
+        },
+        {
+          "id": "11:3381722046902419844",
+          "name": "ownerUserId",
+          "type": 9
+        },
+        {
+          "id": "12:7336133538324683894",
+          "name": "firstName",
+          "type": 9
+        },
+        {
+          "id": "13:5494846030757192437",
+          "name": "lastName",
+          "type": 9
+        },
+        {
+          "id": "14:1964721497814447877",
+          "name": "isEN",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "15:3573654968509726694",
+          "name": "mbpRatio",
+          "type": 9
+        },
+        {
+          "id": "16:6108748011958505730",
+          "name": "maxMbpRatio",
+          "type": 9
+        },
+        {
+          "id": "17:5063858508029339536",
+          "name": "chRatioAble",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "18:3737455976798646266",
+          "name": "minMbpRatio",
+          "type": 9
+        },
+        {
+          "id": "19:4299475107911026410",
+          "name": "mbpChValue",
+          "type": 9
+        },
+        {
+          "id": "20:1275426599999829224",
+          "name": "mbpChTime",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "21:7012329740707573691",
+          "name": "gb2cRatio",
+          "type": 7,
+          "flags": 4
+        },
+        {
+          "id": "22:4586439761896755906",
+          "name": "maxGb2cRatio",
+          "type": 7,
+          "flags": 4
+        },
+        {
+          "id": "23:2044891615385954479",
+          "name": "minGb2cRatio",
+          "type": 7,
+          "flags": 4
+        },
+        {
+          "id": "24:8912968959592895930",
+          "name": "gb2cChValue",
+          "type": 7,
+          "flags": 4
+        },
+        {
+          "id": "25:6307546334488718465",
+          "name": "devType",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "26:4267699193595137923",
+          "name": "scanConfirm",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "27:8844751949855432116",
+          "name": "enableShare",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "28:876053429116814124",
+          "name": "location",
+          "type": 9
+        },
+        {
+          "id": "29:5937746005017190939",
+          "name": "comment",
+          "type": 9
+        },
+        {
+          "id": "30:6050589841826966966",
+          "name": "networks",
+          "type": 9
+        },
+        {
+          "id": "31:3523397196684630656",
+          "name": "gainMBPUrl",
+          "type": 9
+        },
+        {
+          "id": "32:4572207682353589870",
+          "name": "dateTime",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:1358132505986162052",
+  "lastIndexId": "3:1889503259168191098",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    8942246398894517869
+  ],
+  "retiredIndexUids": [
+    5656682703983820268
+  ],
+  "retiredPropertyUids": [
+    978238903124597878,
+    2276339254209963636,
+    5886276810725609844,
+    7474474098853389428,
+    8067558742886385005,
+    4187165423121675220,
+    533433005780457029,
+    8365507681081910637,
+    409923239616632877,
+    5399692018729915319,
+    1801544507258273653,
+    7306240301383038452,
+    2960197755152594462,
+    4420828492122807266,
+    7726101923257202978,
+    1963427824981066444,
+    650379972777147017,
+    6822590616605256542,
+    7464235068286113772,
+    8353831394713945878,
+    3089040483615352427,
+    4749053312637114504,
+    9081773557351198729,
+    3906461669063687523,
+    6847129667807015667,
+    1158774643900283332,
+    8479029333677203453
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

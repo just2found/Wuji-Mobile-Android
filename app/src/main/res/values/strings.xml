@@ -1,0 +1,681 @@
+<resources>
+    <string name="app_name">WeLine</string>
+    <string name="loading_data">loading data</string>
+    <string name="connecting">connecting</string>
+    <string name="disconnecting">Disconnecting</string>
+
+    <string name="home">Home</string>
+    <string name="store">Store</string>
+    <string name="app">App</string>
+    <string name="msg">Message</string>
+    <string name="me">Me</string>
+
+    <string name="current_net">Current net</string>
+    <string name="machine_name">Machine</string>
+    <string name="network">Network</string>
+    <string name="vip">Virtual IP</string>
+    <string name="lanIp">Local IP</string>
+    <string name="domain">Domain</string>
+    <string name="nodes">Nodes</string>
+    <string name="delay">Delay</string>
+    <string name="uptime">Uptime</string>
+
+    <string name="error_dlg_title">Error</string>
+    <string name="error_string_user_diabled">Your account not found.</string>
+    <string name="error_string_max_device">The number of registered devices has reached the maximum.</string>
+    <string name="error_string_no_network">Unusable Network.</string>
+    <string name="error_string_device_disabled">Your device is restricted to login.</string>
+    <string name="error_string_device_dup">Your device had been online.</string>
+    <string name="error_string_device_locked">Your device had been locked.</string>
+    <string name="error_string_user_unactive">Account is not activated.</string>
+    <string name="error_string_user_locked">Account has been locked.</string>
+
+    <string name="balance">Balance</string>
+    <string name="date">Valid until</string>
+    <string name="score">NB</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="share_code_time_tips">This share code is valid for 24 hours</string>
+    <string name="share_code_tips">This code will become invalid after being used once</string>
+    <string name="send_to">Send to</string>
+    <string name="cannot_open_file_tip">No apps were found to open this file, you may need to go to the app store to find a suitable app !</string>
+    <string name="rename">Rename</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="unbind_device_prompt">Do you want to unbind this device?</string>
+    <string name="msg_admin_remove_device">Owner unbundling will clear all users. If you need to unbind yourself, please transfer the owner\'s authority first.</string>
+    <string name="msg_admin_clear_all">This operation will clear all users in the device. Do you want to execute it?</string>
+    <string name="everyone">Everyone</string>
+    <string name="self">Self</string>
+    <string name="clear_all">Clear all</string>
+    <string name="pls_enter_right_dns">Please enter the correct DNS server address</string>
+    <string name="pls_enter_right_subnet_ip">Please enter the correct device IP address</string>
+    <string name="pls_enter_right_subnet_mask">Please enter the correct subnet mask</string>
+    <string name="repeated_subnet">Repeated subnet</string>
+    <string name="pls_configure_at_least_one_subnet">Please configure at least one subnet</string>
+    <string name="check_all">Check All</string>
+    <string name="cancel">Cancel</string>
+    <string name="pickerview_cancel">Cancel</string>
+    <string name="pickerview_submit">Confirm</string>
+    <string name="cancel_share_to_these_users">Do you want to remove the selected user?</string>
+    <string name="invite">Invite</string>
+    <string name="pls_input_invite_username">Please enter the username you would like to invite</string>
+    <string name="unbind_network_prompt">Do you want to delete this network?</string>
+    <string name="send_request">Sending request &#8230;</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="auth_success">Authorized success</string>
+    <string name="auth_success_tip" translatable="false" />
+    <string name="na">N/A</string>
+    <string name="ok">OK</string>
+    <string name="bind_success">Added successfully</string>
+    <string name="qc_code_invalid">The qr code is invalid</string>
+    <string name="unselect_snode_msg">Deselect SmartNode before discovering,Are you sure to deselect SmartNode?</string>
+    <string name="unselect_snode_title">Deselect SmartNode</string>
+    <string name="fail">failed</string>
+    <string name="update_device_version">Do you want to update the device version?</string>
+    <string name="jws_invalid_ip">Invalid ip/mask/gateway</string>
+    <string name="allow_remote_maint">Allow remote access</string>
+    <string name="disallow_remote_maint">Disable remote access</string>
+    <string name="get_real_time_status_info_fail">Failed to Real-time status info</string>
+    <string name="rx_bytes">Public RX</string>
+    <string name="tx_bytes">Public TX</string>
+    <string name="dlt_rx_bytes">Device RX</string>
+    <string name="dlt_tx_bytes">Device TX</string>
+    <string name="collect_log">Collect logs</string>
+    <string name="stop_collecting_logs">Stop collecting</string>
+    <string name="collecting_logs_stop">Collecting logs has been stopped</string>
+    <string name="account_email_phone">Account/Email/Mobile</string>
+    <string name="password">Password</string>
+    <string name="verify_code">Verify code</string>
+    <string name="get_verify_code">Get verify code</string>
+    <string name="register">Register</string>
+    <string name="forget_password">Forget password</string>
+    <string name="login">Login</string>
+    <string name="use_email">Use email</string>
+    <string name="nickname">Nickname</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="phone">mobile</string>
+    <string name="email">email</string>
+    <string name="use_phone">Use phone</string>
+    <string name="error_phone_number_tips">Please enter the correct mobile number</string>
+    <string name="error_phone_email_tips">Please enter the correct email address</string>
+    <string name="error_string_pwd_confirm">Inconsistent passwords entered twice</string>
+    <string name="error_string_no_nickname">Please enter a nickname no longer than 24 characters</string>
+    <string name="error_string_no_firstname">Please enter a first name no longer than 32 characters</string>
+    <string name="error_string_no_lastname">Please enter a last name no longer than 32 characters</string>
+    <string name="register_succ">Register success</string>
+    <string name="error_string_no_auxcode">Please get and fill in the verification code</string>
+    <string name="reset_pwd_succ">Password reset success</string>
+    <string name="retrieve_password">Reset password</string>
+    <string name="commit">submit</string>
+    <string name="check_for_updates">Check for updates</string>
+    <string name="support">support</string>
+    <string name="home_page">home page</string>
+    <string name="checking_for_updates">Checking for updates&#8230;</string>
+    <string name="no_update">No update</string>
+    <string name="update_fail">Check for update failures</string>
+    <string name="download_now">Download now</string>
+    <string name="download_later">Later</string>
+    <string name="pls_grant_storage_permission">Please grant read/write permissions of mobile storage</string>
+    <string name="update">update</string>
+    <string name="downloading">downloading</string>
+    <string name="select_browser">Pls select the browser</string>
+    <string name="bind_device">Bind Device</string>
+    <string name="input_regist_code">Pls enter the registration code</string>
+    <string name="disagree">disagree</string>
+    <string name="agree">agree</string>
+    <string name="agreed">agreed</string>
+    <string name="disagreed">disagreed</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="sort_by_time">Sort by time</string>
+    <string name="display_by_grid">Display by grid</string>
+    <string name="display_by_list">Display by list</string>
+    <string name="query_space_failure">Query space failed</string>
+    <string name="confirm_reboot_device">Confirm reboot device?</string>
+    <string name="confirm_power_off_device">Confirm shutdown device?</string>
+    <string name="power_off_device">Shutting down &#8230;</string>
+    <string name="rebooting_device">Rebooting &#8230;</string>
+    <string name="success_power_off_device">shutdown succeed</string>
+    <string name="success_reboot_device">reboot succeed</string>
+    <string name="app_mng">app management</string>
+
+    <!-- Apps Activity -->
+    <string name="title_apps_phone">Phone</string>
+    <string name="getting_app_list">Getting app list&#8230;</string>
+    <string name="error_open_app">Sorry, Cannot open this application</string>
+    <string name="error_get_app_details">Do not get app information</string>
+    <string name="can_not_uninstall">Cannot Uninstall</string>
+    <string name="app_not_found_exception">App not found</string>
+    <string name="confirm_uninstall_plugin">Confirm uninstall&#160;&#160;</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="uninstalling_plugin">Uninstalling&#8230;</string>
+    <string name="opening_plugin">Opening&#8230;</string>
+    <string name="closing_plugin">Closing&#8230;</string>
+    <string name="confirm_open_plugin">Confirm open&#160;&#160;</string>
+    <string name="confirm_close_plugin">Confirm close&#160;&#160;</string>
+    <string name="app_status">Status：&#160;</string>
+    <string name="app_state_getting">Getting&#8230;</string>
+    <string name="app_state_on">Running</string>
+    <string name="app_state_off">Stopped</string>
+    <string name="app_state_unknown">Unknown</string>
+
+    <!--App Manage-->
+    <string name="file_service">File Service</string>
+    <string name="download_tool">Download Tool</string>
+    <string name="multimedia_service">Multimedia Service</string>
+
+    <string name="network_mng">Network Management</string>
+    <string name="tips_no_network">You do not have a network yet</string>
+    <string name="tips_this_net_no_dev">No other devices are found online in the current network</string>
+    <string name="tips_local_net_no_dev">Device not found in LAN</string>
+    <string name="tips_no_dev">No device available</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="use_more_features">Use more features</string>
+    <string name="not_connected">Not connected</string>
+    <string name="pls_login">Please login</string>
+    <string name="tips_log_out_and_delete">Do you want to delete your current account?</string>
+    <string name="tips_switch_account">Do you want to switch to %1$s</string>
+    <string name="account">Account</string>
+    <string name="my_account">My account</string>
+    <string name="modify_name">Modify the name</string>
+    <string name="modify_pwd">Modify password</string>
+    <string name="delete_account">Delete account</string>
+    <string name="switch_account">Switch account</string>
+    <string name="old_pwd">Old password</string>
+    <string name="pls_input_old_pwd">Enter the old password</string>
+    <string name="new_pwd">New password</string>
+    <string name="pls_input_new_pwd">Enter a new password</string>
+    <string name="confirm_pwd">Confirm password</string>
+    <string name="pls_input_new_pwd_again">Confirm password</string>
+    <string name="device">Device</string>
+    <string name="mine">Mine</string>
+    <string name="shared">Shared</string>
+    <string name="tips_login">Open the journey of lian</string>
+    <string name="new_pwd_are_different">The new password entered twice is inconsistent</string>
+    <string name="modify_succ">modified successfully</string>
+    <string name="delete_this_account">delete this account</string>
+    <string name="system_msg">System Message</string>
+    <string name="file_share">File Sharing</string>
+    <string name="transfer">Transmission</string>
+    <string name="no_msg">No Message</string>
+    <string name="pls_select_way">Please select the method</string>
+    <string name="pls_select_type">Please select type</string>
+    <string name="add_new_device">Add device</string>
+    <string name="add_new_net">Add network</string>
+    <string name="add_share_net">Join a shared network</string>
+    <string name="pls_input_share_code">Please enter the sharing code</string>
+    <string name="pls_input_net_name">Please enter the new network name</string>
+    <string name="create_new_net">Create a new network</string>
+    <string name="add_share_device">Add a shared device</string>
+    <string name="net_name">Name</string>
+    <string name="dev_name">Name</string>
+    <string name="remove">Remove</string>
+    <string name="mark_name">Remark</string>
+    <string name="owner">Owner</string>
+    <string name="hine_net_device">Hide devices on the network</string>
+    <string name="share">Share</string>
+    <string name="share_device">Share device</string>
+    <string name="members_mng">Member Management</string>
+    <string name="device_space">Device space</string>
+    <string name="reboot">Restart</string>
+    <string name="shutdown">Shutdown</string>
+    <string name="node_config">Node configuration</string>
+    <string name="enable_node">Select this node</string>
+    <string name="version_no">Version</string>
+    <string name="upgrade_firmware">Upgrade firmware</string>
+    <string name="share_code">Share code</string>
+    <string name="enable_share">Enable sharing</string>
+    <string name="tips_share_need_auth">Requires verification when the device is added</string>
+    <string name="access_internet_by_sn">Access internet via this device</string>
+    <string name="use_dedicated_dns">Use Dedicated DNS</string>
+    <string name="dns_1">DNS 1</string>
+    <string name="dns_2">DNS 2</string>
+    <string name="access_subnet_by_sn">Access subnet via this device</string>
+    <string name="add_subnet">Add a new subnet</string>
+    <string name="setting_text_cache">Clear Cache</string>
+    <string name="setting_text_dl_path">Set the download path</string>
+    <string name="setting_text_del_trans_record">Delete upload and download records</string>
+    <string name="setting_text_not_wifi_warnning">Upload/download file reminder in non-WiFi environment</string>
+    <string name="setting_text_no_more_net_hint">The number of homepage networks is not enough to hide when selected</string>
+    <string name="setting_text_dlt_enable">DLT function is enabled</string>
+    <string name="setting_text_safe_setting">Security options</string>
+    <string name="about">About</string>
+    <string name="request_succ">Request Success</string>
+    <string name="wait_for_net_auth">Waiting for the owner of this network to authorize you</string>
+    <string name="wait_for_dev_auth">Waiting for the owner of this device to authorize you</string>
+    <string name="control_panel">Control Panel</string>
+    <string name="common_functions">Common Functions</string>
+    <string name="dev_mng">Device Management</string>
+    <string name="dev_flow_details">Device traffic details</string>
+    <string name="dev_flow_stat">Device traffic stat</string>
+    <string name="local_dev_mng">Local Device Diagnostics</string>
+
+    <!--Backup Contacts and SMS-->
+    <string name="title_sync_contacts">Backup Contacts</string>
+    <string name="last_sync_time">Last backup time：</string>
+    <string name="sync_contacts_to_server">Backup Contacts to Station</string>
+    <string name="recover_contacts_to_phone">Recovery Contacts to phone</string>
+    <string name="title_sync_sms">Backup SMS</string>
+    <string name="sync_sms_to_server">Backup SMS to Station</string>
+    <string name="recover_sms_to_phone">Recovery SMS to phone</string>
+    <string name="recovering">Recovering&#8230;</string>
+    <string name="recover_waiting">Waiting&#8230;</string>
+    <string name="recover_prepare">Prepare recovery&#8230;</string>
+    <string name="recover_success">Recovery Complete</string>
+    <string name="recover_failed">Recovery Failed</string>
+    <string name="error_export_sms">Backup SMS error</string>
+    <string name="error_export_contacts">Backup Contacts error</string>
+    <string name="error_import_sms">Recovery SMS error</string>
+    <string name="error_import_contacts">Recovery Contacts error</string>
+    <string name="no_sms_to_recover">No SMS to recovery</string>
+    <string name="no_contact_to_recover">No Contact to recovery</string>
+    <string name="syncing">Backuping&#8230;</string>
+    <string name="exporting">Exporting&#8230;</string>
+    <string name="sync_waiting">Waiting&#8230;</string>
+    <string name="not_sync">Not Backup</string>
+    <string name="sync_failed">Backup Failed</string>
+    <string name="sync_success">Backup Succeed</string>
+    <string name="wait_to_sync">Waiting Operation</string>
+    <string name="no_sms_to_sync">No SMS to backup</string>
+    <string name="no_contact_to_sync">No Contact to backup</string>
+    <string name="sync_exception_download">Backup failed, Pls try again</string>
+    <string name="recovery_exception_upload">Recovery failed, Pls try again</string>
+    <string name="permission_denied_backup_contact">To backup your contacts, Pls grant permissions to access your contacts!</string>
+    <string name="permission_denied_contact">To view your contacts, Pls grant permissions to access your contacts!</string>
+    <string name="permission_denied_backup_sms">To backup your sms, Pls grant permissions to access your sms!</string>
+    <string name="permission_denied_sms">To send sms，Pls grant permissions to access your sms！</string>
+    <string name="backup_location">Location</string>
+    <string name="backup">Backup</string>
+
+    <string name="add_resource">Add Resource</string>
+    <string name="backup_photo">Backup Photo</string>
+    <string name="unshare">Cancel share</string>
+    <string name="used_space_tips">Your space has been used</string>
+    <string name="total_space">Total space:</string>
+    <string name="querying">Querying&#8230;</string>
+    <string name="free_space">Free space:</string>
+    <string name="used_space">Used space:</string>
+    <string name="client">Client</string>
+    <string name="type_qrcode">QRCodeHasBeenGenerated</string>
+    <string name="bind_time">Bind time</string>
+    <string name="delete_personal_data">Delete personal data</string>
+    <string name="create_success">Create success</string>
+    <string name="login_tips">Sign in now to use this feature</string>
+    <string name="enter">Enter</string>
+    <string name="not_remind_again">No longer prompted</string>
+    <string name="Copied">Copied</string>
+    <string name="pay_now">Pay now</string>
+    <string name="privileged_service">Privilege</string>
+    <string name="service_content">Service Content：</string>
+    <string name="high_speed_traffic_packet">High speed traffic packet</string>
+    <string name="valid_until">Valid until</string>
+    <string name="remaining_time">Remaining time：</string>
+    <string name="unsubscribed">Unsubscribed</string>
+    <string name="details_device">Device Details</string>
+    <string name="subnet">Subnet</string>
+    <string name="access_by_browser">Access by browser</string>
+    <string name="just_logout">Log out only</string>
+    <string name="logout_and_delete">Log out and delete</string>
+    <string name="setting_text_device_list_show_mark_name">The remark name is prioritized show in the device list</string>
+
+    <string name="internet_access">Leakproof</string>
+    <string name="tips_internet_access">When the virtual network connection is lost, internet traffic is automatically block without any intervention</string>
+    <string name="tips_internet_access_sn_cancel">When the Izzbie One unselected, internet traffic is  automatically block</string>
+    <string name="do_it_best_with_sys_settings">Configure system settings to make this feature better</string>
+    <string name="real_time_status_info">Real-time status info</string>
+    <string name="clients">Clients</string>
+    <string name="devices">Devices</string>
+    <string name="delete_this_selected_msg">delete the selected message</string>
+    <string name="password_must_contains_num_letter_char">Password must be 8–32 characters and contain numbers, letters and special characters.</string>
+    <string name="choose_from_album">Choose from album</string>
+    <string name="image_have_qrcode">Image have a QRCode?</string>
+    <string name="open_camera_error">Open camera error!! Check it</string>
+    <string name="qrcode_notice">Align the QR Code within the frame to scan</string>
+    <string name="switch_success">Successful switched</string>
+    <string name="title_account">Account</string>
+    <string name="advanced_settings">Advanced Settings</string>
+    <string name="status">Status</string>
+    <string name="no_special_characters_in_the_name">No special characters in the name</string>
+    <string name="virtual_node">Virtual node</string>
+    <string name="view_subnode">View subnode</string>
+    <string name="see_details">See details</string>
+    <string name="service_expiring">Expiring</string>
+    <string name="total_traffic">Total traffic</string>
+    <string name="remaining_traffic">Remaining</string>
+    <string name="flow_usable">Total traffic</string>
+    <string name="flow_used">Used traffic</string>
+    <string name="not_opened_service">Not opened service</string>
+    <string name="virtual_net_service">Virtual Network Service</string>
+    <string name="indefinitely">Permanent</string>
+    <string name="service_expired">Expired</string>
+    <string name="service_opened">Subscribed</string>
+    <string name="tmp_file_not_found">Temporary file are deleted or moved</string>
+    <string name="location">Location</string>
+    <string name="recharge">Recharge</string>
+    <string name="recharge_record">Recharge record</string>
+    <string name="expenses_record">Expenses record</string>
+    <string name="pay_type">Payment method</string>
+    <string name="alipay">Alipay</string>
+    <string name="recharge_amount">Recharge amount</string>
+    <string name="get_score">Get scores</string>
+    <string name="no_record">No record</string>
+    <string name="wepay">WeChat</string>
+    <string name="paypal" translatable="false">PayPal</string>
+    <string name="applepay" translatable="false">ApplePay</string>
+    <string name="score_get_record">Details of scores income</string>
+    <string name="score_expenses_record">Details of scores expenses</string>
+    <string name="vnodeapply">Active VNode</string>
+    <string name="vnodeflow">Traffic cost</string>
+    <string name="score_for_bound_devices">From bound devices</string>
+    <string name="transferin">Transfer in</string>
+    <string name="current_month_data">Real-time data this month</string>
+    <string name="manual">Manual</string>
+    <string name="pay_order_error">Payment order error</string>
+    <string name="fmt_time_adapter_title">yyyy MMM</string>
+    <string name="fmt_time_adapter_title2">MMM.dd,yyyy</string>
+    <string name="fmt_time_adapter_item">MMM.dd HH:mm</string>
+    <string name="fmt_time_adapter_item2">MMM.dd</string>
+    <string name="fmt_time">MMM.dd,yyyy HH:mm</string>
+    <string name="source">Source</string>
+    <string name="create_date">Creation date</string>
+    <string name="order_no">Order number</string>
+    <string name="types_of_expenses">Types of expenses</string>
+    <string name="virtual_node_id">VNode ID</string>
+    <string name="this_month">This month</string>
+    <string name="used_score">Scores used</string>
+    <string name="currency">Currency type</string>
+    <string name="view_remote_management">Remote Management</string>
+    <string name="switch_network">Switch Network</string>
+    <string name="select_smartnode">Select SmartNode</string>
+    <string name="receive_score">Receive scores</string>
+    <string name="unbound">Unbound</string>
+    <string name="bind_phone">Binding phone</string>
+    <string name="pls_input_your_phone_number">Please input your phone number</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="Bonus_score_of_register">Bonus scores of register</string>
+    <string name="error_string_empty_account">Please enter a account</string>
+    <string name="modify_nick">Modify nickname</string>
+    <string name="low_score_tips">Your scores are insufficient. Do you need to recharge it?</string>
+    <string name="no_special_characters_in_the_loginname">Account name must be 8–24 characters and contain both numbers and letters.</string>
+    <string name="score_transfer">Scores transfer</string>
+    <string name="other_account">Account</string>
+    <string name="trans_amount">Amount</string>
+    <string name="service_fee">Service fee</string>
+    <string name="service_fee_tips">A service fee of $FEE$% is charged.</string>
+    <string name="transferable_score">Transferable scores</string>
+    <string name="pls_enter_a_amount">Please enter a correct amount.</string>
+    <string name="score_transfer_succ">Success</string>
+    <string name="transferout">Transfer out</string>
+    <string name="error_transfer_to_yourself">Can\'t transfer scores to yourself.</string>
+    <string name="reward_for_activities">Reward for activities</string>
+    <string name="to_target">To：</string>
+    <string name="from_target">From：</string>
+    <string name="income">Income</string>
+    <string name="expenses">Expenses</string>
+    <string name="upgrade_to_administrator">Upgrade to administrator</string>
+    <string name="Downgrad_to_a_common_user">Downgrad to a common user</string>
+    <string name="transfer_ownership_of_this_device">Transfer ownership of this device</string>
+    <string name="load_failed">Loading failed</string>
+    <string name="valid_traffic">Valid traffic</string>
+    <string name="invalid_traffic">Invalid traffic</string>
+    <string name="upstream_traffic">Upstream traffic</string>
+    <string name="all_dev">All devices</string>
+    <string name="upgrade_all">UpgradeAll</string>
+    <string name="discover_new_firmware_version">Discover new firmware version</string>
+    <string name="tips_upgrading_firmware">Firmware upgrade in progress &#8230;</string>
+    <string name="expand">Expand</string>
+    <string name="shrink">Shrink</string>
+    <string name="flow_unit_price">Price</string>
+    <string name="action_offline_download">Transmission</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="total_earnings">Total earnings</string>
+    <string name="earnings">Earnings</string>
+    <string name="cur_date">Date</string>
+    <string name="by_months">By months</string>
+    <string name="by_days">By days</string>
+    <string name="delay_time_title">Delayed effective time</string>
+    <string name="hours">Hour</string>
+    <string name="minutes">Minute</string>
+    <string name="undo">Undo</string>
+
+    <string name="copyright" translatable="false">Copyright © 2019 Izzbie Inc. Memenet Inc.</string>
+    <string name="device_id" translatable="false">ID</string>
+    <string name="device_sn" translatable="false">SN</string>
+    <string name="effective_time">EffectiveTime</string>
+    <string name="last_flow_unit_price">Latest price</string>
+    <string name="set_mbpoint_ratio_msg">Traffic price is about to change</string>
+    <string name="cancel_mbpoint_ratio_msg">Traffic price change of plan has been canceled</string>
+    <string name="rmb" translatable="false">CNY</string>
+    <string name="usd" translatable="false">USD</string>
+    <string name="tips_mark_all_read">Mark all read</string>
+    <string name="to_be_confirmed">Unprocessed</string>
+    <string name="agreement_tips_1" translatable="false">Welcome to WeLine. We attach great importance to your privacy and protection of personal information and have formulated our privacy policy in relation to collection, use and protection of personal information. The main contents are:\n
+1．How do we collect and use your personal information \n
+2．How do we share, transfer, and publicly disclose your personal information \n
+3．How do we store your personal information \n
+4．How do we protect your personal information \n
+5．How do we use Cookies and similar technologies \n
+6．How do we handle minors\' personal information \n
+7．How can you exercise your right to manage your personal information</string>
+    <string name="agreement_tips_2" translatable="false">We have stipulated specific rules for account registration, usage of Weline services and relevant requirements in the User Agreement. For more details, you may refer to the full version of the $P$ and $P$. And if you agree to the foregoing two documents, please click Confirm to start our services.</string>
+    <string name="not_used" translatable="false">Not Used</string>
+    <string name="agreement_policy" translatable="false">User Agreement and Privacy Policy</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="stop_connect">Whether to stop connection</string>
+    <string name="fast_transfer">Lightning transfer</string>
+    <string name="change_to_network">Switch device to this network</string>
+    <string name="flow_details">Traffic details</string>
+    <string name="valid">Valid period</string>
+    <string name="is_save_config">Save the configuration?</string>
+
+    <!--<设备添加时需要验证 添加设备时需要验证/>-->
+    <string name="wallet">Wallet</string>
+    <string name="torrents">FastTransmission</string>
+    <string name="generate_seed">Generate seed</string>
+    <string name="clear_downloaded_files">Clear downloaded files</string>
+    <string name="root_dir_name_private">My space</string>
+    <string name="root_dir_name_public">Public space</string>
+    <string name="total">Total</string>
+    <string name="promotions">Promotions</string>
+    <string name="recharge_description">Recharge instructions</string>
+    <string name="recharge_description_content">When the recharge is not completed, please do not switch the WeLine account or uninstall the APP, please wait for the recharge to end, otherwise the account may not be credited. If such a situation occurs, please contact customer service.</string>
+    <string name="visible_devices">Visible devices</string>
+    <string name="my_devices">My devices</string>
+    <string name="shared_devices">Shared devices</string>
+    <string name="modify_dev_name">Modify device name</string>
+    <string name="modify_remark_name">Modify remark name</string>
+    <string name="modify_price">Modify price</string>
+    <string name="pls_scan_qrcode">Please use %s to scan the QR code</string>
+    <string name="circle_month">month</string>
+    <string name="circle_year">year</string>
+    <string name="vadded_fee">Commission of value-added fees</string>
+    <string name="deposit_value">Security deposit</string>
+    <string name="service_fees">Service charges</string>
+    <string name="switch_circle_for_circle_brief">Please switch to this circle to view</string>
+    <string name="circle_main_en_server_offline">Main EN is offline</string>
+
+    <string name="tips_switch_to_circle">Switch to that circle</string>
+    <string name="friend_device">Friend\'s</string>
+
+    <string name="please_choice_theme">Please choose a theme</string>
+    <string name="simple_style">Simple mode (new)</string>
+    <string name="older_style">Professional mode (old)</string>
+    <string name="home_style">Theme mode</string>
+    <string name="comment">Comment</string>
+    <string name="edit_dynamic">Edit</string>
+    <string name="publish_dynamic">Publish</string>
+    <string name="resources">Resources</string>
+    <!--    <string name="operation_failed">OperationFailed</string>-->
+
+    <string name="manager_remove_device_hint">Confirm unbinding</string>
+    <string name="remove_device_title">Remove device</string>
+    <string name="manager_remove_device_content">Please enter \"Confirm unbinding\" to complete this operation</string>
+    <string name="onwer_remove_device_content">Please enter \"Confirm unbinding and clear all users\" to complete this operation.</string>
+    <string name="onwer_remove_device_hint">Confirm to unbinding and clear all users</string>
+    <string name="clear_user_data_hint">Also clear user data</string>
+    <string name="confirm_delete">Confirm delete</string>
+    <string name="delete_user_hint">Please enter \"Confirm delete\" to complete this operation</string>
+    <string name="simple_style_short">Simple</string>
+    <string name="older_style_short">Professional</string>
+
+
+    <string name="reply">Reply</string>
+    <string name="dynamic">Moments</string>
+    <string name="dynamic_detail">Moments details</string>
+    <string name="publish_success">Successful Posted</string>
+    <string name="delete_dynamic_confirm_hint">Delete this Moments post?</string>
+    <string name="delete_comment_confirm_hint">Delete this Comment?</string>
+    <string name="yestody">Yesterday</string>
+
+    <string name="file_is_saved">File saved</string>
+    <string name="the_dynamic_is_deleted">This Moments post has been deleted</string>
+    <string name="all_text">Show More</string>
+    <string name="shrink_text">Show Less</string>
+
+    <string name="not_find_en_server">EN server not found</string>
+    <string name="add_immediately">Add now</string>
+    <string name="purchase_immediately">Buy now</string>
+    <string name="unsubscribe_device_server">Unsubscribed device service</string>
+    <string name="subscribe_immediately">Subscribe now</string>
+    <string name="to_purchase_immediately">Shop now</string>
+    <string name="en_server_cant_connected">EN server connection exception</string>
+    <string name="without_dynamic">No Moments post</string>
+    <string name="publish_immediately">Post now</string>
+    <string name="dynamic_is_publishing_title">Uploading</string>
+    <string name="cancel_publish">Cancel post</string>
+    <string name="stop_publish_dynamic_hint">You have a Moments post being uploaded. Do you want to continue with this operation and delete the post?</string>
+    <string name="restart_publish">Repost</string>
+
+    <!--不可删除 xpopup替换文字-->
+    <string name="xpopup_cancel">@string/cancel</string>
+    <string name="xpopup_ok">@string/confirm</string>
+    <string name="xpopup_save">save</string>
+    <!--不可删除 EasyPhotos替换文字-->
+    <string name="selector_folder_all_easy_photos">All pictures</string>
+    <string name="selector_folder_all_video_photo_easy_photos">Pictures and videos</string>
+    <string name="selector_folder_video_easy_photos">All videos</string>
+    <string name="selector_easy_photos">@string/choice</string>
+    <string name="selector_action_done_easy_photos">Complete (%1$d/%2$d)</string>
+    <string name="selector_preview_easy_photos">Preview</string>
+    <string name="selector_reach_max_hint_easy_photos">You can select at most %d pictures or videos</string>
+    <string name="selector_reach_max_image_hint_easy_photos">You can select at most %d pictures</string>
+    <string name="selector_reach_max_video_hint_easy_photos">You can select at most %d videos</string>
+    <string name="msg_no_file_easy_photos">The file does not exist or is damaged!</string>
+    <string name="msg_no_camera_easy_photos">Unable to start the camera!</string>
+    <string name="camera_temp_file_error_easy_photos">Picture error</string>
+    <string name="selector_permission_error_easy_photos">@string/tips_request_camera_permission</string>
+    <string name="no_photos_easy_photos">No media files that meet the requirements</string>
+    <string name="permissions_again_easy_photos">Please click and allow relevant permissions</string>
+    <string name="permissions_die_easy_photos">Please click and allow relevant permissions in the settings</string>
+    <string name="done_easy_photos">@string/completed</string>
+    <string name="cancel_easy_photos">@string/cancel</string>
+    <string name="video_selection_easy_photos">Video selection (max 100M)</string>
+    <string name="tap_take_photo">Tap to take a photo</string>
+    <string name="long_press_camera">Long press camera</string>
+    <string name="recording_too_short">Recording time is too short</string>
+    <string name="missing_audio_permission">No recording permission</string>
+    <!--不可删除 EasyPhotos替换文字 end-->
+    <plurals name="dynamic_message_count">
+        <item quantity="one">%s msgs</item>
+        <item quantity="other">%s msg</item>
+    </plurals>
+
+    <string name="my_identify_code">My Identifier</string>
+    <string name="identify_code">Identifier</string>
+    <string name="has_saved_in_phone">Saved to phone</string>
+    <string name="device_identify_code">Device Identifier</string>
+    <string name="clear_user_data_failed_hint">Clear user data fails, please try to uncheck the checkbox and unbind directly</string>
+
+    <string name="device_disable_switch_circle_hint">Do you want to switch to the corresponding Circle?</string>
+    <string name="remove_circle_hint">Do you want to remove this Circle?</string>
+    <string name="the_circle_not_support_dynamic">The current Circle does not support this feature</string>
+    <string name="cloud_device">Cloud Devices</string>
+    <string name="cloud_device_broadband">Bandwidth</string>
+    <string name="cloud_device_status_stop">Deactivate</string>
+    <string name="cloud_device_status_unbounded">Not associated</string>
+    <string name="flow_fee_payer">Flow fee payer</string>
+    <string name="alter_flow_fee_payer">Change the flow fee payer</string>
+    <string name="user">user</string>
+    <string name="user_to_pay">Paid by the user</string>
+    <string name="onwer_to_pay">Paid by the owner</string>
+    <string name="reset">Reset</string>
+    <string name="filter">Filter</string>
+    <string name="customize">customize</string>
+    <string name="DNLA" translatable="false">DNLA</string>
+    <string name="dnla_protocol">DNLA protocol</string>
+    <string name="dnla_scanning_path_setting">Set DNLA scan path</string>
+    <string name="current_scan_path">Current scan path:</string>
+    <string name="function_description">Function Description</string>
+    <string name="dlna_function_content">1. Build a home entertainment network so that electronic devices such as computers, mobile phones, TVs, and set-top boxes can easily access resources such as photos, music, and videos.
+\n2. After opening this service, all device applications that support DLNA protocol in the local area network can search for the current device and allow it to access multimedia files in the DLNA scan path.</string>
+    <string name="SAMBA" translatable="false">SAMBA</string>
+    <string name="samba_protocol">Samba protocol</string>
+    <string name="anonymous_access">Anonymous access</string>
+    <string name="anonymous_access_hint">After opening, all users can use public space and external storage</string>
+    <string name="lan_scan_visible">LAN scan visible</string>
+    <string name="current_samba_user_name">Current Samba username</string>
+    <string name="setting_samba_password">Set Samba password</string>
+    <string name="samba_function_content">1. The Samba service allows all smart cameras, computers, mobile phones, TVs or other electronic products in the local area network that support this function to easily access the data shared in the device.
+\n2. Each device user account corresponds to a Samba user name, and each user name must be set with a password before using the Samba service for the first time.
+\n3. How to use Samba
+\nWindows computer
+\na. Press Win+R key combination
+\nb. Enter the LAN IP %s of the device in the running window that pops up
+\nc. Enter username and password
+\nMac OS computer
+\na.Finder->Go->Connect to Server
+\ Nb. In the pop-up window, enter %s
+\nc. Enter username and password
+\n4. After modifying the Samba anonymous access or password, if your computer does not take effect, please manually clear the Samba cache on your computer (Windows can be executed in the command line: net use * /del /y)</string>
+    <string name="picture_selection_easy_photos">Choose a local picture</string>
+    <string name="crop_picture">Crop picture</string>
+    <string name="the_picture_format_error">Incorrect image format</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+<!--    <string name="hardware_information">硬件信息</string>-->
+<!--    <string name="device_information">设备信息</string>-->
+<!--    <string name="upload_speed">上传速度</string>-->
+<!--    <string name="download_speed">下载速度</string>-->
+<!--    <string name="running_time">运行时间</string>-->
+<!--    <string name="hard_disk_temperature">硬盘温度</string>-->
+<!--    <string name="fan_speed">风扇转速</string>-->
+<!--    <string name="memory">内存</string>-->
+<!--    <string name="product_model">产品型号</string>-->
+<!--    <string name="system_version_number">系统版本号</string>-->
+<!--    <string name="no_torrent_file_found">未找到种子文件</string>-->
+<!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+
+<!--    <string name="create_group_rent">创建群组</string>-->
+<!--    <string name="group_name_describe">请输入长度不大于32位的群组名称</string>-->
+<!--    <string name="enter_group_name">请输入群组名称</string>-->
+<!--    <string name="announcement">公告</string>-->
+<!--    <string name="member">成员</string>-->
+<!--    <string name="leave_group">退出群组</string>-->
+<!--    <string name="delete_group">删除群组</string>-->
+<!--    <string name="announcement_editor">公告编辑</string>-->
+<!--    <string name="transfer_management_authority">移交管理权限</string>-->
+<!--    <string name="user_details">用户详情</string>-->
+<!--    <string name="allow_upload_of_group_files">允许上传群组文件</string>-->
+<!--    <string name="allow_management_of_group_files">允许管理群组文件</string>-->
+<!--    <string name="hint_search_key">请输入关键字</string>-->
+<!--    <string name="storage_space">储存空间</string>-->
+<!--    <string name="cpu_usage_rate">CPU使用率</string>-->
+<!--    <string name="memory_usage">内存使用率</string>-->
+<!--    <string name="cpu_temperature">CPU温度</string>-->
+<!--    <string name="receive_data">接收：</string>-->
+<!--    <string name="send">发送：</string>-->
+<!--    <string name="capacity">容量</string>-->
+<!--    <string name="disk_not_inserted">未插入磁盘</string>-->
+<!--    <string name="no_conversion_cpu">CPU</string>-->
+<!--    <string name="unit_of_speed">转/分</string>-->
+<!--    <string name="fan_name">风扇</string>-->
+    <string name="device_change_circle">Device switching circle</string>
+    <string name="cloud_device_expired">Expired</string>
+    <string name="rebuild_hint">The poster wall information will be updated soon.</string>
+    <string name="rebuild">Refresh</string>
+    <string name="update_poster_title">Update</string>
+    <string name="update_poster_hint">The poster wall has updated information, whether to update?</string>
+
+</resources>

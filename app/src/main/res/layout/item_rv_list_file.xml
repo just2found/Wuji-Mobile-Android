@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_gray_to_gray"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/common_2"
+    android:paddingEnd="2dp">
+
+    <net.sdvn.nascommon.widget.CheckableImageButton
+        android:id="@+id/rv_list_ibtn_select"
+        style="@style/checkableImageButton"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/icon_uncheck"
+        app:layout_constraintBottom_toBottomOf="@+id/select_place_holder"
+        app:layout_constraintEnd_toEndOf="@+id/select_place_holder"
+        app:layout_constraintStart_toStartOf="@+id/select_place_holder"
+        app:layout_constraintTop_toTopOf="@+id/select_place_holder" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rv_list_iv_icon_container"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="@dimen/common_6"
+        android:layout_marginBottom="6dp"
+        android:background="@android:color/transparent"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/card_iv_radius"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <net.linkmate.app.view.SquareImageView
+            android:id="@+id/rv_list_iv_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_file_default"
+            tools:src="@drawable/bg_launcher" />
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/rv_list_progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="@dimen/common_2"
+        android:progressDrawable="@drawable/progress_horizontal_material_blue_no_rect"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_list_barrier_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/rv_list_barrier3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rv_list_barrier2"
+        app:layout_constraintTop_toTopOf="@+id/rv_list_barrier_top"
+        tools:progress="50" />
+
+
+    <TextView
+        android:id="@+id/rv_list_txt_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:ellipsize="middle"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/view_middle"
+        android:paddingEnd="2dp"
+        android:singleLine="true"
+        android:textColor="@color/darker"
+        android:textSize="@dimen/text_size_mid"
+        app:layout_constraintBottom_toTopOf="@id/rv_list_progressbar"
+        app:layout_constraintEnd_toStartOf="@+id/rv_list_iv_favorite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rv_list_barrier2"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="namejkfjasdfjsdjfsdjflksdjafsdjflsjdaflsjdfklsjdfjsdlfjsdlfjsldfjlskdajklsdjflksdajfklsjdflsdjaflsajdfasdfkljsladfj;sa" />
+
+    <ImageView
+        android:id="@+id/rv_list_iv_favorite"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_favorite_y_12dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_list_txt_name"
+        app:layout_constraintEnd_toEndOf="@+id/rv_list_barrier3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rv_list_txt_name"
+        app:layout_constraintTop_toTopOf="@+id/rv_list_txt_name"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/rv_list_barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_6"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="rv_list_iv_icon_container" />
+
+    <androidx.constraintlayout.widget.Placeholder
+        android:id="@+id/select_place_holder"
+        android:layout_width="@dimen/common_icon48"
+        android:layout_height="@dimen/common_icon48"
+        app:layout_constraintBottom_toBottomOf="@id/rv_list_barrier_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rv_list_barrier_top" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/rv_list_barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_16"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="select_place_holder" />
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/rv_list_barrier_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="rv_list_iv_icon_container" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/rv_list_barrier_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="rv_list_iv_icon_container" />
+
+
+    <LinearLayout
+        android:id="@+id/container_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/rv_list_barrier_bottom"
+        app:layout_constraintEnd_toStartOf="@id/rv_list_barrier3"
+        app:layout_constraintStart_toEndOf="@+id/rv_list_barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/rv_list_progressbar">
+
+        <!--    <TextView-->
+        <net.sdvn.nascommon.widget.AutoGoneTextView
+            android:id="@+id/rv_list_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_middle"
+            android:layout_marginEnd="2dp"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/text_size_min"
+            app:layout_constraintBottom_toBottomOf="@id/rv_list_barrier_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/rv_list_txt_size"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rv_list_img_dl"
+            app:layout_constraintTop_toBottomOf="@+id/rv_list_progressbar"
+            tools:text="2020-02-21 20:31:00" />
+
+        <!--    <TextView-->
+        <net.sdvn.nascommon.widget.AutoGoneTextView
+            android:id="@+id/rv_list_txt_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:ems="5"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/text_size_min"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rv_list_txt_time"
+            app:layout_constraintTop_toBottomOf="@+id/rv_list_progressbar"
+            tools:text="878.61MB" />
+
+        <net.linkmate.app.view.SquareImageView
+            android:id="@+id/rv_list_img_dl"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="4dp"
+            android:elevation="@dimen/common_2"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_have_downloaded"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_list_txt_time"
+            app:layout_constraintEnd_toStartOf="@+id/rv_list_txt_time"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rv_list_barrier2"
+            app:layout_constraintTop_toBottomOf="@+id/rv_list_progressbar"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <net.sdvn.nascommon.widget.CheckableImageButton
+        android:id="@+id/rv_list_cb_select"
+        style="@style/checkableImageButton"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/select_place_holder"
+        app:layout_constraintEnd_toEndOf="@+id/select_place_holder"
+        app:layout_constraintStart_toStartOf="@+id/select_place_holder"
+        app:layout_constraintTop_toTopOf="@+id/select_place_holder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

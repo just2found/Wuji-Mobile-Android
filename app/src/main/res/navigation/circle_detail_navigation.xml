@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/circle_detail_navigation"
+    app:startDestination="@id/circleDetail"
+    >
+    <fragment
+        android:id="@+id/circleDetail"
+        android:name="net.linkmate.app.ui.activity.circle.circleDetail.CircleDetialFragment"
+        android:label="CircleDetail"
+        >
+        <argument
+            android:name="function"
+            app:argType="integer"
+            android:defaultValue="0"/>
+        <action
+            android:id="@+id/enterDetial"
+            app:destination="@id/circleDetail"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+</navigation>

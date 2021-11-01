@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wx_no_installed">Сначала установите WeChat и попробуйте снова</string>
+    <string name="pay_succ">Оплата успешна</string>
+    <string name="pay_failed">Платеж не удалась</string>
+    <string name="pay_cancelled">Платеж отменен</string>
+    <string name="pay_order_error">Ошибка платежа</string>
+</resources>

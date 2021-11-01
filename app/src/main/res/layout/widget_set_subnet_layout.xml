@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subnet_widget_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/common_1"
+    android:background="@color/color_bg_grey150"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight32"
+        android:paddingStart="16sp"
+        android:paddingEnd="16sp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/subnet_widget_ip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0fff"
+            android:digits="0123456789."
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="IP"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_gray"
+            android:textSize="@dimen/txt_13" />
+
+        <EditText
+            android:id="@+id/subnet_widget_netmask"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0fff"
+            android:digits="0123456789."
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="Netmask"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_gray"
+            android:textSize="@dimen/txt_13" />
+
+        <View
+            android:layout_width="@dimen/common_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg_grey250"/>
+
+        <TextView
+            android:id="@+id/subnet_widget_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/delete"
+            android:textSize="@dimen/txt_9" />
+    </LinearLayout>
+</LinearLayout>

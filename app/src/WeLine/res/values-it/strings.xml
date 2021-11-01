@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connecting_message">Accesso&#8230;</string>
+    <string name="error_string_no_account">È necessario inserire l\'ID utente e la password.</string>
+    <string name="error_string_invalid_account">L\'ID utente o la password non sono corretti.</string>
+    <string name="error_string_gw_busy">Il server è occupato, riprovare tra 10 minuti.</string>
+    <string name="error_string_socket">Non è possibile connettersi al servizio, controllare la rete.</string>
+    <string name="string_notification_ticker">WeLine disconnesso.</string>
+    <string name="string_notification_text">WeLine disconnesso, toccare qui per aprire.</string>
+    <string name="DownloadFail">Aggiornamento WeLine non riesce a scaricare.</string>
+    <string name="update_title">Aggiornamento WeLine</string>
+    <string name="update_content">Viene fornito un nuovo aggiornamento software ($VERSION$) per migliorare la stabilità.</string>
+    <string name="agree_privacy">Ho letto. Sono d\'accordo con questa politica sulla privacy.</string>
+    <string name="if_not_agree_privacy">Accetto l\'accordo sulla privacy solo prima di poter continuare ad utilizzare la WeLine.</string>
+</resources>

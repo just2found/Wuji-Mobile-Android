@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">공유 취소됨 혹은 만료 됨!</string>
+    <string name="tip_error_open_dir">목록 열기 실패</string>
+    <string name="tip_error_task_running">임무 운행 중 오류</string>
+    <string name="msg_error_exceed_downloads">이 공유는 최대 다운로드 횟수를 초과</string>
+    <string name="msg_error_cancel_shared">공유 실패 취소</string>
+    <string name="msg_error_bind_network">원격 서비스 에러 연결</string>
+    <string name="msg_error_user_not_exist">공유 사용자가 존재하지 않음</string>
+    <string name="msg_error_illegal_operation">사용자의 알수 없는 조작, 새로 고침 후 다시 시도하십시오</string>
+    <string name="msg_error_get_device_ip">공유 서버 실패 연결, 나중에 다시 시도하십시오</string>
+    <string name="msg_error_broken_network">네트워크 오류</string>
+    <string name="msg_error_dl_not_running">다운로드는 운행상태에 있지 않음, 새 파일 추가 할 수 없음</string>
+    <string name="msg_error_source_file_open">소스 파일 오픈 실패</string>
+    <string name="msg_error_source_file_change">소스 파일 크기 변환</string>
+    <string name="msg_error_temp_file">임시 파일이 삭제 됨</string>
+    <string name="msg_error_auth">내부 인증 오류</string>
+    <string name="msg_error_target_file">타겟 파일 쓰기 실패</string>
+    <string name="msg_error_token">알수 없는 토큰</string>
+    <string name="msg_error_more_shared_ticket">다운로드 임무 만듬</string>
+    <string name="msg_error_shared_ticket_overtime">공유 만료기간 지남</string>
+    <string name="tips_warn_cancel_share">완성 못된 파일은 취소되며 임시 피일은 제거 됩니다!</string>
+    <string name="msg_error_disk_full">하드 디스크가 꽉 차서 공간을 정리 후 다시 시도하십시오</string>
+</resources>

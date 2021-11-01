@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="download_start_error">Download start error</string>
+    <string name="other_ways" tools:ignore="ExtraTranslation">Open by other player</string>
+    <string name="open">Open</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strNetworkTipsCancelBtn">إلغاء</string>
+    <string name="strNetworkTipsConfirmBtn">استمر</string>
+    <string name="strNetworkTipsMessage">هل تحولت الشبكة إلى شبكة الموبايل ، فهل تستمر؟</string>
+    <string name="strNetworkTipsTitle">نصائح الشبكة</string>
+    <string name="strNotificationClickToContinue">استمر في التنزيل</string>
+    <string name="strNotificationClickToInstall">انقر للتثبيت</string>
+    <string name="strNotificationClickToRetry">انقر لإعادة المحاولة</string>
+    <string name="strNotificationClickToView">انقر للتحقق</string>
+    <string name="strNotificationDownloadError">فشل التنزيل</string>
+    <string name="strNotificationDownloadSucc">انتهى التنزيل</string>
+    <string name="strNotificationDownloading">جارى التنزيل</string>
+    <string name="strNotificationHaveNewVersion">هناك نسخة جديدة</string>
+    <string name="strToastCheckUpgradeError">فشل التحقق من الإصدار الجديد ، يرجى المحاولة مرة أخرى</string>
+    <string name="strToastCheckingUpgrade">&#8230;جارٍ التحقق ، يرجى الانتظار</string>
+    <string name="strToastYourAreTheLatestVersion">هذا آخر إصدار</string>
+    <string name="strUpgradeDialogCancelBtn">المرة القادمة</string>
+    <string name="strUpgradeDialogContinueBtn">استمر</string>
+    <string name="strUpgradeDialogFeatureLabel">تعليمات التحديث</string>
+    <string name="strUpgradeDialogFileSizeLabel">حجم العبوة</string>
+    <string name="strUpgradeDialogInstallBtn">تثبيت</string>
+    <string name="strUpgradeDialogRetryBtn">أعد المحاولة</string>
+    <string name="strUpgradeDialogUpdateTimeLabel">وقت التحديث</string>
+    <string name="strUpgradeDialogUpgradeBtn">تحديث على الفور</string>
+    <string name="strUpgradeDialogVersionLabel">الإصدار</string>
+</resources>

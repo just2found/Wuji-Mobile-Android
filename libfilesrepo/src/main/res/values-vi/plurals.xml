@@ -1,0 +1,26 @@
+<resources>
+    <plurals name="users">
+        <item quantity="other">%1$s người dùng</item>
+    </plurals>
+    <plurals name="folders">
+        <item quantity="other">%d Thư mục</item>
+    </plurals>
+    <plurals name="files">
+        <item quantity="other">%d tập tin</item>
+    </plurals>
+    <plurals name="plurals_hour">
+        <item quantity="other">%d giờ</item>
+    </plurals>
+    <plurals name="plurals_day">
+        <item quantity="other">%d Ngày</item>
+    </plurals>
+    <plurals name="plurals_minutes">
+        <item quantity="other">%d phút</item>
+    </plurals>
+    <plurals name="shared_users">
+        <item quantity="other">Chia sẻ người dùng liên kết %d người</item>
+    </plurals>
+    <plurals name="local_accounts">
+        <item quantity="other">Tài khoản địa phương%d</item>
+    </plurals>
+</resources>

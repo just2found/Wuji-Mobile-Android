@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_string_invalid_account">Votre compte ou mot de passe est incorrect.</string>
+    <string name="error_string_gw_busy">Le serveur est occupé. Réessayer au bout de 10 minutes.</string>
+    <string name="error_string_user_diabled">Votre compte a été suspendu temporairement.</string>
+    <string name="error_string_max_device">Le nombre d\'appareils enregistrés dépasse la limite.</string>
+    <string name="error_string_no_network">Le réseau actuel n\'est pas disponible.</string>
+    <string name="error_string_device_disabled">Votre appareil est interdit à la connexion.</string>
+    <string name="error_string_socket">Impossible de se connecter au Serveur. Vérifier votre réseau.</string>
+    <string name="error_string_device_dup">Votre appareil s\'est déjà inscrit.</string>
+    <string name="error_string_device_locked">Votre appareil a déjà été verrouillé.</string>
+    <string name="error_string_user_unactive">Votre compte n\'a pas été activé.</string>
+    <string name="error_string_user_locked">Votre compte a été verrouillé.</string>
+    <string name="KR_Device_Removed">Cet appareil a été retiré du Réseau.</string>
+    <string name="KR_Member_Removed">Votre compte a été retiré du réseau.</string>
+    <string name="KR_Deivce_Deactived">Votre appareil a été interdit.</string>
+    <string name="dr_invalid_sms">SMS invalide</string>
+    <string name="dr_vpn_permission_denied">Autorisation VPN refusée</string>
+    <string name="dr_vpn_tunnel_is_occupied">Le canal VPN est occupé</string>
+    <string name="dr_read_phone_state_permission_denied">Échec de la lecture de l\'ID de l\'appareil</string>
+    <string name="success">Succès</string>
+    <string name="error_string_pending">Chargement en cours&#8230;</string>
+    <string name="ec_insufficient_points">Scores insuffisants</string>
+    <string name="flow_is_expire">Aucun trafic d\'achat</string>
+
+</resources>

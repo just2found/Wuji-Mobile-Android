@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connecting_message">เชื่อมต่อกับไมโครลิงค์&#8230;</string>
+    <string name="error_string_no_account">ไม่ป้อนรหัสไมโครลิงค์หรือรหัสผ่าน</string>
+    <string name="error_string_invalid_account">รหัสไมโครลิงค์หรือรหัสผ่านไม่ถูกต้อง</string>
+    <string name="error_string_gw_busy">บริการไมโครลิงค์ไม่ว่าง โปรดลองลงชื่อเข้าใช้อีกครั้งหลังจากผ่านไป 10 นาที</string>
+    <string name="error_string_socket">ไม่สามารถเชื่อมต่อกับบริการได้โปรดตรวจสอบสภาพแวดล้อมเครือข่ายของคุณ</string>
+    <string name="string_notification_ticker">การเชื่อมต่อไมโครลิงค์ถูกตัดการเชื่อมต่อ</string>
+    <string name="string_notification_text">ไมโครลิงค์ถูกตัดการเชื่อมต่อ สัมผัสเบาๆเพื่อเปิด</string>
+    <string name="DownloadFail">การดาวน์โหลดการอัพเดตไมโครลิงค์ล้มเหลว</string>
+    <string name="update_title">อัพเดตไมโครลิงค์</string>
+    <string name="update_content">มีซอฟต์แวร์ไมโครลิงค์รุ่นใหม่ ($VERSION$) แนะนำให้อัพเดตทันที</string>
+    <string name="agree_privacy">หลังจากอ่านรายละเอียดแล้ว ฉันยอมรับข้อตกลงความเป็นส่วนตัวของผู้ใช้</string>
+    <string name="if_not_agree_privacy">คุณสามารถใช้ไมโครลิงก์ต่อไปได้โดยการยอมรับข้อตกลงความเป็นส่วนตัวเท่านั้น</string>
+</resources>

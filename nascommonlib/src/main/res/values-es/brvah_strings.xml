@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brvah_loading">Cargando&#8230;</string>
+    <string name="brvah_load_failed">Error al cargar, haga clic en mí para volver a intentarlo</string>
+    <string name="brvah_load_end">No más datos</string>
+</resources>

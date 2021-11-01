@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/common_1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_msg_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg_grey50"
+        android:padding="@dimen/common_6">
+
+        <LinearLayout
+            android:id="@+id/ll_msg_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/common_16"
+                android:layout_height="@dimen/common_16"
+                android:layout_marginStart="@dimen/common_4"
+                android:layout_marginTop="@dimen/common_1"
+                android:layout_marginEnd="@dimen/common_4"
+                android:padding="@dimen/common_2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_news" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/txt_item_title"
+                android:textSize="13sp"
+                tools:text="Mr.Liu" />
+
+            <ImageView
+                android:id="@+id/iv_msg_selected"
+                android:layout_width="@dimen/common_18"
+                android:layout_height="@dimen/common_18"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_uncheck" />
+        </LinearLayout>
+
+        <net.linkmate.app.view.AutoTextView
+            android:id="@+id/tv_msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_msg_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/common_24"
+            android:layout_marginTop="@dimen/common_4"
+            android:minLines="2"
+            android:textColor="@color/text_dark_gray"
+            android:textSize="12sp"
+            tools:text="Mr.Liu邀请你加入中国好声音" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_below="@id/tv_msg_content"
+            android:layout_marginStart="@dimen/common_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/common_12"
+                android:layout_height="@dimen/common_12"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_time" />
+
+            <TextView
+                android:id="@+id/tv_msg_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_2"
+                android:layout_weight="1"
+                tools:text="2017-12-18 22:05:10.0"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_msg_nega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_dash_stroke_full_radius_blue"
+                android:paddingStart="@dimen/common_10"
+                android:paddingTop="@dimen/common_3"
+                android:paddingEnd="@dimen/common_10"
+                android:paddingBottom="@dimen/common_3"
+                android:text="@string/disagree"
+                android:textColor="@color/txt_item_content"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_msg_posi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_dash_stroke_full_radius_blue"
+                android:paddingStart="@dimen/common_10"
+                android:paddingTop="@dimen/common_3"
+                android:paddingEnd="@dimen/common_10"
+                android:paddingBottom="@dimen/common_3"
+                android:text="@string/agree"
+                android:textColor="@color/txt_item_content"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_msg_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

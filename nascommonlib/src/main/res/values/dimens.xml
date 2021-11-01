@@ -1,0 +1,61 @@
+<resources>
+    <dimen name="layout_title_height">48dp</dimen>
+    <dimen name="layout_tool_title_height">42dp</dimen>
+
+    <!-- Login Activity Dimens -->
+
+    <dimen name="layout_common_button_height">40dp</dimen>
+
+    <dimen name="common_size_radius">4dp</dimen>
+    <dimen name="common_size_stroke">0.5dp</dimen>
+    <dimen name="common_size_stroke_shrink">-2px</dimen>
+
+    <dimen name="line_common_weight">0.5dp</dimen>
+    <dimen name="line_dialog_weight">@dimen/line_common_weight</dimen>
+    <dimen name="line_list_divider_height">@dimen/line_common_weight</dimen>
+    <dimen name="line_settings_weight">@dimen/line_common_weight</dimen>
+
+    <dimen name="layout_dialog_bottom_height">42dp</dimen>
+    <dimen name="layout_dialog_margin">16dp</dimen>
+    <dimen name="layout_path_height">36dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+
+    <!-- new login -->
+    <dimen name="layout_btn_height">42dp</dimen>
+    <dimen name="common_8">8dp</dimen>
+    <dimen name="common_24">24dp</dimen>
+    <dimen name="common_16">16dp</dimen>
+    <dimen name="common_ItemHeight48">48dp</dimen>
+    <dimen name="common_Btn_42">42dp</dimen>
+
+    <dimen name="default_elevation">1dp</dimen>
+    <dimen name="common_ItemHeight32">32dp</dimen>
+    <dimen name="common_4">4dp</dimen>
+    <dimen name="default_elevation_3">3dp</dimen>
+    <dimen name="dialog_radius">6dp</dimen>
+
+    <dimen name="view_start">16dp</dimen>
+    <dimen name="view_middle">8dp</dimen>
+    <dimen name="view_end">16dp</dimen>
+    <dimen name="view_top_start">16dp</dimen>
+    <dimen name="view_top_middle">8dp</dimen>
+    <dimen name="view_top_end">16dp</dimen>
+    <dimen name="view_bottom_start">16dp</dimen>
+    <dimen name="view_bottom_middle">8dp</dimen>
+    <dimen name="view_bottom_end">16dp</dimen>
+    <dimen name="tv_padding">4dp</dimen>
+    <dimen name="check_box_size">48dp</dimen>
+    <dimen name="check_box_padding">16dp</dimen>
+    <dimen name="def_progress">64dp</dimen>
+    <dimen name="layout_edit_height">42dp</dimen>
+    <dimen name="layout_content_height">42dp</dimen>
+    <dimen name="card_view_radius">6dp</dimen>
+    <dimen name="item_header_padding">8dp</dimen>
+    <dimen name="ripple_radius">24dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

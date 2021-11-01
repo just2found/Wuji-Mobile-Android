@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Error-->
+    <string name="ec_request">Request failed, please try again later</string>
+    <string name="ec_timeout">Connection timeout!</string>
+
+    <string name="ec_invalid_auth_code">Invalid verification code</string>
+    <string name="ec_not_found_acount">User not found</string>
+    <string name="ec_failed_send_auth_code">Verification code failed to send</string>
+    <string name="ec_invalid_share_code">Sharing code has expired</string>
+    <string name="ec_vip_not_machers_ticket">ip and ticket do not match</string>
+    <string name="ec_auth_sig_failed">Sig check failed</string>
+    <string name="ec_not_found_device">Device not found</string>
+
+    <string name="ec_invalid_sig">Invalid sig,please generate sig by key and random</string>
+    <string name="ec_not_exists_parterid">Cannot find partner by partner id</string>
+    <string name="ec_appid_partrid_not_match">App id and partner id do not match</string>
+    <string name="ec_not_found_user">Cannot find user by this user id</string>
+    <string name="ec_not_found_device_by_id">Cannot find device by this device id</string>
+    <string name="ec_not_found_device_by_sn">Cannot find device by this device sn</string>
+    <string name="ec_sn_not_exist">The device sn do not exist</string>
+    <string name="ec_user_attr_not_match">Find the user id do not match</string>
+    <string name="ec_dev_attr_not_match_by_id">Find the device id do not match</string>
+    <string name="ec_dev_attr_not_match_by_sn">Find the device sn do not match</string>
+    <string name="ec_not_fount_user_by_loginname">Cannot find user by login name</string>
+    <string name="ec_user_not_add_dev">The user is not bind this device</string>
+    <string name="ec_user_not_admin">The user is not the device administrator</string>
+    <string name="ec_batch_over_limit_register_user">The batch size of user register is over limit:limit number is 100</string>
+    <string name="ec_batch_over_limit_binds_user">The batch size of device bind is over limit:users limit number is 100</string>
+    <string name="ec_batch_over_limit_binds_dev">The batch size of device bind is over limit:devices limit number is 100</string>
+    <string name="ec_batch_over_limit_unbinds_user">The batch size of device unbind is over limit:users limit number is 100</string>
+    <string name="ec_batch_over_limit_unbinds_dev">The batch size of device unbind is over limit:devices limit number is 100</string>
+
+    <string name="ec_has_joined_the_network">Has joined the network !</string>
+    <string name="ec_has_applyed_to_join_the_network">has applyed to join the network!</string>
+    <string name="ec_device_bind_apply_has_been_submit">Device bind apply has been submit !</string>
+    <string name="ec_devices_binded_account_over_limited">Devices binded account over limited !</string>
+    <string name="ec_network_joined_account_limited">Network joined account limited !</string>
+    <string name="ec_user_joined_network_limited">User joined network limited !</string>
+    <string name="ec_networkid_not_find">Network not found !</string>
+    <string name="ec_newsid_not_find">Msg not found !</string>
+
+    <string name="device_has_been_added">%1$s device has been added</string>
+    <string name="ec_invalid_share_t2">Invalid share token</string>
+    <string name="unknown_exception">Unknown exception</string>
+
+    <string name="ec_exception">Server exception</string>
+
+    <string name="ec_invalid_ticket">Ticket is invalid</string>
+    <string name="ec_invalid_partnerid_or_appid">Partnerid or appid is invalid</string>
+    <string name="ec_invalid_params">Params error</string>
+    <string name="ec_invalid_token">Token is invalid</string>
+    <string name="ec_invalid_downlaodtoken">DownloadToken is invalid</string>
+    <string name="ec_invalid_sharetoken">ShareToken is invalid</string>
+    <string name="ec_no_permission">No permission</string>
+    <string name="ec_device_offline">Device offline</string>
+    <string name="ec_auxcode">The verification code is incorrect or has expired</string>
+    <string name="ec_invalid_qrcode">Invalid QR code</string>
+    <string name="ec_qrcode_not_scaned">QR code is not scanned</string>
+    <string name="ec_invalid_account">This user could not be found</string>
+    <string name="ec_send_auxcode">Send verification code failed</string>
+    <string name="ec_invalid_sharecode">Sharing code has expired</string>
+    <string name="ec_vip_conflict">Vip does not match ticket</string>
+    <string name="ec_sig">Sig check failed</string>
+    <string name="ec_invalid_device">This device could not be found</string>
+    <string name="ec_qrcode_timeout">QR code timeout</string>
+    <string name="ec_userid_confilict">Userid does not match ticket</string>
+    <string name="ec_invalid_t2">Invalid t2</string>
+    <string name="ec_already_bound">User has been bound to the device</string>
+
+    <string name="ec_null_partnerid">Partnerid is empty</string>
+    <string name="ec_null_appid">Appid is empty</string>
+    <string name="ec_null_random">Random is empty</string>
+    <string name="ec_null_request_packet">RequestPacket is empty</string>
+    <string name="ec_null_sig">Sig is empty</string>
+    <string name="ec_null_userid">UserId is empty</string>
+    <string name="ec_null_deviceid">DeviceId is empty</string>
+    <string name="ec_null_devicesn">DeviceSn is empty</string>
+    <string name="ec_null_username">UserName is empty</string>
+    <string name="ec_null_passwd">PassWord is empty</string>
+    <string name="ec_null_users">Users is empty</string>
+    <string name="ec_null_binds">Binds is empty</string>
+    <string name="ec_null_unbinds">UnBinds is empty</string>
+    <string name="ec_null_devices">Devices is empty</string>
+    <string name="ec_null_networkid">networkid is empty</string>
+    <string name="ec_null_newsid">newsid is empty</string>
+    <string name="ec_null_news_process">new process is empty</string>
+    <string name="ec_null_net_name">networkname is empty</string>
+    <string name="ec_null_members">members is empty</string>
+    <string name="ec_null_mbpoint">mbpoint is empty</string>
+    <string name="ec_null_mgrlevel">mgrlevel is empty</string>
+
+    <string name="ec_username_has_registered">The username has registered</string>
+    <string name="ec_passwd_no_match">Old password is not correct</string>
+    <string name="ec_news_has_been_processed">News has been processed</string>
+    <string name="ec_joined_or_applied_to_join_the_network">Joined or applied to join the network.</string>
+    <string name="ec_bound_or_requested_to_bind_the_device">Bound or requested to bind the device</string>
+    <string name="ec_invalid_news_type">Invalid news type</string>
+    <string name="ec_this_news_does_not_belong_to_this_user">The news does not belong to the user</string>
+    <string name="ec_invalid_news">Unable to find record for this news</string>
+    <string name="ec_phone_has_registered">This phone has registered.</string>
+    <string name="ec_email_has_registered">This email has registered.</string>
+    <string name="ec_user_is_not_bound_to_this_device">The user is not bound to this device.</string>
+
+    <string name="ec_disabled_appid">The appid has disabled</string>
+    <string name="ec_overdue_appid">The appid has overdue</string>
+    <string name="ec_api_not_authorized">The api is not authorized</string>
+    <string name="ec_over_limit_rigster_user">The number of registered users exceeds the limit</string>
+    <string name="ec_over_limit_device_accounts">The number of accounts that the device can bind exceeds the limit</string>
+    <string name="ec_over_limit_users_of_the_network">The number of users that the network can join exceeds the limit</string>
+    <string name="ec_over_limit_network_of_the_user">The number of users can join the network exceeds the limit</string>
+    <string name="ec_user_create_network_limited">The number of users can create the network exceeds the limit</string>
+    <string name="ec_app_has_forbid_mbpoint_transfer">This app has forbid mbpoint transfer</string>
+    <string name="ec_device_owner_cannot_unbind_directly">Device owner cannot unbind directly</string>
+    <string name="ec_must_device_owner_can_grade_user_bind_level">Only device owner can grade user bind level</string>
+
+    <string name="ec_not_found_this_networkid">Not found this networkId</string>
+    <string name="ec_not_found_this_newsid">Not found this newsId</string>
+    <string name="ec_not_the_net_admin">Non-administrators cannot operate</string>
+    <string name="ec_can_not_delete_deault_network">Unable to delete default network</string>
+    <string name="ec_the_user_can_not_be_searched">This user cannot be searched</string>
+    <string name="ec_joined_or_invited_to_join_the_network">This user has joined or has been invited</string>
+    <string name="ec_can_not_delete_admin">Unable to delete network administrator</string>
+    <string name="ec_invalid_chars">Cannot contains special characters, please resubmit!</string>
+
+    <string name="ec_device_not_of_user">The device is not belong to this user!</string>
+    <string name="ec_no_enough_mbpoion_to_tranfer">No enough mbpoion to tranfer!</string>
+    <string name="ec_find_more_than_one_user">Find more than one user by username!</string>
+
+    <string name="ec_too_many_requests">Too frequent request, please try again later</string>
+
+    <string name="ec_order_submit_error">Payment information is abnormal, please contact customer service if you have any questions.</string>
+    <string name="ec_order_amount_over_limit">The payment amount has reached the limit today.</string>
+    <string name="ec_user_set_out_of_range">The set unit price of traffic exceeds the specific range</string>
+    <string name="api_params_language" >en</string>
+
+    <string name="ec_msg_has_agreed" >This message has been agreed</string>
+    <string name="ec_msg_has_denied" >This message has been denied</string>
+    <string name="ec_msg_has_expired" >This message has expired</string>
+    <string name="ec_en_servers_limited" >The number of EN servers in the circle has reached the upper limit</string>
+    <string name="ec_moving_en_server" >Before moving the EN server, please cancel the EN service</string>
+    <string name="ec_bind_en_server" >Unable to bind EN server</string>
+    <string name="ec_unbinding_en_server" >Before unbinding the EN server, please cancel the EN service first</string>
+    <string name="ec_leaving_circle_cancel_EN" >Before leaving the circle, please cancel the EN service in the circle</string>
+    <string name="ec_at_least_one_fee_type" >At least one item must be activated for this fee type</string>
+    <string name="ec_cannot_delete_en_server_owner" >Cannot delete users who provide EN services in circles</string>
+    <string name="ec_amount_is_abnormal" >The amount is abnormal, please buy again</string>
+    <string name="ec_insufficient_score" >Insufficient NB</string>
+    <string name="ec_already_applied" >Already applied</string>
+    <string name="ec_move_en_server_from_circle" >Cannot move EN servers from other Circles</string>
+</resources>

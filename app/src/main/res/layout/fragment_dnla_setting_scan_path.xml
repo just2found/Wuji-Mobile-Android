@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/mPublishSwitch"
+        style="@style/StyleDialogDesSwitch"
+        android:layout_marginTop="@dimen/common_16"
+        android:background="@color/bg_white"
+        android:checked="false"
+        android:paddingTop="@dimen/common_4"
+        android:paddingBottom="@dimen/common_4"
+        android:text="@string/root_dir_name_public"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/txt_13"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--底部线条-->
+    <View
+        android:id="@+id/vSwitchBottom"
+        style="@style/common_line_style"
+        android:layout_width="match_parent"
+        android:visibility="gone" />
+
+    <Switch
+        android:id="@+id/mExternalStorageSwitch"
+        style="@style/StyleDialogDesSwitch"
+        android:background="@color/bg_white"
+        android:checked="false"
+        android:paddingTop="@dimen/common_4"
+        android:paddingBottom="@dimen/common_4"
+        android:text="@string/external_storage"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/txt_13"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/layout_empty_view"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brvah_loading">Đang tải&#8230;</string>
+    <string name="brvah_load_failed">Tải thất bại, hãy thử lại</string>
+    <string name="brvah_load_end">Không có thêm dữ liệu</string>
+</resources>

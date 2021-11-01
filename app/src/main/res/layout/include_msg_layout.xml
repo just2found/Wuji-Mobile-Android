@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/include_msg_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_light"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/iml_rl_system_msg_expand"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon64"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:padding="@dimen/common_6"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_icon_msg"
+            android:layout_width="@dimen/common_icon64"
+            android:layout_height="@dimen/common_icon64"
+            android:padding="@dimen/common_4"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_sys_msg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_6"
+            android:text="@string/system_msg"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_15"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon_msg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/iml_tv_msg_count"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_16"
+            android:background="@drawable/bg_orange_bubble"
+            android:gravity="center"
+            android:minWidth="@dimen/common_16"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_4"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/txt_11"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="999"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/iml_tv_msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="@dimen/common_6"
+            android:singleLine="true"
+            android:text="@string/no_msg"
+            android:textColor="@color/text_light_gray"
+            android:textSize="@dimen/txt_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon_msg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/iml_rl_file_share_expand"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon64"
+        android:background="@drawable/bg_ripple_trans_gray">
+
+        <ImageView
+            android:id="@+id/iv_icon_share"
+            android:layout_width="@dimen/common_icon64"
+            android:layout_height="@dimen/common_icon64"
+            android:padding="@dimen/common_8"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_msg_share_v2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/common_6"
+            android:paddingTop="@dimen/common_6"
+            android:paddingEnd="@dimen/common_6"
+            android:paddingBottom="@dimen/common_2"
+            android:text="@string/file_share"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_15"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon_share"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/iml_tv_msg_share_count"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_16"
+            android:background="@drawable/bg_orange_bubble"
+            android:gravity="center"
+            android:minWidth="@dimen/common_16"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_4"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/txt_11"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/iv_icon_share"
+            app:layout_constraintTop_toTopOf="@+id/iv_icon_share"
+            tools:text="2"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/common_6"
+            android:paddingTop="@dimen/common_2"
+            android:paddingEnd="@dimen/common_6"
+            android:paddingBottom="@dimen/common_6"
+            android:singleLine="true"
+            android:text="@string/no_msg"
+            android:textColor="@color/text_light_gray"
+            android:textSize="@dimen/txt_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/iml_rl_upload_download_expand"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon64"
+        android:background="@drawable/bg_ripple_trans_gray">
+
+        <ImageView
+            android:id="@+id/iv_icon_trans"
+            android:layout_width="@dimen/common_icon64"
+            android:layout_height="@dimen/common_icon64"
+            android:padding="@dimen/common_8"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_msg_trans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/common_6"
+            android:paddingTop="@dimen/common_6"
+            android:paddingEnd="@dimen/common_6"
+            android:paddingBottom="@dimen/common_2"
+            android:text="@string/transfer"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_15"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon_trans"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/iml_tv_trans_count"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_16"
+            android:background="@drawable/bg_orange_bubble"
+            android:gravity="center"
+            android:minWidth="@dimen/common_16"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_4"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/txt_11"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/iv_icon_trans"
+            app:layout_constraintTop_toTopOf="@+id/iv_icon_trans"
+            tools:text="13"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/common_6"
+            android:paddingTop="@dimen/common_2"
+            android:paddingEnd="@dimen/common_6"
+            android:paddingBottom="@dimen/common_6"
+            android:singleLine="true"
+            android:text="@string/no_msg"
+            android:textColor="@color/text_light_gray"
+            android:textSize="@dimen/txt_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/iml_rl_torrents_expand"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon64"
+        android:background="@drawable/bg_ripple_trans_gray"
+        tools:visibility="visible"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_icon_torrents"
+            android:layout_width="@dimen/common_icon64"
+            android:layout_height="@dimen/common_icon64"
+            android:padding="@dimen/common_8"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_bt_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/common_6"
+            android:paddingTop="@dimen/common_6"
+            android:paddingEnd="@dimen/common_6"
+            android:paddingBottom="@dimen/common_2"
+            android:text="@string/transfer"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_15"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon_torrents"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/iml_tv_torrents_count"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_16"
+            android:background="@drawable/bg_orange_bubble"
+            android:gravity="center"
+            android:minWidth="@dimen/common_16"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_4"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/txt_11"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/iv_icon_torrents"
+            app:layout_constraintTop_toTopOf="@+id/iv_icon_torrents"
+            tools:text="13"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/common_6"
+            android:paddingTop="@dimen/common_2"
+            android:paddingEnd="@dimen/common_6"
+            android:paddingBottom="@dimen/common_6"
+            android:singleLine="true"
+            android:text="@string/no_msg"
+            android:textColor="@color/text_light_gray"
+            android:textSize="@dimen/txt_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line"
+        android:background="@color/line_gray" />
+</LinearLayout>

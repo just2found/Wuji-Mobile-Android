@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_title_bar_gradient_me"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/itb_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_ItemHeight48"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/common_16"
+            >
+            <net.linkmate.app.view.MarqueeTextView
+                android:id="@+id/itb_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/txt_17"
+                tools:text="titlie" />
+
+            <ImageView
+                android:id="@+id/itb_iv_right"
+                android:layout_width="47dip"
+                android:layout_height="47dip"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:padding="10dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_me_setting" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_rl_my_info"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dip"
+            android:background="@drawable/bg_ripple_trans_gray">
+
+            <ImageView
+                android:id="@+id/me_iv_avatar"
+                android:layout_width="49dip"
+                android:layout_height="49dip"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dip"
+                android:layout_marginEnd="15dip"
+                android:src="@drawable/icon_default_user_new" />
+
+            <ImageView
+                android:id="@+id/me_iv_account"
+                android:layout_width="@dimen/common_18"
+                android:layout_height="@dimen/common_18"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dip"
+                android:src="@drawable/icon_me_white_right" />
+
+            <TextView
+                android:id="@+id/me_tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/me_iv_avatar"
+                android:layout_marginTop="@dimen/common_3"
+                android:layout_toEndOf="@+id/me_iv_avatar"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/title_text_color"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:text="一个简单的昵称" />
+
+            <TextView
+                android:id="@+id/me_tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/me_iv_avatar"
+                android:layout_marginBottom="@dimen/common_3"
+                android:layout_toEndOf="@+id/me_iv_avatar"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_light_blue"
+                android:textSize="12sp"
+                tools:text="18666666666" />
+        </RelativeLayout>
+
+        <net.linkmate.app.view.TipsBar
+            android:id="@+id/tipsBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:content_text="@string/load_failed"
+            app:icon_visibility="visible"
+            app:link_text="@string/back_to_login"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/me_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_button_white_radius_top_14"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/common_line"
+                        android:layout_marginTop="6dp" />
+
+                    <net.linkmate.app.view.ActivityItemLayout
+                        android:id="@+id/me_ail_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:background_radius_top="true"
+                        app:iv_icon_src="@drawable/icon_me_score"
+                        app:tv_title_text="@string/wallet" />
+                </LinearLayout>
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/me_ail_privile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iv_icon_src="@drawable/icon_me_privile"
+                    app:tv_title_text="@string/privileged_service" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:background="@color/bg_gray"/>
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/me_ail_net_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iv_icon_src="@drawable/icon_me_netmng_lenovo"
+                    app:tv_title_text="@string/circle_manager" />
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/me_ail_dev_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iv_icon_src="@drawable/icon_me_devmng_lenovo"
+                    app:tv_title_text="@string/dev_mng" />
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/me_ail_dev_flow_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iv_icon_src="@drawable/icon_me_dev_traffic_new"
+                    app:tv_title_text="@string/dev_flow_details" />
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/me_ail_local_dev_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iv_icon_src="@drawable/icon_me_local_diagnostics"
+                    app:tv_title_text="@string/local_dev_mng" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:background="@color/bg_gray" />
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/me_ail_backup_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iv_icon_src="@drawable/icon_me_phone"
+                    app:tv_title_text="@string/backup_photo" />
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/me_ail_backup_contacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iv_icon_src="@drawable/icon_me_contact"
+                    app:tv_title_text="@string/title_sync_contacts" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:layout_marginBottom="6dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <fragment
+                        android:id="@+id/carousel_view_container"
+                        android:name="net.linkmate.app.ui.fragment.ads.CarouselAdsFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </FrameLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/flAttach"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvAttach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:paddingTop="8dip"
+        android:background="@drawable/item_click_transparent"
+        android:linksClickable="true"
+        android:textColor="@color/text_dark"
+        android:textSize="11sp" />
+</FrameLayout>

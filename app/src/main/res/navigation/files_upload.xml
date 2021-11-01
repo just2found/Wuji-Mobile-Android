@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/files_upload"
+    app:startDestination="@id/uploadNavFragment">
+
+    <fragment
+        android:id="@+id/uploadNavFragment"
+        android:name="net.linkmate.app.ui.nas.upload.UploadNavFragment"
+        android:label="UploadNavFragment"
+        tools:layout="@layout/fragment_nas_upload">
+        <argument
+            android:name="deviceid"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="fileType"
+            app:argType="net.sdvn.nascommon.model.phone.LocalFileType" />
+        <argument
+            android:name="path"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/uploadSelectPathFragment"
+        android:name="net.linkmate.app.ui.nas.upload.UploadSelectPathFragment"
+        android:label="UploadSelectPathFragment"
+        tools:layout="@layout/fragment_choice_nas">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <argument
+            android:name="rootPathType"
+            app:argType="integer" />
+        <argument
+            android:name="action"
+            app:argType="net.sdvn.nascommon.model.FileManageAction"
+            android:defaultValue="UPLOAD" />
+
+    </fragment>
+
+</navigation>

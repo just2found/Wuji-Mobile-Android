@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/common_6"
+    android:paddingEnd="@dimen/common_10"
+    android:paddingTop="@dimen/common_6"
+    android:paddingBottom="@dimen/common_6">
+
+    <TextView
+        android:id="@+id/idfd_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_dark_gray"
+        android:background="@drawable/bg_square_full_radius_white"
+        android:padding="@dimen/common_6"
+        android:textSize="@dimen/txt_13"
+        android:gravity="center"
+        android:layout_margin="@dimen/common_4"
+        tools:text="2020年2月" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TableRow
+            android:id="@+id/idfd_tr_totle"
+            android:layout_margin="@dimen/common_1"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/txt_12"
+                android:text="@string/total_traffic" />
+
+            <TextView
+                android:id="@+id/idfd_tv_totle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/txt_12"
+                android:gravity="end"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/txt_12"
+                tools:text="100G" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/idfd_tr_valid"
+            android:layout_margin="@dimen/common_1"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/txt_12"
+                android:text="@string/upstream_traffic" />
+
+            <TextView
+                android:id="@+id/idfd_tv_valid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_12"
+                android:gravity="end"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/txt_12"
+                tools:text="50G" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/idfd_tr_invalid"
+            android:layout_margin="@dimen/common_1"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/txt_12"
+                android:text="@string/invalid_traffic" />
+
+            <TextView
+                android:id="@+id/idfd_tv_invalid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_12"
+                android:gravity="end"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/txt_12"
+                tools:text="50G" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/idfd_tr_score"
+            android:layout_margin="@dimen/common_1"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/txt_12"
+                android:text="@string/relate_points" />
+
+            <TextView
+                android:id="@+id/idfd_tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_12"
+                android:gravity="end"
+                android:textColor="@color/text_orange"
+                android:textSize="@dimen/txt_12"
+                tools:text="50G" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

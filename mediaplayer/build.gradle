@@ -1,0 +1,73 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "boolean", "USE_DECODER_EXTENSIONS", "true"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+//    flavorDimensions "decoderExtensions"
+//
+//    productFlavors {
+//        noDecoderExtensions {
+//            dimension "decoderExtensions"
+//            buildConfigField "boolean", "USE_DECODER_EXTENSIONS", "false"
+//        }
+//        withDecoderExtensions {
+//            dimension "decoderExtensions"
+//            buildConfigField "boolean", "USE_DECODER_EXTENSIONS", "true"
+//        }
+//    }
+
+    repositories {
+        flatDir {
+            dirs '../libs'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation deps.junit
+    androidTestImplementation deps.atsl.ext_junit
+    androidTestImplementation deps.atsl.runner
+    androidTestImplementation deps.espresso.core
+
+    implementation deps.kotlin.stdlib
+    implementation deps.support.app_compat
+    implementation deps.support.core_ktx
+    implementation deps.support.design
+    implementation deps.lifecycle.extensions
+    implementation deps.lifecycle.runtime_ktx
+    //----------------- media player
+    api deps.exoplayer
+    api deps.exoplayerCore
+    api deps.exoplayerUI
+    api deps.exoplayerExtOKHttp
+//    api deps.exoplayerExtGvr
+//    api deps.exoplayerExtRtmp
+//    api deps.exoplayerExtCronet
+
+//    implementation(name: 'extension-flac', ext: 'aar')
+//    implementation(name: 'extension-opus', ext: 'aar')
+//    implementation(name: 'extension-vp9', ext: 'aar')
+    api(name: 'extension-ffmpeg', ext: 'aar')
+//    implementation(name: 'extension-av1', ext: 'aar')
+}

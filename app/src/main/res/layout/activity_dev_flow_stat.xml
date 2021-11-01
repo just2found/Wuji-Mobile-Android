@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/score_recode_srl"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:id="@+id/score_ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_title_bar_gradient"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/score_iv_left"
+                        android:layout_width="@dimen/common_icon48"
+                        android:layout_height="@dimen/common_icon48"
+                        android:background="@drawable/bg_ripple_trans_gray"
+                        android:padding="@dimen/common_12"
+                        android:scaleType="centerInside"
+                        android:visibility="gone"
+                        app:tint="@color/title_icon_color"
+                        app:tintMode="src_in"
+                        tools:src="@drawable/icon_return"
+                        tools:visibility="visible" />
+
+                    <net.linkmate.app.view.MarqueeTextView
+                        android:id="@+id/score_tv_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/common_8"
+                        android:layout_weight="1"
+                        android:text="@string/dev_flow_stat"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="@dimen/txt_17" />
+
+                    <ImageView
+                        android:id="@+id/score_iv_right"
+                        android:layout_width="@dimen/common_icon48"
+                        android:layout_height="@dimen/common_icon48"
+                        android:background="@drawable/bg_ripple_trans_gray"
+                        android:padding="@dimen/common_12"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_refresh_white_24dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/bg_trans_white_30" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/adfs_ll_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_12"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/common_12"
+                            android:layout_height="@dimen/common_12"
+                            android:layout_marginEnd="@dimen/common_2"
+                            app:tint="@color/title_icon_color"
+                            app:tintMode="src_in"
+                            android:src="@drawable/icon_dropdown" />
+
+                        <TextView
+                            android:id="@+id/adfs_tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_10"
+                            android:layout_marginBottom="@dimen/common_10"
+                            android:gravity="center"
+                            android:minWidth="40dp"
+                            android:text="@string/cur_date"
+                            android:textColor="@color/title_text_color"
+                            android:textSize="@dimen/txt_12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/adfs_ll_expand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/common_12"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/adfs_tv_expand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_10"
+                            android:layout_marginBottom="@dimen/common_10"
+                            android:text="@string/filter"
+                            android:textColor="@color/title_text_color"
+                            android:textSize="@dimen/txt_12" />
+
+                        <ImageView
+                            android:layout_width="@dimen/common_12"
+                            android:layout_height="@dimen/common_12"
+                            android:layout_marginStart="@dimen/common_2"
+                            app:tint="@color/title_icon_color"
+                            app:tintMode="src_in"
+                            android:src="@drawable/icon_dropdown" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="10"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <net.linkmate.app.view.MarqueeTextView
+                                android:id="@+id/adfs_tv_flow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="-"
+                                android:textColor="@color/text_yellow"
+                                android:textSize="@dimen/txt_28" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_4"
+                                android:text="@string/upstream_traffic"
+                                android:textColor="@color/text_light_blue"
+                                android:textSize="@dimen/txt_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="10"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <net.linkmate.app.view.MarqueeTextView
+                                android:id="@+id/adfs_tv_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:singleLine="true"
+                                android:text="-"
+                                android:textColor="@color/text_yellow"
+                                android:textSize="@dimen/txt_28" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_4"
+                                android:text="@string/relate_points"
+                                android:textColor="@color/text_light_blue"
+                                android:textSize="@dimen/txt_12" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@color/bg_tab_blue"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/common_48"
+                    android:paddingEnd="@dimen/common_48">
+
+                    <TextView
+                        android:id="@+id/adfs_tv_month_stat"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/common_24"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/by_months"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="@dimen/txt_13"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/adfs_tv_day_stat"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/common_24"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/by_days"
+                        android:textColor="@color/text_light_blue"
+                        android:textSize="@dimen/txt_12" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <net.linkmate.app.view.TipsBar
+            android:id="@+id/tipsBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            app:icon_visibility="visible"
+            app:content_text="@string/load_failed"
+            app:link_text="@string/back_to_login"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/adfs_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="@dimen/common_10"
+            android:background="@drawable/bg_square_full_radius_white"
+            android:elevation="@dimen/common_3" />
+    </LinearLayout>
+</LinearLayout>

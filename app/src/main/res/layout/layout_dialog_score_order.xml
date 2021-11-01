@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        app:cardCornerRadius="@dimen/common_6">
+
+        <ScrollView
+            android:id="@+id/score_order_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg_grey250"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/score_order_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_16"
+                android:layout_marginBottom="@dimen/common_16"
+                android:background="@color/color_bg_grey50"
+                android:orientation="vertical">
+
+                <net.linkmate.app.view.DataItemLayout
+                    android:id="@+id/device_local_dil_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:tv_data_text="M3"
+                    app:tv_text="@string/dev_name"
+                    tools:visibility="visible" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/score_order_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_trans_black_30"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <net.linkmate.app.view.ProgressView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                app:dot_color="@color/color_orange"
+                app:dot_count="7" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/score_order_iv_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon36"
+        android:layout_marginTop="@dimen/common_4"
+        android:layout_marginBottom="@dimen/common_4"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_cancel" />
+</LinearLayout>

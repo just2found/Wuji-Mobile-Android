@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_dialog_title_gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="300dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_ItemHeight48"
+                android:gravity="center"
+                android:text="@string/privileged_service"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/txt_19" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dv_rv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/common_line"
+                android:layout_marginEnd="@dimen/common_line"
+                android:layout_weight="1"
+                android:background="@color/color_bg_grey250"
+                android:minHeight="200dp"
+                android:overScrollMode="never">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <include
+                android:id="@+id/dv_empty"
+                layout="@layout/pager_empty_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_bg_grey250"
+                android:minHeight="200dp" />
+
+            <TextView
+                android:id="@+id/dv_btn_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_ItemHeight42"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:gravity="center"
+                android:text="@string/see_details"
+                android:textColor="@color/text_light_blue"
+                android:textSize="@dimen/txt_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dv_iv_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon36"
+        android:layout_marginTop="@dimen/common_4"
+        android:layout_marginBottom="@dimen/common_4"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_cancel" />
+</LinearLayout>

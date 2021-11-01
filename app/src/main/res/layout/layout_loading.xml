@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_trans_black_30"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="gone"
+    tools:showIn="@layout/dialog_process_system_msg"
+    tools:visibility="gone">
+
+    <net.linkmate.app.view.ProgressView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:dot_color="@color/color_orange"
+        app:dot_count="7" />
+</FrameLayout>

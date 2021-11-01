@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/common_24">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginBottom="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+
+            <Switch
+                android:id="@+id/setting_switch_dlt"
+                style="@style/StyleDialogDesSwitch"
+                android:background="@color/bg_white"
+                android:checked="false"
+                android:paddingStart="@dimen/common_12"
+                android:paddingEnd="@dimen/common_12"
+                android:text="@string/setting_text_dlt_enable"
+                android:textSize="@dimen/txt_15" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginStart="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+            <Switch
+                android:id="@+id/setting_switch_leakproof"
+                style="@style/StyleDialogDesSwitch"
+                android:background="@color/bg_white"
+                android:checked="false"
+                android:paddingStart="@dimen/common_12"
+                android:paddingEnd="@dimen/common_12"
+                android:text="@string/internet_access"
+                android:textSize="@dimen/txt_15" />
+
+            <TextView
+                android:id="@+id/setting_inet_access_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:drawablePadding="@dimen/common_16"
+                android:paddingStart="@dimen/common_16"
+                android:paddingEnd="@dimen/common_16"
+                android:paddingBottom="@dimen/common_8"
+                android:text="@string/tips_internet_access"
+                android:textColor="@color/color_black_secondary_text"
+                android:textSize="@dimen/text_size_sm" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginStart="@dimen/common_24"
+                android:background="@color/line_gray" />
+
+            <TextView
+                android:id="@+id/tv_settings_inet_access_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:drawableEnd="@drawable/ic_settings_blue_24dp"
+                android:drawablePadding="@dimen/common_16"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/common_ItemHeight42"
+                android:paddingStart="@dimen/common_16"
+                android:paddingEnd="@dimen/common_24"
+                android:text="@string/do_it_best_with_sys_settings"
+                android:textSize="@dimen/text_size_sm"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginStart="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/setting_ail_safe_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:iv_right_arrow_visibility="gone"
+                app:tv_tips_text="RC4,MD5-HMAC"
+                app:tv_title_text="@string/setting_text_safe_setting" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginStart="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

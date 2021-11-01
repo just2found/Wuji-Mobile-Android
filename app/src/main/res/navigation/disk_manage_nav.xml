@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/disk_manage_nav">
+
+    <fragment
+        android:id="@+id/diskSpaceFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.disk.DiskSpaceFragment"
+        android:label="DiskSpaceFragment"
+        tools:layout="@layout/fragment_disk_space">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_space_to_manage"
+            app:destination="@id/diskManageFragment"
+            app:enterAnim="@animator/fragment_fade_enter"
+            app:exitAnim="@animator/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_space_to_load"
+            app:destination="@id/dskLoadFragment"
+            app:enterAnim="@animator/fragment_fade_enter"
+            app:exitAnim="@animator/fragment_fade_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/diskManageFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.disk.DiskManageFragment"
+        android:label="DiskManageFragment"
+        tools:layout="@layout/fragment_disk_manage">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_manage_to_load"
+            app:destination="@id/dskLoadFragment"
+            app:enterAnim="@animator/fragment_fade_enter"
+            app:exitAnim="@animator/fragment_fade_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dskLoadFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.disk.DiskLoadFragment"
+        android:label="DiskLoadFragment"
+        tools:layout="@layout/fragment_disk_load">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+</navigation>

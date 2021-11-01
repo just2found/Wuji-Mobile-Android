@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">Chia sẻ đã bị hủy !</string>
+    <string name="tip_error_open_dir">Mở mục lục thất bại</string>
+    <string name="tip_error_task_running">Thực hiện nhiệm vụ lỗi</string>
+    <string name="msg_error_exceed_downloads">Chia sẻ này vượt quá số lượt tải xuống tối đa</string>
+    <string name="msg_error_cancel_shared">Không thể hủy chia sẻ</string>
+    <string name="msg_error_bind_network">Lỗi kết nối với dịch vụ từ xa</string>
+    <string name="msg_error_user_not_exist">Người dùng chia sẻ không còn tồn tại</string>
+    <string name="msg_error_illegal_operation">Hoạt động không hợp lệ của người dùng, vui lòng làm mới và thử lại</string>
+    <string name="msg_error_get_device_ip">Không thể kết nối với máy chủ chia sẻ, vui lòng thử lại sau</string>
+    <string name="msg_error_broken_network">Lỗi mạng</string>
+    <string name="msg_error_dl_not_running">Tải xuống không ở trạng thái chạy và không thể thêm các tệp mới</string>
+    <string name="msg_error_source_file_open">Không thể mở tệp nguồn</string>
+    <string name="msg_error_source_file_change">Thay đổi kích thước tệp nguồn</string>
+    <string name="msg_error_temp_file">Tập tin tạm thời đã bị xóa</string>
+    <string name="msg_error_auth">Lỗi xác thực nội bộ</string>
+    <string name="msg_error_target_file">Không thể ghi tệp đích</string>
+    <string name="msg_error_token">Dấu chứng nhận không hợp lệ</string>
+    <string name="msg_error_more_shared_ticket">Đã tạo nhiệm vụ tải xuống</string>
+    <string name="msg_error_shared_ticket_overtime">Chia sẻ quá hạn</string>
+    <string name="tips_warn_cancel_share">Tải xuống chưa hoàn thành sẽ bị hủy và các tập tin tạm thời bị xóa!</string>
+    <string name="msg_error_disk_full">Đĩa đã đầy, vui lòng xóa dung lượng và thử lại!</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_start"
+        android:paddingTop="25dip"
+        android:layout_marginEnd="@dimen/view_end"
+        android:paddingBottom="19dip"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:text="xxxx"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/tvConfirmHint"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        tools:text="xxx"
+        android:gravity="center"
+        android:paddingStart="@dimen/common_8"
+        android:paddingBottom="21dip"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:textSize="12sp"
+        android:textColor="@color/text_dark_gray"
+        />
+    <include
+        layout="@layout/include_layout_pos_and_neg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvConfirmHint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_ItemHeight56"
+    android:background="@drawable/item_click_white_ripple"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvStatusTitle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_16"
+        android:layout_marginTop="@dimen/common_8"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_13"
+        app:layout_constraintBottom_toTopOf="@id/tvStatusContent"
+        app:layout_constraintEnd_toEndOf="@+id/rightBarrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/tvStatusContent"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/common_8"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/txt_13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rightBarrier"
+        app:layout_constraintStart_toStartOf="@+id/tvStatusTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatusTitle"
+        tools:text="content" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/rightBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="ivStatusEdit,vRedDot,mStatusSwitch" />
+
+    <ImageView
+        android:id="@+id/ivStatusEdit"
+        android:layout_width="@dimen/common_icon48"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/common_12"
+        android:paddingEnd="@dimen/common_12"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_edit"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+    <!--红点-->
+    <ImageView
+        android:id="@+id/vRedDot"
+        android:layout_width="@dimen/common_icon48"
+        android:layout_height="@dimen/common_icon20"
+        android:paddingStart="@dimen/common_12"
+        android:paddingEnd="@dimen/common_12"
+        android:scaleType="centerInside"
+        android:src="@drawable/red_dot"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Switch
+        android:id="@+id/mStatusSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/common_12"
+        android:paddingEnd="@dimen/common_8"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--底部线条-->
+    <View
+        android:id="@+id/vStatusBottom"
+        style="@style/common_line_style"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

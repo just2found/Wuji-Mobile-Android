@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/pop_account_view_out"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_half"
+            android:background="@color/line_gray" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pop_account_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bg_grey250"
+            android:fadeScrollbars="true"
+            android:overScrollMode="never"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_half"
+        android:background="@color/line_gray" />
+
+    <TextView
+        android:id="@+id/pop_account_tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_button_white_ripple_trans_gray"
+        android:foreground="@drawable/bg_ripple_trans_gray"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_15" />
+</LinearLayout>

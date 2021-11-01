@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_device_item_subnet_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_minHeight="@dimen/common_ItemHeight42"
+    android:background="@android:color/white"
+    android:minHeight="@dimen/common_ItemHeight42">
+
+
+    <ImageView
+        android:id="@+id/tvIPTitle"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="@dimen/view_middle"
+        android:gravity="start|center_vertical"
+        android:padding="@dimen/common_8"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:src="@drawable/ic_device_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvIP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvIP"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/view_middle"
+        android:padding="@dimen/common_8"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_mid"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIPTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvIPTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvIPTitle"
+        tools:text="192.168.0.1/32" />
+
+    <!--顶部线条-->
+    <View
+        style="@style/common_line_style"
+        android:layout_height="@dimen/common_2"
+        android:background="@color/bg_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--左边线条-->
+    <View
+        style="@style/common_line_style"
+        android:layout_width="@dimen/common_2"
+        android:layout_height="0dip"
+        android:background="@color/bg_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--右边线条-->
+    <View
+        android:layout_width="@dimen/common_2"
+        android:layout_height="0dip"
+        android:background="@color/bg_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--    &lt;!&ndash;底部线条&ndash;&gt;-->
+    <View
+        android:id="@+id/vSubnetBottomLine"
+        style="@style/common_line_style"
+        android:layout_height="@dimen/common_2"
+        android:background="@color/bg_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/hbMask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

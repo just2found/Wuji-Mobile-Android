@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/bg_white"
+        app:cardCornerRadius="@dimen/common_6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/view_start">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_6"
+                    android:layout_marginBottom="@dimen/common_6"
+                    android:gravity="center"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_title"
+                    tools:text="立即登录即可使用此功能" />
+
+                <FrameLayout
+                    android:id="@+id/fl_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_top_middle">
+
+                    <net.sdvn.nascommon.widget.ClearEditText
+                        android:id="@+id/et_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_stroke_full_radius_gray"
+                        android:gravity="center"
+                        android:minHeight="@dimen/layout_edit_height"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark_gray"
+                        android:textDirection="anyRtl"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:autoSizeMaxTextSize="@dimen/txt_14"
+                        android:autoSizeMinTextSize="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/layout_edit_height"
+                        android:padding="8dp"
+                        android:textColor="@color/text_dark_gray"
+                        app:autoSizeMaxTextSize="@dimen/txt_14"
+                        app:autoSizeMinTextSize="1sp"
+                        app:autoSizeTextType="uniform"
+                        tools:text="test"
+
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_extra"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_top_middle"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <net.sdvn.nascommon.widget.ClearEditText
+                        android:id="@+id/et_extra"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_stroke_full_radius_gray"
+                        android:gravity="center"
+                        android:minHeight="@dimen/layout_edit_height"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark_gray"
+                        android:textDirection="anyRtl"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_extra"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:autoSizeMaxTextSize="@dimen/txt_14"
+                        android:autoSizeMinTextSize="1sp"
+                        android:autoSizeTextType="uniform"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:minHeight="@dimen/layout_edit_height"
+                        android:padding="8dp"
+                        android:textColor="@color/text_dark_gray"
+                        android:visibility="gone"
+                        app:autoSizeMaxTextSize="@dimen/txt_14"
+                        app:autoSizeMinTextSize="1sp"
+                        app:autoSizeTextType="uniform"
+                        tools:text="test"
+                        tools:visibility="visible" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_top_middle"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <net.sdvn.nascommon.widget.CheckableImageButton
+                        android:id="@+id/cb_check"
+                        style="@style/checkableImageButton"
+                        android:layout_marginStart="@dimen/view_middle" />
+
+                    <TextView
+                        android:id="@+id/tv_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/tv_padding"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/txt_14"
+                        tools:text="test" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_extra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <TextView
+                    android:id="@+id/btn_extra"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:background="@drawable/bg_button_white_ripple_trans_gray"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_mid"
+                    tools:text="额外按钮" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/iv_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_below="@+id/layout_extra"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_ItemHeight48"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/negative"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_square_left_bottom_radius_white"
+                    android:foreground="@drawable/bg_ripple_trans_gray"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_mid"
+                    tools:text="取消" />
+
+                <View
+                    android:layout_width="@dimen/common_line"
+                    android:layout_height="fill_parent"
+                    android:background="@color/line_gray" />
+
+                <TextView
+                    android:id="@+id/positive"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_square_right_bottom_radius_white"
+                    android:foreground="@drawable/bg_ripple_trans_gray"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_mid"
+                    tools:text="确认" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

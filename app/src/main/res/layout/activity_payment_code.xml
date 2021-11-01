@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dynamic_toolbar_color"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/flToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolbar_grey_style"
+            app:navigationIcon="@drawable/icon_return_black"
+            app:title="@string/my_identify_code" />
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/clQrCode1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="30dp">
+                <TextView
+                    android:id="@+id/btnWechat"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dip"
+                    android:gravity="center"
+                    android:text="微信"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:paddingVertical="6dp"
+                    android:background="@drawable/bg_button_radius" />
+                <TextView
+                    android:id="@+id/btnAlipay"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dip"
+                    android:gravity="center"
+                    android:text="支付宝"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:paddingVertical="6dp"
+                    android:background="@drawable/bg_button_radius_un" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clQrCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dip"
+                android:layout_marginEnd="22dip"
+                android:background="@drawable/bg_square_full_radius_white"
+                android:paddingStart="14dip"
+                android:paddingTop="14dip"
+                android:paddingEnd="14dip"
+                android:paddingBottom="35dip">
+
+                <LinearLayout
+                    android:id="@+id/llContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:text="888" />
+
+                    <TextView
+                        android:id="@+id/tvContent"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:textSize="14sp"
+                        tools:text="12387493888" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivQRCode"
+                    android:layout_width="0dip"
+                    android:layout_height="0dip"
+                    android:layout_marginStart="24dip"
+                    android:layout_marginTop="35dip"
+                    android:layout_marginEnd="24dip"
+                    android:scaleType="center"
+                    app:layout_constraintDimensionRatio="h,1:1.2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/llContent" />
+
+                <ProgressBar
+                    android:id="@+id/mProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivQRCode"
+                    app:layout_constraintEnd_toEndOf="@+id/ivQRCode"
+                    app:layout_constraintStart_toStartOf="@+id/ivQRCode"
+                    app:layout_constraintTop_toTopOf="@+id/ivQRCode" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dip"
+                android:layout_marginEnd="22dip"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="提交支付截图"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:paddingVertical="10dp"
+                android:background="@drawable/bg_button_radius" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_search_rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/common_16"
+    android:layout_marginEnd="@dimen/common_16"
+    android:paddingTop="@dimen/common_8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_square_full_radius_blue_ring"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/layout_search_et_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_ItemHeight32"
+            android:layout_weight="100"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_search_grey600_24dp"
+            android:drawablePadding="@dimen/common_4"
+            android:ellipsize="start"
+            android:hint="搜索"
+            android:paddingStart="@dimen/common_4"
+            android:paddingEnd="@dimen/common_icon32"
+            android:textSize="@dimen/txt_12"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/layout_search_iv_cancel"
+            android:layout_width="@dimen/common_icon24"
+            android:layout_height="@dimen/common_icon24"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="@dimen/common_4"
+            android:src="@drawable/ic_cancel_grey600_24dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</RelativeLayout>

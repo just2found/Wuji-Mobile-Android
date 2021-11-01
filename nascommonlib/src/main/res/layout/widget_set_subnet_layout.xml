@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subnet_widget_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/common_8"
+    android:layout_marginEnd="@dimen/common_8"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_blue_150" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight32"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_blue_150" />
+
+        <EditText
+            android:id="@+id/subnet_widget_ip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0fff"
+            android:digits="0123456789."
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="IP"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="@color/color_black_hint_text"
+            android:textSize="@dimen/txt_list_title" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_blue_150" />
+
+        <EditText
+            android:id="@+id/subnet_widget_netmask"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0fff"
+            android:digits="0123456789."
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="Netmask"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="@color/color_black_hint_text"
+            android:textSize="@dimen/txt_list_title" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_blue_150" />
+
+        <ImageView
+            android:id="@+id/subnet_widget_remove"
+            android:layout_width="@dimen/common_ItemHeight32"
+            android:layout_height="@dimen/common_ItemHeight32"
+            android:gravity="center"
+            android:padding="6dp"
+            android:src="@drawable/ic_action_cancel"
+            android:scaleType="centerInside"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_blue_150" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/selector_tab_home"
+        android:title="@string/home" />
+
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_store"-->
+    <!--        android:icon="@drawable/selector_tab_store"-->
+    <!--        android:title="@string/store" />-->
+    <!--<item-->
+    <!--android:id="@+id/navigation_app"-->
+    <!--android:icon="@drawable/selector_tab_app"-->
+    <!--android:title="@string/app"/>-->
+    <item
+        android:id="@+id/navigation_dynamic"
+        android:icon="@drawable/selector_tab_dynamic"
+        android:title="@string/dynamic" />
+    <item
+        android:id="@+id/navigation_msg"
+        android:icon="@drawable/selector_tab_msg"
+        android:title="@string/msg" />
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/selector_tab_me"
+        android:title="@string/me" />
+
+</menu>

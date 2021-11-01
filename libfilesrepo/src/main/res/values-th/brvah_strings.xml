@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brvah_loading">กำลังโหลด&#8230;</string>
+    <string name="brvah_load_failed">การโหลดล้มเหลวโปรดคลิกฉันเพื่อลองอีกครั้ง</string>
+    <string name="brvah_load_end">ไม่มีข้อมูลอีกแล้ว</string>
+</resources>

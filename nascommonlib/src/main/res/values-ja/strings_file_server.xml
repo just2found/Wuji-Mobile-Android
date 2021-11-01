@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">シェアがキャンセルされました</string>
+    <string name="tip_error_open_dir">ディレクトリの起動に失敗しました</string>
+    <string name="tip_error_task_running">タスク実行中にエラー</string>
+    <string name="msg_error_exceed_downloads">この共有は最大ダウンロード回数を超えています。</string>
+    <string name="msg_error_cancel_shared">シェア解除に失敗しました</string>
+    <string name="msg_error_bind_network">リモートサービスの接続エラー</string>
+    <string name="msg_error_user_not_exist">シェアユーザはもう存在しません。</string>
+    <string name="msg_error_illegal_operation">ユーザの無効な操作は、更新後にやり直してください。</string>
+    <string name="msg_error_get_device_ip">シェアサーバの接続に失敗しました。後でやり直してください。</string>
+    <string name="msg_error_broken_network">ネットワークエラー</string>
+    <string name="msg_error_dl_not_running">ダウンロードは実行状態ではなく、新しいファイルを追加できません。</string>
+    <string name="msg_error_source_file_open">ソースファイルのオープンに失敗しました。</string>
+    <string name="msg_error_source_file_change">ソースファイルのサイズ変更</string>
+    <string name="msg_error_temp_file">一時ファイルを削除します</string>
+    <string name="msg_error_auth">内部認証エラー</string>
+    <string name="msg_error_target_file">ターゲットファイルの書き込みに失敗しました。</string>
+    <string name="msg_error_token">無効な認証マーク</string>
+    <string name="msg_error_more_shared_ticket">ダウンロードジョブが作成されました。</string>
+    <string name="msg_error_shared_ticket_overtime">シェアが失効しました</string>
+    <string name="tips_warn_cancel_share">未完了のダウンロードはキャンセルされます。一時ファイルは削除されます。</string>
+    <string name="msg_error_disk_full">ディスクがいっぱいです。空間を整理してやり直してください。</string>
+</resources>

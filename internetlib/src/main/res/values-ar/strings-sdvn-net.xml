@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Error-->
+    <string name="ec_request">فشل الطلب ، يرجى المحاولة في وقت لاحق</string>
+    <string name="ec_timeout">انتهت مهلة الاتصال!</string>
+
+    <string name="ec_invalid_auth_code">رمز التحقق غير صالح</string>
+    <string name="ec_not_found_acount">المستخدم ليس موجود</string>
+    <string name="ec_failed_send_auth_code">فشل إرسال رمز التحقق</string>
+    <string name="ec_invalid_share_code">انتهت صلاحية رمز المشاركة</string>
+    <string name="ec_vip_not_machers_ticket"> IP وتذكرة لا تتطابق</string>
+    <string name="ec_auth_sig_failed"> فشل تدقيق Sig</string>
+    <string name="ec_not_found_device">لم يتم العثور علي الجهاز</string>
+
+    <string name="ec_invalid_sig">عدم تطابق SIG ، معلمات غير طبيعية</string>
+    <string name="ec_not_exists_parterid">PARTNERID غير موجود</string>
+    <string name="ec_appid_partrid_not_match">لا يتطابق APPID مع PARTNERID</string>
+    <string name="ec_not_found_user">لم يتم العثور على المستخدم</string>
+    <string name="ec_not_found_device_by_id">لم يتم العثور على الجهاز بالمعرف المقابل</string>
+    <string name="ec_not_found_device_by_sn">لم يتم العثور على جهاز لـ SN المقابل</string>
+    <string name="ec_sn_not_exist">SN الجهاز غير موجود</string>
+    <string name="ec_user_attr_not_match">سمات المستخدم التي تم العثور عليها لا تتطابق ، طلب PARTNERID أو APPID لا يتطابق مع القيمة الفعلية</string>
+    <string name="ec_dev_attr_not_match_by_id">لا تتطابق سمة جهاز ID المقابلة ، لا يتوافق طلب PARTNERID أو APPID مع القيمة الفعلية</string>
+    <string name="ec_dev_attr_not_match_by_sn">لا تتطابق سمات جهاز SN المقابلة ، ولا يتوافق طلب PARTNERID أو APPID مع القيمة الفعلية</string>
+    <string name="ec_not_fount_user_by_loginname">لا هذا المستخدم</string>
+    <string name="ec_user_not_add_dev">المستخدم غير مرتبط بهذا الجهاز</string>
+    <string name="ec_user_not_admin">المستخدم ليس مسؤولاً عن هذا الجهاز</string>
+    <string name="ec_batch_over_limit_register_user">يتجاوز عدد المستخدمين المسجلين على دفعات الحد ، ولا يتجاوز عدد المستخدمين 100 لكل مستخدم</string>
+    <string name="ec_batch_over_limit_binds_user">يتجاوز عدد المستخدمين المنضمين إلى مجموعة من الأجهزة الحد المسموح به ، ولا يتجاوز عدد المستخدمين المقيدين 100 مستخدم في المرة الواحدة</string>
+    <string name="ec_batch_over_limit_binds_dev">يتجاوز عدد الأجهزة المقيدة في دفعات الحد ، ولا يتجاوز عدد الأجهزة المقيدة 100 في المرة الواحدة</string>
+    <string name="ec_batch_over_limit_unbinds_user">يتجاوز عدد المستخدمين غير المقيدين في الدفعات الحد المسموح به ، ولا يتجاوز عدد المستخدمين غير المقيدين 100 دفعة في المرة الواحدة</string>
+    <string name="ec_batch_over_limit_unbinds_dev">يتجاوز عدد الأجهزة غير المجمعة في الدفعات الحد المسموح به ، ولا يتجاوز عدد الأجهزة غير المجمعة 100 في المرة الواحدة</string>
+
+    <string name="ec_has_joined_the_network">انضم إلى الشبكة!</string>
+    <string name="ec_has_applyed_to_join_the_network">تقدم بطلب للانضمام إلى الشبكة!</string>
+    <string name="ec_device_bind_apply_has_been_submit">تم إرسال تطبيق ربط الجهاز!</string>
+    <string name="ec_devices_binded_account_over_limited">تجاوز حساب ربط الجهاز الحد!</string>
+    <string name="ec_network_joined_account_limited">حساب الوصول إلى الشبكة محدود!</string>
+    <string name="ec_user_joined_network_limited">انضم المستخدم شبكة محدودة!</string>
+    <string name="ec_networkid_not_find">لم يتم العثور على الشبكة!</string>
+    <string name="ec_newsid_not_find">لم يتم العثور على رسالة!</string>
+
+    <string name="device_has_been_added">تمت إضافة الجهاز</string>
+    <string name="ec_invalid_share_t2">رمز المشاركة غير صالح</string>
+    <string name="unknown_exception">استثناء غير معروف</string>
+
+    <string name="ec_exception">استثناء الخادم</string>
+
+    <string name="ec_invalid_ticket">هوية مستخدم غير صالحه</string>
+    <string name="ec_invalid_partnerid_or_appid">شريك أو معرف غير صالح</string>
+    <string name="ec_invalid_params">خطأ معلمة</string>
+    <string name="ec_invalid_token">معرف التحقق غير صالح</string>
+    <string name="ec_invalid_downlaodtoken">معرف التنزيل غير صالح</string>
+    <string name="ec_invalid_sharetoken">شعار المشاركة غير صالح</string>
+    <string name="ec_no_permission">لا يوجد إذن</string>
+    <string name="ec_device_offline">الجهاز غير متصل بالإنترنت</string>
+    <string name="ec_auxcode">رمز التحقق غير صحيح أو انتهت صلاحيته</string>
+    <string name="ec_invalid_qrcode">رمز الاستجابة السريعة غير صالح</string>
+    <string name="ec_qrcode_not_scaned">لا يتم مسح رمز الاستجابة السريعة</string>
+    <string name="ec_invalid_account">لا يمكن العثور على هذا المستخدم</string>
+    <string name="ec_send_auxcode">فشل إرسال رمز التحقق</string>
+    <string name="ec_invalid_sharecode">انتهت صلاحية رمز المشاركة</string>
+    <string name="ec_vip_conflict">لا يتطابق vip مع ticket</string>
+    <string name="ec_sig">فشل تدقيق Sig</string>
+    <string name="ec_invalid_device">لا يمكن العثور على هذا الجهاز</string>
+    <string name="ec_qrcode_timeout">مهلة رمز الاستجابة السريعة</string>
+    <string name="ec_userid_confilict">لا يطابق Userid مع ticket</string>
+    <string name="ec_invalid_t2">t2 غير صالح</string>
+    <string name="ec_already_bound">تم ربط المستخدم بالجهاز</string>
+
+    <string name="ec_null_partnerid">Partnerid فارغ</string>
+    <string name="ec_null_appid">Appid فارغ</string>
+    <string name="ec_null_random">Random فارغ</string>
+    <string name="ec_null_request_packet">RequestPacket فارغ</string>
+    <string name="ec_null_sig">Sig فارغ</string>
+    <string name="ec_null_userid">UserId فارغ</string>
+    <string name="ec_null_deviceid">Id جهاز فارغ</string>
+    <string name="ec_null_devicesn">DeviceSn فارغ</string>
+    <string name="ec_null_username">اسم المستخدم فارغ</string>
+    <string name="ec_null_passwd">كلمة المرور فارغة</string>
+    <string name="ec_null_users">Users فارغ</string>
+    <string name="ec_null_binds">Binds فارغ</string>
+    <string name="ec_null_unbinds">UnBinds فارغ</string>
+    <string name="ec_null_devices">Devices فارغ</string>
+    <string name="ec_null_networkid">networkid فارغ</string>
+    <string name="ec_null_newsid">newsid فارغ</string>
+    <string name="ec_null_news_process">newprocess فارغة</string>
+    <string name="ec_null_net_name">اسم الشبكة فارغ</string>
+    <string name="ec_null_members">members فارغ</string>
+    <string name="ec_null_mbpoint">mbpoint فارغ</string>
+    <string name="ec_null_mgrlevel">mgrlevel فارغ</string>
+
+    <string name="ec_username_has_registered">تم تسجيل اسم المستخدم</string>
+    <string name="ec_passwd_no_match">كلمة المرور القديمة غير صحيحة</string>
+    <string name="ec_news_has_been_processed">تم معالجة الأخبار</string>
+    <string name="ec_joined_or_applied_to_join_the_network">انضم أو تقدم بطلب للانضمام إلى الشبكة</string>
+    <string name="ec_bound_or_requested_to_bind_the_device">ملزمة أو طلب ربط الجهاز</string>
+    <string name="ec_invalid_news_type">نوع أخبار غير صالح</string>
+    <string name="ec_this_news_does_not_belong_to_this_user">لا تنتمي الرسالة للمستخدم</string>
+    <string name="ec_invalid_news">غير قادر على العثور على سجل لهذا الخبر</string>
+    <string name="ec_phone_has_registered">تم تسجيل هذا الموبايل</string>
+    <string name="ec_email_has_registered">تم تسجيل هذا البريد الإلكتروني</string>
+    <string name="ec_user_is_not_bound_to_this_device">المستخدم غير مرتبط بهذا الجهاز</string>
+
+    <string name="ec_disabled_appid">شعار App غير صالح</string>
+    <string name="ec_overdue_appid">انتهت صلاحية شعار App</string>
+    <string name="ec_api_not_authorized">عملية غير مصرح بها</string>
+    <string name="ec_over_limit_rigster_user">يتجاوز عدد المستخدمين المسجلين على الحد</string>
+    <string name="ec_over_limit_device_accounts">يتجاوز عدد الحسابات التي يمكن للجهاز ربط على الحد</string>
+    <string name="ec_over_limit_users_of_the_network">يتجاوز عدد المستخدمين الذين يمكن للشبكة الانضمام على الحد</string>
+    <string name="ec_over_limit_network_of_the_user">يتجاوز عدد المستخدمين الذين يمكنهم الانضمام إلى الشبكة على الحد</string>
+    <string name="ec_user_create_network_limited">يتجاوز عدد المستخدمين الذين يمكنهم إنشاء الشبكة على الحد</string>
+    <string name="ec_app_has_forbid_mbpoint_transfer">هذا APP يحظر نقل النقاط</string>
+    <string name="ec_device_owner_cannot_unbind_directly">لا يستطيع مالك الجهاز فك الارتباط مباشرة</string>
+    <string name="ec_must_device_owner_can_grade_user_bind_level">يمكن لمالك الجهاز فقط تقدير مستوى ربط المستخدم</string>
+
+    <string name="ec_not_found_this_networkid">لم يتم العثور على id الشبكة</string>
+    <string name="ec_not_found_this_newsid">لم يتم العثور على id هذا الخبر</string>
+    <string name="ec_not_the_net_admin">لا يمكن لغير المسؤولين العمل</string>
+    <string name="ec_can_not_delete_deault_network">غير قادر على حذف الشبكة الافتراضية</string>
+    <string name="ec_the_user_can_not_be_searched">لا يمكن البحث عن هذا المستخدم</string>
+    <string name="ec_joined_or_invited_to_join_the_network">انضم هذا المستخدم أو تمت دعوته</string>
+    <string name="ec_can_not_delete_admin">غير قادر على حذف مسؤول الشبكة</string>
+    <string name="ec_invalid_chars">لا يمكن أن يحتوي على أحرف خاصة ، يرجى إعادة الإرسال!</string>
+
+    <string name="ec_device_not_of_user">لا ينتمي الجهاز لهذا المستخدم!</string>
+    <string name="ec_no_enough_mbpoion_to_tranfer">نقاط غير كافية ، يرجى التحديث والمحاولة مرة أخرى</string>
+    <string name="ec_find_more_than_one_user">البيانات غير طبيعية ، ويتم الاستعلام عن عدة مستخدمين</string>
+
+    <string name="ec_too_many_requests">طلب متكرر للغاية ، يرجى المحاولة مرة أخرى</string>
+
+    <string name="ec_order_submit_error">معلومات الدفع غير طبيعية ، إذا كان لديك أي أسئلة يرجى الاتصال بخدمة العملاء</string>
+    <string name="ec_order_amount_over_limit">وصل مبلغ الدفع اليوم إلى الحد الأقصى</string>
+    <string name="ec_user_set_out_of_range">يتجاوز سعر الوحدة المحدد للتدفق النطاق المحدد</string>
+    <string name="api_params_language" >ar</string>
+
+    <string name="ec_msg_has_agreed" >تم الاتفاق على هذه الرسالة</string>
+    <string name="ec_msg_has_denied" >تم رفض هذه الرسالة</string>
+    <string name="ec_msg_has_expired" >انتهت صلاحية هذه الرسالة</string>
+    <string name="ec_en_servers_limited" >وصل عدد خوادم عقدة الحافة في الدائرة إلى الحد الأعلى</string>
+    <string name="ec_moving_en_server" >قبل نقل خادم عقدة الحافة ، يرجى إلغاء خدمة عقدة الحافة</string>
+    <string name="ec_bind_en_server" >تعذر ربط خادم عقدة الحافة</string>
+    <string name="ec_unbinding_en_server" >قبل إلغاء ربط خادم عقدة الحافة ، يرجى إلغاء خدمة عقدة الحافة أولاً</string>
+    <string name="ec_leaving_circle_cancel_EN" >قبل مغادرة الدائرة ، يرجى إلغاء خدمة عقدة الحافة في الدائرة</string>
+    <string name="ec_at_least_one_fee_type" >يجب تنشيط عنصر واحد على الأقل لنوع الرسوم هذا</string>
+    <string name="ec_cannot_delete_en_server_owner" >لا يمكن حذف المستخدمين الذين يقدمون خدمات عقدة الحافة في الدوائر</string>
+    <string name="ec_amount_is_abnormal" >المبلغ غير طبيعي ، يرجى الشراء مرة أخرى</string>
+    <string name="ec_insufficient_score" >NB غير كافية</string>
+    <string name="ec_already_applied" >تطبق بالفعل</string>
+    <string name="ec_move_en_server_from_circle" >لا يمكن نقل خوادم EN من الدوائر الأخرى</string>
+</resources>

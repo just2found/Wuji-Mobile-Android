@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //kotlin std
+    implementation deps.kotlin.stdlib
+    implementation deps.kotlin.test
+    implementation deps.kotlin.allopen
+    implementation deps.kotlin.coroutines
+
+    implementation deps.retrofit.runtime
+    implementation deps.lifecycle.livedata_ktx
+    implementation deps.gson
+    implementation deps.timber
+    implementation deps.support.core
+    implementation deps.support.fragment_runtime_ktx
+    implementation deps.support.viewpager2
+    implementation deps.support.palette_ktx
+    implementation deps.disklrucache
+    implementation deps.zxing
+
+    testImplementation deps.mock_web_server
+    testImplementation deps.mockito.core
+
+    testImplementation deps.junit
+    androidTestImplementation deps.atsl.ext_junit
+    androidTestImplementation deps.espresso.core
+
+}

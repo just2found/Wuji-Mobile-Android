@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_publish_dynamic_progress"
+    android:paddingBottom="23dip">
+    <!--边界辅助线-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="14dip" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="14dip" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="14dip" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dip"
+        android:text="@string/dynamic_is_publishing_title"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop" />
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dip"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_weight="0"
+        android:includeFontPadding="false"
+        android:paddingTop="3dip"
+        android:textColor="#999999"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        app:layout_constraintTop_toBottomOf="@+id/mProgressBar"
+        tools:text="10M/110M" />
+
+    <TextView
+        android:id="@+id/tvErrorHint"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/common_8"
+        android:layout_weight="1"
+        android:paddingTop="3dip"
+        android:textColor="@color/red"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvProgressText"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toTopOf="@+id/tvProgressText"
+        tools:text="@string/network_not_available" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierTextTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvErrorHint,tvProgressText" />
+    <!--内容-->
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dip"
+        android:background="@drawable/item_click_transparent"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="3"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_15"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/barrierTextTop"
+        tools:text="sdfsf" />
+
+    <!--图片-->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierImageTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvContent" />
+
+    <net.linkmate.app.view.DynamicImageLayout
+        android:id="@+id/clImagePanel"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dip"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/barrierImageTop" />
+
+    <!--底部-->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierBottomTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvContent,clImagePanel" />
+
+    <TextView
+        android:id="@+id/btnCancel"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dip"
+        android:layout_marginEnd="10dip"
+        android:background="@drawable/selector_publish_dynamic_cancel"
+        android:clickable="true"
+        android:gravity="center"
+        android:minWidth="0dip"
+        android:minHeight="0dip"
+        android:paddingTop="@dimen/common_10"
+        android:paddingBottom="@dimen/common_10"
+        android:autoSizeMaxTextSize="@dimen/txt_13"
+        android:autoSizeMinTextSize="1sp"
+        android:text="@string/cancel_publish"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:paddingStart="@dimen/common_10"
+        android:paddingEnd="@dimen/common_10"
+        app:autoSizeMaxTextSize="@dimen/txt_13"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/btnBack"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/barrierBottomTop" />
+
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dip"
+        android:background="@drawable/selector_publish_dynamic_back"
+        android:clickable="true"
+        android:gravity="center"
+        android:minWidth="0dip"
+        android:minHeight="0dip"
+        android:autoSizeMaxTextSize="@dimen/txt_13"
+        android:autoSizeMinTextSize="1sp"
+        android:paddingTop="@dimen/common_10"
+        android:paddingBottom="@dimen/common_10"
+        android:text="@string/title_back"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:paddingStart="@dimen/common_10"
+        android:paddingEnd="@dimen/common_10"
+        app:autoSizeMaxTextSize="@dimen/txt_13"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel"
+        app:layout_constraintTop_toTopOf="@+id/btnCancel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

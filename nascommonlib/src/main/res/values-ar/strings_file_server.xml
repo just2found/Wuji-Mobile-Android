@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">تم إلغاء المشاركة!</string>
+    <string name="tip_error_open_dir">فشل في فتح الدليل</string>
+    <string name="tip_error_task_running">خطأ في تنفيذ المهمة</string>
+    <string name="msg_error_exceed_downloads">تتجاوز هذه المشاركة على الحد الأقصى لعدد التنزيلات</string>
+    <string name="msg_error_cancel_shared">فشل إلغاء المشاركة</string>
+    <string name="msg_error_bind_network">خطأ في الاتصال بالخدمة البعيدة</string>
+    <string name="msg_error_user_not_exist">لم يعد المستخدم المشارك موجودًا</string>
+    <string name="msg_error_illegal_operation">عملية المستخدم غير صالحة ، يرجى التحديث والمحاولة مرة أخرى</string>
+    <string name="msg_error_get_device_ip">فشل الاتصال بخادم المشاركة ، يرجى المحاولة مرة أخرى</string>
+    <string name="msg_error_broken_network">خطأ في الشبكة</string>
+    <string name="msg_error_dl_not_running">التنزيل ليس قيد التشغيل ، لا يمكن إضافة ملفات جديدة</string>
+    <string name="msg_error_source_file_open">فشل فتح ملف المصدر</string>
+    <string name="msg_error_source_file_change">تغيير حجم ملف المصدر</string>
+    <string name="msg_error_temp_file">تم حذف الملفات المؤقتة</string>
+    <string name="msg_error_auth">خطأت مصادقة داخلية</string>
+    <string name="msg_error_target_file">فشلت كتابة الملف الهدف</string>
+    <string name="msg_error_token">علامة المصادقة غير صالحة</string>
+    <string name="msg_error_more_shared_ticket">تم إنشاء مهمة التنزيل</string>
+    <string name="msg_error_shared_ticket_overtime">انتهت صلاحية المشاركة</string>
+    <string name="tips_warn_cancel_share">سيتم إلغاء التنزيلات غير المكتملة وإزالة الملفات المؤقتة!</string>
+    <string name="msg_error_disk_full">القرص ممتلئ ، يرجى مسح المساحة وإعادة المحاولة!</string>
+</resources>

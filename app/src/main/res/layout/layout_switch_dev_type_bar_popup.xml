@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/common_12"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lsdtbp_ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight48"
+        android:background="@drawable/bg_square_top_radius_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_12">
+
+        <TextView
+            android:id="@+id/lsdtbp_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/online_resources"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_13"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/lsdtbp_iv_right_arrow"
+            android:layout_width="@dimen/common_icon24"
+            android:layout_height="@dimen/common_icon24"
+            android:src="@drawable/ic_expand_more_black_24dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lsdtbp_rl_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lsdtbp_iv_back"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/bg_square_bottom_radius_white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/common_12">
+
+            <TextView
+                android:id="@+id/lsdtbp_tv_check_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_ItemHeight36"
+                android:background="@drawable/bg_square_full_radius_primary"
+                android:gravity="center"
+                android:minWidth="90dp"
+                android:paddingStart="@dimen/common_6"
+                android:paddingTop="@dimen/common_8"
+                android:paddingEnd="@dimen/common_6"
+                android:paddingBottom="@dimen/common_8"
+                android:text="@string/online_resources"
+                android:textColor="@color/white"
+                android:autoSizeMaxTextSize="@dimen/txt_12"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeMaxTextSize="@dimen/txt_12"
+                android:maxLines="1"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/lsdtbp_tv_check_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_ItemHeight36"
+                android:layout_marginLeft="@dimen/txt_12"
+                android:background="@drawable/bg_square_full_radius_light"
+                android:gravity="center"
+                android:minWidth="90dp"
+                android:paddingStart="@dimen/common_6"
+                android:paddingTop="@dimen/common_8"
+                android:paddingEnd="@dimen/common_6"
+                android:paddingBottom="@dimen/common_8"
+                android:text="@string/my_resources"
+                android:textColor="@color/text_dark"
+                android:autoSizeMaxTextSize="@dimen/txt_12"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeMaxTextSize="@dimen/txt_12"
+                android:maxLines="1"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/lsdtbp_tv_check_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_ItemHeight36"
+                android:layout_marginLeft="@dimen/txt_12"
+                android:background="@drawable/bg_square_full_radius_light"
+                android:gravity="center"
+                android:minWidth="90dp"
+                android:paddingStart="@dimen/common_6"
+                android:paddingTop="@dimen/common_8"
+                android:paddingEnd="@dimen/common_6"
+                android:paddingBottom="@dimen/common_8"
+                android:text="@string/shared_resources"
+                android:textColor="@color/text_dark"
+                android:autoSizeMaxTextSize="@dimen/txt_12"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeMaxTextSize="@dimen/txt_12"
+                android:maxLines="1"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

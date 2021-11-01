@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">Condivisione annullata o scaduta!</string>
+    <string name="tip_error_open_dir">Impossibile aprire la directory</string>
+    <string name="tip_error_task_running">Errore nell\'esecuzione del compito!</string>
+    <string name="msg_error_exceed_downloads">Questa quota supera il numero massimo di download</string>
+    <string name="msg_error_cancel_shared">Annullare la condivisione non riuscita</string>
+    <string name="msg_error_bind_network">Errore di connessione al servizio di assistenza remota</string>
+    <string name="msg_error_user_not_exist">Non esistono più condivisori</string>
+    <string name="msg_error_illegal_operation">Operazione non valida per l\'utente, si prega di aggiornare e riprovare</string>
+    <string name="msg_error_get_device_ip">Impossibile connettersi al server di condivisione, si prega di riprovare più tardi</string>
+    <string name="msg_error_broken_network">Rete interrotta</string>
+    <string name="msg_error_dl_not_running">Il download non è in esecuzione, non è possibile aggiungere nuovi file</string>
+    <string name="msg_error_source_file_open">File sorgente aperto fallito</string>
+    <string name="msg_error_source_file_change">Modifica della dimensione del file sorgente</string>
+    <string name="msg_error_temp_file">I file temporanei vengono cancellati</string>
+    <string name="msg_error_auth">Errore di autenticazione interna</string>
+    <string name="msg_error_target_file">Impossibile scrivere il file di destinazione</string>
+    <string name="msg_error_token">Gettone non valido</string>
+    <string name="msg_error_more_shared_ticket">È stato creato un compito di download</string>
+    <string name="msg_error_shared_ticket_overtime">La condivisione è scaduta</string>
+    <string name="tips_warn_cancel_share">I download non completati saranno cancellati e i file temporanei saranno rimossi!</string>
+    <string name="msg_error_disk_full">Il disco è pieno, liberare spazio e riprovare!</string>
+</resources>

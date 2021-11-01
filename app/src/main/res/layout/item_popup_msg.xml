@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_msg_rl_upload_download"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dip"
+    android:background="@drawable/bg_ripple_trans_gray"
+    tools:showIn="@layout/include_msg_bar">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="@dimen/common_icon42"
+        android:layout_height="@dimen/common_icon42"
+        android:paddingStart="@dimen/common_4"
+        android:paddingEnd="@dimen/common_4"
+        android:src="@drawable/icon_msg_transfer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="@dimen/common_8"
+        android:text="@string/transfer"
+        android:textColor="@color/text_dark"
+        android:paddingStart="@dimen/common_8"
+        android:paddingEnd="@dimen/common_8"
+        android:autoSizeMaxTextSize="@dimen/txt_13"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeTextType="uniform"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeMaxTextSize="@dimen/txt_13"
+        android:maxLines="2"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+    <TextView
+        android:id="@+id/home_msg_tv_trans_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_orange_bubble"
+        android:gravity="center"
+        android:minWidth="@dimen/common_16"
+        android:paddingStart="@dimen/common_4"
+        android:paddingEnd="@dimen/common_4"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/txt_11"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        tools:text="13"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dialog_radius">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true">
+
+            <FrameLayout
+                android:id="@+id/share_code_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/barrier14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <net.sdvn.nascommon.widget.SquareImageView
+                    android:id="@+id/act_share_code_iv_qr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    tools:src="@drawable/icon_device_wz" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/sc_tips"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="24dp"
+                android:autoSizeMaxTextSize="@dimen/text_size_sm"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="@string/share_file_period"
+                app:autoSizeMaxTextSize="@dimen/text_size_sm"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toTopOf="@+id/btn_share"
+                app:layout_constraintEnd_toStartOf="@+id/sc_tips_content"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/sc_tips_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:gravity="end"
+                android:maxLines="1"
+                android:paddingStart="@dimen/common_4"
+                android:paddingEnd="@dimen/common_4"
+                app:autoSizeMaxTextSize="@dimen/text_size_sm"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="@+id/sc_tips"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/sc_tips"
+                tools:text="12345678" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="5dp"
+                android:autoSizeMaxTextSize="@dimen/text_size_sm"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="@string/download_counter"
+                app:autoSizeMaxTextSize="@dimen/text_size_sm"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toTopOf="@+id/sc_tips"
+                app:layout_constraintEnd_toStartOf="@+id/share_counter"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <TextView
+                android:id="@+id/share_counter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:autoSizeMaxTextSize="@dimen/text_size_sm"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="end"
+                android:maxLines="1"
+                android:paddingStart="@dimen/common_4"
+                android:paddingEnd="@dimen/common_4"
+                app:autoSizeMaxTextSize="@dimen/text_size_sm"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                tools:text="12345678" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="top"
+                app:constraint_referenced_ids="textView4" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="end"
+                app:constraint_referenced_ids="textView3"
+
+                />
+
+
+            <net.sdvn.nascommon.widget.AutoGoneTextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:autoSizeMaxTextSize="@dimen/text_size_sm"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="@string/download_counter"
+                app:autoSizeMaxTextSize="@dimen/text_size_sm"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toStartOf="@+id/share_password"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrier14"
+                tools:text="@string/download_counter" />
+
+
+            <net.sdvn.nascommon.widget.AutoGoneTextView
+                android:id="@+id/share_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_content_copy_blue_24dp"
+                android:drawablePadding="5dip"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                android:gravity="end"
+                android:maxLines="1"
+                android:paddingStart="@dimen/common_4"
+                android:paddingEnd="@dimen/common_4"
+                app:autoSizeMaxTextSize="@dimen/text_size_sm"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeTextType="uniform"
+                tools:text="12345678"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_share"
+                style="@style/Style_btn_bg_primary"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:enabled="false"
+                android:text="@string/tab_share"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sc_tips" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/im_dismiss"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/card_view"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_cancel" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unexpected_intent_action">การกระทำที่ไม่คาดคิด:%1$s</string>
+    <string name="error_cleartext_not_permitted">ไม่อนุญาตการรับส่งข้อความที่ชัดเจน</string>
+    <string name="error_generic">การเล่นล้มเหลว</string>
+    <string name="error_unrecognized_abr_algorithm">อัลกอริทึม ABR ที่ไม่รู้จัก</string>
+    <string name="error_unrecognized_stereo_mode">โหมดสเตอริโอที่ไม่รู้จัก</string>
+    <string name="error_drm_not_supported">  ระดับ API ต่ำกว่า 18 ไม่รองรับเนื้อหาที่มีการป้องกัน</string>
+    <string name="error_drm_unsupported_scheme">อุปกรณ์นี้ไม่รองรับรูปแบบ DRM ที่จำเป็น</string>
+    <string name="error_drm_unknown">เกิดข้อผิดพลาด DRM ที่ไม่รู้จัก</string>
+    <string name="error_no_decoder">อุปกรณ์นี้ไม่มีตัวถอดรหัส%1$s</string>
+    <string name="error_no_secure_decoder">อุปกรณ์นี้ไม่มีตัวถอดรหัสความปลอดภัย%1$s</string>
+    <string name="error_querying_decoders">ไม่สามารถสืบค้นตัวถอดรหัสอุปกรณ์</string>
+    <string name="error_instantiating_decoder">ไม่สามารถยกตัวอย่างถอดรหัส%1$s</string>
+    <string name="error_unsupported_video">สื่อมีแทร็กวิดีโอ แต่อุปกรณ์นี้ไม่สามารถเล่นได้</string>
+    <string name="error_unsupported_audio">สื่อมีแทร็กเสียง แต่อุปกรณ์นี้ไม่สามารถเล่นได้</string>
+    <string name="storage_permission_denied">ปฏิเสธการเข้าถึงที่จัดเก็บข้อมูล</string>
+    <string name="download_start_error">ไม่สามารถเริ่มดาวน์โหลด</string>
+</resources>

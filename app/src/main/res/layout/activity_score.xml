@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/score_recode_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/score_ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/score_iv_left"
+                        android:layout_width="@dimen/common_icon48"
+                        android:layout_height="@dimen/common_icon48"
+                        android:background="@drawable/bg_ripple_trans_gray"
+                        android:padding="@dimen/common_12"
+                        android:scaleType="centerInside"
+                        android:visibility="gone"
+                        tools:src="@drawable/icon_return"
+                        tools:visibility="visible" />
+
+                    <net.linkmate.app.view.MarqueeTextView
+                        android:id="@+id/score_tv_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/common_8"
+                        android:layout_marginStart="@dimen/title_start"
+                        android:layout_weight="1"
+                        android:text="@string/wallet"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/txt_17" />
+
+                    <ImageView
+                        android:id="@+id/score_iv_right"
+                        android:layout_width="@dimen/common_icon48"
+                        android:layout_height="@dimen/common_icon48"
+                        android:background="@drawable/bg_ripple_trans_gray"
+                        android:padding="@dimen/common_12"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_refresh_white_24dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_10"
+                    android:layout_marginTop="@dimen/common_10"
+                    android:text="@string/score"
+                    android:textColor="@color/text_light_blue"
+                    android:textSize="@dimen/txt_12" />
+
+                <TextView
+                    android:id="@+id/score_tv_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_10"
+                    android:layout_marginTop="@dimen/common_16"
+                    android:layout_marginBottom="@dimen/common_24"
+                    android:ellipsize="marquee"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/txt_48"
+                    tools:text="9999999999.99"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+            <net.linkmate.app.view.TipsBar
+                android:id="@+id/tipsBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                app:icon_visibility="visible"
+                app:content_text="@string/load_failed"
+                app:link_text="@string/back_to_login"
+                android:visibility="gone"
+                tools:visibility="visible"
+                />
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/score_ail_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:tv_title_text="@string/recharge" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/score_ail_score_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:tv_title_text="@string/score_transfer" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginTop="@dimen/common_20"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/score_ail_recharge_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:tv_title_text="@string/recharge_record" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/score_ail_get_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:tv_title_text="@string/score_get_record" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <net.linkmate.app.view.ActivityItemLayout
+                android:id="@+id/score_ail_expenses_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_icon_visibility="gone"
+                app:tv_title_text="@string/score_expenses_record" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

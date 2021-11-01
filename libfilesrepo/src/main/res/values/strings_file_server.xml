@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_error_share_not_found">Sharing cancelled or expired!</string>
+    <string name="tip_error_open_dir">Failed to open directory</string>
+    <string name="tip_error_task_running">Error executing task!</string>
+    <string name="msg_error_exceed_downloads">This share exceeds the maximum number of downloads</string>
+    <string name="msg_error_cancel_shared">Cancel sharing failed</string>
+    <string name="msg_error_bind_network">Error connecting to remote service</string>
+    <string name="msg_error_user_not_exist">Sharer not exist</string>
+    <string name="msg_error_illegal_operation">User invalid operation, please refresh and try again</string>
+    <string name="msg_error_get_device_ip">Failed to connect to the sharing server, please try again later</string>
+    <string name="msg_error_broken_network">Broken network</string>
+    <string name="msg_error_dl_not_running">Download is not running, you cannot add new files</string>
+    <string name="msg_error_source_file_open">Source file open failed</string>
+    <string name="msg_error_source_file_change">Source file size change</string>
+    <string name="msg_error_temp_file">Temporary files are deleted</string>
+    <string name="msg_error_auth">Internal authentication error</string>
+    <string name="msg_error_target_file">Failed to write target file</string>
+    <string name="msg_error_token">Invalid token</string>
+    <string name="msg_error_more_shared_ticket">Download task has been created</string>
+    <string name="msg_error_shared_ticket_overtime">Sharing has expired</string>
+    <string name="tips_warn_cancel_share">Unfinished downloads will be cancelled and temporary files removed!</string>
+    <string name="msg_error_disk_full">Disk is full, please clear space and try again!</string>
+</resources>

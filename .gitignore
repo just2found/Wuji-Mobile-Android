@@ -1,0 +1,36 @@
+.idea/
+build/
+.gradle/
+.externalNativeBuild/
+.settings/
+.project
+.classpath
+*.iml
+local.properties
+.svn
+
+### macOS ###
+.DS_Store
+# Thumbnails
+._*
+
+*.jks
+#jl local test
+testbottomnav
+scripts
+plugins
+#mediaplayer
+doc
+retrofit2livedatacalladapter
+app/ChainSpace
+app/Izzbie
+app/LinkMate
+app/WeLine
+app/WeLinePubTest
+playmedia
+imageselector/
+filehelper/
+
+gradle.properties
+/linkmate_publish-2021-04-23-20-30.xls
+.vscode

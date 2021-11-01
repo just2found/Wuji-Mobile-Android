@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_ItemHeight56"
+    android:background="?android:selectableItemBackground"
+    android:gravity="center"
+    android:paddingStart="@dimen/common_2"
+    android:paddingEnd="2dp"
+    app:layout_swipeItemType="main">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/file_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="@dimen/common_6"
+        android:layout_marginBottom="6dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_4dp"
+        tools:src="@drawable/icon_file_torrent" />
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:textColor="@color/darker"
+        android:textSize="@dimen/text_size_sm"
+        app:layout_constraintBottom_toTopOf="@+id/center_baseline"
+        app:layout_constraintEnd_toStartOf="@+id/rv_list_cb_select"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/file_image"
+        app:layout_constraintVertical_bias="0.19999999"
+        tools:text="file name" />
+
+    <androidx.constraintlayout.widget.Placeholder
+        android:id="@+id/center_baseline"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/file_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darker_gray"
+        android:textSize="@dimen/text_size_min"
+        android:gravity="top"
+        app:layout_constraintStart_toStartOf="@+id/file_name"
+        app:layout_constraintTop_toBottomOf="@+id/center_baseline"
+        tools:text="2020-08-18 11:22:31" />
+
+    <TextView
+        android:id="@+id/file_size_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_middle"
+        android:ems="5"
+        android:gravity="center"
+        android:textColor="@color/darker_gray"
+        android:textSize="@dimen/text_size_min"
+        app:layout_constraintStart_toEndOf="@+id/file_time_tv"
+        app:layout_constraintBaseline_toBaselineOf="@+id/file_time_tv"
+        tools:text="6.01MB" />
+
+    <net.sdvn.nascommon.widget.CheckableImageButton
+        android:id="@+id/rv_list_cb_select"
+        style="@style/checkableImageButton"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <net.linkmate.app.view.SquareImageView
+        android:id="@+id/rv_list_img_dl"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/common_10"
+        android:layout_marginBottom="@dimen/common_2"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_have_downloaded"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/file_size_tv"
+        app:layout_constraintStart_toEndOf="@+id/file_size_tv"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/view3"
+        style="@style/HorizontalSplitLine"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/file_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

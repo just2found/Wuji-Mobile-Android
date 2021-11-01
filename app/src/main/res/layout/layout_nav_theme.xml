@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/common_18"
+        android:layout_marginEnd="@dimen/common_18"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatus"
+        android:text="@string/home_style"
+        android:textSize="@dimen/txt_15"
+        />
+
+    <View
+        android:id="@+id/ivFirstStyleInnerTop"
+        android:layout_width="0dip"
+        android:layout_height="10dip"
+        app:layout_constraintStart_toStartOf="@+id/ivFirstStyleInner"
+        app:layout_constraintEnd_toEndOf="@+id/ivFirstStyleInner"
+        app:layout_constraintBottom_toTopOf="@+id/ivFirstStyleInner"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivFirstStyleInner"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_margin="10dip"
+        android:src="@drawable/simple_style"
+        app:layout_constraintDimensionRatio="h,60:53"
+        app:layout_constraintEnd_toEndOf="@+id/ivFirstStyle"
+        app:layout_constraintStart_toStartOf="@+id/ivFirstStyle"
+        app:layout_constraintBottom_toTopOf="@+id/tvFirstStyle"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_6dp" />
+
+    <ImageView
+        android:id="@+id/ivFirstStyle"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_marginStart="@dimen/common_18"
+        android:layout_marginEnd="@dimen/common_18"
+        android:layout_marginBottom="@dimen/common_18"
+        android:background="@drawable/bg_theme_choice_main"
+        app:layout_constraintBottom_toTopOf="@+id/vMiddleLine"
+        app:layout_constraintTop_toTopOf="@+id/ivFirstStyleInnerTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <net.linkmate.app.view.CusTextView
+        android:id="@+id/tvFirstStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_18"
+        android:layout_marginEnd="@dimen/common_18"
+        android:layout_marginBottom="@dimen/common_10"
+        android:gravity="center"
+        android:drawablePadding="6dip"
+        android:text="@string/simple_style_short"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_10"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/check_red"
+        app:startDrawableHeight="15dip"
+        app:startDrawableWidth="15dip"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFirstStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--辅助线 中线-->
+    <View
+        android:id="@+id/vMiddleLine"
+        android:layout_width="0dip"
+        android:layout_height="1dip"
+        android:layout_marginTop="50dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivSecondStyleInner"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_margin="10dip"
+        android:src="@drawable/older_style"
+        app:layout_constraintDimensionRatio="h,60:53"
+        app:layout_constraintTop_toTopOf="@+id/ivSecondStyle"
+        app:layout_constraintEnd_toEndOf="@+id/ivFirstStyle"
+        app:layout_constraintStart_toStartOf="@+id/ivFirstStyle"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_6dp" />
+
+    <ImageView
+        android:id="@+id/ivSecondStyle"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_marginStart="@dimen/common_18"
+        android:layout_marginEnd="@dimen/common_18"
+        android:layout_marginTop="@dimen/common_18"
+        app:layout_constraintTop_toBottomOf="@+id/vMiddleLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSecondStyleInnerBottom"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <net.linkmate.app.view.CusTextView
+        android:id="@+id/tvSecondStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_18"
+        android:layout_marginEnd="@dimen/common_18"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:drawablePadding="6dip"
+        android:text="@string/older_style_short"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_10"
+        android:textStyle="bold"
+        app:startDrawableHeight="15dip"
+        app:startDrawableWidth="15dip"
+        android:drawableStart="@drawable/ic_radio_button_unchecked_black_24dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivSecondStyleInner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <View
+        android:id="@+id/ivSecondStyleInnerBottom"
+        android:layout_width="0dip"
+        android:layout_height="10dip"
+        app:layout_constraintStart_toStartOf="@+id/tvSecondStyle"
+        app:layout_constraintEnd_toEndOf="@+id/tvSecondStyle"
+        app:layout_constraintTop_toBottomOf="@+id/tvSecondStyle"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

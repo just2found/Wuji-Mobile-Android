@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clCommentItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_white_ripple"
+    android:orientation="horizontal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivPortrait"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginStart="@dimen/common_12"
+        android:src="@color/color_bg_grey300"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvName"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_6dp" />
+    <!--辅助控件 用于图片置于名字和内容中间线条-->
+    <View
+        android:id="@+id/vMid"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        app:layout_constraintBottom_toTopOf="@+id/tvComment"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_8"
+        android:textColor="@color/dynamic_name_color"
+        android:textSize="@dimen/txt_13"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/common_12"
+        android:layout_marginTop="@dimen/common_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPortrait"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/the_dynamic_is_deleted" />
+
+    <net.linkmate.app.view.CusTextView
+        android:id="@+id/tvComment"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:textColor="#1A1A1A"
+        android:textSize="@dimen/txt_13"
+        android:layout_marginEnd="@dimen/common_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:text="@string/the_dynamic_is_deleted"
+        app:startDrawableHeight="12dip"
+        app:startDrawableWidth="14dip"
+        />
+
+    <TextView
+        android:id="@+id/tvCommentTime"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"
+        android:layout_marginTop="@dimen/common_5"
+        android:textSize="@dimen/txt_10"
+        app:layout_constraintStart_toStartOf="@+id/tvComment"
+        app:layout_constraintTop_toBottomOf="@+id/tvComment"
+        tools:text="sfsf" />
+    <View style="@style/common_line_style"
+        app:layout_constraintStart_toStartOf="@id/tvCommentTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/common_12"
+        app:layout_constraintTop_toBottomOf="@id/tvCommentTime"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

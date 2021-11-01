@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_white_ripple">
+    <!--    <CheckBox-->
+    <!--        android:id="@+id/cbUser"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:button="@null"-->
+    <!--        android:text="user"-->
+    <!--        android:drawablePadding="@dimen/common_12"-->
+    <!--        android:drawableStart="@drawable/selector_check_box_tree_view"-->
+    <!--        android:focusable="false"-->
+    <!--        android:focusableInTouchMode="false"-->
+    <!--        android:padding="@dimen/common_16"-->
+    <!--        android:textColor="@color/selector_black_to_gray"-->
+    <!--        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/common_16"
+            android:textSize="@dimen/txt_14"
+            android:text="user"
+            android:textColor="@color/selector_black_to_gray" />
+
+        <ImageView
+            android:id="@+id/ivAdmin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_user_master" />
+    </LinearLayout>
+    <!--底部线条-->
+    <View
+        android:id="@+id/vUserBottom"
+        style="@style/common_line_style"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom" />
+</FrameLayout>

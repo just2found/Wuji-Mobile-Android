@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        app:cardCornerRadius="@dimen/common_6">
+
+        <ScrollView
+            android:id="@+id/device_des_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg_grey250"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/device_des_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/common_8">
+
+                <LinearLayout
+                    android:id="@+id/device_des_progress_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <net.linkmate.app.view.SquareImageView
+                        android:id="@+id/device_des_ic"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        tools:src="@drawable/icon_device" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_speed_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/bg_square_full_radius_white"
+                            android:drawableStart="@drawable/icon_speed_up"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="@dimen/common_4"
+                            android:text="@string/speed_up"
+                            android:textSize="@dimen/txt_11"
+                            android:visibility="invisible"
+                            tools:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/space_progress"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_weight="1"
+                                android:max="100"
+                                android:progressDrawable="@drawable/progress_horizontal_material"
+                                tools:progress="10"
+                                tools:secondaryProgress="20" />
+
+                            <TextView
+                                android:id="@+id/space_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="8dp"
+                                android:textColor="@color/text_dark"
+                                android:textSize="@dimen/txt_10"
+                                tools:text="text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progress1"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="@dimen/common_20"
+                                android:layout_height="12dp"
+                                android:max="10"
+                                android:progress="10"
+                                android:progressDrawable="@drawable/progress_horizontal_material" />
+
+                            <TextView
+                                android:id="@+id/text_wo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:textColor="@color/text_dark"
+                                android:textSize="@dimen/txt_10"
+                                tools:text="wo used" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <ProgressBar
+                                android:id="@+id/progress2"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="@dimen/common_20"
+                                android:layout_height="12dp"
+                                android:layout_marginStart="12dp"
+                                android:max="10"
+                                android:progressDrawable="@drawable/progress_horizontal_material"
+                                android:secondaryProgress="10" />
+
+                            <TextView
+                                android:id="@+id/text_all"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:textColor="@color/text_dark"
+                                android:textSize="@dimen/txt_10"
+                                tools:text="all used" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_16"
+                    android:background="@color/color_bg_grey50"
+                    android:orientation="vertical">
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_data_text="N/A"
+                        app:tv_text="@string/dev_name"
+                        tools:iv_src="@drawable/icon_edit" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_mark_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:tv_data_text="N/A"
+                        app:tv_text="@string/mark_name"
+                        tools:iv_src="@drawable/icon_edit" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:tv_data_text="N/A"
+                        app:tv_text="@string/valid_until" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_total_traffic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:tv_data_text="N/A"
+                        app:tv_text="@string/total_traffic" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_remaining_traffic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:tv_data_text="N/A"
+                        app:tv_text="@string/flow_used" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_vip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_text="@string/vip"
+                        tools:tv_data_text="198.18.1.100" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_lip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_text="@string/lanIp"
+                        tools:tv_data_text="10.23.45.67" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_domain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_text="@string/domain"
+                        tools:tv_data_text="10.23.45.67" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:tv_text="@string/location"
+                        tools:tv_data_text="" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_text="@string/owner"
+                        tools:tv_data_text="admin(18111111111)" />
+
+                    <net.linkmate.app.view.DataItemLayout
+                        android:id="@+id/des_dil_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tv_text="@string/version_no"
+                        tools:tv_data_text="3.0.1.1888" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch_sn_enable"
+                    style="@style/StyleDialogDesSwitch"
+                    android:layout_marginBottom="@dimen/common_16"
+                    android:checked="false"
+                    android:text="@string/enable_node"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_des_btn_share"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/share_device"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_des_btn_by_browser"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/access_by_browser"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_des_btn_sn"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/node_config"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_des_btn_subnet"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/subnet"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_des_btn_networks"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/network_location"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_des_upgrade"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/upgrade_firmware"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_des_btn_vnode"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/view_subnode"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/device_des_btn_delete"
+                    style="@style/StyleDialogDesTvBtn"
+                    android:text="@string/remove"
+                    android:textColor="@color/text_orange"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include
+            layout="@layout/layout_upgrade_progress"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_share_code"
+            layout="@layout/layout_share_code"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_node_setting"
+            layout="@layout/layout_node_setting"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_subnet"
+            layout="@layout/layout_subnet"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_vnode"
+            layout="@layout/layout_vnode"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/layout_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_trans_black_30"
+            android:clickable="true"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <net.linkmate.app.view.ProgressView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:dot_color="@color/color_orange"
+                app:dot_count="7" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/device_des_iv_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_icon36"
+        android:layout_marginTop="@dimen/common_4"
+        android:layout_marginBottom="@dimen/common_4"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_cancel" />
+</LinearLayout>

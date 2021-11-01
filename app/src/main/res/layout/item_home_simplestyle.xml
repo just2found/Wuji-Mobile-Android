@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vTitleTitleLine"
+        style="@style/common_line_style"
+        android:layout_width="match_parent"
+        android:background="#E5E5E5"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_item_title"
+        android:paddingStart="14dip"
+        android:paddingTop="14dip"
+        android:paddingEnd="14dip"
+        android:paddingBottom="14dip"
+        android:textColor="#7E7E7E"
+        android:textSize="@dimen/txt_12"
+        tools:text="32323" />
+
+    <View
+        android:id="@+id/vTitleBottomLine"
+        style="@style/common_line_style"
+        android:layout_width="match_parent"
+        android:background="#E5E5E5"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_click_white_ripple">
+        <!--边界辅助线-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="14dip" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="14dip" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_4dp"
+            tools:src="@color/black" />
+
+        <View
+            android:id="@+id/vStatusEnd"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_marginStart="@dimen/common_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/vStatusBottom"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_marginTop="@dimen/common_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+
+        <View
+            android:id="@+id/vStatus"
+            android:layout_width="@dimen/common_12"
+            android:layout_height="@dimen/common_12"
+            android:background="@drawable/icon_green_dot_18dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/vStatusBottom"
+            app:layout_constraintEnd_toEndOf="@+id/vStatusEnd"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llMiddle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/endBarrier"
+            app:layout_constraintStart_toEndOf="@+id/ivImage"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:includeFontPadding="false"
+                android:padding="0dip"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="@dimen/txt_15"
+                android:textStyle="bold"
+                tools:text="sdflsjd" />
+
+            <net.linkmate.app.view.CusTextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:drawablePadding="4dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:padding="0dip"
+                android:singleLine="true"
+                android:textColor="#AEAEAE"
+                android:textSize="11sp"
+                app:startDrawableHeight="@dimen/common_10"
+                app:startDrawableWidth="@dimen/common_10"
+                tools:text="sdflsjdf" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/endBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="start"
+            app:constraint_referenced_ids="ivRightImage,guidelineEnd"
+            />
+
+        <ImageView
+            android:id="@+id/ivRightImage"
+            android:layout_width="40dip"
+            android:layout_height="0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/gray_right_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/ivImage"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivImage" />
+
+        <View
+            android:id="@+id/vBottomLine"
+            style="@style/common_line_style"
+            android:layout_marginTop="@dimen/common_10"
+            android:background="#E5E5E5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/llMiddle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

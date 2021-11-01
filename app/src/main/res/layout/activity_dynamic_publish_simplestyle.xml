@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--头部-->
+
+    <FrameLayout
+        android:id="@+id/flToolbar"
+        android:layout_width="match_parent"
+        android:background="@color/dynamic_toolbar_color"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_ItemHeight48"
+            app:layout_collapseMode="pin"
+            app:layout_collapseParallaxMultiplier="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:contentInsetStartWithNavigation="0dip"
+            app:navigationIcon="@drawable/icon_return_black"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/common_12"
+                    android:layout_weight="1"
+                    android:text="@string/edit_dynamic"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/txt_15" />
+
+                <TextView
+                    android:id="@+id/tvPublish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="11dip"
+                    android:background="@drawable/selector_button_bg_primary"
+                    android:clickable="true"
+                    android:enabled="false"
+                    android:gravity="end|center_vertical"
+                    android:onClick="onClick"
+                    android:paddingStart="9dip"
+                    android:paddingTop="5dip"
+                    android:paddingEnd="9dip"
+                    android:paddingBottom="5dip"
+                    android:text="@string/publish_dynamic"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_13" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBrief"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <!--灰色背景-->
+            <View
+                android:id="@+id/vContentBackgroud"
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:background="@drawable/bg_dynamic_publish"
+                app:layout_constraintBottom_toBottomOf="@+id/tvNumber"
+                app:layout_constraintEnd_toEndOf="@+id/etContent"
+                app:layout_constraintStart_toStartOf="@+id/etContent"
+                app:layout_constraintTop_toTopOf="@+id/etContent"
+                />
+            <!--编辑-->
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/dynamic"
+                android:lines="6"
+                android:maxLength="500"
+                android:layout_marginStart="11dip"
+                android:layout_marginTop="14dip"
+                android:layout_marginEnd="11dip"
+                android:paddingBottom="26dip"
+                android:paddingStart="13dip"
+                android:paddingTop="13dip"
+                android:paddingEnd="13dip"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--设备数-->
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dip"
+                android:layout_marginEnd="24dip"
+                android:maxLength="500"
+                android:paddingBottom="13dip"
+                android:text="0/500"
+                android:textSize="12sp"
+                android:textColor="@color/text_dark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etContent" />
+            <!--视频-->
+            <include layout="@layout/include_dynamic_publish_video_simplestyle" />
+
+            <!--图片-->
+            <include layout="@layout/include_dynamic_publish_picture_simplestyle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

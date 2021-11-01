@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans_black"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".ui.simplestyle.device.download_offline.SavePathDialogFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_button_white_radius_top"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/common_20"
+            android:lines="1"
+            android:text="@string/select_the_download_path"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_16" />
+
+        <TextView
+            android:id="@+id/save_path_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_margin="@dimen/common_20"
+            android:background="@drawable/bg_20_full_radius_gray"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:hint="@string/select_the_download_path"
+            android:singleLine="true"
+            android:textColor="#B3B3B3"
+            android:textColorHint="#B3B3B3"
+            android:textSize="@dimen/txt_14" />
+
+        <TextView
+            android:id="@+id/ok_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginStart="@dimen/common_20"
+            android:layout_marginEnd="@dimen/common_20"
+            android:layout_marginBottom="@dimen/common_20"
+            android:background="@drawable/bg_button_theme_primary_radius"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_14" />
+
+    </LinearLayout>
+
+</FrameLayout>

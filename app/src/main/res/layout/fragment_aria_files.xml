@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.sdvn.nascommon.widget.ReboundScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <net.sdvn.nascommon.widget.StickListView
+        android:id="@+id/listview_files"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/line_gray"
+        android:dividerHeight="@dimen/line_list_divider_height"
+        android:listSelector="@android:color/transparent" />
+
+</net.sdvn.nascommon.widget.ReboundScrollView>

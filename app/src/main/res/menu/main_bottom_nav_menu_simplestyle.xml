@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--注意orderInCategory，须按顺序赋值，Activity中会被使用-->
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_simplestyle"
+        android:orderInCategory="0"
+        android:title="@string/resources" />
+    <item
+        android:id="@+id/navigation_circle"
+        android:icon="@drawable/ic_circle_simplestyle"
+        android:orderInCategory="1"
+        android:title="@string/circle" />
+    <item
+        android:id="@+id/navigation_friend_circle"
+        android:icon="@drawable/ic_dynamic_simplestyle"
+        android:orderInCategory="2"
+        android:title="@string/dynamic" />
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/ic_message_simplestyle"
+        android:orderInCategory="3"
+        android:title="@string/msg" />
+
+    <item
+        android:id="@+id/navigation_mine"
+        android:orderInCategory="4"
+        android:icon="@drawable/ic_mine_simplestyle"
+        android:title="@string/me" />
+
+</menu>

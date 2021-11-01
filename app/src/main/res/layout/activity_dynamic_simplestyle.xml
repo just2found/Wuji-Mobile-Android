@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.linkmate.app.view.dynamicRefresh.DynamicSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mSwipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="?actionBarSize"
+                app:collapsedTitleTextAppearance="@style/dynamic_title_style"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <!--
+                          app:contentScrim 设置折叠时toolbar的颜色  不能配置有透明度的颜色
+                          app:statusBarScrim 设置折叠时状态栏的颜色
+                          -->
+
+                <include layout="@layout/item_dynamic_header_simplestyle" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_brief_title_transparent"
+                    app:layout_collapseMode="pin"
+                    app:layout_collapseParallaxMultiplier="0.5"
+                    app:layout_constraintTop_toBottomOf="@+id/vStatusHelper"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <!--                    <net.linkmate.app.view.CusTextView-->
+                    <!--                        android:id="@+id/tvCircleName"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:background="@drawable/bg_friend_circle_header"-->
+                    <!--                        android:drawableEnd="@drawable/icon_time"-->
+                    <!--                        android:drawablePadding="@dimen/common_5"-->
+                    <!--                        android:paddingStart="@dimen/common_10"-->
+                    <!--                        android:paddingTop="@dimen/common_5"-->
+                    <!--                        android:paddingEnd="@dimen/common_5"-->
+                    <!--                        android:visibility="gone"-->
+                    <!--                        android:paddingBottom="@dimen/common_5"-->
+                    <!--                        tools:text="xxx的圈子"-->
+                    <!--                        tools:visibility="visible"-->
+                    <!--                        android:textColor="@color/text_gray"-->
+                    <!--                        app:endDrawableHeight="20dip"-->
+                    <!--                        app:endDrawableWidth="20dip" />-->
+
+                    <TextView
+                        android:id="@+id/tvToolbarTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/toolbar_title"
+                        android:layout_marginEnd="56dip"
+                        android:ellipsize="middle"
+                        android:visibility="gone" />
+
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- android:overScrollMode="never" 去掉光晕  NestedScrollView 列表必须配置android:layout_height="wrap_content"-->
+        <!-- 数据长度到达某个阶段后recyclerView会自动往下滑一段，是因为recyclerview获取到了焦点，处理：blocksDescendants-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            android:focusableInTouchMode="false"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <!--辅助控件，用于测量底部的screenLocation, 不同设备，可能有虚拟菜单，底部位置不同-->
+        <View
+            android:id="@+id/vBottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_gravity="bottom" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</net.linkmate.app.view.dynamicRefresh.DynamicSwipeRefreshLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flComment"
+    android:layout_width="match_parent"
+    android:background="@color/dynamic_comment_color"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:paddingBottom="6dip"
+        android:paddingTop="6dip"
+        android:paddingStart="8dip"
+        android:paddingEnd="8dip"
+        android:background="@drawable/item_attach_click_bg"
+        android:textSize="@dimen/txt_13" />
+</FrameLayout>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/scan"
+        android:icon="@drawable/icon_home_scan_48"
+        android:title="@string/empty"
+        app:showAsAction="ifRoom|collapseActionView"
+        />
+
+    <item
+        android:id="@+id/circle"
+        android:icon="@drawable/icon_home_status_48"
+        android:title="@string/empty"
+        app:showAsAction="ifRoom|collapseActionView"
+        />
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/icon_home_add_48"
+        android:title="@string/empty"
+        app:showAsAction="ifRoom|collapseActionView"
+        />
+
+</menu>

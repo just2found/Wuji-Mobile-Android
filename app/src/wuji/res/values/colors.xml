@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D2AC80</color>
+    <color name="colorPrimaryDark">#D2AC80</color>
+    <color name="colorAccent">#CDAA87</color>
+    <color name="colorSecondary">#CDAA87</color>
+
+    <color name="bg_title_start_color">#FFFFFF</color>
+    <color name="bg_title_end_color">#FFFFFF</color>
+    <color name="bg_item_title">#F8F9FA</color>
+    <color name="bg_item">#fff</color>
+
+    <color name="title_text_color">#2b2b2b</color>
+    <color name="title_text_color_dark">#ececec</color>
+    <color name="title_icon_color">#2b2b2b</color>
+    <color name="title_icon_color_dark">#ececec</color>
+    <color name="primary">#D6B898</color>
+    <color name="primary_dark">#A18B73</color>
+    <color name="bg_tab_blue">#ececec</color>
+    <color name="text_yellow">#D6B898</color>
+
+    <color name="bg_trans_white_30">#4D2b2b2b</color>
+    <color name="text_light_blue">#999</color>
+
+    <color name="color_light_blue">#ddd</color>
+    <color name="color_light_blue_txt">@color/colorAccent</color>
+
+    <color name="bg_title2">#D2AC80</color>
+
+    <color name="theme_body_text">#333333</color>
+    <color name="theme_body_text_hint">#999999</color>
+    <color name="link_blue">@color/primary</color>
+
+</resources>

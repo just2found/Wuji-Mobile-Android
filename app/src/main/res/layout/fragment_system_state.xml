@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.nas.info.SystemStateFragment">
+
+    <net.linkmate.app.ui.function_ui.titlebar.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/layout_title_height"
+        app:text_content="@string/tool_system_status" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--   二个进度球-->
+
+            <!--   二个进度球-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_15"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <FrameLayout
+                    android:layout_width="132dp"
+                    android:layout_height="132dp"
+                    android:background="@drawable/ic_round_shadow">
+
+                    <org.view.libwidget.progress.WaveProgressView
+                        android:id="@+id/cpu_wpv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/common_15"
+                        app:bindingText="bottom_text"
+                        app:bottom_text="40%"
+                        app:bottom_textSize="@dimen/txt_20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:max="100"
+                        app:stroke_color="@color/color_0C81FB"
+                        app:stroke_width="3dp"
+                        app:submerged_textColor="#ffffff"
+                        app:wave_color="#0f87f6" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2" />
+
+                <FrameLayout
+                    android:layout_width="132dp"
+                    android:layout_height="132dp"
+                    android:background="@drawable/ic_round_shadow">
+
+                    <org.view.libwidget.progress.WaveProgressView
+                        android:id="@+id/memory_wpv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/common_15"
+                        app:bindingText="bottom_text"
+                        app:bottom_text="40%"
+                        app:bottom_textSize="@dimen/txt_20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:max="100"
+                        app:stroke_color="@color/color_0C81FB"
+                        app:stroke_width="3dp"
+                        app:submerged_textColor="#ffffff"
+                        app:wave_color="#0f87f6" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_5"
+                android:layout_marginBottom="@dimen/common_10"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/no_conversion_cpu"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/memory"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="@dimen/common_16"
+                android:background="@drawable/bg_white_shadow">
+
+                <TextView
+                    android:id="@+id/upload_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_upload"
+                    android:drawablePadding="@dimen/common_10"
+                    android:gravity="center"
+                    android:text="@string/upload_speed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_16"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/view4"
+                    app:layout_constraintHorizontal_bias="0.45"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <TextView
+                    android:id="@+id/download_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_download"
+                    android:drawablePadding="@dimen/common_10"
+                    android:text="@string/download_speed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_16"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.55"
+                    app:layout_constraintStart_toEndOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.3" />
+
+                <TextView
+                    android:id="@+id/upload_speed_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/color_0C81FB"
+                    android:textSize="@dimen/txt_16"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/upload_title_tv"
+                    app:layout_constraintStart_toStartOf="@+id/upload_title_tv"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.706"
+                    tools:text="100.50 Mb/s" />
+
+                <TextView
+                    android:id="@+id/download_speed_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_0C81FB"
+                    android:textSize="@dimen/txt_16"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/download_title_tv"
+                    app:layout_constraintStart_toStartOf="@+id/download_title_tv"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.706"
+                    tools:text="100.50 Mb/s" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="#f1f1f1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.55"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_12"
+                android:background="@drawable/bg_white_shadow"
+                android:orientation="vertical">
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/running_time_ail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_10"
+                    app:iv_icon_visibility="gone"
+                    app:iv_right_arrow_visibility="gone"
+                    app:tv_title_text="@string/running_time"
+                    tools:tv_tips_text="10：10：10" />
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/fan_speed_ail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iv_icon_visibility="gone"
+                    app:iv_right_arrow_visibility="gone"
+                    app:tv_title_text="@string/fan_speed"
+                    tools:tv_tips_text="1366转/分" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fan_speed_rv"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:visibility="visible"/>
+
+                <net.linkmate.app.view.ActivityItemLayout
+                    android:id="@+id/hard_disk_temperature_ail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:iv_icon_visibility="gone"
+                    app:iv_right_arrow_visibility="gone"
+                    app:tv_title_text="@string/hard_disk_temperature" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/hard_disk_temperature_rv"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

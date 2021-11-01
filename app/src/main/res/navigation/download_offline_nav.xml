@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/download_offline_nav"
+    app:startDestination="@id/indexFragment">
+
+    <fragment
+        android:id="@+id/indexFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.download_offline.DownloadOfflineIndexFragment"
+        android:label="DownloadOfflineIndexFragment"
+        tools:layout="@layout/fragment_download_offline_index">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_index_to_detail"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+        <action
+            android:id="@+id/action_index_to_add"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.download_offline.DownloadOfflineDetailFragment"
+        android:label="DownloadOfflineDetailFragment"
+        tools:layout="@layout/fragment_download_offline_detail">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_detail_to_index"
+            app:destination="@id/indexFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.download_offline.DownloadOfflineAddFragment"
+        android:label="DownloadOfflineAddFragment"
+        tools:layout="@layout/fragment_download_offline_add">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_add_to_index"
+            app:destination="@id/indexFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+        <action
+            android:id="@+id/action_add_to_retrieval"
+            app:destination="@id/retrievalFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+        <action
+            android:id="@+id/action_add_to_find"
+            app:destination="@id/findFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+        <action
+            android:id="@+id/action_add_to_set"
+            app:destination="@id/setPathFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/retrievalFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.download_offline.DownloadOfflineRetrievalFragment"
+        android:label="DownloadOfflineRetrievalFragment"
+        tools:layout="@layout/fragment_download_offline_retrieval">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_retrieval_to_index"
+            app:destination="@id/indexFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+        <action
+            android:id="@+id/action_retrieval_to_add"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+        <action
+            android:id="@+id/action_retrieval_to_set"
+            app:destination="@id/setPathFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/findFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.download_offline.DownloadOfflineFindFragment"
+        android:label="DownloadOfflineFindFragment"
+        tools:layout="@layout/fragment_download_offline_find">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_find_to_index"
+            app:destination="@id/indexFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+        <action
+            android:id="@+id/action_find_to_add"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+        <action
+            android:id="@+id/action_find_to_set"
+            app:destination="@id/setPathFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/setPathFragment"
+        android:name="net.linkmate.app.ui.simplestyle.device.download_offline.DownloadOfflineSetPathFragment"
+        android:label="DownloadOfflineFindFragment"
+        tools:layout="@layout/fragment_download_offline_set_path">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+    </fragment>
+</navigation>

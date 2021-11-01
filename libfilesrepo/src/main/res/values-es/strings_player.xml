@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unexpected_intent_action">Acción de intención inesperada: %1$s</string>
+    <string name="error_cleartext_not_permitted">El tráfico de texto claro no está permitido</string>
+    <string name="error_generic">Reproducción fallida</string>
+    <string name="error_unrecognized_abr_algorithm">Algoritmo ABR no reconocido</string>
+    <string name="error_unrecognized_stereo_mode">Modo estéreo no reconocido</string>
+    <string name="error_drm_not_supported">El nivel de API por debajo de 18 no admite contenido protegido</string>
+    <string name="error_drm_unsupported_scheme">Este dispositivo no es compatible con el esquema DRM requerido</string>
+    <string name="error_drm_unknown">Se ha producido un error desconocido de DRM</string>
+    <string name="error_no_decoder">Este dispositivo no proporciona un decodificador %1$s</string>
+    <string name="error_no_secure_decoder">Este dispositivo no proporciona un decodificador de seguridad %1$s</string>
+    <string name="error_querying_decoders">No se puede consultar el decodificador del dispositivo</string>
+    <string name="error_instantiating_decoder">No se puede crear una instancia del decodificador %1$s</string>
+    <string name="error_unsupported_video">Los medios contienen canciones de video, pero este dispositivo no puede reproducir</string>
+    <string name="error_unsupported_audio">Los medios contienen pistas de audio, pero este dispositivo no puede reproducir</string>
+    <string name="storage_permission_denied">Acceso al almacenamiento denegado</string>
+    <string name="download_start_error">No se puede iniciar la descarga</string>
+</resources>

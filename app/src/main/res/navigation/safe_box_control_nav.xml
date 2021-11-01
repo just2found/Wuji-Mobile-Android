@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/safe_box_nav">
+
+    <fragment
+        android:id="@+id/setFragment"
+        android:name="net.linkmate.app.ui.nas.safe_box.control.SafeBoxSetFragment"
+        android:label="SafeBoxSetFragment"
+        tools:layout="@layout/fragment_safe_box_set">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_set_to_reset_psw"
+            app:destination="@id/verifyPasswordFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+        <action
+            android:id="@+id/action_set_to_reset_question"
+            app:destination="@id/verifyQuestionFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+        <action
+            android:id="@+id/action_set_to_All"
+            app:destination="@id/resetAllFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyPasswordFragment"
+        android:name="net.linkmate.app.ui.nas.safe_box.control.VerifyPasswordFragment"
+        android:label="VP2QuickCloudNavFragment"
+        tools:layout="@layout/fragment_verify_password">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+
+        <argument
+            android:name="tpye"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_verify_to_set_password"
+            app:destination="@id/setPasswordFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+        <action
+            android:id="@+id/action_verify_to_verify_question"
+            app:destination="@id/verifyQuestionFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/setPasswordFragment"
+        android:name="net.linkmate.app.ui.nas.safe_box.control.SetPasswordFragment"
+        android:label="VP2QuickCloudNavFragment"
+        tools:layout="@layout/fragment_set_password">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <argument
+            android:name="trans"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyQuestionFragment"
+        android:name="net.linkmate.app.ui.nas.safe_box.control.VerifyQuestionFragment"
+        android:label="VerifyQuestionFragment"
+        tools:layout="@layout/fragment_verify_quesition">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+
+        <argument
+            android:name="tpye"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_question_to_set_password"
+            app:destination="@id/setPasswordFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+        <action
+            android:id="@+id/action_question_to_set_question"
+            app:destination="@id/setQuestionFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+
+
+        <action
+            android:id="@+id/action_question_to_all"
+            app:destination="@id/resetAllFragment"
+            app:enterAnim="@anim/slide_right_in"
+            app:exitAnim="@anim/slide_left_out"
+            app:popEnterAnim="@anim/slide_left_in"
+            app:popExitAnim="@anim/slide_right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setQuestionFragment"
+        android:name="net.linkmate.app.ui.nas.safe_box.control.SetQuestionFragment"
+        android:label="SetQuestionFragment"
+        tools:layout="@layout/fragment_set_question">
+        <argument
+            android:name="deviceid"
+            app:argType="string" />
+        <argument
+            android:name="trans"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/resetAllFragment"
+        android:name="net.linkmate.app.ui.nas.safe_box.control.SafeBoxResetAllFragment"
+        android:label="SafeBoxResetAllFragment"
+        tools:layout="@layout/fragment_safe_box_reset_all">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/initFragment"
+        android:name="net.linkmate.app.ui.nas.safe_box.control.SafeBoxInitFragment"
+        android:label="DownloadOfflineIndexFragment"
+        tools:layout="@layout/fragment_safe_box_init">
+        <argument
+            android:name="deviceid"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+</navigation>

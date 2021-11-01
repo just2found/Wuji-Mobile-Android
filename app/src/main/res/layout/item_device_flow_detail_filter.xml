@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="6dip"
+    android:id="@+id/root">
+    <!--间隔12dip-->
+    <CheckBox
+        android:id="@+id/cbCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2083048234028"
+        android:textSize="11sp"
+        android:textColor="@color/color_device_flow_detial"
+        android:paddingStart="13dip"
+        android:paddingEnd="13dip"
+        android:paddingTop="11dip"
+        android:paddingBottom="11dip"
+        android:background="@drawable/selector_device_flow_detail_item"
+        android:checked="true"
+        android:button="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <ImageView
+        android:id="@+id/ivChecked"
+        android:layout_width="17dip"
+        android:layout_height="17dip"
+        android:src="@drawable/ic_checked_top"
+        />
+
+</FrameLayout>

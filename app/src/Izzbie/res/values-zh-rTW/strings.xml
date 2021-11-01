@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChainSpace</string>
+    <string name="connecting_message">正在連入 ChainSpace &#8230;</string>
+    <string name="error_string_no_account">未填寫ChainSpace ID或密碼.</string>
+    <string name="error_string_invalid_account">ChainSpace ID或密碼錯誤.</string>
+    <string name="error_string_gw_busy">ChainSpace服務正忙,請在10分鐘后再嘗試登入.</string>
+    <string name="error_string_socket">無法連接到ChainSpace,請檢查您的網絡環境.</string>
+    <string name="string_notification_ticker">ChainSpace 連接已斷開.</string>
+    <string name="string_notification_text">ChainSpace 已斷開連接, 輕觸打開.</string>
+    <string name="DownloadFail">ChainSpace 更新下載失敗.</string>
+    <string name="update_title">ChainSpace 更新</string>
+    <string name="update_content">ChainSpace軟件有新版本了 ($VERSION$), 建議立即進行更新.</string>
+</resources>

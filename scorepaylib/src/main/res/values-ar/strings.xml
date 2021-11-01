@@ -1,0 +1,7 @@
+<resources>
+    <string name="wx_no_installed">يرجى تثبيت وي شات أولاً وإعادة المحاولة</string>
+    <string name="pay_succ">نجحت عملية الدفع</string>
+    <string name="pay_failed">فشلت عملية الدفع</string>
+    <string name="pay_cancelled">تم إلغاء الدفع</string>
+    <string name="pay_order_error">خطأ في دفع الأمر</string>
+</resources>

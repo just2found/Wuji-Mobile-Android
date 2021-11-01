@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ihd_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_4"
+        android:background="@drawable/bg_check_btn_stroke_full_radius_gray"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="5dip"
+        android:paddingTop="@dimen/common_10"
+        android:paddingEnd="5dip"
+        android:paddingBottom="@dimen/common_24">
+
+        <TextView
+            android:id="@+id/ira_tv_original_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥500"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/txt_13"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--占位 高度必须固定，否则autoSizeText会动-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ira_tv_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginStart="@dimen/common_4"
+                android:layout_marginEnd="@dimen/common_4"
+                android:autoSizeMaxTextSize="26sp"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeStepGranularity="1sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:text="￥ 500"
+                android:textColor="@color/primary"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeMaxTextSize="26sp"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeTextType="uniform" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="60dp">
+
+            <ImageView
+                android:layout_width="@dimen/common_12"
+                android:layout_height="@dimen/common_12"
+                android:layout_marginRight="@dimen/common_2"
+                android:paddingTop="@dimen/common_2"
+                android:src="@drawable/icon_recharge_score" />
+
+            <TextView
+                android:id="@+id/ira_tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="500"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/txt_12" />
+
+            <EditText
+                android:id="@+id/etScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:text="500"
+                android:textColor="@color/text_dark"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/txt_12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/ira_tv_reward_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_2"
+                android:text="+10"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/txt_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

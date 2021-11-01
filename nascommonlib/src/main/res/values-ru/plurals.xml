@@ -1,0 +1,42 @@
+<resources>
+    <plurals name="users">
+        <item quantity="one">%1$s пользователь</item>
+        <item quantity="few">%1$s пользователя</item>
+        <item quantity="many">%1$s пользователей</item>
+    </plurals>
+    <plurals name="folders">
+        <item quantity="one">%d папка</item>
+        <item quantity="few">%d папки</item>
+        <item quantity="many">%d папок</item>
+    </plurals>
+    <plurals name="files">
+        <item quantity="one">%d файл</item>
+        <item quantity="few">%d файла</item>
+        <item quantity="many">%d файлов</item>
+    </plurals>
+    <plurals name="plurals_hour">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="plurals_day">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+    </plurals>
+    <plurals name="plurals_minutes">
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="shared_users">
+        <item quantity="one">%d общих пользователь</item>
+        <item quantity="few">%d общих пользователя</item>
+        <item quantity="many">%d общих пользователей</item>
+    </plurals>
+    <plurals name="local_accounts">
+        <item quantity="one">%d локальных аккаунт</item>
+        <item quantity="few">%d локальных аккаунта</item>
+        <item quantity="many">%d локальных аккаунтов</item>
+    </plurals>
+</resources>

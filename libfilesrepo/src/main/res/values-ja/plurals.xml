@@ -1,0 +1,26 @@
+<resources>
+    <plurals name="users">
+        <item quantity="other">%1s 名ユーザー</item>
+    </plurals>
+    <plurals name="folders">
+        <item quantity="other">%d 個フォルダ</item>
+    </plurals>
+    <plurals name="files">
+        <item quantity="other">%d 個ファイル</item>
+    </plurals>
+    <plurals name="plurals_hour">
+        <item quantity="other">%d時間</item>
+    </plurals>
+    <plurals name="plurals_day">
+        <item quantity="other">%d日</item>
+    </plurals>
+    <plurals name="plurals_minutes">
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="shared_users">
+        <item quantity="other">シェアバインディング%d名ユーザ</item>
+    </plurals>
+    <plurals name="local_accounts">
+        <item quantity="other">%d個ローカルアカウント</item>
+    </plurals>
+</resources>

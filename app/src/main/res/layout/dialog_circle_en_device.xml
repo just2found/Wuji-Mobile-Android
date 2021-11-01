@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/item_click_white_ripple"
+    android:padding="@dimen/common_4">
+    <!--背景-->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivDeviceIcon"
+        android:layout_width="@dimen/common_icon36"
+        android:layout_height="@dimen/common_icon36"
+        android:layout_marginStart="@dimen/common_4"
+        android:layout_marginBottom="@dimen/common_8"
+        android:scaleType="fitXY"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_6dp"
+        android:src="@drawable/icon_device_wz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/llENName"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/bForbidden"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivDeviceIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/common_12"
+        android:paddingTop="@dimen/common_8"
+        >
+
+        <TextView
+            android:id="@+id/tvENName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="dev"
+            android:textColor="@color/selector_black_to_gray"
+            android:textSize="@dimen/txt_16"
+            android:textStyle="bold"
+          />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_4"
+        android:paddingBottom="@dimen/common_8"
+        android:text="user xxx"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/txt_10"
+        app:layout_constraintEnd_toStartOf="@+id/bForbidden"
+        app:layout_constraintStart_toStartOf="@+id/llENName"
+        app:layout_constraintTop_toBottomOf="@+id/llENName" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/bForbidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="tvForbidden,ivPartner"
+        />
+    <TextView
+        android:id="@+id/tvForbidden"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:text="@string/forbidden"
+        android:textColor="@color/red"
+        android:textSize="@dimen/txt_10"
+        android:paddingEnd="@dimen/common_8"
+        app:layout_constraintEnd_toStartOf="@+id/ivPartner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible"
+        tools:visibility="visible"
+
+        />
+    <ImageView
+        android:id="@+id/ivPartner"
+        android:layout_width="@dimen/common_18"
+        android:layout_height="@dimen/common_18"
+        android:src="@drawable/ic_en_server"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="@dimen/common_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:enabled="false"
+        />
+
+
+    <View
+        android:id="@+id/viewItemFoot"
+        style="@style/common_line_style"
+        app:layout_constraintStart_toStartOf="@+id/llENName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

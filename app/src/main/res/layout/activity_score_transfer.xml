@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginTop="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_ItemHeight48"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/common_12"
+                android:paddingEnd="@dimen/common_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transferable_score"
+                    android:textColor="@color/text_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/score_transfer_tv_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_12"
+                    android:ellipsize="start"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:text="0.00"
+                    android:textColor="@color/text_dark_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:layout_marginTop="@dimen/common_12"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:id="@+id/score_transfer_ll_find"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_ItemHeight48"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/common_12"
+                android:paddingEnd="@dimen/common_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_account"
+                    android:textColor="@color/text_dark"
+                    android:textSize="15sp" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/score_transfer_et_find"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_12"
+                        android:background="@color/transparent"
+                        android:ellipsize="start"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:gravity="end"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_dark_gray"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/score_transfer_tv_find"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_12"
+                        android:gravity="end"
+                        android:text="@string/account_email_phone"
+                        android:textColor="@color/text_gray"
+                        android:autoSizeMaxTextSize="@dimen/txt_15"
+                        android:autoSizeMinTextSize="1sp"
+                        android:autoSizeTextType="uniform"
+                        app:autoSizeTextType="uniform"
+                        app:autoSizeMinTextSize="1sp"
+                        app:autoSizeMaxTextSize="@dimen/txt_15"
+                        android:maxLines="1"
+                        />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/score_transfer_line_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:id="@+id/transfer_ll_step_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:background="@color/bg_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/other_account"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/score_transfer_tv_account_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_12"
+                        android:background="@color/transparent"
+                        android:ellipsize="start"
+                        android:gravity="end"
+                        android:hint="@string/account"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark_gray"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <LinearLayout
+                    android:id="@+id/score_transfer_ll_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:background="@color/bg_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/score_transfer_tv_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_12"
+                        android:ellipsize="start"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/score_transfer_line_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <LinearLayout
+                    android:id="@+id/score_transfer_ll_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:background="@color/bg_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/score_transfer_tv_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_12"
+                        android:ellipsize="start"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/score_transfer_line_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:background="@color/bg_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nickname"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/score_transfer_tv_nick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_12"
+                        android:ellipsize="start"
+                        android:gravity="end"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:layout_marginTop="@dimen/common_12"
+                    android:background="@color/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:background="@color/bg_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trans_amount"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/score_transfer_et_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_12"
+                        android:background="@color/transparent"
+                        android:ellipsize="start"
+                        android:gravity="end"
+                        android:inputType="numberDecimal"
+                        android:hint="0"
+                        android:textAlignment="viewEnd"
+                        android:singleLine="true"
+                        android:textColor="@color/text_dark_gray"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_ItemHeight48"
+                    android:background="@color/bg_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/common_12"
+                    android:paddingEnd="@dimen/common_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_fee"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/score_transfer_tv_fee"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_12"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        tools:text="@string/service_fee_tips"
+                        android:textColor="@color/text_dark_gray"
+                        android:textColorHint="@color/text_gray"
+                        android:autoSizeMaxTextSize="@dimen/txt_15"
+                        android:autoSizeMinTextSize="1sp"
+                        android:autoSizeTextType="uniform"
+                        app:autoSizeTextType="uniform"
+                        app:autoSizeMinTextSize="1sp"
+                        app:autoSizeMaxTextSize="@dimen/txt_15"
+                        android:maxLines="1"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line"
+                    android:background="@color/line_gray" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/score_transfer_btn"
+            style="@style/Style_btn_bg_primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_ItemHeight42"
+            android:layout_marginStart="@dimen/common_12"
+            android:layout_marginTop="@dimen/common_24"
+            android:layout_marginEnd="@dimen/common_12"
+            android:elevation="@dimen/common_10"
+            android:text="@string/next"
+            android:textColor="@color/text_white" />
+
+    </LinearLayout>
+</LinearLayout>

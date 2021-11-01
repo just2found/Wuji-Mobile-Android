@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.nas.group.GroupOSCreateFragment">
+
+    <FrameLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:minHeight="@dimen/layout_title_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_10"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:minHeight="@dimen/layout_title_height"
+            android:padding="@dimen/common_6"
+            app:layout_constraintBottom_toBottomOf="@+id/title_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="@dimen/txt_24"
+        android:autoSizeMinTextSize="@dimen/txt_12"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/create_group_rent"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_24"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="@dimen/txt_24"
+        app:autoSizeMinTextSize="@dimen/txt_12"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22"
+        app:layout_constraintWidth_percent="0.9" />
+
+
+    <TextView
+        android:id="@+id/describe_tv"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_24"
+        android:paddingStart="@dimen/common_10"
+        android:paddingEnd="@dimen/common_10"
+        android:text="@string/group_name_describe"
+        android:textSize="@dimen/txt_15"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        android:gravity="center"
+        android:autoSizeMaxTextSize="@dimen/txt_15"
+        android:autoSizeMinTextSize="@dimen/txt_12"
+        app:autoSizeMaxTextSize="@dimen/txt_15"
+        app:autoSizeMinTextSize="@dimen/txt_12"
+        android:autoSizeTextType="uniform"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+
+    <org.view.libwidget.item.InputItem1
+        android:id="@+id/group_name_it"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_ItemHeight56"
+        android:layout_marginStart="@dimen/common_20"
+        android:layout_marginEnd="@dimen/common_20"
+        app:clear_drawable="@drawable/ic_close_black_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv"
+        app:layout_constraintVertical_bias="0.15"
+        app:regular_check="length32"
+        app:separator_color="@color/gray_b3"
+        app:separator_focus_color="@color/color_0C81FB"
+        app:text_color="@color/black_a85"
+        app:text_hint="@string/enter_group_name"
+        app:text_size="@dimen/sp_16" />
+
+
+    <Button
+        android:id="@+id/determine_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_48"
+        android:background="@drawable/bg_button_theme_primary_radius"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_name_it"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.80" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

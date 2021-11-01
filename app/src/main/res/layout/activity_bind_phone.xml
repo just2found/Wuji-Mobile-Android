@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title_bar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/common_12"
+            android:layout_marginTop="@dimen/common_12"
+            android:layout_marginBottom="@dimen/common_6"
+            android:gravity="center_vertical"
+            android:maxEms="8"
+            android:maxLines="2"
+            android:text="@string/phone"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/bg_white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/abp_tv_ccp"
+                android:layout_width="@dimen/common_icon42"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/common_4"
+                android:layout_marginEnd="@dimen/common_4"
+                android:background="@drawable/bg_ripple_trans_gray"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="+86"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/txt_14" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/abp_et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:padding="@dimen/common_8"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="@dimen/txt_14" />
+
+                <TextView
+                    android:id="@+id/abp_tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:autoSizeMaxTextSize="@dimen/txt_14"
+                    android:autoSizeMinTextSize="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:padding="@dimen/common_8"
+                    android:text="@string/pls_input_your_phone_number"
+                    android:textColor="@color/text_light_gray"
+                    app:autoSizeMaxTextSize="@dimen/txt_14"
+                    app:autoSizeMinTextSize="1sp"
+                    app:autoSizeTextType="uniform" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/common_12"
+            android:layout_marginTop="@dimen/common_12"
+            android:layout_marginBottom="@dimen/common_6"
+            android:gravity="center_vertical"
+            android:maxEms="8"
+            android:maxLines="2"
+            android:text="@string/verify_code"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/txt_15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/bg_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="8dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/abp_et_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:padding="@dimen/common_8"
+                    android:textColor="@color/text_light_gray"
+                    android:textSize="@dimen/txt_14" />
+
+                <TextView
+                    android:id="@+id/abp_tv_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:autoSizeMaxTextSize="@dimen/txt_14"
+                    android:autoSizeMinTextSize="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@null"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:padding="@dimen/common_8"
+                    android:text="@string/verify_code"
+                    android:textColor="@color/text_light_gray"
+                    app:autoSizeMaxTextSize="@dimen/txt_14"
+                    app:autoSizeMinTextSize="1sp"
+                    app:autoSizeTextType="uniform" />
+            </FrameLayout>
+
+            <net.linkmate.app.view.CountDownTextView
+                android:id="@+id/abp_tv_get_code"
+                android:layout_width="100dip"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:autoSizeMaxTextSize="12sp"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/selector_button_bg_primary"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/common_4"
+                android:paddingRight="@dimen/common_4"
+                android:text="@string/get_verify_code"
+                android:textColor="@color/text_white"
+                app:autoSizeMaxTextSize="12sp"
+                app:autoSizeMinTextSize="1sp"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line"
+            android:background="@color/line_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line"
+            android:layout_marginBottom="@dimen/common_8"
+            android:background="@color/line_gray" />
+
+        <Button
+            android:id="@+id/abp_btn_confirm"
+            style="@style/Style_btn_bg_primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_ItemHeight42"
+            android:layout_margin="@dimen/common_12"
+            android:elevation="@dimen/common_10"
+            android:text="@string/confirm"
+            android:textColor="@color/text_white" />
+
+    </LinearLayout>
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:ccpDialog_backgroundColor="@color/transparent"
+        app:ccpDialog_keyboardAutoPopup="false"
+        app:ccpDialog_searchEditTextTint="@color/color_white_hint_text"
+        app:ccpDialog_showCloseIcon="true"
+        app:ccpDialog_showFastScroller="false"
+        app:ccpDialog_textColor="@color/black"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_autoDetectLanguage="true"
+        app:ccp_autoFormatNumber="false"
+        app:ccp_contentColor="@color/transparent"
+        app:ccp_countryPreference="CN,US,HK,TW,DE,FR,JP,KR,TH,ES,IT,GB,VN"
+        app:ccp_defaultPhoneCode="86"
+        app:ccp_rememberLastSelection="true"
+        app:ccp_showFlag="false"
+        app:ccp_showNameCode="false"
+        app:ccp_textSize="14sp" />
+</FrameLayout>

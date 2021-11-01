@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unexpected_intent_action">예상되지 않은 인텐트 액션:%1$s </string>
+    <string name="error_cleartext_not_permitted">클리어 텍스트 트래픽이 허용되지 않음</string>
+    <string name="error_generic">플레이 실패</string>
+    <string name="error_unrecognized_abr_algorithm">식별할 수 없는 ABR 알고리즘</string>
+    <string name="error_unrecognized_stereo_mode">식별할 수 없는 스테리오 모드</string>
+    <string name="error_drm_not_supported">API등급이 18보단 낮으면 지원 받지 못하는 내용</string>
+    <string name="error_drm_unsupported_scheme">이 디바이스는 필요한 DRM 방안을 지원하지 않음</string>
+    <string name="error_drm_unknown">알수 없는 DRM 오류 발생</string>
+    <string name="error_no_decoder">이 디바이스는 디코더를 제공하지 않음%1$s</string>
+    <string name="error_no_secure_decoder">이 디바이스는 안전 디코더를 제공하지 않음%1$s</string>
+    <string name="error_querying_decoders">디바이스 디코더를 찾아 볼 수 없음</string>
+    <string name="error_instantiating_decoder">디코더를 인스턴화 할 수 없음%1$s</string>
+    <string name="error_unsupported_video">미디어에 비디오 트랙이 포함되지만 이 디바이스에서 플레이 할 수 없음</string>
+    <string name="error_unsupported_audio">미디어에 오디오 트랙이 포함 되지만 이 디바이스에서 플레이 할 수 없음</string>
+    <string name="storage_permission_denied">저장 방문 권한이 거절 당함</string>
+    <string name="download_start_error">다운로드 시작 불가</string>
+</resources>

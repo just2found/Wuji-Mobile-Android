@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_white_ripple">
+    <!--边界辅助线-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="14dip" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="14dip" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:src="@drawable/icon_defualt_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_4dp" />
+
+    <View
+        android:id="@+id/vStatusEnd"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_marginStart="@dimen/common_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vStatusBottom"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_marginTop="@dimen/common_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+
+    <View
+        android:id="@+id/vStatus"
+        android:layout_width="@dimen/common_12"
+        android:layout_height="@dimen/common_12"
+        android:background="@drawable/icon_green_dot_18dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/vStatusBottom"
+        app:layout_constraintEnd_toEndOf="@+id/vStatusEnd"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/llMiddle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier"
+        app:layout_constraintStart_toEndOf="@+id/ivImage"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/group_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:includeFontPadding="false"
+            android:padding="0dip"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="@dimen/txt_15"
+            android:textStyle="bold"
+            tools:text="sdflsjd" />
+
+        <net.linkmate.app.view.CusTextView
+            android:id="@+id/group_announcement_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:drawablePadding="4dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:padding="0dip"
+            android:singleLine="true"
+            android:textColor="#AEAEAE"
+            android:textSize="11sp"
+            app:startDrawableHeight="@dimen/common_10"
+            app:startDrawableWidth="@dimen/common_10"
+            tools:text="sdflsjdf" />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.Placeholder
+        android:id="@+id/end_place_holder"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+        app:layout_constraintTop_toTopOf="@+id/ivImage" />
+
+    <ImageView
+        android:id="@+id/group_setting"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_hori_more_12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/end_place_holder"
+        app:layout_constraintEnd_toEndOf="@+id/end_place_holder"
+        app:layout_constraintStart_toStartOf="@+id/end_place_holder"
+        app:layout_constraintTop_toTopOf="@+id/end_place_holder" />
+
+    <View
+        android:id="@+id/vBottomLine"
+        style="@style/common_line_style"
+        android:layout_marginTop="@dimen/common_10"
+        android:background="#E5E5E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/llMiddle" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="end_place_holder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

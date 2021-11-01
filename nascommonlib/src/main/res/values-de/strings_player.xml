@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unexpected_intent_action">Unerwartete vorsätzliche Handlung: %1$s</string>
+    <string name="error_cleartext_not_permitted">Klartext-Datenflussist nicht erlaubt</string>
+    <string name="error_generic">Wiedergabe fehlgeschlagen</string>
+    <string name="error_unrecognized_abr_algorithm">Nicht erkannter BERA-Algorithmus</string>
+    <string name="error_unrecognized_stereo_mode">Nicht erkannter Stereomodus</string>
+    <string name="error_drm_not_supported">Ebenen unter 18 nicht unterstützt</string>
+    <string name="error_drm_unsupported_scheme">Dieses Gerät unterstützt das erforderliche DRM-Schema nicht</string>
+    <string name="error_drm_unknown">Ein unbekannter DRM-Fehler ist aufgetreten</string>
+    <string name="error_no_decoder">Dieses Gerät bietet keinen Decoder  %1$s</string>
+    <string name="error_no_secure_decoder">Dieses Gerät bietet keinen sicheren Decoder %1$s</string>
+    <string name="error_querying_decoders">Geräte-Decoder können nicht abgefragt werden</string>
+    <string name="error_instantiating_decoder">Decoder kann nicht instanziiert werden %1$s</string>
+    <string name="error_unsupported_video">Medien enthalten Video-Tracks, können aber auf diesem Gerät nicht abgespielt werden.</string>
+    <string name="error_unsupported_audio">Medien enthalten Audio-Tracks, können aber auf diesem Gerät nicht abgespielt werden.</string>
+    <string name="storage_permission_denied">Der Zugriff auf Speicher wird verweigert</string>
+    <string name="download_start_error">Das Herunterladen konnte nicht gestartet werden</string>
+</resources>

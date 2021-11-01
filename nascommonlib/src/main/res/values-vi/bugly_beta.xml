@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strNetworkTipsCancelBtn">Hủy</string>
+    <string name="strNetworkTipsConfirmBtn">Tiếp tục tải</string>
+    <string name="strNetworkTipsMessage">Bạn đã chuyển sang mạng di động. Bạn có muốn tiếp tục tải xuống hiện tại không?</string>
+    <string name="strNetworkTipsTitle">Nhắc nhở mạng</string>
+    <string name="strNotificationClickToContinue">Tiếp tục tải</string>
+    <string name="strNotificationClickToInstall">Nhấn để cài đặt</string>
+    <string name="strNotificationClickToRetry">Nhấn vào đây để thử lại</string>
+    <string name="strNotificationClickToView">Nhấn vào đây để xem</string>
+    <string name="strNotificationDownloadError">Tải xuống thất bại</string>
+    <string name="strNotificationDownloadSucc">Tải hoàn tất</string>
+    <string name="strNotificationDownloading">Đang tải về</string>
+    <string name="strNotificationHaveNewVersion">Có phiên bản mới</string>
+    <string name="strToastCheckUpgradeError">Kiểm tra phiên bản mới không thành công, vui lòng thử lại sau</string>
+    <string name="strToastCheckingUpgrade">Đang kiểm tra, vui lòng đợi&#8230;</string>
+    <string name="strToastYourAreTheLatestVersion">Đã là phiên bản mới nhất</string>
+    <string name="strUpgradeDialogCancelBtn">Để lần sau</string>
+    <string name="strUpgradeDialogContinueBtn">Tiếp tục</string>
+    <string name="strUpgradeDialogFeatureLabel">Mô tả cập nhật</string>
+    <string name="strUpgradeDialogFileSizeLabel">Kích cỡ gói</string>
+    <string name="strUpgradeDialogInstallBtn">Cài đặt</string>
+    <string name="strUpgradeDialogRetryBtn">Thử lại</string>
+    <string name="strUpgradeDialogUpdateTimeLabel">Thời gian cập nhật</string>
+    <string name="strUpgradeDialogUpgradeBtn">Cập nhật ngay lập tức</string>
+    <string name="strUpgradeDialogVersionLabel">Phiên bản</string>
+</resources>

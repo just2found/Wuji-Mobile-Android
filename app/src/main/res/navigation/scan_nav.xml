@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scan_nav"
+    app:startDestination="@id/captureFragment">
+
+    <fragment
+        android:id="@+id/captureFragment"
+        android:name="net.linkmate.app.ui.scan.CaptureFragment"
+        android:label="CaptureFragment"
+        tools:layout="@layout/fragment_capture">
+        <action
+            android:id="@+id/action_captureFragment_to_applyLogonFragment"
+            app:destination="@id/applyLogonFragment" />
+        <action
+            android:id="@+id/action_captureFragment_to_scanResultOperatorFragment"
+            app:destination="@id/scanResultOperatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/applyLogonFragment"
+        android:name="net.linkmate.app.ui.scan.ApplyLogonFragment"
+        android:label="ApplyLogonFragment"
+        tools:layout="@layout/fragment_apply_logon" >
+        <argument
+            android:name="scanResult"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanResultOperatorFragment"
+        android:name="net.linkmate.app.ui.scan.ScanResultOperatorFragment"
+        android:label="ScanResultOperatorFragment"
+        tools:layout="@layout/fragment_scan_result_operator">
+        <argument
+            android:name="resIdIv"
+            app:argType="integer" />
+        <argument
+            android:name="resIdOperation"
+            app:argType="integer" />
+        <argument
+            android:name="resIdOperationTip"
+            app:argType="integer" />
+    </fragment>
+</navigation>

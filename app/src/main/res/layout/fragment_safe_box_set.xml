@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context=".ui.nas.safe_box.control.SafeBoxSetFragment">
+
+    <net.linkmate.app.ui.function_ui.titlebar.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/layout_title_height"
+        app:text_content="@string/tab_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="@dimen/common_16"
+        android:background="@drawable/bg_20_full_radius_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBar"
+        app:layout_constraintVertical_bias="0.02">
+
+        <TextView
+            android:id="@+id/modify_pwd_tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/common_16"
+            android:text="@string/modify_user_pwd"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="@dimen/common_10"
+            android:layout_marginEnd="@dimen/common_10"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/modify_secret_tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/common_16"
+            android:text="@string/modify_secret_guard"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_18" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reset_secret_all_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/common_16"
+        android:background="@drawable/bg_20_full_radius_white"
+        android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/common_16"
+        android:text="@string/reset_safe_box"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/logout_secret_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/common_16"
+        android:background="@drawable/bg_20_full_radius_white"
+        android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/common_16"
+        android:text="@string/login_out_safe_box"
+        android:textColor="@color/red"
+        android:textSize="@dimen/txt_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_secret_all_tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

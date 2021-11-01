@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connecting_message">&#8230; الاتصال بالارتباط الصغير</string>
+    <string name="error_string_no_account">لم يتم ملء معرف الارتباط الصغير أو كلمة المرور.</string>
+    <string name="error_string_invalid_account">خطأ معرف الارتباط الصغير أو كلمة المرور.</string>
+    <string name="error_string_gw_busy">خدمة الارتباط الصغير مشغولة ، يرجى المحاولة مرة أخرى بعد 10 دقائق .</string>
+    <string name="error_string_socket">لا يمكن الاتصال بالخدمة ، تحقق من الشبكة الخاصة بك.</string>
+    <string name="string_notification_ticker">تم قطع اتصال الارتباط الصغير</string>
+    <string name="string_notification_text">تم قطع اتصال الارتباط الصغير ، المس هنا لفتح.</string>
+    <string name="DownloadFail">فشل تنزيل تحديث الارتباط الصغير</string>
+    <string name="update_title">تحديث اتصال الارتباط الصغير</string>
+    <string name="update_content">هناك إصدار جديد من برنامج الارتباط الصغير ($VERSION$) يوصى بالتحديث على الفور.</string>
+    <string name="agree_privacy">لقد قرأت. أوافق على سياسة الخصوصية هذه.</string>
+    <string name="if_not_agree_privacy">فقط من خلال الموافقة على اتفاقية الخصوصية يمكنك الاستمرار في استخدام الارتباط الصغير.</string>
+    <string name="app_name">WeLine</string>
+</resources>

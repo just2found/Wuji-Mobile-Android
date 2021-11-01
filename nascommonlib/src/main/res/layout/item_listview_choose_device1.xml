@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0.2dp"
+    android:background="@color/white"
+    app:layout_goneMarginBottom="1dp"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+
+
+    <net.sdvn.nascommon.widget.CheckableImageButton
+        android:id="@+id/select_box"
+        style="@style/checkableImageButton"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_device"
+        android:layout_width="@dimen/common_ItemHeight48"
+        android:layout_height="@dimen/common_ItemHeight48"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_device"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageStyle_4dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toStartOf="@+id/select_box"
+        android:layout_toEndOf="@+id/iv_device"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/darker"
+            android:textSize="@dimen/text_size_mid" />
+
+        <TextView
+            android:id="@+id/tv_device_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_sm" />
+    </LinearLayout>
+
+</RelativeLayout>
+

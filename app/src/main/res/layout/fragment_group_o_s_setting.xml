@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.nas.group.GroupOSSettingFragment">
+
+    <net.linkmate.app.ui.function_ui.titlebar.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/layout_title_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text_content="@string/tab_setting" />
+
+    <net.linkmate.app.view.TipsBar
+        android:id="@+id/tipsBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:content_text="@string/load_failed"
+        app:icon_visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBar"
+        app:link_text="@string/back_to_login"
+        tools:visibility="visible" />
+
+
+    <!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_button_white_radius_top_14" />
+        -->
+
+    <TextView
+        android:id="@+id/setting_group_notice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button_white_radius_top_14"
+        android:drawableEnd="@drawable/icon_circle_right"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/layout_title_height"
+        android:paddingStart="@dimen/view_start"
+        android:paddingEnd="@dimen/view_end"
+        android:text="@string/announcement"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_16"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/tipsBar"
+        tools:visibility="visible" />
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_line"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/setting_group_notice" />
+
+
+    <TextView
+        android:id="@+id/setting_group_recycle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/icon_circle_right"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/layout_title_height"
+        android:paddingStart="@dimen/view_start"
+        android:paddingEnd="@dimen/view_end"
+        android:text="@string/root_dir_name_recycle"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_16"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/include3"
+        tools:visibility="visible" />
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/include_line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_line"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/setting_group_recycle" />
+
+    <TextView
+        android:id="@+id/setting_group_member"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_white_radius_bottom_14"
+        android:drawableEnd="@drawable/icon_circle_right"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/layout_title_height"
+        android:paddingStart="@dimen/view_start"
+        android:paddingEnd="@dimen/view_end"
+        android:text="@string/member"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/txt_16"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/include4"
+        tools:visibility="visible" />
+
+    <!--   <View
+               android:layout_width="match_parent"
+               android:layout_height="14dp"
+               android:background="@drawable/bg_button_white_radius_bottom_14" />
+   -->
+
+    <TextView
+        android:id="@+id/setting_leave_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_start"
+        android:background="@drawable/bg_button_white_ripple_trans_gray_radius_14"
+        android:gravity="center_vertical|start"
+        android:minHeight="@dimen/layout_title_height"
+        android:paddingStart="@dimen/view_start"
+        android:text="@string/leave_group"
+        android:textColor="@color/red"
+        android:textSize="@dimen/txt_15"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/setting_group_member"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/setting_delete_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_start"
+        android:background="@drawable/bg_button_white_ripple_trans_gray_radius_14"
+        android:gravity="center_vertical|start"
+        android:minHeight="@dimen/layout_title_height"
+        android:paddingStart="@dimen/view_start"
+        android:text="@string/delete_group"
+        android:textColor="@color/red"
+        android:textSize="@dimen/txt_15"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/setting_leave_group"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="setting_group_notice,include3" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="setting_group_recycle,include4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

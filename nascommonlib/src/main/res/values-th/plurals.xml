@@ -1,0 +1,26 @@
+<resources>
+    <plurals name="users">
+        <item quantity="other">ู้ใช้งาน%1$sท่าน</item>
+    </plurals>
+    <plurals name="folders">
+        <item quantity="other">โฟลเดอร์%dเล่ม</item>
+    </plurals>
+    <plurals name="files">
+        <item quantity="other">โฟลเดอร์%dเล่ม</item>
+    </plurals>
+    <plurals name="plurals_hour">
+        <item quantity="other">%dชั่วโมง</item>
+    </plurals>
+    <plurals name="plurals_day">
+        <item quantity="other">%dวัน</item>
+    </plurals>
+    <plurals name="plurals_minutes">
+        <item quantity="other">%dนาที</item>
+    </plurals>
+    <plurals name="shared_users">
+        <item quantity="other">แบ่งปันผู้ใช้ที่ถูกผูกไว้%d</item>
+    </plurals>
+    <plurals name="local_accounts">
+        <item quantity="other">หมายเลขบัญชีท้องถิ่น%d</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brvah_loading">로딩중&#8230;</string>
+    <string name="brvah_load_failed">로딩 실패, 클릭하여 다시 시도</string>
+    <string name="brvah_load_end">더 많은 데이터가 없음</string>
+</resources>

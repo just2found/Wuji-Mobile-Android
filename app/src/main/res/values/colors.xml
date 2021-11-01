@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#11a3fd</color>
+    <color name="colorPrimaryDark">#11a3fd</color>
+    <color name="colorAccent">@color/bg_light_blue</color>
+    <color name="colorSecondary">#11a3fd</color>
+
+    <color name="bg_dialog_translucent">#66333333</color>
+    <color name="bg_dark">#333333</color>
+    <color name="bg_dark_gray">#757575</color>
+    <color name="bg_light_gray">#adadad</color>
+    <color name="bg_silver">#99c0c0c0</color>
+    <color name="bg_gray">#F6F6F6</color>
+    <color name="bg_light">#f9f9f9</color>
+    <color name="bg_light_2">#F7F7F7</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="bg_orange">#FFE84E40</color>
+    <color name="bg_light_blue">#98d0fc</color>
+    <color name="bg_blue">#60b2f2</color>
+    <color name="bg_tab_blue">#191c32a2</color>
+    <color name="bg_tab_indicator">#ecf6ff</color>
+    <color name="bg_trans_blue">#B25289eb</color>
+    <color name="bg_dark_blue">#2e77b0</color>
+    <color name="bg_dark_blue_lab">#265CDC</color>
+    <color name="bg_dark_blue_button">#4279fe</color>
+    <color name="color_bg_grey500">#9e9e9e</color>
+    <color name="color_bg_grey350">#c8c8c8</color>
+    <color name="color_bg_grey300">#e0e0e0</color>
+    <color name="color_bg_grey250">#ececec</color>
+    <color name="color_bg_grey150">#f2f2f2</color>
+    <color name="color_bg_grey50">#fafafa</color>
+    <color name="bg_trans_white_20">#33ffffff</color>
+    <color name="bg_trans_white_30">#4cffffff</color>
+    <color name="bg_trans_white_60">#99ffffff</color>
+    <color name="bg_trans_black_30">#4c000000</color>
+
+    <color name="bg_device_blue_stroke">#1b6fbd</color>
+    <color name="bg_device_blue_start">#e3edff</color>
+    <color name="bg_device_blue_end">#d6e3fa</color>
+    <color name="bg_device_green_stroke">#1dbb24</color>
+    <color name="bg_device_green_start">#eff8e0</color>
+    <color name="bg_device_green_end">#e3f2c9</color>
+    <color name="bg_device_yellow_start">#fdf9e7</color>
+    <color name="bg_device_yellow_end">#faf1d6</color>
+    <color name="transparent_dialog">#80000000</color>
+    <color name="gray_normal">@color/gray</color>
+    <color name="gray_selected">@color/darker_gray</color>
+    <color name="gray_pressed">@color/darker_gray</color>
+    <color name="gray_disabled">@color/light_gray</color>
+    <color name="gray">#c0c0c0</color>
+    <color name="darker_gray">#aaaaaa</color>
+    <color name="light_gray">#d0d0d0</color>
+    <color name="progress_bar_1">#21d97f</color>
+    <color name="progress_bar_2">#21a5e4</color>
+    <color name="color_white_hint_text">#4cffffff</color>
+    <color name="color_txt_disable">#a0ffffff</color>
+    <color name="color_bg_btn">#e5ff6b11</color>
+    <color name="color_bg_btn_pressed">#b3ff6b11</color>
+    <color name="color_bg_btn_disable">#ceff6b11</color>
+    <color name="color_orange">#ff5420</color>
+    <color name="color_bg_btn_disable_green">#236112</color>
+    <color name="color_bg_btn_green">#38b44a</color>
+    <color name="color_bg_btn_pressed_green">#008f00</color>
+    <color name="primary">#ff2196f3</color>
+    <color name="primary_dark">#1565c0</color>
+    <color name="color_green_dark">#ff179b16</color>
+
+    <color name="bg_item_checked">#dff3ff</color>
+
+    <color name="stroke_light">#ebebeb</color>
+    <color name="stroke_blue">#3C90FD</color>
+
+    <color name="line_gray">#ececec</color>
+    <color name="line_trans">#99ffffff</color>
+    <color name="line_item">#ececec</color>
+    <color name="line_blue_stroke">#00b7ee</color>
+
+    <color name="bg_tips">#FFFAEB</color>
+    <color name="bg_warning">#F7EBED</color>
+
+    <color name="text_link">#425FFF</color>
+    <color name="text_warning">#D0021B</color>
+    <color name="text_black">#000</color>
+    <color name="text_dark">#333333</color>
+    <color name="text_dark_gray">#666666</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_light_gray">#adadad</color>
+    <color name="text_light_gray2">#aeaeae</color>
+    <color name="text_white_gray">#f9f9f9</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_orange">#E8541E</color>
+    <color name="text_light_blue">#cbdbde</color>
+    <color name="text_blue_translucent">#771b82d2</color>
+    <color name="text_blue">#108EE9</color>
+    <color name="text_green">#00D418</color>
+    <color name="text_red">#FA084C</color>
+    <color name="text_tab_blue">#5289eb</color>
+    <color name="text_yellow">#F9E33E</color>
+
+    <color name="txt_item_title">#1e1e1e</color>
+    <color name="txt_item_content">#808080</color>
+
+    <color name="translucent_ripple_blue">#110C8CFC</color>
+    <color name="translucent_ripple_gray">#22BBBBBB</color>
+    <color name="translucent_gray">#33000000</color>
+    <color name="translucent_primary">#882196f3</color>
+
+    <color name="red_point">#FFE84E40</color>
+    <color name="transparent">#0000</color>
+    <color name="front_anim_progress_bar">#9bc848</color>
+    <color name="text_anim_progress">#dddddd</color>
+
+    <color name="color_gradient_light">#dbdbdb</color>
+    <color name="color_gradient_dark">#dedede</color>
+    <color name="color_light_blue">#78cbfe</color>
+    <color name="color_light_blue_txt">#0e8ffc</color>
+
+    <color name="light_green">#78dd78</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="link_blue">#2980FF</color>
+
+    <color name="dynamic_toolbar_color">#ededed</color>
+    <color name="dynamic_comment_color">#F7F7F7</color>
+    <color name="dynamic_name_color">#4D618E</color>
+
+    <color name="breif_bg_defualt_color">#454545</color>
+    <color name="bg_item_selected">#E1EDFA</color>
+    <color name="color_foreground_mask">#54FFFFFF</color>
+
+    <color name="bg_f5f7fa">#f5f7fa</color>
+    <color name="bg_e1edfa">#e1edfa</color>
+    <color name="color_0C81FB">#0C81FB</color>
+    <color name="color_7DB9FA">#7DB9FA</color>
+    <color name="color_e2edfa">#e2edfa</color>
+    <color name="color_7cbaf9">#7cbaf9</color>
+    <color name="color_0d80f8">#0d80f8</color>
+    <color name="color_49B811">#49B811</color>
+    <color name="color_D1061E">#D1061E</color>
+
+    <color name="playbackControlBackground">#CC000000</color>
+    <color name="playTint">#cc63c866</color>
+    <color name="pauseTint">#ccc76185</color>
+    <color name="playerControlText">#cca2a2a2</color>
+
+    <!--theme  blue底色 -->
+    <color name="bg_title_start_color">#0C8CFC</color>
+    <color name="bg_title_end_color">#0B6BF8</color>
+    <color name="title_text_color">#ececec</color>
+    <color name="title_text_color_dark">#2b2b2b</color>
+    <color name="title_icon_color">#ffffff</color>
+    <color name="title_icon_color_dark">#2b2b2b</color>
+    <color name="bg_item_title">#F8F9FA</color>
+    <color name="bg_item">#fff</color>
+
+    <color name="gray_b3">#B3B3B3</color>
+    <color name="text_color_hint">#999999</color>
+    <color name="theme_body_text">#EFEFEF</color>
+    <color name="theme_body_text_hint">#D9D9D9</color>
+    <!--theme blue底色 -->
+
+</resources>

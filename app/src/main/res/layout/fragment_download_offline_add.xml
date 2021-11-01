@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.simplestyle.device.download_offline.DownloadOfflineAddFragment">
+
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar_gradient"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/common_icon48"
+            android:layout_height="@dimen/common_icon48"
+            android:padding="@dimen/common_12"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:src="@drawable/icon_return"
+            app:tint="@color/title_icon_color"
+            app:tintMode="src_in" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="start|center_vertical"
+            android:layout_weight="5"
+            android:text="@string/add_download_task"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/txt_17" />
+
+        <ImageView
+            android:id="@+id/set_path"
+            android:layout_width="@dimen/common_icon48"
+            android:layout_height="@dimen/common_icon48"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_ripple_trans_gray"
+            android:padding="14dp"
+            android:src="@drawable/ic_offline_d_setting"
+            app:tint="@color/title_icon_color"
+            app:tintMode="src_in" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/type_ll"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/layout_tool_title_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout">
+
+        <TextView
+            android:id="@+id/seed_type_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/seed_download"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/http_type_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/connect_to_download"
+            android:textColor="@color/txt_item_content"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/left_v"
+        android:layout_width="0dp"
+        android:layout_height="1.33dp"
+        android:background="@color/color_0C81FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_ll"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <View
+        android:id="@+id/right_v"
+        android:layout_width="0dp"
+        android:layout_height="1.33dp"
+        android:background="@color/color_0C81FB"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_ll"
+        app:layout_constraintWidth_percent="0.4" />
+
+
+    <ImageView
+        android:id="@+id/center_bg_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rd_by_file"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout"
+        app:layout_constraintVertical_bias="0.39" />
+
+
+    <Button
+        android:id="@+id/retrieval_seed_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/bg_button_theme_primary_radius"
+        android:text="@string/automatic_seed_retrieval"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/center_bg_img"
+        app:layout_constraintVertical_bias="0.663"
+        app:layout_constraintWidth_percent="0.65" />
+
+    <Button
+        android:id="@+id/find_seed_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/bg_button_theme_primary_radius"
+        android:text="@string/add_seeds_manually"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrieval_seed_btn"
+        app:layout_constraintVertical_bias="0.49"
+        app:layout_constraintWidth_percent="0.65" />
+
+    <EditText
+        android:id="@+id/http_address_edt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_white_radius_grey_stroke"
+        android:hint="@string/http_ftp_magnet"
+        android:padding="@dimen/common_12"
+        android:textColor="@color/text_dark_gray"
+        android:textSize="@dimen/txt_15"
+        android:visibility="gone"
+        app:layout_constraintDimensionRatio="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_ll"
+        app:layout_constraintWidth_percent="0.85"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/add_http_task_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/bg_button_theme_primary_radius"
+        android:text="@string/download_to_device"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_14"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/center_bg_img"
+        app:layout_constraintVertical_bias="0.88"
+        app:layout_constraintWidth_percent="0.65" />
+</androidx.constraintlayout.widget.ConstraintLayout>

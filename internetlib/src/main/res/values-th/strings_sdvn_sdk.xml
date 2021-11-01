@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_string_invalid_account">ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง.</string>
+    <string name="error_string_gw_busy">เซิร์ฟเวอร์ไม่ว่างโปรดลองลงชื่อเข้าใช้อีกครั้งหลังจาก 10 นาที</string>
+    <string name="error_string_user_diabled">บัญชีของคุณถูกระงับ</string>
+    <string name="error_string_max_device">จำนวนอุปกรณ์เกินขีดจำกัด</string>
+    <string name="error_string_no_network">เครือข่ายปัจจุบันไม่สามารถใช้งานได้</string>
+    <string name="error_string_device_disabled">อุปกรณ์ปัจจุบันไม่ได้รับอนุญาตให้ลงชื่อเข้าใช้</string>
+    <string name="error_string_socket">ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์โปรดตรวจสอบสภาพแวดล้อมเครือข่ายของคุณ</string>
+    <string name="error_string_device_dup">IDของอุปกรณ์นี้ได้รับการเข้าสู่ระบบแล้ว</string>
+    <string name="error_string_device_locked">อุปกรณ์ปัจจุบันถูกล็อค</string>
+    <string name="error_string_user_unactive">บัญชีของคุณไม่ได้เปิดใช้งาน</string>
+    <string name="error_string_user_locked">บัญชีของคุณถูกล็อค.</string>
+    <string name="KR_Device_Removed">อุปกรณ์นี้ถูกลบออกจากเครือข่าย</string>
+    <string name="KR_Member_Removed">บัญชีของคุณถูกลบออกจากเครือข่าย</string>
+    <string name="KR_Deivce_Deactived">อุปกรณ์ของคุณถูกปิดการใช้งาน</string>
+    <string name="dr_invalid_sms">SMS ไม่ถูกต้อง</string>
+    <string name="dr_vpn_permission_denied">สิทธิVPNถูกปฏิเสธ </string>
+    <string name="dr_vpn_tunnel_is_occupied">ช่อง VPN ถูกใช้งานไปแล้ว</string>
+    <string name="dr_read_phone_state_permission_denied">ไม่สามารถอ่านรหัสประจำตัวอุปกรณ์</string>
+    <string name="success">ความสำเร็จ</string>
+    <string name="error_string_pending">กำลังโหลด &#8230;</string>
+    <string name="ec_insufficient_points">คะแนนไม่เพียงพอ</string>
+    <string name="flow_is_expire">ไม่มีการจราจร</string>
+
+</resources>

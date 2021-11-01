@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wx_no_installed">Vui lòng cài đặt WeChat trước và thử lại</string>
+    <string name="pay_succ">thanh toán thành công</string>
+    <string name="pay_failed">Thanh toán không thành công</string>
+    <string name="pay_cancelled">Đã hủy thanh toán</string>
+    <string name="pay_order_error">Lỗi thanh toán</string>
+</resources>

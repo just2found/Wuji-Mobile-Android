@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_warning"
+    android:gravity="center_vertical"
+    android:id="@+id/root"
+    android:orientation="horizontal"
+    tools:showIn="net.linkmate.app.view.TipsBar"
+    app:layout_collapseMode="pin">
+
+    <net.linkmate.app.view.MarqueeTextView
+        android:id="@+id/tips_tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_8"
+        android:layout_weight="1"
+        android:textColor="@color/text_warning"
+        android:textSize="@dimen/txt_11"
+        tools:text="This is a tips" />
+
+    <TextView
+        android:id="@+id/tips_tv_link"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:textColor="@color/text_link"
+        android:textSize="@dimen/txt_11"
+        tools:text="点击跳转" />
+
+    <ImageView
+        android:id="@+id/tips_iv_close"
+        android:layout_width="@dimen/common_icon32"
+        android:layout_height="@dimen/common_icon32"
+        android:background="@drawable/bg_ripple_trans_gray"
+        android:padding="@dimen/common_5"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_close_black_24dp" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_square_full_radius_primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/common_12"
+    android:paddingTop="@dimen/common_6"
+    android:paddingEnd="@dimen/common_12"
+    android:paddingBottom="@dimen/common_6">
+
+    <TextView
+        android:id="@+id/lmv_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-05"
+        android:textColor="@color/text_white_gray"
+        android:textSize="@dimen/txt_12" />
+
+    <TextView
+        android:id="@+id/lmv_tv_flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0GB"
+        android:textColor="@color/text_white_gray"
+        android:textSize="@dimen/txt_12" />
+
+    <TextView
+        android:id="@+id/lmv_tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收益：0"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/txt_14" />
+
+</LinearLayout>

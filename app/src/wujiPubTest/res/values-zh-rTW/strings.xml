@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">无极</string>
+    <string name="connecting_message">正在連入微鏈接 &#8230;</string>
+    <string name="error_string_no_account">未填寫微鏈接ID或密碼.</string>
+    <string name="error_string_invalid_account">微鏈接ID或密碼錯誤.</string>
+    <string name="error_string_gw_busy">微鏈接服務正忙,請在10分鐘后再嘗試登入.</string>
+    <string name="error_string_socket">無法連接到服务,請檢查您的網絡環境.</string>
+    <string name="string_notification_ticker">微鏈接連接已斷開.</string>
+    <string name="string_notification_text">微鏈接已斷開連接, 輕觸打開.</string>
+    <string name="DownloadFail">微鏈接更新下載失敗.</string>
+    <string name="update_title">微鏈接更新</string>
+    <string name="update_content">微鏈接軟件有新版本了 ($VERSION$), 建議立即進行更新.</string>
+    <string name="agree_privacy">已閱讀，我同意接受用戶隱私協議.</string>
+    <string name="if_not_agree_privacy">只有同意隱私協議，才可以繼續使用微鏈接.</string>
+    <string name="agree_user_agreement">已閱讀並同意 </string>
+</resources>

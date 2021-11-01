@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <net.sdvn.nascommon.widget.TitleBackLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_bar_gradient"
+            android:minHeight="@dimen/layout_title_height" />
+
+        <net.linkmate.app.view.TipsBar
+            android:id="@+id/tipsBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:content_text="@string/load_failed"
+            app:icon_visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/title_layout"
+            app:link_text="@string/back_to_login"
+            tools:visibility="visible" />
+
+        <include layout="@layout/include_swipe_refresh_and_rv" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

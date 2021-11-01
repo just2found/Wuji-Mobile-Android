@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_string_invalid_account">Il vostro ID utente o la vostra password non sono corretti.</string>
+    <string name="error_string_gw_busy">Il server è occupato, riprovare tra 10 minuti.</string>
+    <string name="error_string_user_diabled">Il tuo account non è stato trovato.</string>
+    <string name="error_string_max_device">Il numero di dispositivi registrati ha raggiunto il massimo.</string>
+    <string name="error_string_no_network">Rete inutilizzabile.</string>
+    <string name="error_string_device_disabled">Il vostro dispositivo è limitato al login.</string>
+    <string name="error_string_socket">Non è possibile connettersi al Server, controllare la rete.</string>
+    <string name="error_string_device_dup">Il tuo dispositivo era online.</string>
+    <string name="error_string_device_locked">Il dispositivo è stato bloccato.</string>
+    <string name="error_string_user_unactive">L\'account non è attivato.</string>
+    <string name="error_string_user_locked">Il conto è stato bloccato.</string>
+    <string name="KR_Device_Removed">Il dispositivo è stato rimosso dalla rete.</string>
+    <string name="KR_Member_Removed">L\'account è stato rimosso dalla rete.</string>
+    <string name="KR_Deivce_Deactived">Il dispositivo è stato disattivato.</string>
+    <string name="dr_invalid_sms">SMS non valido</string>
+    <string name="dr_vpn_permission_denied">Autorizzazione VPN negata</string>
+    <string name="dr_vpn_tunnel_is_occupied">Tunel VPN è occupato</string>
+    <string name="dr_read_phone_state_permission_denied">Leggere il permesso statale del telefono negato</string>
+    <string name="success">Successo</string>
+    <string name="error_string_pending">Caricamento&#8230;</string>
+    <string name="ec_insufficient_points">Punti insufficienti</string>
+    <string name="flow_is_expire">Nessun traffico di acquisto</string>
+
+</resources>

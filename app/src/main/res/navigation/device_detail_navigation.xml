@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/device_detail_navigation"
+    app:startDestination="@id/deviceDetail"
+    >
+    <fragment
+        android:id="@+id/deviceDetail"
+        android:name="net.linkmate.app.ui.activity.nasApp.deviceDetial.DeviceDetailFragment"
+        android:label="DeviceDetail"
+        >
+        <argument
+            android:name="function"
+            app:argType="integer"
+            android:defaultValue="0"/>
+        <action
+            android:id="@+id/enterDetial"
+            app:destination="@id/deviceDetail"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+</navigation>

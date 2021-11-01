@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">无极</string>
+    <string name="connecting_message">正在连入&#8230;</string>
+    <string name="error_string_no_account">未填写ID或密码.</string>
+    <string name="error_string_invalid_account">ID或密码错误.</string>
+    <string name="error_string_gw_busy">服务正忙,请在10分钟后再尝试登入.</string>
+    <string name="error_string_socket">无法连接到服务,请检查您的网络环境.</string>
+    <string name="string_notification_ticker">连接已断开.</string>
+    <string name="string_notification_text">已断开连接, 轻触打开.</string>
+    <string name="DownloadFail">更新下载失败.</string>
+    <string name="update_title">更新</string>
+    <string name="update_content">软件有新版本了 ($VERSION$), 建议立即更新.</string>
+    <string name="agree_privacy">已阅读，我同意接受用户隐私协议.</string>
+    <string name="if_not_agree_privacy">只有同意隐私协议，才可以继续使用.</string>
+    <string name="downloadURL">https://www.welinecn.com/</string>
+    <string name="agree_user_agreement">已阅读并同意</string>
+</resources>
